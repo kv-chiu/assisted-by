@@ -4,6 +4,9 @@ cd "$(dirname "$0")"
 
 repo_path="${REPO:-linux-full.git}"
 lore_external="${LORE_EXTERNAL:-https://lore.kernel.org/all/}"
+while [[ "$lore_external" == */ ]]; do
+  lore_external="${lore_external%/}"
+done
 task_tmp_dir="$(mktemp -d "${TMPDIR:-/tmp}/assisted-by-refresh.XXXXXX")"
 
 cleanup() {
