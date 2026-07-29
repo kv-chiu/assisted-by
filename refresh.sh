@@ -34,6 +34,7 @@ cd "$(dirname "$0")"
 repo_path="${REPO:-linux-full.git}"
 lore_external="$(normalize_external_url "${LORE_EXTERNAL:-https://lore.kernel.org/all/}")"
 task_tmp_dir="$(mktemp -d "${TMPDIR:-/tmp}/assisted-by-refresh.XXXXXX")"
+cached_kernel_head=""
 
 cleanup() {
   rm -rf -- "$task_tmp_dir"
@@ -43,7 +44,7 @@ cleanup() {
 }
 trap cleanup EXIT
 
-for required_command in git lei python3 tar; do
+for required_command in git lei python3; do
   if ! command -v "$required_command" >/dev/null 2>&1; then
     echo "error: required command not found: $required_command" >&2
     exit 127
@@ -59,6 +60,7 @@ else
     echo "error: $repo_path exists but is not a bare Git repository" >&2
     exit 1
   fi
+  cached_kernel_head="$(git --git-dir="$repo_path" rev-parse HEAD)"
   git --git-dir="$repo_path" fetch --no-tags origin \
     +refs/heads/master:refs/heads/master
 fi
@@ -78,8 +80,15 @@ lei q -d mid -o - -f mboxrd \
 python3 parse_commits.py "$repo_path" "$task_tmp_dir/data.json"
 python3 parse_lei.py "$task_tmp_dir/lei.mbox" "$task_tmp_dir/lore_data.json"
 
-# 4. compute kernel-wide line totals
-python3 kernel_stats.py "$repo_path" "$task_tmp_dir/kernel_stats.json"
+# 4. update kernel-wide line totals from the cached HEAD when possible
+kernel_stats_args=(
+  "$repo_path" "$task_tmp_dir/kernel_stats.json"
+  --baseline kernel_stats.json
+)
+if [[ -n "$cached_kernel_head" ]]; then
+  kernel_stats_args+=(--previous-head "$cached_kernel_head")
+fi
+python3 kernel_stats.py "${kernel_stats_args[@]}"
 
 # 5. reject empty or regressing remote results before replacing published data
 python3 validate_refresh.py \
