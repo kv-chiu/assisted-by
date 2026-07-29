@@ -9,46 +9,59 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh
+  group: refresh-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
-    timeout-minutes: 75
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: install lei (public-inbox)
+      - name: install lei
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends public-inbox jq
+          sudo apt-get install -y --no-install-recommends lei
+          command -v lei
+          lei --version
+
+      - name: compute cache epoch
+        id: cache-epoch
+        run: echo "week=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
 
       - name: restore lei state
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
-          path: ~/.local/share/lei
-          key: lei-state-${{ github.run_id }}
-          restore-keys: |
-            lei-state-
+          path: |
+            ~/.cache/public-inbox
+            ~/.config/lei
+            ~/.local/share/lei
+          key: ${{ runner.os }}-lei-state-v1
 
       - name: restore linux-full.git
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: linux-full.git
-          key: linux-full-${{ github.run_id }}
+          key: ${{ runner.os }}-linux-full-2026-${{ steps.cache-epoch.outputs.week }}
           restore-keys: |
-            linux-full-
+            ${{ runner.os }}-linux-full-2026-
 
-      - name: register lei external
-        run: |
-          lei add-external https://lore.kernel.org/all/ || true
+      - name: run tests
+        run: python3 -m unittest discover -s tests -v
 
       - name: run refresh.sh
         run: ./refresh.sh
+
+      - name: validate generated files
+        run: |
+          python3 -m json.tool data.json >/dev/null
+          python3 -m json.tool lore_data.json >/dev/null
+          python3 -m json.tool kernel_stats.json >/dev/null
+          git diff --check
 
       - name: commit and push if changed
         run: |
@@ -60,4 +73,4 @@ jobs:
           fi
           git add index.html data.json lore_data.json kernel_stats.json
           git commit -m "data: scheduled refresh ($(date -u +%Y-%m-%dT%H:%MZ))"
-          git push
+          git push origin "HEAD:${GITHUB_REF_NAME}"
