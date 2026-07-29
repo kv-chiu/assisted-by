@@ -283,6 +283,7 @@
   }
   .bar-row .count .add { display: block; color: var(--accent); }
   .bar-row .count .rem { display: block; color: var(--red); font-size: 13px; }
+  .bar-row .count small { display: block; color: var(--dim); font-size: 9px; margin-top: 3px; }
   @keyframes grow {
     from { transform: scaleX(0); }
     to { transform: scaleX(1); }
@@ -497,6 +498,8 @@
   .toggle button + button { border-left: 1px solid var(--line); }
   .toggle button:hover { color: var(--text); }
   .toggle button.active { background: var(--accent); color: #0a0a0a; font-weight: 600; }
+  .model-controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+  .author-toggle.active { background: var(--warn) !important; }
   .row-lines .dim-num { color: var(--dim); }
   .lines { display: inline-flex; gap: 8px; align-items: baseline; }
   .lines .add { color: var(--accent); }
@@ -636,6 +639,44 @@
     line-height: 1.6;
   }
   .window-scope.warning { color: var(--warn); }
+  .dominance-panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 22px;
+    margin-bottom: 26px;
+  }
+  .dominance-summary {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .dominance-metric { background: var(--panel-2); padding: 16px; }
+  .dominance-metric .value {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 21px;
+    color: var(--text);
+  }
+  .dominance-metric .name {
+    margin-top: 6px;
+    color: var(--dim);
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  .dominance-note {
+    margin: 14px 0 0;
+    color: var(--dim);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .author-model-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px 12px;
+  }
+  .author-model-detail .adjusted { color: var(--text); }
   .empty-state {
     border: 1px dashed var(--line);
     color: var(--dim);
@@ -646,6 +687,7 @@
   @media (max-width: 900px) {
     .highlights { grid-template-columns: 1fr; }
     .howmade { grid-template-columns: 1fr; }
+    .dominance-summary { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 760px) {
     .wrap { padding: 36px 18px 56px; }
@@ -655,6 +697,11 @@
     .commit-row .author, .commit-row .tag { display: none; }
     .funnel-row { grid-template-columns: 1fr; gap: 6px; }
     .window-summary { grid-template-columns: 1fr; }
+    .dominance-summary { grid-template-columns: 1fr 1fr; }
+    .section-head { align-items: flex-start; gap: 14px; }
+    .model-controls { justify-content: flex-start; }
+    .bar-row .label { align-items: flex-start; flex-direction: column; }
+    .author-model-detail { justify-content: flex-start; }
   }
 </style>
 </head>
@@ -710,11 +757,20 @@
   <section>
     <div class="section-head">
       <h2>Models disclosed</h2>
-      <div class="toggle" id="models-toggle">
-        <button data-mode="submitted" class="active">by submissions</button>
-        <button data-mode="commits">by merged commits</button>
-        <button data-mode="lines">by lines added</button>
+      <div class="model-controls">
+        <div class="toggle" id="models-toggle">
+          <button data-mode="submitted" class="active">by submissions</button>
+          <button data-mode="commits">by merged commits</button>
+          <button data-mode="lines">by lines added</button>
+        </div>
+        <div class="toggle">
+          <button type="button" class="author-toggle" id="author-analysis-toggle" aria-pressed="false">author adjustment: off</button>
+        </div>
       </div>
+    </div>
+    <div class="dominance-panel" id="dominance-panel" hidden>
+      <div class="dominance-summary" id="dominance-summary"></div>
+      <p class="dominance-note" id="dominance-note"></p>
     </div>
     <div class="bars" id="models"></div>
     <p class="caveat" id="models-caveat"></p>
@@ -770,7 +826,7 @@
     </div>
   </section>
 
-  <section class="two-col">
+  <section class="two-col" id="author-leaderboards" hidden>
     <div>
       <div class="section-head">
         <h2>Top authors</h2>
@@ -819,7 +875,9 @@
           Replies, cover letters (0/N), and bot accounts (Patchwork, kernel test robot, syzbot,
           0day) are dropped. Patch series respins (v1, v2, v3) collapse to one entry per
           (canonical subject, sender). The <span class="mono">Assisted-by:</span> line must appear
-          in non-quoted body text.
+          in non-quoted body text. Optional author-dominance analysis groups patches by a stable
+          anonymous hash of the normalized sender address; names and addresses are not embedded
+          in the browser's rolling-window data, and aliases are not merged.
         </p>
       </div>
       <div class="how-block">
@@ -832,7 +890,10 @@
           <span class="mono">Unknown</span>.
           Rolling 7/30/45/60/90/180-day views are anchored to the latest data date and
           compared with the immediately preceding equal-length window. Within each dimension,
-          the same vendor, model, or tool counts at most once per patch.
+          the same vendor, model, or tool counts at most once per patch. Contributor-weighted
+          model shares count each author once per model. Effective contributors use
+          <span class="mono">1 / sum(s_i^2)</span>, where <span class="mono">s_i</span> is an
+          author's share of that model's patches.
         </p>
       </div>
       <div class="how-block">
@@ -1128,6 +1189,7 @@
   if (!WINDOW_KEYS.includes(activeWindow)) activeWindow = "45";
   let activeModelMode = "submitted";
   let activeActivityMode = "lines";
+  let authorAnalysisEnabled = false;
 
   const selectedWindow = () => data.windows[activeWindow];
   const windowLabel = () => activeWindow === "all" ? "ALL" : `${activeWindow}D`;
@@ -1175,6 +1237,34 @@
     const cls = delta > 0 ? "up" : delta < 0 ? "down" : "flat";
     const sign = delta > 0 ? "+" : delta < 0 ? "&minus;" : "";
     return `<span class="delta ${cls}">${sign}${Math.abs(delta).toLocaleString()}</span> vs previous ${activeWindow}D`;
+  }
+
+  const dominancePct = value => value == null ? "—" : `${value.toFixed(1)}%`;
+
+  function renderDominance() {
+    const panel = document.getElementById("dominance-panel");
+    const modelToggle = document.getElementById("models-toggle");
+    document.getElementById("author-leaderboards").hidden = !authorAnalysisEnabled;
+    panel.hidden = !authorAnalysisEnabled;
+    modelToggle.hidden = authorAnalysisEnabled;
+    if (!authorAnalysisEnabled) return;
+
+    const analysis = selectedWindow().submitted.author_analysis || {};
+    const metrics = [
+      [Number(analysis.authors || 0).toLocaleString(), "authors"],
+      [Number(analysis.effective_contributors || 0).toFixed(1), "effective contributors"],
+      [dominancePct(analysis.top1_share), "Top 1 share of patches"],
+      [dominancePct(analysis.top5_share), "Top 5 share of patches"],
+      [Number(analysis.gini || 0).toFixed(3), "Gini · 0 equal, 1 concentrated"],
+    ];
+    document.getElementById("dominance-summary").innerHTML = metrics.map(([value, name]) => `
+      <div class="dominance-metric">
+        <div class="value">${value}</div>
+        <div class="name">${name}</div>
+      </div>`).join("");
+    document.getElementById("dominance-note").textContent =
+      `${windowLabel()} submitted patches, grouped by stable anonymous sender identity. ` +
+      `Model bars now use contributor-weighted adoption: each author counts once per model, whether they sent 1 patch or 500.`;
   }
 
   function renderWindowHeader() {
@@ -1230,6 +1320,39 @@
   function renderModels(mode) {
     const selected = selectedWindow();
     const previous = selected.previous;
+    if (authorAnalysisEnabled) {
+      const analysis = selected.submitted.author_analysis || {};
+      const models = Object.entries(analysis.models || {}).map(([key, stats]) => {
+        const parts = key.split(" — ");
+        return {key, vendor: parts.shift(), model: parts.join(" — "), ...stats};
+      }).sort((a, b) =>
+        (b.contributor_weighted_share || 0) - (a.contributor_weighted_share || 0) ||
+        b.authors - a.authors || b.patches - a.patches
+      ).slice(0, 16);
+      const max = Math.max(...models.map(row => row.contributor_weighted_share || 0), 1);
+      document.getElementById("models").innerHTML = models.length ? models.map(row => {
+        const width = (row.contributor_weighted_share || 0) / max * 100;
+        return `
+          <div class="bar-row">
+            <div>
+              <div class="label">
+                <span class="name">${escape(row.model)} <small class="vsub">${escape(VLABEL[row.vendor] || row.vendor)}</small></span>
+                <span class="pct author-model-detail">
+                  <span class="adjusted">${dominancePct(row.contributor_weighted_share)} contributor-weighted</span>
+                  <span>${row.patches.toLocaleString()} patches · ${row.authors.toLocaleString()} authors</span>
+                  <span>ex Top 1 ${dominancePct(row.without_top1_share)} · ex Top 5 ${dominancePct(row.without_top5_share)} · raw ${dominancePct(row.raw_share)}</span>
+                </span>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width:${width}%"></div></div>
+            </div>
+            <div class="count">${Number(row.effective_contributors || 0).toFixed(1)}<small>effective</small></div>
+          </div>`;
+      }).join("") : '<div class="empty-state">No author concentration data in this window.</div>';
+      document.getElementById("models-caveat").textContent =
+        "Effective contributors = 1 / Σs², where s is each author’s share of this model’s patches. " +
+        "Top 1/5 exclusions remove the most prolific authors across all disclosed patches in the selected window.";
+      return;
+    }
     const all = dimensionRows("models").map(row => {
       const parts = row.key.split(" — ");
       return {...row, vendor: parts.shift(), model: parts.join(" — ")};
@@ -1294,6 +1417,15 @@
       activeModelMode = btn.dataset.mode;
       renderModels(activeModelMode);
     });
+  });
+  document.getElementById("author-analysis-toggle").addEventListener("click", event => {
+    authorAnalysisEnabled = !authorAnalysisEnabled;
+    const button = event.currentTarget;
+    button.classList.toggle("active", authorAnalysisEnabled);
+    button.setAttribute("aria-pressed", String(authorAnalysisEnabled));
+    button.textContent = `author adjustment: ${authorAnalysisEnabled ? "on" : "off"}`;
+    renderDominance();
+    renderModels(activeModelMode);
   });
 
   // --- by vendor ---
@@ -1388,6 +1520,7 @@
 
   function renderWindowViews() {
     renderWindowHeader();
+    renderDominance();
     renderModels(activeModelMode);
     renderVendors();
     renderTools();

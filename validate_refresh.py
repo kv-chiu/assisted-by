@@ -41,6 +41,17 @@ def validate_shape(merged: dict, lore: dict) -> None:
         == lore["unique_patches_with_tag"],
         "lore daily dimensions do not match unique patch count",
     )
+    for day, bucket in lore.get("daily_dimensions", {}).items():
+        require(
+            sum(bucket.get("authors", {}).values()) == bucket.get("patches", 0),
+            f"lore author counts do not match patch count on {day}",
+        )
+        for model, count in bucket.get("models", {}).items():
+            require(
+                sum(bucket.get("model_authors", {}).get(model, {}).values())
+                == count,
+                f"lore model author counts do not match {model} on {day}",
+            )
 
 
 def validate_progress(old_merged: dict, old_lore: dict,
