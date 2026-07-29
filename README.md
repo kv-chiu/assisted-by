@@ -66,7 +66,7 @@ Install the required commands first. On Ubuntu 24.04, `lei` is a separate binary
 installing the `public-inbox` server package does not provide it:
 
 ```
-sudo apt-get install lei git python3 tar
+sudo apt-get install lei git python3
 ```
 
 ```
@@ -78,7 +78,9 @@ Does, in order:
 1. `git fetch --shallow-since=2026-01-01` on `linux-full.git`.
 2. `lei q ... 'b:"Assisted-by:" AND d:20260101..'` to a fresh mbox.
 3. Run `parse_commits.py` and `parse_lei.py`.
-4. `kernel_stats.py` updates the kernel-wide denominator.
+4. `kernel_stats.py` updates the kernel-wide denominator. With a restored kernel
+   cache it processes only commits since the cached HEAD; a cache miss performs a
+   complete recount.
 5. `build_data.py` inlines the combined JSON into `index.html`.
 
 The refresh writes parser output to a temporary directory and validates that counts and
