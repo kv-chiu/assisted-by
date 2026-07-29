@@ -77,7 +77,8 @@ identity; aliases belonging to the same person are not currently merged.
 ## Files
 
 ```
-index.html         single-file site, JSON inlined
+index.html         static page with the default analytics JSON inlined
+author_data.json   anonymous author-dominance summaries, loaded only on demand
 og.png / .svg      Open Graph card (1200x630)
 favicon.*          icons
 parse_commits.py   merged-side parser (git log)
@@ -112,7 +113,8 @@ Does, in order:
 4. `kernel_stats.py` updates the kernel-wide denominator. With a restored kernel
    cache it processes only commits since the cached HEAD; a cache miss performs a
    complete recount.
-5. `build_data.py` inlines the combined JSON into `index.html`.
+5. `build_data.py` inlines the default JSON into `index.html` and writes the optional,
+   lazy-loaded `author_data.json` summaries.
 
 The refresh writes parser output to a temporary directory and validates that counts and
 the latest lore date do not regress before replacing published JSON. For an intentional

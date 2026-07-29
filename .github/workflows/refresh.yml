@@ -65,16 +65,17 @@ jobs:
           python3 -m json.tool data.json >/dev/null
           python3 -m json.tool lore_data.json >/dev/null
           python3 -m json.tool kernel_stats.json >/dev/null
+          python3 -m json.tool author_data.json >/dev/null
           git diff --check
 
       - name: commit and push if changed
         run: |
           git config user.name "assisted-by-bot"
           git config user.email "actions@github.com"
-          if git diff --quiet -- index.html data.json lore_data.json kernel_stats.json; then
+          if git diff --quiet -- index.html author_data.json data.json lore_data.json kernel_stats.json; then
             echo "no data changes"
             exit 0
           fi
-          git add index.html data.json lore_data.json kernel_stats.json
+          git add index.html author_data.json data.json lore_data.json kernel_stats.json
           git commit -m "data: scheduled refresh ($(date -u +%Y-%m-%dT%H:%MZ))"
           git push origin "HEAD:${GITHUB_REF_NAME}"
