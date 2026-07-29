@@ -24,21 +24,24 @@ lei_external_registered {expected!r}
     def test_accepts_trailing_slash_added_by_lei(self):
         self.assertTrue(
             self.registered(
-                "https://lore.kernel.org/all/", "https://lore.kernel.org/all"
+                "https://lore.kernel.org/all/ boost=0",
+                "https://lore.kernel.org/all",
             )
         )
 
     def test_accepts_trailing_slash_removed_by_lei(self):
         self.assertTrue(
             self.registered(
-                "https://lore.kernel.org/all", "https://lore.kernel.org/all/"
+                "https://lore.kernel.org/all boost=0",
+                "https://lore.kernel.org/all/",
             )
         )
 
     def test_rejects_a_different_external(self):
         self.assertFalse(
             self.registered(
-                "https://lore.kernel.org/lkml/", "https://lore.kernel.org/all/"
+                "https://lore.kernel.org/lkml/ boost=0",
+                "https://lore.kernel.org/all/",
             )
         )
 

@@ -12,7 +12,9 @@ lei_external_registered() {
   local expected configured
   expected="$(normalize_external_url "$1")"
 
-  while IFS= read -r configured; do
+  # lei 1.9 prints each entry as "LOCATION boost=N".  The location is the
+  # first field; URLs cannot contain spaces.
+  while read -r configured _; do
     if [[ "$(normalize_external_url "$configured")" == "$expected" ]]; then
       return 0
     fi
