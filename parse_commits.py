@@ -151,6 +151,44 @@ def normalize(tag: str) -> dict:
     return {"vendor": "Unknown", "model": t, "tool": "Unknown"}
 
 
+def new_daily_bucket():
+    return {
+        "patches": 0,
+        "lines": [0, 0],
+        "vendors": Counter(),
+        "models": Counter(),
+        "tools": Counter(),
+        "vendor_lines": defaultdict(lambda: [0, 0]),
+        "model_lines": defaultdict(lambda: [0, 0]),
+        "tool_lines": defaultdict(lambda: [0, 0]),
+    }
+
+
+def serialize_daily(daily):
+    out = {}
+    for day, bucket in sorted(daily.items()):
+        out[day] = {
+            "patches": bucket["patches"],
+            "lines": {"ins": bucket["lines"][0], "del": bucket["lines"][1]},
+            "vendors": dict(bucket["vendors"]),
+            "models": dict(bucket["models"]),
+            "tools": dict(bucket["tools"]),
+            "vendor_lines": {
+                key: {"ins": value[0], "del": value[1]}
+                for key, value in bucket["vendor_lines"].items()
+            },
+            "model_lines": {
+                key: {"ins": value[0], "del": value[1]}
+                for key, value in bucket["model_lines"].items()
+            },
+            "tool_lines": {
+                key: {"ins": value[0], "del": value[1]}
+                for key, value in bucket["tool_lines"].items()
+            },
+        }
+    return out
+
+
 def main():
     repo = sys.argv[1] if len(sys.argv) > 1 else "linux-full.git"
     out_path = sys.argv[2] if len(sys.argv) > 2 else "data.json"
@@ -210,6 +248,7 @@ def main():
     committers = Counter()
     by_date = defaultdict(int)
     by_date_lines = defaultdict(lambda: [0, 0])
+    daily_dimensions = defaultdict(new_daily_bucket)
 
     for c in commits:
         ins, dele = c["insertions"], c["deletions"]
@@ -238,6 +277,22 @@ def main():
         by_date[day] += 1
         by_date_lines[day][0] += ins
         by_date_lines[day][1] += dele
+        daily = daily_dimensions[day]
+        daily["patches"] += 1
+        daily["lines"][0] += ins
+        daily["lines"][1] += dele
+        for v in seen_v:
+            daily["vendors"][v] += 1
+            daily["vendor_lines"][v][0] += ins
+            daily["vendor_lines"][v][1] += dele
+        for mkey in seen_m:
+            daily["models"][mkey] += 1
+            daily["model_lines"][mkey][0] += ins
+            daily["model_lines"][mkey][1] += dele
+        for tool in seen_t:
+            daily["tools"][tool] += 1
+            daily["tool_lines"][tool][0] += ins
+            daily["tool_lines"][tool][1] += dele
 
     out = {
         "total_commits": len(commits),
@@ -256,6 +311,7 @@ def main():
         "top_committers": committers.most_common(15),
         "by_date": dict(sorted(by_date.items())),
         "by_date_lines": {d: {"ins": l[0], "del": l[1]} for d, l in sorted(by_date_lines.items())},
+        "daily_dimensions": serialize_daily(daily_dimensions),
         "commits": commits,
     }
     Path(out_path).write_text(json.dumps(out, indent=2))
