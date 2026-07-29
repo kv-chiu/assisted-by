@@ -46,6 +46,7 @@
     --bar: #2a2a2a;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   html, body {
     margin: 0; padding: 0;
     background: var(--bg); color: var(--text);
@@ -244,7 +245,7 @@
   .bars { display: grid; gap: 14px; }
   .bar-row {
     display: grid;
-    grid-template-columns: 1fr 80px;
+    grid-template-columns: minmax(0, 1fr) 80px;
     gap: 16px;
     align-items: center;
   }
@@ -691,17 +692,20 @@
   }
   @media (max-width: 760px) {
     .wrap { padding: 36px 18px 56px; }
-    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .two-col, .vendor-grid { grid-template-columns: 1fr; }
     .commit-row { grid-template-columns: 70px 1fr; gap: 8px; }
     .commit-row .author, .commit-row .tag { display: none; }
     .funnel-row { grid-template-columns: 1fr; gap: 6px; }
     .window-summary { grid-template-columns: 1fr; }
-    .dominance-summary { grid-template-columns: 1fr 1fr; }
-    .section-head { align-items: flex-start; gap: 14px; }
+    .dominance-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .section-head { align-items: flex-start; flex-direction: column; gap: 14px; }
     .model-controls { justify-content: flex-start; }
+    #models-toggle { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+    #models-toggle button { padding-left: 6px; padding-right: 6px; }
     .bar-row .label { align-items: flex-start; flex-direction: column; }
     .author-model-detail { justify-content: flex-start; }
+    .two-col a, .bar-row .name, .bar-row .pct { overflow-wrap: anywhere; }
   }
 </style>
 </head>
