@@ -22,6 +22,11 @@ def validate_shape(merged: dict, lore: dict) -> None:
             "merged tag count is smaller than commit count")
     require(len(merged.get("commits", [])) == merged["total_commits"],
             "merged commit list does not match total_commits")
+    require(
+        sum(day.get("patches", 0) for day in merged.get("daily_dimensions", {}).values())
+        == merged["total_commits"],
+        "merged daily dimensions do not match total_commits",
+    )
 
     require(lore.get("input_messages", 0) > 0, "lore query returned no messages")
     require(lore.get("patch_messages_with_tag", 0) > 0,
@@ -31,6 +36,11 @@ def validate_shape(merged: dict, lore: dict) -> None:
     require(lore["patch_messages_with_tag"] >= lore["unique_patches_with_tag"],
             "unique lore patch count exceeds tagged message count")
     require(bool(lore.get("latest")), "lore result has no latest date")
+    require(
+        sum(day.get("patches", 0) for day in lore.get("daily_dimensions", {}).values())
+        == lore["unique_patches_with_tag"],
+        "lore daily dimensions do not match unique patch count",
+    )
 
 
 def validate_progress(old_merged: dict, old_lore: dict,

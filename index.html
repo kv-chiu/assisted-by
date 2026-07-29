@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How much of the Linux kernel is written by AI?</title>
-<meta name="description" content="Three months after the Linux kernel started requiring an Assisted-by: tag, 166 of 26,044 mainline commits carry one. 0.64% of activity. One model dominates. Data from torvalds/linux and lore.kernel.org.">
+<meta name="description" content="Track disclosed AI use in Linux kernel patches across rolling 7, 30, 45, 60, 90, and 180-day windows. Data from torvalds/linux and lore.kernel.org.">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://assisted-by.dev/">
 <meta property="og:title" content="How much of the Linux kernel is written by AI?">
-<meta property="og:description" content="Three months into the Assisted-by: disclosure policy, 3,304 of 1,130,805 lines added to mainline came from disclosed-AI commits. 0.29% of insertions, 0.64% of commits. The verifiable floor.">
+<meta property="og:description" content="Recent and historical Assisted-by: disclosure trends across models, vendors, and tools in Linux kernel development.">
 <meta property="og:image" content="https://assisted-by.dev/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -17,7 +17,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="How much of the Linux kernel is written by AI?">
-<meta name="twitter:description" content="Three months in: 3,304 of 1,130,805 lines added to mainline (0.29%) came from commits with the Assisted-by: tag. The verifiable floor.">
+<meta name="twitter:description" content="Recent and historical Assisted-by: disclosure trends across models, vendors, and tools in Linux kernel development.">
 <meta name="twitter:image" content="https://assisted-by.dev/og.png">
 <link rel="canonical" href="https://assisted-by.dev/">
 
@@ -572,6 +572,77 @@
     max-width: 720px;
   }
 
+  /* rolling adoption window */
+  .window-panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 24px;
+  }
+  .window-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .window-controls button {
+    background: transparent;
+    color: var(--dim);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .window-controls button:hover { color: var(--text); border-color: var(--dim-2); }
+  .window-controls button.active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+    font-weight: 700;
+  }
+  .window-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 20px;
+  }
+  .window-metric { background: var(--panel-2); padding: 18px; }
+  .window-metric .value {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+    color: var(--text);
+  }
+  .window-metric .name {
+    margin-top: 6px;
+    color: var(--dim);
+    font-size: 12px;
+  }
+  .window-metric .compare {
+    margin-top: 4px;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--dim-2);
+    font-size: 11px;
+  }
+  .delta { font-family: "JetBrains Mono", monospace; white-space: nowrap; }
+  .delta.up, .delta.new { color: var(--accent); }
+  .delta.down { color: var(--red); }
+  .delta.flat { color: var(--dim); }
+  .window-scope {
+    margin: 14px 0 0;
+    color: var(--dim);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .window-scope.warning { color: var(--warn); }
+  .empty-state {
+    border: 1px dashed var(--line);
+    color: var(--dim);
+    padding: 20px;
+    font-size: 13px;
+  }
+
   @media (max-width: 900px) {
     .highlights { grid-template-columns: 1fr; }
     .howmade { grid-template-columns: 1fr; }
@@ -583,6 +654,7 @@
     .commit-row { grid-template-columns: 70px 1fr; gap: 8px; }
     .commit-row .author, .commit-row .tag { display: none; }
     .funnel-row { grid-template-columns: 1fr; gap: 6px; }
+    .window-summary { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -617,10 +689,31 @@
 
   <section>
     <div class="section-head">
-      <h2>Models in the kernel</h2>
+      <h2>Adoption window</h2>
+      <div class="meta" id="window-range"></div>
+    </div>
+    <div class="window-panel">
+      <div class="window-controls" id="window-controls" role="group" aria-label="Analysis time window">
+        <button type="button" data-window="7">7D</button>
+        <button type="button" data-window="30">30D</button>
+        <button type="button" data-window="45">45D</button>
+        <button type="button" data-window="60">60D</button>
+        <button type="button" data-window="90">90D</button>
+        <button type="button" data-window="180">180D</button>
+        <button type="button" data-window="all">ALL</button>
+      </div>
+      <div class="window-summary" id="window-summary"></div>
+      <p class="window-scope" id="window-scope"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Models disclosed</h2>
       <div class="toggle" id="models-toggle">
-        <button data-mode="lines" class="active">by lines added</button>
-        <button data-mode="commits">by commits</button>
+        <button data-mode="submitted" class="active">by submissions</button>
+        <button data-mode="commits">by merged commits</button>
+        <button data-mode="lines">by lines added</button>
       </div>
     </div>
     <div class="bars" id="models"></div>
@@ -630,7 +723,7 @@
   <section>
     <div class="section-head">
       <h2>By vendor</h2>
-      <div class="meta">who trained the model</div>
+      <div class="meta" id="vendor-meta">who trained the model</div>
     </div>
     <div class="bars" id="vendor-bars"></div>
   </section>
@@ -638,7 +731,7 @@
   <section>
     <div class="section-head">
       <h2>By tool</h2>
-      <div class="meta">how the model was invoked</div>
+      <div class="meta" id="tool-meta">how the model was invoked</div>
     </div>
     <div class="bars" id="tool-bars"></div>
   </section>
@@ -646,7 +739,7 @@
   <section>
     <div class="section-head">
       <h2>Per-vendor model breakdown</h2>
-      <div class="meta">merged tags only</div>
+      <div class="meta" id="vendor-grid-meta">submitted patches</div>
     </div>
     <div class="vendor-grid" id="vendor-grid"></div>
   </section>
@@ -681,14 +774,14 @@
     <div>
       <div class="section-head">
         <h2>Top authors</h2>
-        <div class="meta">who wrote the patch</div>
+        <div class="meta">since 2026-01-01 · who wrote the patch</div>
       </div>
       <div class="bars" id="authors"></div>
     </div>
     <div>
       <div class="section-head">
         <h2>Top committers</h2>
-        <div class="meta">who landed the patch</div>
+        <div class="meta">since 2026-01-01 · who landed the patch</div>
       </div>
       <div class="bars" id="committers"></div>
     </div>
@@ -737,6 +830,9 @@
           actual lab; the wrapper appears under "By tool" instead. Tags that do not parse
           (free-text, joke names, <span class="mono">FOO:BAR.baz</span>) bucket as
           <span class="mono">Unknown</span>.
+          Rolling 7/30/45/60/90/180-day views are anchored to the latest data date and
+          compared with the immediately preceding equal-length window. Within each dimension,
+          the same vendor, model, or tool counts at most once per patch.
         </p>
       </div>
       <div class="how-block">
@@ -744,16 +840,16 @@
         <p>Merge rate (different humans use different tools for different patch types; the
           ratio is not a model quality signal). Submitted-versus-merged percentages (same reason).
           Authorial intent or motivation behind any tag string. Patches that landed without
-          disclosure (this page measures policy compliance, not actual AI usage). Share of
-          kernel-wide lines: GitHub's stats API refuses repos over 10k commits and computing
-          diffstats from the partial clone would take hours; the AI-side line counts stand
-          on their own.
+          disclosure (this page measures policy compliance, not actual AI usage). A disclosed
+          tag is evidence of assistance, not a measure of model quality or how much of the
+          resulting patch the model authored.
         </p>
       </div>
       <div class="how-block">
         <h3>Reproducibility</h3>
         <p>Source on GitHub:
-          <a href="https://github.com/snek-git/assisted-by">snek-git/assisted-by</a>.
+          <a href="https://github.com/kv-chiu/assisted-by">kv-chiu/assisted-by</a>
+          (forked from <a href="https://github.com/snek-git/assisted-by">snek-git/assisted-by</a>).
           Three small Python scripts:
           <span class="mono">parse_commits.py</span> (merged side),
           <span class="mono">parse_lei.py</span> (submitted side),
@@ -778,7 +874,7 @@
     <div>
       Source: <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git">torvalds/linux</a>
       mainline as of <span id="datestamp" class="mono"></span>.
-      Code: <a href="https://github.com/snek-git/assisted-by">github.com/snek-git/assisted-by</a>.
+      Code: <a href="https://github.com/kv-chiu/assisted-by">github.com/kv-chiu/assisted-by</a>.
     </div>
     <div class="mono">git log --grep="Assisted-by:" --since="2026-01-01"</div>
   </footer>
@@ -824,8 +920,8 @@
     Hard to know exactly. AI use does not always announce itself. But three months ago the kernel started
     requiring an <span class="mono">Assisted-by:</span> tag for AI-assisted contributions, and that gives us
     a verifiable floor: ${ledeMain}
-    Inside that floor: one model dominates by a factor of two, one workflow accounts for nearly all the
-    volume from one author, and one maintainer contributes a fifth of all merged AI tags.
+    The mix changes quickly as models and tools evolve. Use the rolling windows below to separate
+    current adoption from the historical cumulative picture.
   `;
 
   // --- in context: zoomable unit grid ---
@@ -1018,35 +1114,160 @@
     return `<div class="stat"><div class="num">${num}</div><div class="label">${s.label}${s.sub ? `<br><span class="sub">${s.sub}</span>`: ''}</div></div>`;
   }).join("");
 
-  // --- models in the kernel: merged + submitted comparison ---
+  // --- rolling adoption windows ---
   const fmtLines = (ins, del) => {
     if (!ins && !del) return '<span class="lines none">no lines</span>';
     return `<span class="lines"><span class="add">+${(ins||0).toLocaleString()}</span><span class="rem">&minus;${(del||0).toLocaleString()}</span></span>`;
   };
 
+  const WINDOW_KEYS = ["7", "30", "45", "60", "90", "180", "all"];
+  const params = new URLSearchParams(window.location.search);
+  let savedWindow = null;
+  try { savedWindow = localStorage.getItem("assisted-by-window"); } catch (_) {}
+  let activeWindow = params.get("window") || savedWindow || data.window.default || "45";
+  if (!WINDOW_KEYS.includes(activeWindow)) activeWindow = "45";
+  let activeModelMode = "submitted";
+  let activeActivityMode = "lines";
+
+  const selectedWindow = () => data.windows[activeWindow];
+  const windowLabel = () => activeWindow === "all" ? "ALL" : `${activeWindow}D`;
+  const lineDimension = dimension => ({
+    vendors: "vendor_lines", models: "model_lines", tools: "tool_lines"
+  }[dimension]);
+
+  function dimensionRows(dimension) {
+    const selected = selectedWindow();
+    const previous = selected.previous;
+    const merged = selected.merged[dimension] || {};
+    const submitted = selected.submitted[dimension] || {};
+    const prevMerged = previous ? previous.merged[dimension] || {} : {};
+    const prevSubmitted = previous ? previous.submitted[dimension] || {} : {};
+    const lines = selected.merged[lineDimension(dimension)] || {};
+    const keys = new Set([
+      ...Object.keys(merged), ...Object.keys(submitted),
+      ...Object.keys(prevMerged), ...Object.keys(prevSubmitted),
+    ]);
+    return [...keys].map(key => ({
+      key,
+      merged: merged[key] || 0,
+      submitted: submitted[key] || 0,
+      prevMerged: prevMerged[key] || 0,
+      prevSubmitted: prevSubmitted[key] || 0,
+      ins: (lines[key] || {}).ins || 0,
+      del: (lines[key] || {}).del || 0,
+    }));
+  }
+
+  function shareDelta(current, currentTotal, previous, previousTotal) {
+    if (!selectedWindow().previous) return "";
+    if (!previousTotal) {
+      return current ? '<span class="delta new">new</span>' : '<span class="delta flat">—</span>';
+    }
+    const delta = (currentTotal ? current / currentTotal * 100 : 0) - previous / previousTotal * 100;
+    const cls = delta > 0.05 ? "up" : delta < -0.05 ? "down" : "flat";
+    const sign = delta > 0.05 ? "+" : delta < -0.05 ? "&minus;" : "";
+    return `<span class="delta ${cls}">${sign}${Math.abs(delta).toFixed(1)} pp</span>`;
+  }
+
+  function countComparison(current, previous) {
+    if (!selectedWindow().previous) return "historical cumulative";
+    const delta = current - previous;
+    const cls = delta > 0 ? "up" : delta < 0 ? "down" : "flat";
+    const sign = delta > 0 ? "+" : delta < 0 ? "&minus;" : "";
+    return `<span class="delta ${cls}">${sign}${Math.abs(delta).toLocaleString()}</span> vs previous ${activeWindow}D`;
+  }
+
+  function renderWindowHeader() {
+    const selected = selectedWindow();
+    const previous = selected.previous;
+    document.querySelectorAll("#window-controls button").forEach(button => {
+      const active = button.dataset.window === activeWindow;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+    document.getElementById("window-range").textContent =
+      `${selected.start} → ${selected.end} · data through ${data.window.as_of}`;
+
+    const vendorRows = dimensionRows("vendors")
+      .filter(row => row.submitted > 0)
+      .sort((a, b) => b.submitted - a.submitted);
+    const leader = vendorRows[0];
+    const leaderName = leader ? (VLABEL[leader.key] || leader.key) : "No vendor data";
+    const leaderShare = leader && selected.submitted.patches
+      ? leader.submitted / selected.submitted.patches * 100 : 0;
+    const leaderCompare = leader ? shareDelta(
+      leader.submitted, selected.submitted.patches,
+      leader.prevSubmitted, previous ? previous.submitted.patches : 0
+    ) : "";
+
+    document.getElementById("window-summary").innerHTML = `
+      <div class="window-metric">
+        <div class="value">${selected.submitted.patches.toLocaleString()}</div>
+        <div class="name">unique patches submitted</div>
+        <div class="compare">${countComparison(selected.submitted.patches, previous ? previous.submitted.patches : 0)}</div>
+      </div>
+      <div class="window-metric">
+        <div class="value">${selected.merged.patches.toLocaleString()}</div>
+        <div class="name">disclosed-AI commits merged</div>
+        <div class="compare">${countComparison(selected.merged.patches, previous ? previous.merged.patches : 0)}</div>
+      </div>
+      <div class="window-metric">
+        <div class="value">${escape(leaderName)}</div>
+        <div class="name">leading submitted-patch vendor · ${leaderShare.toFixed(1)}%</div>
+        <div class="compare">${leaderCompare || "historical cumulative"}</div>
+      </div>`;
+
+    const scope = document.getElementById("window-scope");
+    const lowSample = activeWindow !== "all" && selected.submitted.patches < 20;
+    scope.classList.toggle("warning", lowSample);
+    scope.innerHTML = lowSample
+      ? `<b>Low sample:</b> only ${selected.submitted.patches} submitted patches in this window. Rankings may be volatile.`
+      : `${windowLabel()} applies to models, vendors, tools, activity, and recent commits. Headline and context figures remain cumulative. Shares are patch penetration and can exceed 100% in total when one patch discloses multiple vendors or tools.`;
+  }
+
+  // --- models: submitted + merged comparison ---
+
   function renderModels(mode) {
-    const all = data.model_compare.filter(r => r.merged > 0 || r.submitted >= 5);
+    const selected = selectedWindow();
+    const previous = selected.previous;
+    const all = dimensionRows("models").map(row => {
+      const parts = row.key.split(" — ");
+      return {...row, vendor: parts.shift(), model: parts.join(" — ")};
+    }).filter(row => row.merged > 0 || row.submitted > 0);
     let ranked, max, getValue, getCount, getMeta, caveat;
-    if (mode === "lines") {
+    if (mode === "submitted") {
+      ranked = [...all].sort((a, b) => b.submitted - a.submitted || b.merged - a.merged).slice(0, 16);
+      getValue = row => row.submitted;
+      getCount = row => row.submitted.toLocaleString();
+      getMeta = row => {
+        const share = selected.submitted.patches ? row.submitted / selected.submitted.patches * 100 : 0;
+        const delta = shareDelta(
+          row.submitted, selected.submitted.patches,
+          row.prevSubmitted, previous ? previous.submitted.patches : 0
+        );
+        return `${share.toFixed(1)}% of submitted patches${delta ? ` · ${delta}` : ""} · ${row.merged} merged`;
+      };
+      max = Math.max(...ranked.map(getValue), 1);
+      caveat = `Bar width: unique submitted patches in ${windowLabel()} that disclose this model. Revisions are collapsed and each model counts at most once per patch.`;
+    } else if (mode === "lines") {
       ranked = [...all].filter(r => r.merged > 0).sort((a, b) => (b.ins||0) - (a.ins||0)).slice(0, 16);
       getValue = r => r.ins || 0;
       getCount = r => `<span class="add">+${(r.ins||0).toLocaleString()}</span><span class="rem">&minus;${(r.del||0).toLocaleString()}</span>`;
       getMeta = r => `${r.merged} commit${r.merged===1?'':'s'} · ${r.submitted.toLocaleString()} submitted`;
       max = Math.max(...ranked.map(getValue), 1);
-      caveat = `Bar width: lines added in merged mainline commits whose tag references this model.
-        Wrappers (Claude Code, Cursor, GitHub Copilot, OpenCode) attribute to the
-        underlying model. Multi-tag commits attribute lines to each disclosed model, so bucket totals
-        can sum to more than 3,304.`;
+      caveat = `Bar width: lines added by merged commits in ${windowLabel()} whose tag references this model. Multi-model commits attribute their lines to each disclosed model.`;
     } else {
       ranked = [...all].sort((a, b) => (b.merged - a.merged) || (b.submitted - a.submitted)).slice(0, 16);
       getValue = r => r.merged;
       getCount = r => `${r.merged}`;
       getMeta = r => `${r.submitted.toLocaleString()} submitted · ${fmtLines(r.ins, r.del)}`;
       max = Math.max(...ranked.map(getValue), 1);
-      caveat = `Bar width: count of unique merged mainline commits whose tag references this model.
-        Submitted-to-lists count and lines added/removed appear in the meta line above each bar
-        (v1/v2/v3 collapsed; replies, cover letters, and bot accounts dropped).
-        Wrappers attribute to the underlying model; the wrapper itself appears under "By tool" below.`;
+      caveat = `Bar width: unique merged mainline commits in ${windowLabel()} whose tag references this model. Submitted count and merged lines appear above each bar.`;
+    }
+    if (!ranked.length) {
+      document.getElementById("models").innerHTML = '<div class="empty-state">No model disclosures in this window.</div>';
+      document.getElementById("models-caveat").textContent = caveat;
+      return;
     }
     document.getElementById("models").innerHTML = ranked.map(r => {
       const isProtest = r.vendor.includes("Greg KH");
@@ -1070,70 +1291,122 @@
     btn.addEventListener("click", () => {
       document.querySelectorAll("#models-toggle button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      renderModels(btn.dataset.mode);
+      activeModelMode = btn.dataset.mode;
+      renderModels(activeModelMode);
     });
   });
-  renderModels("lines");
 
   // --- by vendor ---
-  const vendorRows = data.vendor_compare.filter(r => r.merged > 0 || r.submitted >= 5);
-  const vmax = Math.max(...vendorRows.map(r => r.merged || 1));
-  document.getElementById("vendor-bars").innerHTML = vendorRows.map(r => {
-    const pct = (r.merged / vmax) * 100;
-    const cls = r.vendor.includes("Greg KH") ? "protest" : (r.vendor === "Unknown" ? "dim" : "");
-    const sharePct = data.total_tags ? (r.merged/data.total_tags*100).toFixed(0) + "%" : "";
-    return `
-      <div class="bar-row">
-        <div>
-          <div class="label"><span class="name">${VLABEL[r.vendor] || r.vendor}</span><span class="pct">${sharePct} merged · ${r.submitted.toLocaleString()} submitted · ${fmtLines(r.ins, r.del)}</span></div>
-          <div class="bar-track"><div class="bar-fill ${cls}" style="width:${pct}%"></div></div>
-        </div>
-        <div class="count">${r.merged}</div>
-      </div>`;
-  }).join("");
+  function renderVendors() {
+    const selected = selectedWindow();
+    const previous = selected.previous;
+    const rows = dimensionRows("vendors")
+      .filter(row => row.submitted > 0 || row.merged > 0)
+      .sort((a, b) => b.submitted - a.submitted || b.merged - a.merged);
+    const max = Math.max(...rows.map(row => row.submitted), 1);
+    document.getElementById("vendor-meta").textContent = `submitted patches · ${windowLabel()}`;
+    document.getElementById("vendor-bars").innerHTML = rows.length ? rows.map(row => {
+      const width = row.submitted / max * 100;
+      const cls = row.key.includes("Greg KH") ? "protest" : (row.key === "Unknown" ? "dim" : "");
+      const share = selected.submitted.patches ? row.submitted / selected.submitted.patches * 100 : 0;
+      const delta = shareDelta(
+        row.submitted, selected.submitted.patches,
+        row.prevSubmitted, previous ? previous.submitted.patches : 0
+      );
+      return `
+        <div class="bar-row">
+          <div>
+            <div class="label"><span class="name">${escape(VLABEL[row.key] || row.key)}</span><span class="pct">${share.toFixed(1)}% of patches${delta ? ` · ${delta}` : ""} · ${row.merged} merged · ${fmtLines(row.ins, row.del)}</span></div>
+            <div class="bar-track"><div class="bar-fill ${cls}" style="width:${width}%"></div></div>
+          </div>
+          <div class="count">${row.submitted.toLocaleString()}</div>
+        </div>`;
+    }).join("") : '<div class="empty-state">No vendor disclosures in this window.</div>';
+  }
 
   // --- by tool ---
-  const toolRows = data.tool_compare.filter(r => r.merged > 0 || r.submitted >= 5);
-  const tmax = Math.max(...toolRows.map(r => r.merged || 1));
-  document.getElementById("tool-bars").innerHTML = toolRows.map(r => {
-    const pct = (r.merged / tmax) * 100;
-    const cls = /Local LLM fuzzer/i.test(r.tool) ? "protest" : (r.tool === "Unknown" ? "dim" : "");
-    const sharePct = data.total_tags ? (r.merged/data.total_tags*100).toFixed(0) + "%" : "";
-    return `
-      <div class="bar-row">
-        <div>
-          <div class="label"><span class="name">${escape(r.tool)}</span><span class="pct">${sharePct} merged · ${r.submitted.toLocaleString()} submitted · ${fmtLines(r.ins, r.del)}</span></div>
-          <div class="bar-track"><div class="bar-fill ${cls}" style="width:${pct}%"></div></div>
-        </div>
-        <div class="count">${r.merged}</div>
-      </div>`;
-  }).join("");
-
-  // --- vendor x model breakdown (merged only) ---
-  const VENDOR_ORDER = ["Anthropic", "DeepSeek", "OpenAI", "Google",
-                        "Z.ai", "Greg KH (local LLM fuzzer)", "Unknown"];
-  document.getElementById("vendor-grid").innerHTML = VENDOR_ORDER
-    .filter(v => data.vendor_models_merged[v])
-    .map(v => {
-      const models = data.vendor_models_merged[v];
-      const total = Object.values(models).reduce((a,b)=>a+b, 0);
-      const isProtest = v.includes("Greg KH");
-      const rows = Object.entries(models)
-        .sort((a,b) => b[1]-a[1])
-        .map(([m, n]) => {
-          const L = data.model_lines[`${v} — ${m}`] || {ins: 0, del: 0};
-          const ln = (L.ins || L.del)
-            ? `<span class="add">+${(L.ins||0).toLocaleString()}</span><span class="rem">&minus;${(L.del||0).toLocaleString()}</span>`
-            : '';
-          return `<div class="model-row"><span class="m">${escape(m)}</span><span class="row-meta"><span class="lines">${ln}</span><span class="n">${n}</span></span></div>`;
-        }).join("");
+  function renderTools() {
+    const selected = selectedWindow();
+    const previous = selected.previous;
+    const rows = dimensionRows("tools")
+      .filter(row => row.submitted > 0 || row.merged > 0)
+      .sort((a, b) => b.submitted - a.submitted || b.merged - a.merged);
+    const max = Math.max(...rows.map(row => row.submitted), 1);
+    document.getElementById("tool-meta").textContent = `submitted patches · ${windowLabel()}`;
+    document.getElementById("tool-bars").innerHTML = rows.length ? rows.map(row => {
+      const width = row.submitted / max * 100;
+      const cls = /Local LLM fuzzer/i.test(row.key) ? "protest" : (row.key === "Unknown" ? "dim" : "");
+      const share = selected.submitted.patches ? row.submitted / selected.submitted.patches * 100 : 0;
+      const delta = shareDelta(
+        row.submitted, selected.submitted.patches,
+        row.prevSubmitted, previous ? previous.submitted.patches : 0
+      );
       return `
-        <div class="vendor-card ${isProtest ? 'protest' : ''}">
-          <h3><span>${VLABEL[v] || v}</span><span class="total">${total}</span></h3>
-          <div class="sub">${Object.keys(models).length} model variant${Object.keys(models).length===1?'':'s'} disclosed</div>
+        <div class="bar-row">
+          <div>
+            <div class="label"><span class="name">${escape(row.key)}</span><span class="pct">${share.toFixed(1)}% of patches${delta ? ` · ${delta}` : ""} · ${row.merged} merged · ${fmtLines(row.ins, row.del)}</span></div>
+            <div class="bar-track"><div class="bar-fill ${cls}" style="width:${width}%"></div></div>
+          </div>
+          <div class="count">${row.submitted.toLocaleString()}</div>
+        </div>`;
+    }).join("") : '<div class="empty-state">No tool disclosures in this window.</div>';
+  }
+
+  // --- vendor x model breakdown (submitted patches) ---
+  function renderVendorGrid() {
+    const selected = selectedWindow();
+    const previous = selected.previous;
+    const grouped = {};
+    dimensionRows("models").filter(row => row.submitted > 0).forEach(row => {
+      const parts = row.key.split(" — ");
+      const vendor = parts.shift();
+      const model = parts.join(" — ");
+      (grouped[vendor] ||= []).push({...row, model});
+    });
+    const vendors = Object.keys(grouped).sort((a, b) =>
+      (selected.submitted.vendors[b] || 0) - (selected.submitted.vendors[a] || 0)
+    );
+    document.getElementById("vendor-grid-meta").textContent = `submitted patches · ${windowLabel()}`;
+    document.getElementById("vendor-grid").innerHTML = vendors.length ? vendors.map(vendor => {
+      const models = grouped[vendor].sort((a, b) => b.submitted - a.submitted);
+      const vendorTotal = selected.submitted.vendors[vendor] || 0;
+      const rows = models.map(row => {
+        const delta = shareDelta(
+          row.submitted, selected.submitted.patches,
+          row.prevSubmitted, previous ? previous.submitted.patches : 0
+        );
+        return `<div class="model-row"><span class="m">${escape(row.model)}</span><span class="row-meta">${delta}<span class="n">${row.submitted}</span></span></div>`;
+      }).join("");
+      return `
+        <div class="vendor-card ${vendor.includes("Greg KH") ? "protest" : ""}">
+          <h3><span>${escape(VLABEL[vendor] || vendor)}</span><span class="total">${vendorTotal.toLocaleString()}</span></h3>
+          <div class="sub">${models.length} model variant${models.length === 1 ? "" : "s"} · unique patches</div>
           <div class="model-list">${rows}</div>
         </div>`;
-    }).join("");
+    }).join("") : '<div class="empty-state">No model breakdown is available in this window.</div>';
+  }
+
+  function renderWindowViews() {
+    renderWindowHeader();
+    renderModels(activeModelMode);
+    renderVendors();
+    renderTools();
+    renderVendorGrid();
+    renderTimeline(activeActivityMode);
+    shown = initial;
+    renderCommits();
+  }
+
+  document.querySelectorAll("#window-controls button").forEach(button => {
+    button.addEventListener("click", () => {
+      activeWindow = button.dataset.window;
+      const url = new URL(window.location.href);
+      url.searchParams.set("window", activeWindow);
+      history.replaceState({}, "", url);
+      try { localStorage.setItem("assisted-by-window", activeWindow); } catch (_) {}
+      renderWindowViews();
+    });
+  });
 
   // --- highlights ---
   const cgit = (sha) => `https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=${sha}`;
@@ -1174,18 +1447,24 @@
   `;
 
   // --- timeline ---
-  const dates = Object.keys(data.by_date).sort();
-  const start = new Date(dates[0]);
-  const end = new Date(dates[dates.length-1]);
-  const days = Math.round((end - start) / 86400000) + 1;
-  const series = [];
-  for (let i = 0; i < days; i++) {
-    const d = new Date(start.getTime() + i*86400000);
-    const key = d.toISOString().slice(0,10);
-    const lines = data.by_date_lines[key] || {ins: 0, del: 0};
-    series.push({ d: key, n: data.by_date[key] || 0, ins: lines.ins||0, del: lines.del||0 });
+  function selectedSeries() {
+    const selected = selectedWindow();
+    const start = new Date(`${selected.start}T00:00:00Z`);
+    const end = new Date(`${selected.end}T00:00:00Z`);
+    const days = Math.round((end - start) / 86400000) + 1;
+    const series = [];
+    for (let i = 0; i < days; i++) {
+      const d = new Date(start.getTime() + i * 86400000);
+      const key = d.toISOString().slice(0, 10);
+      const lines = data.by_date_lines[key] || {ins: 0, del: 0};
+      series.push({d: key, n: data.by_date[key] || 0, ins: lines.ins || 0, del: lines.del || 0});
+    }
+    return series;
   }
+
   function renderTimeline(mode) {
+    const series = selectedSeries();
+    const days = series.length;
     const w = 1000, h = 180, pad = 6;
     const bw = (w - pad*2) / series.length;
     let svg = "", meta = "";
@@ -1204,7 +1483,7 @@
       svg += `<line x1="${pad}" y1="${mid}" x2="${w - pad}" y2="${mid}" stroke="var(--line)" stroke-width="1"/>`;
       const peakIns = Math.max(...series.map(s => s.ins));
       const peakDel = Math.max(...series.map(s => s.del));
-      meta = `${days} days · peak +${peakIns}/&minus;${peakDel} lines on a single day`;
+      meta = `${windowLabel()} · peak +${peakIns}/&minus;${peakDel} lines on a single day`;
     } else {
       const ymax = Math.max(...series.map(s => s.n), 1);
       svg = series.map((s, i) => {
@@ -1213,21 +1492,21 @@
         const y = h - bh - 4;
         return `<rect x="${x.toFixed(2)}" y="${y.toFixed(2)}" width="${(bw - 1).toFixed(2)}" height="${bh.toFixed(2)}" fill="var(--accent)" opacity="${s.n === 0 ? 0 : 0.85}"/>`;
       }).join("");
-      meta = `${days} days · peak ${Math.max(...series.map(s => s.n))} commits/day`;
+      meta = `${windowLabel()} · peak ${Math.max(...series.map(s => s.n))} commits/day`;
     }
     document.getElementById("timeline").innerHTML = svg;
     document.getElementById("activity-meta").innerHTML = meta;
+    document.getElementById("axis-l").textContent = series[0].d;
+    document.getElementById("axis-r").textContent = series[series.length - 1].d;
   }
-  document.getElementById("axis-l").textContent = dates[0];
-  document.getElementById("axis-r").textContent = dates[dates.length-1];
   document.querySelectorAll("#activity-toggle button").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll("#activity-toggle button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      renderTimeline(btn.dataset.mode);
+      activeActivityMode = btn.dataset.mode;
+      renderTimeline(activeActivityMode);
     });
   });
-  renderTimeline("lines");
 
   // --- authors / committers ---
   function leaderboard(rows, target, n=10) {
@@ -1250,7 +1529,9 @@
   const initial = 25;
   let shown = initial;
   function renderCommits() {
-    const rows = commits.slice(0, shown).map(c => {
+    const selected = selectedWindow();
+    const windowCommits = commits.filter(c => c.date >= selected.start && c.date <= selected.end);
+    const rows = windowCommits.slice(0, shown).map(c => {
       const tag = c.tags[0] || "";
       const isProtest = /clanker/i.test(tag);
       return `
@@ -1261,23 +1542,24 @@
           <div class="tag ${isProtest ? 'protest' : ''}">${escape(tag)}</div>
         </div>`;
     }).join("");
-    const more = shown < commits.length
-      ? `<div class="show-more" id="more">show all ${commits.length} →</div>`
+    const more = shown < windowCommits.length
+      ? `<div class="show-more" id="more">show all ${windowCommits.length} →</div>`
       : "";
-    document.getElementById("commits").innerHTML = rows + more;
+    document.getElementById("commits").innerHTML = rows + more || '<div class="empty-state">No merged disclosed-AI commits in this window.</div>';
     document.getElementById("commits-meta").textContent =
-      `showing ${Math.min(shown, commits.length)} of ${commits.length}`;
+      `${windowLabel()} · showing ${Math.min(shown, windowCommits.length)} of ${windowCommits.length}`;
     const m = document.getElementById("more");
-    if (m) m.onclick = () => { shown = commits.length; renderCommits(); };
+    if (m) m.onclick = () => { shown = windowCommits.length; renderCommits(); };
   }
-  renderCommits();
 
   // --- datestamp ---
-  document.getElementById("datestamp").textContent = commits[0].date;
+  document.getElementById("datestamp").textContent = data.window.as_of;
 
   function escape(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
+
+  renderWindowViews();
 </script>
 </body>
 </html>

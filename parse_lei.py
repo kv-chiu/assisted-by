@@ -88,6 +88,12 @@ tool_counts = Counter()
 vendor_models = defaultdict(Counter)
 authors = Counter()
 by_date = defaultdict(int)
+daily_dimensions = defaultdict(lambda: {
+    "patches": 0,
+    "vendors": Counter(),
+    "models": Counter(),
+    "tools": Counter(),
+})
 
 groups = {}  # (canonical_subject, sender_local) -> latest message info
 
@@ -159,6 +165,9 @@ for (canon, sender), g in groups.items():
     if g["sender_name"]:
         authors[g["sender_name"]] += 1
     seen = set()
+    seen_vendors = set()
+    seen_models = set()
+    seen_tools = set()
     for tag in g["tags"]:
         n = normalize(tag)
         v, mod, tool = n["vendor"], n["model"], n["tool"]
@@ -167,9 +176,19 @@ for (canon, sender), g in groups.items():
             continue
         seen.add(key)
         vendor_counts[v] += 1
-        model_counts[f"{v} — {mod}"] += 1
+        model_key = f"{v} — {mod}"
+        model_counts[model_key] += 1
         tool_counts[tool] += 1
         vendor_models[v][mod] += 1
+        seen_vendors.add(v)
+        seen_models.add(model_key)
+        seen_tools.add(tool)
+
+    daily = daily_dimensions[g["day"]]
+    daily["patches"] += 1
+    daily["vendors"].update(seen_vendors)
+    daily["models"].update(seen_models)
+    daily["tools"].update(seen_tools)
 
 dates = sorted(by_date.keys())
 out = {
@@ -182,6 +201,15 @@ out = {
     "earliest": dates[0] if dates else None,
     "latest": dates[-1] if dates else None,
     "by_date": dict(sorted(by_date.items())),
+    "daily_dimensions": {
+        day: {
+            "patches": bucket["patches"],
+            "vendors": dict(bucket["vendors"]),
+            "models": dict(bucket["models"]),
+            "tools": dict(bucket["tools"]),
+        }
+        for day, bucket in sorted(daily_dimensions.items())
+    },
     "vendor_counts": vendor_counts.most_common(),
     "model_counts": model_counts.most_common(),
     "tool_counts": tool_counts.most_common(),
@@ -190,5 +218,7 @@ out = {
 }
 open(OUT, "w").write(json.dumps(out, indent=2))
 print(json.dumps({k: v for k, v in out.items()
-                  if k not in ("by_date", "vendor_models", "top_authors")},
+                  if k not in (
+                      "by_date", "daily_dimensions", "vendor_models", "top_authors"
+                  )},
                  indent=2, ensure_ascii=False))

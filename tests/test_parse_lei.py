@@ -76,6 +76,15 @@ class ParseLeiTest(unittest.TestCase):
         self.assertEqual(result["latest"], "2026-07-01")
         self.assertEqual(result["vendor_counts"], [["Google", 1]])
         self.assertEqual(result["tool_counts"], [["Antigravity", 1]])
+        self.assertEqual(
+            result["daily_dimensions"]["2026-07-01"],
+            {
+                "patches": 1,
+                "vendors": {"Google": 1},
+                "models": {"Google — Gemini 3.5": 1},
+                "tools": {"Antigravity": 1},
+            },
+        )
 
 
 if __name__ == "__main__":

@@ -4,6 +4,8 @@ import json
 import re
 import subprocess
 
+from window_stats import build_windows
+
 merged = json.load(open("data.json"))
 lore = json.load(open("lore_data.json"))
 kernel_stats = {}
@@ -29,6 +31,16 @@ sub_tools = to_dict(lore["tool_counts"])
 model_lines = merged.get("model_lines", {})
 vendor_lines = merged.get("vendor_lines", {})
 tool_lines = merged.get("tool_lines", {})
+since = "2026-01-01"
+as_of = max(
+    [lore.get("latest") or since, *merged.get("by_date", {}).keys()]
+)
+windows = build_windows(
+    merged.get("daily_dimensions", {}),
+    lore.get("daily_dimensions", {}),
+    as_of,
+    since,
+)
 
 def lines_for(d, k):
     e = d.get(k) or {}
@@ -61,7 +73,8 @@ tool_compare = sorted(
 )
 
 web = {
-    "window": {"since": "2026-01-01"},
+    "window": {"since": since, "as_of": as_of, "default": "45"},
+    "windows": windows,
     "kernel_total_commits": total_commits,
     "total_commits": merged["total_commits"],
     "total_tags": merged["total_tags"],

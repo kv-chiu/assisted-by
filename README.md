@@ -4,7 +4,8 @@ Tracks the `Assisted-by:` tag in Linux mainline since 2026-01-01: which AI model
 have shown up in disclosed kernel commits, what they have actually merged, and how that
 compares to what is being submitted on lkml.
 
-Live page: https://assisted-by.dev
+Live page: https://kv-chiu.github.io/assisted-by/
+Upstream project: https://assisted-by.dev
 
 ## Why this exists
 
@@ -44,6 +45,18 @@ as Anthropic Sonnet 4.6 under the Copilot tool. Multi-tag commits (e.g. Claude +
 the SMB security fix) attribute lines to each disclosed model. That means bucket sums can
 exceed the global total by design.
 
+## Time windows
+
+The page offers rolling 7, 30, 45, 60, 90, and 180-day views plus `ALL`, with 45 days as
+the default. Windows are anchored to the latest date present in the dataset rather than the
+viewer's clock. Each finite window is compared with the immediately preceding equal-length
+window using percentage-point changes.
+
+Daily dimension counters count a vendor, model, or tool at most once per patch. A patch can
+still disclose more than one vendor or tool, so combined penetration percentages can exceed
+100%. `ALL` is explicitly historical cumulative data rather than a statement about current
+adoption.
+
 ## Files
 
 ```
@@ -53,6 +66,7 @@ favicon.*          icons
 parse_commits.py   merged-side parser (git log)
 parse_lei.py       submitted-side parser (lei mboxrd)
 kernel_stats.py    kernel-wide insertion / deletion / loc totals
+window_stats.py    fixed rolling-window and prior-window aggregates
 build_data.py      combines all three intermediates and inlines the JSON into index.html
 refresh.sh         end-to-end refresh: fetch, parse, build
 data.json          merged parser output
@@ -115,8 +129,7 @@ lei add-external https://lore.kernel.org/all/
 - Authorial intent or motivation behind any tag string.
 - Patches that landed without disclosure. This page measures policy compliance, not
   actual AI usage in the kernel.
-- Share of kernel-wide lines. GitHub's stats API refuses repos over 10k commits and
-  computing diffstats from the partial clone would take hours.
+- Undisclosed AI assistance. This is a verifiable floor, not a census of all AI use.
 
 ## About this analysis
 
