@@ -89,8 +89,8 @@ historical reclassification that reduces a count, run once with
 `ALLOW_DATA_REGRESSION=1` and review the diff before publishing.
 
 The GitHub Actions workflow runs daily and can also be started with `workflow_dispatch`.
-It runs the standard-library test suite first, rotates the large kernel cache weekly, and
-commits data only after JSON and whitespace validation succeed.
+It runs the standard-library test suite first, rotates the lei and kernel caches weekly,
+and commits data only after JSON and whitespace validation succeed.
 
 Run the local test suite with:
 
