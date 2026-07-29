@@ -143,8 +143,15 @@ for raw in iter_messages(MBOX):
 
     key = (canon, sender)
     prev = groups.get(key)
-    if prev is None or day > prev["day"]:
-        groups[key] = {"day": day, "tags": tags, "sender_name": sender_name, "subject": subj}
+    timestamp = dt.astimezone(timezone.utc)
+    if prev is None or timestamp > prev["timestamp"]:
+        groups[key] = {
+            "day": day,
+            "timestamp": timestamp,
+            "tags": tags,
+            "sender_name": sender_name,
+            "subject": subj,
+        }
 
 # now aggregate
 for (canon, sender), g in groups.items():

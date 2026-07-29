@@ -62,6 +62,13 @@ kernel_stats.json  kernel-wide totals
 
 ## Refreshing the data
 
+Install the required commands first. On Ubuntu 24.04, `lei` is a separate binary package;
+installing the `public-inbox` server package does not provide it:
+
+```
+sudo apt-get install lei git python3 tar
+```
+
 ```
 ./refresh.sh
 ```
@@ -71,8 +78,23 @@ Does, in order:
 1. `git fetch --shallow-since=2026-01-01` on `linux-full.git`.
 2. `lei q ... 'b:"Assisted-by:" AND d:20260101..'` to a fresh mbox.
 3. Run `parse_commits.py` and `parse_lei.py`.
-4. `build_data.py` writes `web_data.min.json`.
-5. Inlines that JSON into `index.html`.
+4. `kernel_stats.py` updates the kernel-wide denominator.
+5. `build_data.py` inlines the combined JSON into `index.html`.
+
+The refresh writes parser output to a temporary directory and validates that counts and
+the latest lore date do not regress before replacing published JSON. For an intentional
+historical reclassification that reduces a count, run once with
+`ALLOW_DATA_REGRESSION=1` and review the diff before publishing.
+
+The GitHub Actions workflow runs daily and can also be started with `workflow_dispatch`.
+It runs the standard-library test suite first, rotates the large kernel cache weekly, and
+commits data only after JSON and whitespace validation succeed.
+
+Run the local test suite with:
+
+```
+python3 -m unittest discover -s tests -v
+```
 
 Bootstrapping a fresh clone of this repo:
 
