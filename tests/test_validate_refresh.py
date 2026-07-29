@@ -39,8 +39,19 @@ class ValidateRefreshTest(unittest.TestCase):
         validate_progress(old_merged, old_lore, new_merged, new_lore)
 
     def test_rejects_partial_lore_result(self):
-        with self.assertRaisesRegex(ValueError, "input_messages regressed"):
+        with self.assertRaisesRegex(ValueError, "input_messages regressed beyond tolerance"):
             validate_progress(merged(), lore(), merged(), lore(messages=4))
+
+    def test_accepts_tiny_lore_index_fluctuation(self):
+        old_lore = lore(messages=20000, tagged=13000, unique=10545)
+        new_lore = lore(messages=19998, tagged=12998, unique=10543)
+        validate_progress(merged(), old_lore, merged(), new_lore)
+
+    def test_rejects_material_lore_index_fluctuation(self):
+        old_lore = lore(messages=20000, tagged=13000, unique=10545)
+        new_lore = lore(messages=19000, tagged=12000, unique=9500)
+        with self.assertRaisesRegex(ValueError, "input_messages regressed beyond tolerance"):
+            validate_progress(merged(), old_lore, merged(), new_lore)
 
     def test_rejects_empty_result(self):
         with self.assertRaisesRegex(ValueError, "no commits"):

@@ -2,6 +2,7 @@
 """Reject incomplete refresh results before they replace published data."""
 
 import json
+import math
 import os
 import sys
 from pathlib import Path
@@ -63,8 +64,15 @@ def validate_progress(old_merged: dict, old_lore: dict,
         require(new_merged[key] >= old_merged.get(key, 0),
                 f"merged {key} regressed: {old_merged.get(key, 0)} -> {new_merged[key]}")
     for key in ("input_messages", "patch_messages_with_tag", "unique_patches_with_tag"):
-        require(new_lore[key] >= old_lore.get(key, 0),
-                f"lore {key} regressed: {old_lore.get(key, 0)} -> {new_lore[key]}")
+        old_value = old_lore.get(key, 0)
+        tolerance = (
+            max(5, math.ceil(old_value * 0.001)) if old_value >= 100 else 0
+        )
+        require(
+            new_lore[key] >= old_value - tolerance,
+            f"lore {key} regressed beyond tolerance: "
+            f"{old_value} -> {new_lore[key]} (allowed {tolerance})",
+        )
 
     old_latest = old_lore.get("latest")
     if old_latest:
