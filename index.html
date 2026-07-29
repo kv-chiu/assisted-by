@@ -1190,6 +1190,7 @@
   let activeModelMode = "submitted";
   let activeActivityMode = "lines";
   let authorAnalysisEnabled = false;
+  let authorDataLoaded = false;
 
   const selectedWindow = () => data.windows[activeWindow];
   const windowLabel = () => activeWindow === "all" ? "ALL" : `${activeWindow}D`;
@@ -1240,6 +1241,21 @@
   }
 
   const dominancePct = value => value == null ? "—" : `${value.toFixed(1)}%`;
+
+  async function loadAuthorData() {
+    if (authorDataLoaded) return;
+    const response = await fetch("./author_data.json", {cache: "no-cache"});
+    if (!response.ok) throw new Error(`author data request failed: ${response.status}`);
+    const payload = await response.json();
+    if (payload.window?.as_of !== data.window.as_of) {
+      throw new Error("author data date does not match the page data");
+    }
+    for (const key of WINDOW_KEYS) {
+      if (!payload.windows?.[key]) throw new Error(`author data is missing ${key}`);
+      data.windows[key].submitted.author_analysis = payload.windows[key];
+    }
+    authorDataLoaded = true;
+  }
 
   function renderDominance() {
     const panel = document.getElementById("dominance-panel");
@@ -1418,9 +1434,23 @@
       renderModels(activeModelMode);
     });
   });
-  document.getElementById("author-analysis-toggle").addEventListener("click", event => {
-    authorAnalysisEnabled = !authorAnalysisEnabled;
+  document.getElementById("author-analysis-toggle").addEventListener("click", async event => {
     const button = event.currentTarget;
+    const enable = !authorAnalysisEnabled;
+    if (enable && !authorDataLoaded) {
+      button.disabled = true;
+      button.textContent = "author adjustment: loading…";
+      try {
+        await loadAuthorData();
+      } catch (error) {
+        console.error(error);
+        button.disabled = false;
+        button.textContent = "author adjustment: retry";
+        return;
+      }
+      button.disabled = false;
+    }
+    authorAnalysisEnabled = enable;
     button.classList.toggle("active", authorAnalysisEnabled);
     button.setAttribute("aria-pressed", String(authorAnalysisEnabled));
     button.textContent = `author adjustment: ${authorAnalysisEnabled ? "on" : "off"}`;

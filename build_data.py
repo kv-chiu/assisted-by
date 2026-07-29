@@ -3,6 +3,7 @@
 import json
 import re
 import subprocess
+from pathlib import Path
 
 from window_stats import build_windows
 
@@ -41,6 +42,16 @@ windows = build_windows(
     as_of,
     since,
 )
+author_windows = {
+    key: value["submitted"].pop("author_analysis", {})
+    for key, value in windows.items()
+}
+author_data = {
+    "window": {"since": since, "as_of": as_of},
+    "windows": author_windows,
+}
+author_data_str = json.dumps(author_data, separators=(",", ":"))
+Path("author_data.json").write_text(author_data_str)
 
 def lines_for(d, k):
     e = d.get(k) or {}
@@ -116,3 +127,4 @@ print(f"merged: {merged['total_commits']} commits, {merged['total_tags']} tags")
 print(f"submitted: {lore['unique_patches_with_tag']} unique patches")
 print(f"share of mainline: {merged['total_commits']/total_commits*100:.2f}%")
 print(f"inlined into index.html ({len(data_str)} bytes of data)")
+print(f"wrote author_data.json ({len(author_data_str)} bytes, loaded on demand)")
