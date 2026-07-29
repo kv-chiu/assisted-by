@@ -1,12 +1,36 @@
 #!/usr/bin/env bash
+
+normalize_external_url() {
+  local value="$1"
+  while [[ "$value" == */ ]]; do
+    value="${value%/}"
+  done
+  printf '%s\n' "$value"
+}
+
+lei_external_registered() {
+  local expected configured
+  expected="$(normalize_external_url "$1")"
+
+  while IFS= read -r configured; do
+    if [[ "$(normalize_external_url "$configured")" == "$expected" ]]; then
+      return 0
+    fi
+  done < <(lei ls-external)
+
+  return 1
+}
+
+# Let tests source the comparison helpers without running a refresh.
+if [[ "${BASH_SOURCE[0]}" != "$0" ]]; then
+  return 0
+fi
+
 set -euo pipefail
 cd "$(dirname "$0")"
 
 repo_path="${REPO:-linux-full.git}"
-lore_external="${LORE_EXTERNAL:-https://lore.kernel.org/all/}"
-while [[ "$lore_external" == */ ]]; do
-  lore_external="${lore_external%/}"
-done
+lore_external="$(normalize_external_url "${LORE_EXTERNAL:-https://lore.kernel.org/all/}")"
 task_tmp_dir="$(mktemp -d "${TMPDIR:-/tmp}/assisted-by-refresh.XXXXXX")"
 
 cleanup() {
@@ -38,10 +62,10 @@ else
 fi
 
 # 2. register lore and pull a complete, fresh submitted set
-if ! lei ls-external | grep -Fqx "$lore_external"; then
+if ! lei_external_registered "$lore_external"; then
   lei add-external "$lore_external"
 fi
-if ! lei ls-external | grep -Fqx "$lore_external"; then
+if ! lei_external_registered "$lore_external"; then
   echo "error: lei external was not registered: $lore_external" >&2
   exit 1
 fi
