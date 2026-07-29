@@ -57,6 +57,23 @@ still disclose more than one vendor or tool, so combined penetration percentages
 100%. `ALL` is explicitly historical cumulative data rather than a statement about current
 adoption.
 
+## Author dominance
+
+Author-adjusted analysis is off by default. Enabling it replaces the model ranking with a
+contributor-weighted view and reveals author count, effective contributor count, Top 1 and
+Top 5 patch shares, and the Gini coefficient for the selected window. Each sender counts at
+most once per model in the contributor-weighted share, whether they submitted one patch or
+five hundred.
+
+For each model, effective contributors are the inverse Simpson concentration
+`1 / sum(s_i^2)`, where `s_i` is one author's share of that model's patches. The view also
+recalculates model penetration after removing the most prolific one and five authors across
+the window. This makes it possible to distinguish broad adoption from a high-volume author.
+
+Contributor identities are stable SHA-256-derived IDs of normalized sender addresses. Raw
+names and addresses are not included in the browser's window aggregates. One address is one
+identity; aliases belonging to the same person are not currently merged.
+
 ## Files
 
 ```

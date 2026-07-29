@@ -12,6 +12,7 @@ Output: same shape as parse_mbox.py so the page consumes it identically.
 """
 import email
 import email.policy
+import hashlib
 import json
 import re
 import sys
@@ -82,6 +83,11 @@ def sender_email(frm: str) -> str:
     addr = (m.group(1) if m else frm).strip().lower()
     return addr
 
+
+def anonymous_author_id(sender: str) -> str:
+    """Return a stable, non-reversible identity for author concentration stats."""
+    return hashlib.sha256(sender.encode("utf-8")).hexdigest()[:16]
+
 vendor_counts = Counter()
 model_counts = Counter()
 tool_counts = Counter()
@@ -93,6 +99,8 @@ daily_dimensions = defaultdict(lambda: {
     "vendors": Counter(),
     "models": Counter(),
     "tools": Counter(),
+    "authors": Counter(),
+    "model_authors": defaultdict(Counter),
 })
 
 groups = {}  # (canonical_subject, sender_local) -> latest message info
@@ -189,6 +197,10 @@ for (canon, sender), g in groups.items():
     daily["vendors"].update(seen_vendors)
     daily["models"].update(seen_models)
     daily["tools"].update(seen_tools)
+    author_id = anonymous_author_id(sender)
+    daily["authors"][author_id] += 1
+    for model_key in seen_models:
+        daily["model_authors"][model_key][author_id] += 1
 
 dates = sorted(by_date.keys())
 out = {
@@ -207,6 +219,11 @@ out = {
             "vendors": dict(bucket["vendors"]),
             "models": dict(bucket["models"]),
             "tools": dict(bucket["tools"]),
+            "authors": dict(bucket["authors"]),
+            "model_authors": {
+                model: dict(author_counts)
+                for model, author_counts in bucket["model_authors"].items()
+            },
         }
         for day, bucket in sorted(daily_dimensions.items())
     },

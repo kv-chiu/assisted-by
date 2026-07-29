@@ -18,7 +18,14 @@ def lore(messages=5, tagged=4, unique=3, latest="2026-07-01"):
         "patch_messages_with_tag": tagged,
         "unique_patches_with_tag": unique,
         "latest": latest,
-        "daily_dimensions": {"2026-07-01": {"patches": unique}},
+        "daily_dimensions": {
+            "2026-07-01": {
+                "patches": unique,
+                "authors": {"anonymous-author": unique},
+                "models": {},
+                "model_authors": {},
+            }
+        },
     }
 
 

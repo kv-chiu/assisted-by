@@ -1,3 +1,4 @@
+import hashlib
 import json
 import subprocess
 import sys
@@ -83,6 +84,14 @@ class ParseLeiTest(unittest.TestCase):
                 "vendors": {"Google": 1},
                 "models": {"Google — Gemini 3.5": 1},
                 "tools": {"Antigravity": 1},
+                "authors": {
+                    hashlib.sha256(b"dev@example.com").hexdigest()[:16]: 1
+                },
+                "model_authors": {
+                    "Google — Gemini 3.5": {
+                        hashlib.sha256(b"dev@example.com").hexdigest()[:16]: 1
+                    }
+                },
             },
         )
 

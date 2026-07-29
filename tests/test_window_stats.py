@@ -1,6 +1,6 @@
 import unittest
 
-from window_stats import aggregate_daily, build_windows
+from window_stats import aggregate_daily, author_dominance, build_windows
 
 
 class WindowStatsTest(unittest.TestCase):
@@ -35,12 +35,22 @@ class WindowStatsTest(unittest.TestCase):
                 "vendors": {"Anthropic": 3},
                 "models": {"Anthropic — Opus 4.7": 3},
                 "tools": {"Claude Code": 3},
+                "authors": {"a": 2, "b": 1},
+                "model_authors": {
+                    "Anthropic — Opus 4.7": {"a": 2, "b": 1}
+                },
             },
             "2026-07-29": {
                 "patches": 5,
                 "vendors": {"OpenAI": 5},
                 "models": {"OpenAI — GPT-5.5": 5},
                 "tools": {"Codex": 5},
+                "authors": {"a": 1, "c": 1, "d": 1, "e": 1, "f": 1},
+                "model_authors": {
+                    "OpenAI — GPT-5.5": {
+                        "a": 1, "c": 1, "d": 1, "e": 1, "f": 1
+                    }
+                },
             },
         }
 
@@ -65,6 +75,30 @@ class WindowStatsTest(unittest.TestCase):
         self.assertEqual(current["previous"]["end"], "2026-06-14")
         self.assertEqual(current["submitted"]["patches"], 8)
         self.assertIsNone(windows["all"]["previous"])
+
+    def test_author_dominance_and_model_adjustments(self):
+        result = aggregate_daily(
+            self.submitted, "2026-06-01", "2026-07-29"
+        )["author_analysis"]
+        self.assertEqual(result["authors"], 6)
+        self.assertEqual(result["effective_contributors"], 4.5714)
+        self.assertEqual(result["top1_share"], 37.5)
+        self.assertEqual(result["top5_share"], 87.5)
+        self.assertEqual(result["gini"], 0.2083)
+
+        opus = result["models"]["Anthropic — Opus 4.7"]
+        self.assertEqual(opus["patches"], 3)
+        self.assertEqual(opus["authors"], 2)
+        self.assertEqual(opus["effective_contributors"], 1.8)
+        self.assertEqual(opus["without_top1_share"], 20.0)
+        self.assertEqual(opus["without_top5_share"], 0.0)
+        self.assertEqual(opus["contributor_weighted_share"], 33.3333)
+
+    def test_empty_author_dominance_is_well_defined(self):
+        result = author_dominance({}, {})
+        self.assertEqual(result["authors"], 0)
+        self.assertEqual(result["effective_contributors"], 0.0)
+        self.assertIsNone(result["top1_share"])
 
 
 if __name__ == "__main__":
