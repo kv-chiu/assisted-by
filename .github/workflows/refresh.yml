@@ -27,7 +27,8 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends lei
           command -v lei
-          lei --version
+          lei help >/dev/null
+          dpkg-query -W -f='${Version}\n' lei
 
       - name: compute cache epoch
         id: cache-epoch
