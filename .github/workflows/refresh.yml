@@ -41,7 +41,10 @@ jobs:
             ~/.cache/public-inbox
             ~/.config/lei
             ~/.local/share/lei
-          key: ${{ runner.os }}-lei-state-v1
+          key: ${{ runner.os }}-lei-state-v1-${{ steps.cache-epoch.outputs.week }}
+          restore-keys: |
+            ${{ runner.os }}-lei-state-v1-
+            ${{ runner.os }}-lei-state-v1
 
       - name: restore linux-full.git
         uses: actions/cache@v5
