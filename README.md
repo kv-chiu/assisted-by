@@ -1,18 +1,31 @@
-# Assisted-by
+# Assisted-by: Linux AI disclosure tracker
 
-Tracks the `Assisted-by:` tag in Linux mainline since 2026-01-01: which AI models and tools
-have shown up in disclosed kernel commits, what they have actually merged, and how that
-compares to what is being submitted on lkml.
+An interactive, static dashboard for the Linux kernel's `Assisted-by:` disclosures since
+2026-01-01. It tracks which AI models, vendors, and tools appear in submitted patches and
+merged mainline commits, how adoption changes over time, and which authors are behind the
+merged work.
 
-Live page: https://kv-chiu.github.io/assisted-by/
-Upstream project: https://assisted-by.dev
+- **Live dashboard:** https://kv-chiu.github.io/assisted-by/
+- **Repository:** https://github.com/kv-chiu/assisted-by
+- **Forked from:** https://github.com/snek-git/assisted-by
 
 ## Why this exists
 
 In early 2026 the Linux kernel adopted a policy for AI-assisted contributions: allowed,
-but they must carry an `Assisted-by:` tag naming the model. This page is a single static
-view of what that tag has produced so far. No auth, no analytics, no JS frameworks. Open
-the page, the data is already inlined.
+but they must carry an `Assisted-by:` tag naming the model. This project turns those public
+disclosures into a static, interactive dashboard. No auth, no analytics, no JavaScript
+frameworks: open the page and the main dataset is already inlined.
+
+## What the dashboard includes
+
+- Cumulative merged-commit and line totals placed in the context of overall mainline activity.
+- Rolling 7, 30, 45, 60, 90, and 180-day windows plus a cumulative `ALL` view.
+- Submitted and merged breakdowns by model, vendor, and invocation tool.
+- Daily activity charts and direct links to recent mainline commits.
+- Optional author-concentration analysis with contributor-weighted model adoption, effective
+  contributor counts, Top 1/Top 5 shares, and Gini coefficient.
+- A dedicated **Authors** tab ranking every merged-commit author from highest to lowest; select
+  an author to browse all of their disclosed-AI commits on kernel.org.
 
 ## Numbers come from two sources
 
@@ -57,7 +70,7 @@ still disclose more than one vendor or tool, so combined penetration percentages
 100%. `ALL` is explicitly historical cumulative data rather than a statement about current
 adoption.
 
-## Author dominance
+## Author analysis
 
 Author-adjusted analysis is off by default. Enabling it replaces the model ranking with a
 contributor-weighted view and reveals author count, effective contributor count, Top 1 and
@@ -73,6 +86,10 @@ the window. This makes it possible to distinguish broad adoption from a high-vol
 Contributor identities are stable SHA-256-derived IDs of normalized sender addresses. Raw
 names and addresses are not included in the browser's window aggregates. One address is one
 identity; aliases belonging to the same person are not currently merged.
+
+The separate **Authors** tab uses public author names from merged mainline commits. It is not
+part of the anonymous submitted-patch concentration analysis: its purpose is to make the
+commit counts auditable through direct kernel.org links.
 
 ## Files
 
@@ -121,9 +138,9 @@ the latest lore date do not regress before replacing published JSON. For an inte
 historical reclassification that reduces a count, run once with
 `ALLOW_DATA_REGRESSION=1` and review the diff before publishing.
 
-The GitHub Actions workflow runs daily and can also be started with `workflow_dispatch`.
-It runs the standard-library test suite first, rotates the lei and kernel caches weekly,
-and commits data only after JSON and whitespace validation succeed.
+The GitHub Actions workflow runs daily at 08:00 UTC+8 (00:00 UTC) and can also be started
+with `workflow_dispatch`. It runs the standard-library test suite first, rotates the lei
+and kernel caches weekly, and commits data only after JSON and whitespace validation succeed.
 
 Run the local test suite with:
 
@@ -152,10 +169,11 @@ lei add-external https://lore.kernel.org/all/
 
 ## About this analysis
 
-Built with assistance from Anthropic's Claude (Opus 4.7, via Claude Code) by a human
-collaborator. Tag string normalisation choices in `parse_commits.py` are judgement calls;
-the parser source is the authoritative answer for any "why was X bucketed as Y?" question.
-The page deliberately avoids inferring motivation from tag content.
+Originally built with assistance from Anthropic's Claude (Opus 4.7, via Claude Code) and
+continued in this fork with OpenAI Codex. Tag string normalisation choices in
+`parse_commits.py` are judgement calls; the parser source is the authoritative answer for
+any "why was X bucketed as Y?" question. The page deliberately avoids inferring motivation
+from tag content.
 
 ## License
 
