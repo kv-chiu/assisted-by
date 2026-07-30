@@ -129,6 +129,153 @@
   /* sections */
   section { margin-bottom: 72px; }
 
+  /* primary views */
+  .page-tabs {
+    display: flex;
+    gap: 6px;
+    margin: -20px 0 48px;
+    border-bottom: 1px solid var(--line);
+  }
+  .page-tab {
+    appearance: none;
+    background: transparent;
+    color: var(--dim);
+    border: 0;
+    border-bottom: 2px solid transparent;
+    padding: 14px 18px 12px;
+    margin-bottom: -1px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .15s, border-color .15s;
+  }
+  .page-tab:hover { color: var(--text); }
+  .page-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .page-tab:focus-visible,
+  .author-row:focus-visible,
+  .author-search:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* author explorer */
+  .author-explorer {
+    display: grid;
+    grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    min-height: 520px;
+  }
+  .author-list-panel,
+  .author-detail-panel { background: var(--panel); }
+  .author-list-panel { padding: 18px; }
+  .author-search {
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font: 12px "JetBrains Mono", monospace;
+  }
+  .author-search::placeholder { color: var(--dim-2); }
+  .author-list {
+    display: grid;
+    gap: 4px;
+    max-height: 680px;
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+  .author-row {
+    appearance: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 14px;
+    text-align: left;
+    padding: 10px 10px 9px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .author-row:hover { background: var(--panel-2); }
+  .author-row.active {
+    background: var(--panel-2);
+    border-color: var(--dim-2);
+  }
+  .author-row .author-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  .author-row .author-count {
+    color: var(--text);
+    font: 13px "JetBrains Mono", monospace;
+  }
+  .author-row .author-mini-track {
+    grid-column: 1 / -1;
+    height: 3px;
+    background: var(--bar);
+    border-radius: 1px;
+    overflow: hidden;
+  }
+  .author-row .author-mini-fill {
+    height: 100%;
+    background: var(--accent);
+  }
+  .author-detail-panel { padding: 26px; }
+  .author-detail-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .author-detail-head h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+  .author-detail-count {
+    color: var(--accent);
+    font: 12px "JetBrains Mono", monospace;
+    white-space: nowrap;
+  }
+  .author-commits { display: grid; }
+  .author-commit-link {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr) 86px;
+    gap: 14px;
+    align-items: baseline;
+    padding: 14px 4px;
+    color: var(--text);
+    border-bottom: 1px solid var(--line);
+  }
+  .author-commit-link:hover {
+    color: var(--accent);
+    border-bottom-color: var(--dim-2);
+  }
+  .author-commit-date,
+  .author-commit-sha {
+    color: var(--dim);
+    font: 11px "JetBrains Mono", monospace;
+  }
+  .author-commit-sha { text-align: right; }
+  .author-commit-subject { font-size: 13px; overflow-wrap: anywhere; }
+
   /* zoomable unit grid */
   .grid-stage {
     background: var(--panel);
@@ -692,8 +839,15 @@
   }
   @media (max-width: 760px) {
     .wrap { padding: 36px 18px 56px; }
+    .page-tabs { margin-top: -20px; margin-bottom: 38px; }
     .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .two-col, .vendor-grid { grid-template-columns: 1fr; }
+    .author-explorer { grid-template-columns: 1fr; }
+    .author-list { max-height: 360px; }
+    .author-detail-panel { padding: 20px 16px; }
+    .author-detail-head { align-items: flex-start; flex-direction: column; gap: 6px; }
+    .author-commit-link { grid-template-columns: 70px minmax(0, 1fr); gap: 8px; }
+    .author-commit-sha { display: none; }
     .commit-row { grid-template-columns: 70px 1fr; gap: 8px; }
     .commit-row .author, .commit-row .tag { display: none; }
     .funnel-row { grid-template-columns: 1fr; gap: 6px; }
@@ -719,6 +873,15 @@
       Loading data&hellip;
     </p>
   </header>
+
+  <nav class="page-tabs" role="tablist" aria-label="Page views">
+    <button class="page-tab active" id="overview-tab" type="button" role="tab"
+      aria-selected="true" aria-controls="overview-panel" data-view="overview">Overview</button>
+    <button class="page-tab" id="authors-tab" type="button" role="tab"
+      aria-selected="false" aria-controls="authors-panel" data-view="authors">Authors</button>
+  </nav>
+
+  <div class="tab-panel" id="overview-panel" role="tabpanel" aria-labelledby="overview-tab">
 
   <div class="stats" id="stats"></div>
 
@@ -934,6 +1097,24 @@
       </div>
     </div>
   </section>
+  </div>
+
+  <div class="tab-panel" id="authors-panel" role="tabpanel" aria-labelledby="authors-tab" hidden>
+    <section>
+      <div class="section-head">
+        <h2>Authors</h2>
+        <div class="meta" id="authors-meta">merged disclosed-AI commits · since 2026-01-01</div>
+      </div>
+      <div class="author-explorer">
+        <div class="author-list-panel">
+          <input class="author-search" id="author-search" type="search"
+            placeholder="Filter authors…" aria-label="Filter authors">
+          <div class="author-list" id="author-list" role="listbox" aria-label="Authors by commit count"></div>
+        </div>
+        <div class="author-detail-panel" id="author-detail" aria-live="polite"></div>
+      </div>
+    </section>
+  </div>
 
   <footer>
     <div>
@@ -1690,6 +1871,121 @@
   }
   leaderboard(data.top_authors, document.getElementById("authors"));
   leaderboard(data.top_committers, document.getElementById("committers"));
+
+  // --- primary tabs + author explorer ---
+  const authorGroups = new Map();
+  data.commits.forEach(commit => {
+    if (!authorGroups.has(commit.author)) authorGroups.set(commit.author, []);
+    authorGroups.get(commit.author).push(commit);
+  });
+  const rankedAuthors = [...authorGroups.entries()]
+    .map(([name, authorCommits]) => ({
+      name,
+      commits: authorCommits.sort((a, b) => b.date.localeCompare(a.date)),
+    }))
+    .sort((a, b) => b.commits.length - a.commits.length || a.name.localeCompare(b.name));
+  let selectedAuthor = rankedAuthors[0]?.name || null;
+
+  function renderAuthorDetail() {
+    const author = rankedAuthors.find(row => row.name === selectedAuthor);
+    const target = document.getElementById("author-detail");
+    if (!author) {
+      target.innerHTML = '<div class="empty-state">No matching authors.</div>';
+      return;
+    }
+    target.innerHTML = `
+      <div class="author-detail-head">
+        <h3>${escape(author.name)}</h3>
+        <div class="author-detail-count">${author.commits.length.toLocaleString()} commit${author.commits.length === 1 ? "" : "s"}</div>
+      </div>
+      <div class="author-commits">
+        ${author.commits.map(commit => `
+          <a class="author-commit-link"
+            href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=${encodeURIComponent(commit.sha)}"
+            target="_blank" rel="noopener">
+            <span class="author-commit-date">${escape(commit.date)}</span>
+            <span class="author-commit-subject">${escape(commit.subject)}</span>
+            <span class="author-commit-sha">${escape(commit.sha.slice(0, 12))} ↗</span>
+          </a>`).join("")}
+      </div>`;
+  }
+
+  function renderAuthorList(query = "") {
+    const normalized = query.trim().toLocaleLowerCase();
+    const visible = rankedAuthors.filter(author =>
+      author.name.toLocaleLowerCase().includes(normalized)
+    );
+    if (visible.length && !visible.some(author => author.name === selectedAuthor)) {
+      selectedAuthor = visible[0].name;
+      renderAuthorDetail();
+    }
+    const max = rankedAuthors[0]?.commits.length || 1;
+    document.getElementById("author-list").innerHTML = visible.length
+      ? visible.map(author => {
+          const index = rankedAuthors.indexOf(author);
+          const active = author.name === selectedAuthor;
+          return `
+            <button class="author-row${active ? " active" : ""}" type="button" role="option"
+              aria-selected="${active}" data-author-index="${index}">
+              <span class="author-name">${escape(author.name)}</span>
+              <span class="author-count">${author.commits.length.toLocaleString()}</span>
+              <span class="author-mini-track"><span class="author-mini-fill" style="display:block;width:${author.commits.length / max * 100}%"></span></span>
+            </button>`;
+        }).join("")
+      : '<div class="empty-state">No authors match this filter.</div>';
+  }
+
+  document.getElementById("authors-meta").textContent =
+    `${rankedAuthors.length.toLocaleString()} authors · ${data.commits.length.toLocaleString()} merged disclosed-AI commits · since ${data.window.since}`;
+  document.getElementById("author-list").addEventListener("click", event => {
+    const button = event.target.closest("[data-author-index]");
+    if (!button) return;
+    selectedAuthor = rankedAuthors[Number(button.dataset.authorIndex)].name;
+    document.querySelectorAll(".author-row").forEach(row => {
+      const active = Number(row.dataset.authorIndex) === Number(button.dataset.authorIndex);
+      row.classList.toggle("active", active);
+      row.setAttribute("aria-selected", String(active));
+    });
+    renderAuthorDetail();
+  });
+  document.getElementById("author-search").addEventListener("input", event => {
+    renderAuthorList(event.currentTarget.value);
+  });
+  renderAuthorList();
+  renderAuthorDetail();
+
+  function setPageView(view, updateHash = true) {
+    const authorsActive = view === "authors";
+    document.getElementById("overview-panel").hidden = authorsActive;
+    document.getElementById("authors-panel").hidden = !authorsActive;
+    document.querySelectorAll(".page-tab").forEach(tab => {
+      const active = tab.dataset.view === view;
+      tab.classList.toggle("active", active);
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+    });
+    if (updateHash) {
+      const next = authorsActive ? "#authors" : `${location.pathname}${location.search}`;
+      history.replaceState(null, "", next);
+    }
+  }
+
+  const pageTabs = [...document.querySelectorAll(".page-tab")];
+  pageTabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => setPageView(tab.dataset.view));
+    tab.addEventListener("keydown", event => {
+      if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+      event.preventDefault();
+      const delta = event.key === "ArrowRight" ? 1 : -1;
+      const next = pageTabs[(index + delta + pageTabs.length) % pageTabs.length];
+      setPageView(next.dataset.view);
+      next.focus();
+    });
+  });
+  window.addEventListener("hashchange", () => {
+    setPageView(location.hash === "#authors" ? "authors" : "overview", false);
+  });
+  setPageView(location.hash === "#authors" ? "authors" : "overview", false);
 
   // --- recent commits ---
   const commits = [...data.commits].sort((a,b) => b.date.localeCompare(a.date));
