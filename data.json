@@ -1,24 +1,24 @@
 {
-  "total_commits": 2904,
-  "total_tags": 2991,
-  "total_insertions": 144518,
-  "total_deletions": 49179,
+  "total_commits": 2975,
+  "total_tags": 3064,
+  "total_insertions": 145304,
+  "total_deletions": 49459,
   "vendor_counts": [
     [
       "Anthropic",
-      1497
-    ],
-    [
-      "OpenAI",
-      475
+      1513
     ],
     [
       "Unknown",
-      451
+      499
+    ],
+    [
+      "OpenAI",
+      480
     ],
     [
       "Google",
-      387
+      388
     ],
     [
       "Greg KH (local LLM fuzzer)",
@@ -30,7 +30,7 @@
     ],
     [
       "Z.ai",
-      35
+      38
     ],
     [
       "Cursor (in-house)",
@@ -38,37 +38,8 @@
     ]
   ],
   "vendor_models": {
-    "Anthropic": {
-      "Opus 4.6": 469,
-      "Opus 4.8": 418,
-      "Sonnet 4.6": 161,
-      "Opus 4.7": 157,
-      "Opus": 115,
-      "Sonnet": 56,
-      "claude-fable-5": 45,
-      "Sonnet 4.5": 32,
-      "unspecified": 14,
-      "GLM-5.2": 9,
-      "Opus 4.5": 3,
-      "qwen3.8-max": 2,
-      "deepseek-v4-pro": 2,
-      "claude-fable-5 [Claude Code]": 1,
-      "claude-fable-5 coccinelle": 1,
-      "claude-fable-5 [gcc W=1]": 1,
-      "claude-fable-5 tla+": 1,
-      "claude-fable-5 sparse": 1,
-      "claude-5-fable": 1,
-      "claude-fable-5 [kernel-doc]": 1,
-      "claude-fable-5 [coccinelle]": 1,
-      "claude-fable-5 bpftrace": 1,
-      "Haiku 4.5": 1,
-      "Claude Sonet 4": 1,
-      "4.5": 1,
-      "Claude (Anthropic)": 1,
-      "Claude (Anthropic Claude Code)": 1
-    },
     "Unknown": {
-      "LLM": 97,
+      "LLM": 140,
       "LOLLM # finding obvious bugs": 70,
       "big-pickle": 36,
       "hy3-free": 27,
@@ -78,18 +49,19 @@
       "AuditCode-AI:2026.07": 13,
       "Bynario AI": 8,
       "0sec:claude-opus-4-8": 7,
+      "Kimi:K3": 6,
       "Qoder:Qwen-3.8-MAX-Preview": 6,
       "kres:claude-opus-4-6": 6,
       "GitHub_Copilot:claude-opus-4.8": 6,
       "YuanSheng:claude-4.7-opus": 6,
-      "Kimi:K3": 5,
+      "0sec:multi-model": 5,
       "tencentos-corvus-ai:kimi-k3": 4,
-      "0sec:multi-model": 4,
       "unspecified": 4,
       "Big-pickle": 4,
       "oh-my-pi:GPT-5.5": 4,
       "sashiko:gemini-3.1-pro-preview": 4,
       "GitHub_Copilot:claude-sonnet-5": 3,
+      "Hermes:muse-spark-1.2 syzkaller": 3,
       "Big-Pickle": 3,
       "VeroCoder:claude-sonnet-4-6": 3,
       "LLM (debugging, commit message)": 3,
@@ -98,7 +70,6 @@
       "GitHub_Copilot:claude-opus-5": 2,
       "Antiproof:GPT-5.6-Sol": 2,
       "LLM sparse": 2,
-      "Hermes:muse-spark-1.2 syzkaller": 2,
       "WChat:claude-opus-4-8": 2,
       "mimo-v2.5-free": 2,
       "ChatGPT:GPT-5.6-Pro": 2,
@@ -109,6 +80,8 @@
       "Sashiko-Review:gemini-3.1-pro-preview": 2,
       "ChatGPT:gpt-5.5": 2,
       "\"Claude Code Review Bot\":claude-opus-4-6": 2,
+      "LLM (Claude Sonnet 5, Anthropic)": 1,
+      "LLM KASAN": 1,
       "Kimi:Kimi-K3 # debug and root-cause analysis": 1,
       "CodeBuddy:Kimi-K3": 1,
       "LLM (initial analysis, but incorrect conclusion with too many burnt tokens)": 1,
@@ -146,11 +119,40 @@
       "GPT-Codex:gpt-5.2-codex": 1,
       "AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1
     },
+    "Anthropic": {
+      "Opus 4.6": 471,
+      "Opus 4.8": 418,
+      "Sonnet 4.6": 161,
+      "Opus 4.7": 157,
+      "Opus": 125,
+      "Sonnet": 57,
+      "claude-fable-5": 48,
+      "Sonnet 4.5": 32,
+      "unspecified": 14,
+      "GLM-5.2": 9,
+      "Opus 4.5": 3,
+      "qwen3.8-max": 2,
+      "deepseek-v4-pro": 2,
+      "claude-fable-5 [Claude Code]": 1,
+      "claude-fable-5 coccinelle": 1,
+      "claude-fable-5 [gcc W=1]": 1,
+      "claude-fable-5 tla+": 1,
+      "claude-fable-5 sparse": 1,
+      "claude-5-fable": 1,
+      "claude-fable-5 [kernel-doc]": 1,
+      "claude-fable-5 [coccinelle]": 1,
+      "claude-fable-5 bpftrace": 1,
+      "Haiku 4.5": 1,
+      "Claude Sonet 4": 1,
+      "4.5": 1,
+      "Claude (Anthropic)": 1,
+      "Claude (Anthropic Claude Code)": 1
+    },
     "OpenAI": {
       "GPT-5.5": 198,
-      "GPT-5.6": 108,
-      "GPT-5": 72,
-      "GPT-5.4": 55,
+      "GPT-5.6": 109,
+      "GPT-5": 75,
+      "GPT-5.4": 56,
       "GPT-5.3": 35,
       "deepseek-v4-flash": 2,
       "GPT-6": 1,
@@ -164,7 +166,7 @@
       "Gemini 3.5": 115,
       "Google Gemini 3": 27,
       "Gemini 3.6": 13,
-      "Gemini 3.5 Pro": 6,
+      "Gemini 3.5 Pro": 7,
       "unknown-version": 5,
       "gemini-3-flash": 5,
       "Gemini 3.7": 3,
@@ -181,6 +183,14 @@
       "Pro": 1,
       "Gemini 3.1": 1
     },
+    "Z.ai": {
+      "GLM-5.2": 16,
+      "GLM-4.7": 15,
+      "GLM-5.1": 3,
+      "GLM:5.3": 2,
+      "GLM-5.3": 1,
+      "GLM:5.1 Z.ai": 1
+    },
     "Greg KH (local LLM fuzzer)": {
       "gregkh_clanker_t1000": 28,
       "gkh_clanker_t1000": 25,
@@ -192,13 +202,6 @@
       "DeepSeek V4": 27,
       "DeepSeek V3": 3
     },
-    "Z.ai": {
-      "GLM-5.2": 15,
-      "GLM-4.7": 15,
-      "GLM-5.1": 3,
-      "GLM-5.3": 1,
-      "GLM:5.1 Z.ai": 1
-    },
     "Cursor (in-house)": {
       "composer-1.5": 1,
       "composer-1": 1,
@@ -206,21 +209,25 @@
     }
   },
   "vendor_lines": {
-    "Anthropic": {
-      "ins": 93556,
-      "del": 26104
-    },
     "Unknown": {
-      "ins": 9353,
-      "del": 5123
+      "ins": 9900,
+      "del": 5323
+    },
+    "Anthropic": {
+      "ins": 93700,
+      "del": 26132
     },
     "OpenAI": {
-      "ins": 15883,
-      "del": 6792
+      "ins": 15962,
+      "del": 6838
     },
     "Google": {
-      "ins": 23985,
-      "del": 9581
+      "ins": 23990,
+      "del": 9582
+    },
+    "Z.ai": {
+      "ins": 4656,
+      "del": 147
     },
     "Greg KH (local LLM fuzzer)": {
       "ins": 386,
@@ -230,10 +237,6 @@
       "ins": 1314,
       "del": 374
     },
-    "Z.ai": {
-      "ins": 4637,
-      "del": 140
-    },
     "Cursor (in-house)": {
       "ins": 1825,
       "del": 1405
@@ -242,7 +245,7 @@
   "model_counts": [
     [
       "Anthropic \u2014 Opus 4.6",
-      469
+      471
     ],
     [
       "Anthropic \u2014 Opus 4.8",
@@ -265,8 +268,12 @@
       157
     ],
     [
+      "Unknown \u2014 LLM",
+      140
+    ],
+    [
       "Anthropic \u2014 Opus",
-      115
+      125
     ],
     [
       "Google \u2014 Gemini 3.5",
@@ -274,15 +281,11 @@
     ],
     [
       "OpenAI \u2014 GPT-5.6",
-      108
-    ],
-    [
-      "Unknown \u2014 LLM",
-      97
+      109
     ],
     [
       "OpenAI \u2014 GPT-5",
-      72
+      75
     ],
     [
       "Unknown \u2014 LOLLM # finding obvious bugs",
@@ -290,15 +293,15 @@
     ],
     [
       "Anthropic \u2014 Sonnet",
-      56
+      57
     ],
     [
       "OpenAI \u2014 GPT-5.4",
-      55
+      56
     ],
     [
       "Anthropic \u2014 claude-fable-5",
-      45
+      48
     ],
     [
       "Unknown \u2014 big-pickle",
@@ -354,7 +357,7 @@
     ],
     [
       "Z.ai \u2014 GLM-5.2",
-      15
+      16
     ],
     [
       "Z.ai \u2014 GLM-4.7",
@@ -381,11 +384,15 @@
       8
     ],
     [
+      "Google \u2014 Gemini 3.5 Pro",
+      7
+    ],
+    [
       "Unknown \u2014 0sec:claude-opus-4-8",
       7
     ],
     [
-      "Google \u2014 Gemini 3.5 Pro",
+      "Unknown \u2014 Kimi:K3",
       6
     ],
     [
@@ -405,7 +412,7 @@
       6
     ],
     [
-      "Unknown \u2014 Kimi:K3",
+      "Unknown \u2014 0sec:multi-model",
       5
     ],
     [
@@ -418,10 +425,6 @@
     ],
     [
       "Unknown \u2014 tencentos-corvus-ai:kimi-k3",
-      4
-    ],
-    [
-      "Unknown \u2014 0sec:multi-model",
       4
     ],
     [
@@ -446,6 +449,10 @@
     ],
     [
       "Google \u2014 Gemini 3.7",
+      3
+    ],
+    [
+      "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller",
       3
     ],
     [
@@ -493,6 +500,10 @@
       2
     ],
     [
+      "Z.ai \u2014 GLM:5.3",
+      2
+    ],
+    [
       "Unknown \u2014 GitHub_Copilot:claude-opus-5",
       2
     ],
@@ -506,10 +517,6 @@
     ],
     [
       "Google \u2014 Gemini 3.6 Pro",
-      2
-    ],
-    [
-      "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller",
       2
     ],
     [
@@ -571,6 +578,14 @@
     [
       "Google \u2014 gemini-3 #debug",
       2
+    ],
+    [
+      "Unknown \u2014 LLM (Claude Sonnet 5, Anthropic)",
+      1
+    ],
+    [
+      "Unknown \u2014 LLM KASAN",
+      1
     ],
     [
       "OpenAI \u2014 GPT-6",
@@ -842,17 +857,37 @@
     ]
   ],
   "model_lines": {
-    "Anthropic \u2014 Opus": {
-      "ins": 2070,
-      "del": 365
-    },
     "Unknown \u2014 LLM": {
-      "ins": 2096,
-      "del": 961
+      "ins": 2591,
+      "del": 1155
+    },
+    "Anthropic \u2014 Opus": {
+      "ins": 2176,
+      "del": 379
+    },
+    "Anthropic \u2014 claude-fable-5": {
+      "ins": 1151,
+      "del": 164
     },
     "OpenAI \u2014 GPT-5": {
-      "ins": 1101,
-      "del": 246
+      "ins": 1175,
+      "del": 279
+    },
+    "Anthropic \u2014 Sonnet": {
+      "ins": 1979,
+      "del": 833
+    },
+    "Unknown \u2014 LLM (Claude Sonnet 5, Anthropic)": {
+      "ins": 17,
+      "del": 0
+    },
+    "Unknown \u2014 LLM KASAN": {
+      "ins": 2,
+      "del": 1
+    },
+    "Anthropic \u2014 Opus 4.6": {
+      "ins": 32543,
+      "del": 18138
     },
     "Google \u2014 Gemini 3.8": {
       "ins": 27,
@@ -872,15 +907,11 @@
     },
     "OpenAI \u2014 GPT-5.6": {
       "ins": 2295,
-      "del": 4072
+      "del": 4084
     },
     "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": {
       "ins": 108,
       "del": 30
-    },
-    "Anthropic \u2014 Opus 4.6": {
-      "ins": 32514,
-      "del": 18127
     },
     "Anthropic \u2014 qwen3.8-max": {
       "ins": 16,
@@ -893,6 +924,22 @@
     "Unknown \u2014 Kimi:Kimi-K3 # debug and root-cause analysis": {
       "ins": 0,
       "del": 2
+    },
+    "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
+      "ins": 18,
+      "del": 4
+    },
+    "Z.ai \u2014 GLM:5.3": {
+      "ins": 17,
+      "del": 5
+    },
+    "Unknown \u2014 Kimi:K3": {
+      "ins": 19,
+      "del": 11
+    },
+    "Unknown \u2014 0sec:multi-model": {
+      "ins": 44,
+      "del": 22
     },
     "Unknown \u2014 AuditCode-AI:2026.07": {
       "ins": 249,
@@ -930,10 +977,6 @@
       "ins": 3,
       "del": 1
     },
-    "Anthropic \u2014 Sonnet": {
-      "ins": 1973,
-      "del": 833
-    },
     "DeepSeek \u2014 DeepSeek V3": {
       "ins": 72,
       "del": 33
@@ -951,12 +994,16 @@
       "del": 0
     },
     "Google \u2014 Gemini 3.5 Pro": {
-      "ins": 193,
-      "del": 97
+      "ins": 198,
+      "del": 98
     },
     "Anthropic \u2014 unspecified": {
       "ins": 139,
       "del": 106
+    },
+    "OpenAI \u2014 GPT-5.4": {
+      "ins": 870,
+      "del": 218
     },
     "Unknown \u2014 omp:gpt-5.6-luna sashiko": {
       "ins": 2,
@@ -1014,9 +1061,9 @@
       "ins": 21,
       "del": 23
     },
-    "Anthropic \u2014 claude-fable-5": {
-      "ins": 1135,
-      "del": 161
+    "Z.ai \u2014 GLM-5.2": {
+      "ins": 245,
+      "del": 123
     },
     "Anthropic \u2014 claude-fable-5 coccinelle": {
       "ins": 2,
@@ -1026,14 +1073,6 @@
       "ins": 269,
       "del": 656
     },
-    "Z.ai \u2014 GLM-5.2": {
-      "ins": 243,
-      "del": 121
-    },
-    "OpenAI \u2014 GPT-5.4": {
-      "ins": 865,
-      "del": 217
-    },
     "Google \u2014 Gemini 3.6": {
       "ins": 221,
       "del": 67
@@ -1041,10 +1080,6 @@
     "Unknown \u2014 Big-Pickle": {
       "ins": 39,
       "del": 29
-    },
-    "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
-      "ins": 15,
-      "del": 4
     },
     "Anthropic \u2014 GLM-5.2": {
       "ins": 60,
@@ -1057,10 +1092,6 @@
     "Unknown \u2014 big-pickle": {
       "ins": 273,
       "del": 650
-    },
-    "Unknown \u2014 0sec:multi-model": {
-      "ins": 22,
-      "del": 19
     },
     "OpenAI \u2014 deepseek-v4-flash": {
       "ins": 3,
@@ -1177,10 +1208,6 @@
     "Unknown \u2014 AISLE:Snapshot": {
       "ins": 6,
       "del": 1
-    },
-    "Unknown \u2014 Kimi:K3": {
-      "ins": 11,
-      "del": 9
     },
     "Anthropic \u2014 claude-fable-5 [gcc W=1]": {
       "ins": 2,
@@ -1446,19 +1473,19 @@
   "tool_counts": [
     [
       "Direct / API",
-      1422
-    ],
-    [
-      "Codex",
-      402
+      1439
     ],
     [
       "Unknown",
-      363
+      411
+    ],
+    [
+      "Codex",
+      407
     ],
     [
       "GitHub Copilot",
-      344
+      347
     ],
     [
       "Antigravity",
@@ -1498,21 +1525,29 @@
     ]
   ],
   "tool_lines": {
+    "Unknown": {
+      "ins": 8638,
+      "del": 3541
+    },
+    "Direct / API": {
+      "ins": 47990,
+      "del": 20014
+    },
+    "Codex": {
+      "ins": 12446,
+      "del": 6400
+    },
+    "GitHub Copilot": {
+      "ins": 59144,
+      "del": 13143
+    },
     "Claude Code": {
       "ins": 432,
       "del": 80
     },
-    "Unknown": {
-      "ins": 8091,
-      "del": 3341
-    },
     "Cursor": {
       "ins": 6818,
       "del": 1749
-    },
-    "Codex": {
-      "ins": 12367,
-      "del": 6354
     },
     "Antigravity": {
       "ins": 7843,
@@ -1521,14 +1556,6 @@
     "Kiro": {
       "ins": 793,
       "del": 178
-    },
-    "GitHub Copilot": {
-      "ins": 59109,
-      "del": 13132
-    },
-    "Direct / API": {
-      "ins": 47857,
-      "del": 19989
     },
     "Bynario AI": {
       "ins": 56,
@@ -1552,19 +1579,39 @@
     }
   },
   "model_tools": {
+    "Unknown \u2014 LLM": {
+      "Unknown": 140
+    },
     "Anthropic \u2014 Opus": {
-      "Direct / API": 97,
+      "Direct / API": 107,
       "Kiro": 7,
       "GitHub Copilot": 6,
       "Cursor": 4,
       "Claude Code": 1
     },
-    "Unknown \u2014 LLM": {
-      "Unknown": 97
+    "Anthropic \u2014 claude-fable-5": {
+      "Direct / API": 48
     },
     "OpenAI \u2014 GPT-5": {
-      "Codex": 70,
+      "Codex": 73,
       "GitHub Copilot": 2
+    },
+    "Anthropic \u2014 Sonnet": {
+      "Direct / API": 55,
+      "GitHub Copilot": 2
+    },
+    "Unknown \u2014 LLM (Claude Sonnet 5, Anthropic)": {
+      "Unknown": 1
+    },
+    "Unknown \u2014 LLM KASAN": {
+      "Unknown": 1
+    },
+    "Anthropic \u2014 Opus 4.6": {
+      "Direct / API": 365,
+      "GitHub Copilot": 74,
+      "Claude Code": 12,
+      "Kiro": 11,
+      "Cursor": 9
     },
     "Google \u2014 Gemini 3.8": {
       "Antigravity": 2
@@ -1584,19 +1631,12 @@
       "Codex": 1
     },
     "OpenAI \u2014 GPT-5.6": {
-      "Codex": 89,
+      "Codex": 90,
       "OpenCode": 12,
       "GitHub Copilot": 7
     },
     "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": {
       "Unknown": 3
-    },
-    "Anthropic \u2014 Opus 4.6": {
-      "Direct / API": 365,
-      "GitHub Copilot": 72,
-      "Claude Code": 12,
-      "Kiro": 11,
-      "Cursor": 9
     },
     "Anthropic \u2014 qwen3.8-max": {
       "Direct / API": 2
@@ -1607,6 +1647,18 @@
     },
     "Unknown \u2014 Kimi:Kimi-K3 # debug and root-cause analysis": {
       "Unknown": 1
+    },
+    "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
+      "Unknown": 3
+    },
+    "Z.ai \u2014 GLM:5.3": {
+      "Direct / API": 2
+    },
+    "Unknown \u2014 Kimi:K3": {
+      "Unknown": 6
+    },
+    "Unknown \u2014 0sec:multi-model": {
+      "Unknown": 5
     },
     "Unknown \u2014 AuditCode-AI:2026.07": {
       "Unknown": 13
@@ -1637,10 +1689,6 @@
     "Unknown \u2014 ChatGPT:GPT-5.6-Luna": {
       "Unknown": 1
     },
-    "Anthropic \u2014 Sonnet": {
-      "Direct / API": 55,
-      "GitHub Copilot": 1
-    },
     "DeepSeek \u2014 DeepSeek V3": {
       "Direct / API": 3
     },
@@ -1654,11 +1702,15 @@
       "Unknown": 1
     },
     "Google \u2014 Gemini 3.5 Pro": {
-      "Direct / API": 6
+      "Direct / API": 7
     },
     "Anthropic \u2014 unspecified": {
       "Direct / API": 11,
       "Claude Code": 3
+    },
+    "OpenAI \u2014 GPT-5.4": {
+      "Codex": 53,
+      "GitHub Copilot": 3
     },
     "Unknown \u2014 omp:gpt-5.6-luna sashiko": {
       "Unknown": 1
@@ -1707,8 +1759,9 @@
     "Unknown \u2014 4.6": {
       "Cursor": 1
     },
-    "Anthropic \u2014 claude-fable-5": {
-      "Direct / API": 45
+    "Z.ai \u2014 GLM-5.2": {
+      "OpenCode": 10,
+      "Direct / API": 6
     },
     "Anthropic \u2014 claude-fable-5 coccinelle": {
       "Direct / API": 1
@@ -1716,22 +1769,11 @@
     "Unknown \u2014 hy3-free": {
       "OpenCode": 27
     },
-    "Z.ai \u2014 GLM-5.2": {
-      "OpenCode": 10,
-      "Direct / API": 5
-    },
-    "OpenAI \u2014 GPT-5.4": {
-      "Codex": 52,
-      "GitHub Copilot": 3
-    },
     "Google \u2014 Gemini 3.6": {
       "Antigravity": 13
     },
     "Unknown \u2014 Big-Pickle": {
       "OpenCode": 3
-    },
-    "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
-      "Unknown": 2
     },
     "Anthropic \u2014 GLM-5.2": {
       "Direct / API": 7,
@@ -1742,9 +1784,6 @@
     },
     "Unknown \u2014 big-pickle": {
       "OpenCode": 36
-    },
-    "Unknown \u2014 0sec:multi-model": {
-      "Unknown": 4
     },
     "OpenAI \u2014 deepseek-v4-flash": {
       "Codex": 2
@@ -1835,9 +1874,6 @@
     },
     "Unknown \u2014 AISLE:Snapshot": {
       "Unknown": 2
-    },
-    "Unknown \u2014 Kimi:K3": {
-      "Unknown": 5
     },
     "Anthropic \u2014 claude-fable-5 [gcc W=1]": {
       "Direct / API": 1
@@ -2082,23 +2118,23 @@
     ],
     [
       "Karl Mehltretter",
-      39
+      41
     ],
     [
       "Harry Wentland",
       36
     ],
     [
+      "Fan Wu",
+      35
+    ],
+    [
       "Emmanuel Grumbach",
       35
     ],
     [
-      "Fan Wu",
+      "Johannes Berg",
       34
-    ],
-    [
-      "Bhawanpreet Lakha",
-      33
     ]
   ],
   "top_committers": [
@@ -2115,6 +2151,10 @@
       126
     ],
     [
+      "Johannes Berg",
+      120
+    ],
+    [
       "Chuck Lever",
       108
     ],
@@ -2127,16 +2167,12 @@
       86
     ],
     [
-      "Dmitry Torokhov",
+      "Mark Brown",
       80
     ],
     [
-      "Mark Brown",
-      78
-    ],
-    [
-      "Johannes Berg",
-      73
+      "Dmitry Torokhov",
+      80
     ],
     [
       "Carlos Maiolino",
@@ -2144,11 +2180,15 @@
     ],
     [
       "Takashi Iwai",
-      59
+      62
     ],
     [
       "Paolo Abeni",
-      51
+      53
+    ],
+    [
+      "Luiz Augusto von Dentz",
+      49
     ],
     [
       "Jiri Kosina",
@@ -2157,10 +2197,6 @@
     [
       "Christian Brauner",
       46
-    ],
-    [
-      "Luiz Augusto von Dentz",
-      42
     ]
   ],
   "by_date": {
@@ -2316,31 +2352,35 @@
     "2026-08-15": 17,
     "2026-08-16": 2,
     "2026-08-17": 36,
-    "2026-08-18": 11,
+    "2026-08-18": 13,
     "2026-08-19": 10,
     "2026-08-20": 7,
     "2026-08-21": 1,
     "2026-08-23": 3,
-    "2026-08-24": 17,
+    "2026-08-24": 18,
     "2026-08-25": 10,
     "2026-08-26": 16,
     "2026-08-27": 9,
     "2026-08-28": 1,
     "2026-08-30": 1,
     "2026-08-31": 23,
-    "2026-09-01": 26,
+    "2026-09-01": 28,
     "2026-09-02": 31,
     "2026-09-03": 8,
-    "2026-09-04": 4,
+    "2026-09-04": 13,
     "2026-09-05": 3,
     "2026-09-06": 1,
     "2026-09-07": 52,
-    "2026-09-08": 15,
-    "2026-09-09": 7,
+    "2026-09-08": 17,
+    "2026-09-09": 40,
     "2026-09-10": 11,
     "2026-09-11": 13,
-    "2026-09-12": 2,
-    "2026-09-13": 1
+    "2026-09-12": 5,
+    "2026-09-13": 2,
+    "2026-09-14": 6,
+    "2026-09-15": 9,
+    "2026-09-16": 2,
+    "2026-09-17": 1
   },
   "by_date_lines": {
     "2026-01-13": {
@@ -2952,8 +2992,8 @@
       "del": 130
     },
     "2026-08-18": {
-      "ins": 252,
-      "del": 109
+      "ins": 257,
+      "del": 122
     },
     "2026-08-19": {
       "ins": 65,
@@ -2972,8 +3012,8 @@
       "del": 12
     },
     "2026-08-24": {
-      "ins": 190,
-      "del": 102
+      "ins": 192,
+      "del": 104
     },
     "2026-08-25": {
       "ins": 508,
@@ -3000,8 +3040,8 @@
       "del": 456
     },
     "2026-09-01": {
-      "ins": 213,
-      "del": 66
+      "ins": 233,
+      "del": 72
     },
     "2026-09-02": {
       "ins": 548,
@@ -3012,8 +3052,8 @@
       "del": 60
     },
     "2026-09-04": {
-      "ins": 6,
-      "del": 5
+      "ins": 93,
+      "del": 26
     },
     "2026-09-05": {
       "ins": 20,
@@ -3028,12 +3068,12 @@
       "del": 110
     },
     "2026-09-08": {
-      "ins": 139,
-      "del": 48
+      "ins": 165,
+      "del": 57
     },
     "2026-09-09": {
-      "ins": 81,
-      "del": 29
+      "ins": 516,
+      "del": 201
     },
     "2026-09-10": {
       "ins": 147,
@@ -3044,11 +3084,27 @@
       "del": 42
     },
     "2026-09-12": {
-      "ins": 2,
-      "del": 2
+      "ins": 27,
+      "del": 15
     },
     "2026-09-13": {
-      "ins": 24,
+      "ins": 32,
+      "del": 5
+    },
+    "2026-09-14": {
+      "ins": 23,
+      "del": 11
+    },
+    "2026-09-15": {
+      "ins": 139,
+      "del": 25
+    },
+    "2026-09-16": {
+      "ins": 7,
+      "del": 3
+    },
+    "2026-09-17": {
+      "ins": 9,
       "del": 0
     }
   },
@@ -4097,8 +4153,8 @@
       "models": {
         "Anthropic \u2014 Sonnet 4.5": 2,
         "DeepSeek \u2014 DeepSeek V3.2": 4,
-        "Anthropic \u2014 Opus 4.6": 3,
         "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1,
+        "Anthropic \u2014 Opus 4.6": 3,
         "Anthropic \u2014 Sonnet 4.6": 1
       },
       "tools": {
@@ -4129,13 +4185,13 @@
           "ins": 6,
           "del": 7
         },
-        "Anthropic \u2014 Opus 4.6": {
-          "ins": 102,
-          "del": 17
-        },
         "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
           "ins": 11,
           "del": 1
+        },
+        "Anthropic \u2014 Opus 4.6": {
+          "ins": 102,
+          "del": 17
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "ins": 171,
@@ -4980,8 +5036,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.7": 2,
-        "Anthropic \u2014 Opus 4.6": 4,
         "OpenAI \u2014 GPT-5.4": 3,
+        "Anthropic \u2014 Opus 4.6": 4,
         "Anthropic \u2014 Sonnet 4.6": 2,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": 1
       },
@@ -5009,12 +5065,12 @@
           "ins": 17,
           "del": 3
         },
-        "Anthropic \u2014 Opus 4.6": {
-          "ins": 98,
-          "del": 33
-        },
         "OpenAI \u2014 GPT-5.4": {
           "ins": 97,
+          "del": 33
+        },
+        "Anthropic \u2014 Opus 4.6": {
+          "ins": 98,
           "del": 33
         },
         "Anthropic \u2014 Sonnet 4.6": {
@@ -6005,8 +6061,8 @@
         "Unknown": 2
       },
       "models": {
-        "Anthropic \u2014 Opus 4.7": 6,
         "OpenAI \u2014 GPT-5.4": 1,
+        "Anthropic \u2014 Opus 4.7": 6,
         "Anthropic \u2014 Opus 4.6": 2,
         "Unknown \u2014 GitHub_Copilot:claude-opus-4.6": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
@@ -6032,13 +6088,13 @@
         }
       },
       "model_lines": {
-        "Anthropic \u2014 Opus 4.7": {
-          "ins": 34,
-          "del": 9
-        },
         "OpenAI \u2014 GPT-5.4": {
           "ins": 3,
           "del": 0
+        },
+        "Anthropic \u2014 Opus 4.7": {
+          "ins": 34,
+          "del": 9
         },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 4,
@@ -10042,8 +10098,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.6": 2,
-        "Unknown \u2014 Fable:5": 1,
         "Anthropic \u2014 Opus 4.8": 16,
+        "Unknown \u2014 Fable:5": 1,
         "Anthropic \u2014 Opus 4.7": 3,
         "OpenAI \u2014 GPT-5.5": 14,
         "Unknown \u2014 Bynario AI": 1,
@@ -10075,13 +10131,13 @@
           "ins": 15,
           "del": 45
         },
-        "Unknown \u2014 Fable:5": {
-          "ins": 13,
-          "del": 2
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 339,
           "del": 165
+        },
+        "Unknown \u2014 Fable:5": {
+          "ins": 13,
+          "del": 2
         },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 53,
@@ -11757,8 +11813,8 @@
       "vendors": {
         "Anthropic": 14,
         "Google": 3,
-        "Z.ai": 1,
         "OpenAI": 2,
+        "Z.ai": 1,
         "Unknown": 8
       },
       "models": {
@@ -11767,8 +11823,8 @@
         "Google \u2014 Gemini 3.5": 3,
         "Anthropic \u2014 Opus 4.8": 4,
         "Anthropic \u2014 Sonnet 4.6": 5,
-        "OpenAI \u2014 GPT-5.5": 1,
         "Z.ai \u2014 GLM-5.2": 1,
+        "OpenAI \u2014 GPT-5.5": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 5,
         "Unknown \u2014 hy3-free": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -11791,13 +11847,13 @@
           "ins": 14,
           "del": 8
         },
-        "Z.ai": {
-          "ins": 6,
-          "del": 1
-        },
         "OpenAI": {
           "ins": 8,
           "del": 2
+        },
+        "Z.ai": {
+          "ins": 6,
+          "del": 1
         },
         "Unknown": {
           "ins": 73,
@@ -11825,11 +11881,11 @@
           "ins": 27,
           "del": 12
         },
-        "OpenAI \u2014 GPT-5.5": {
+        "Z.ai \u2014 GLM-5.2": {
           "ins": 6,
           "del": 1
         },
-        "Z.ai \u2014 GLM-5.2": {
+        "OpenAI \u2014 GPT-5.5": {
           "ins": 6,
           "del": 1
         },
@@ -12718,8 +12774,8 @@
       },
       "vendors": {
         "Google": 13,
-        "Unknown": 7,
         "OpenAI": 4,
+        "Unknown": 7,
         "Anthropic": 7,
         "DeepSeek": 1
       },
@@ -12751,13 +12807,13 @@
           "ins": 504,
           "del": 444
         },
-        "Unknown": {
-          "ins": 682,
-          "del": 116
-        },
         "OpenAI": {
           "ins": 512,
           "del": 684
+        },
+        "Unknown": {
+          "ins": 682,
+          "del": 116
         },
         "Anthropic": {
           "ins": 38,
@@ -12874,8 +12930,8 @@
         "Anthropic \u2014 Opus": 1,
         "Anthropic \u2014 Opus 4.8": 5,
         "Anthropic \u2014 deepseek-v4-pro": 1,
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
         "Z.ai \u2014 GLM-5.2": 1,
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
         "Unknown \u2014 hy3-free": 1,
         "Unknown \u2014 big-pickle": 2,
         "Google \u2014 Gemini 3.1 Pro": 1
@@ -12954,11 +13010,11 @@
           "ins": 17,
           "del": 3
         },
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
+        "Z.ai \u2014 GLM-5.2": {
           "ins": 5,
           "del": 0
         },
-        "Z.ai \u2014 GLM-5.2": {
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
           "ins": 5,
           "del": 0
         },
@@ -13487,17 +13543,17 @@
       },
       "vendors": {
         "Google": 7,
-        "Anthropic": 12,
         "DeepSeek": 2,
+        "Anthropic": 12,
         "Unknown": 4,
         "OpenAI": 5
       },
       "models": {
         "Google \u2014 Gemini 3.6": 2,
         "Google \u2014 Gemini 3.5": 5,
-        "Unknown \u2014 mimo-v2.5-free": 2,
-        "Anthropic \u2014 Opus 4.6": 8,
         "DeepSeek \u2014 DeepSeek V4": 2,
+        "Anthropic \u2014 Opus 4.6": 8,
+        "Unknown \u2014 mimo-v2.5-free": 2,
         "Anthropic \u2014 Sonnet 4.6": 1,
         "Unknown \u2014 LLM": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -13518,13 +13574,13 @@
           "ins": 280,
           "del": 215
         },
-        "Anthropic": {
-          "ins": 849,
-          "del": 554
-        },
         "DeepSeek": {
           "ins": 130,
           "del": 52
+        },
+        "Anthropic": {
+          "ins": 849,
+          "del": 554
         },
         "Unknown": {
           "ins": 141,
@@ -13544,7 +13600,7 @@
           "ins": 268,
           "del": 213
         },
-        "Unknown \u2014 mimo-v2.5-free": {
+        "DeepSeek \u2014 DeepSeek V4": {
           "ins": 130,
           "del": 52
         },
@@ -13552,7 +13608,7 @@
           "ins": 526,
           "del": 459
         },
-        "DeepSeek \u2014 DeepSeek V4": {
+        "Unknown \u2014 mimo-v2.5-free": {
           "ins": 130,
           "del": 52
         },
@@ -14962,28 +15018,31 @@
       }
     },
     "2026-08-18": {
-      "patches": 11,
+      "patches": 13,
       "lines": {
-        "ins": 252,
-        "del": 109
+        "ins": 257,
+        "del": 122
       },
       "vendors": {
         "Anthropic": 8,
+        "OpenAI": 2,
+        "Google": 1,
         "Z.ai": 1,
-        "OpenAI": 1,
         "Unknown": 1
       },
       "models": {
         "Anthropic \u2014 Opus": 3,
         "Anthropic \u2014 Opus 4.8": 3,
         "Anthropic \u2014 Sonnet": 2,
+        "OpenAI \u2014 GPT-5.6": 1,
+        "Google \u2014 Gemini 3.5 Pro": 1,
         "Z.ai \u2014 GLM-5.2": 1,
         "OpenAI \u2014 GPT-5.4": 1,
         "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1
       },
       "tools": {
-        "Direct / API": 9,
-        "Codex": 1,
+        "Direct / API": 10,
+        "Codex": 2,
         "Unknown": 1
       },
       "vendor_lines": {
@@ -14991,13 +15050,17 @@
           "ins": 189,
           "del": 65
         },
+        "OpenAI": {
+          "ins": 21,
+          "del": 37
+        },
+        "Google": {
+          "ins": 5,
+          "del": 1
+        },
         "Z.ai": {
           "ins": 19,
           "del": 6
-        },
-        "OpenAI": {
-          "ins": 21,
-          "del": 25
         },
         "Unknown": {
           "ins": 23,
@@ -15017,6 +15080,14 @@
           "ins": 147,
           "del": 49
         },
+        "OpenAI \u2014 GPT-5.6": {
+          "ins": 0,
+          "del": 12
+        },
+        "Google \u2014 Gemini 3.5 Pro": {
+          "ins": 5,
+          "del": 1
+        },
         "Z.ai \u2014 GLM-5.2": {
           "ins": 19,
           "del": 6
@@ -15032,12 +15103,12 @@
       },
       "tool_lines": {
         "Direct / API": {
-          "ins": 208,
-          "del": 71
+          "ins": 213,
+          "del": 72
         },
         "Codex": {
           "ins": 21,
-          "del": 25
+          "del": 37
         },
         "Unknown": {
           "ins": 23,
@@ -15061,8 +15132,8 @@
         "Anthropic \u2014 claude-fable-5 coccinelle": 1,
         "Anthropic \u2014 Opus 4.8": 2,
         "Unknown \u2014 hy3-free": 1,
-        "OpenAI \u2014 GPT-5.5": 1,
         "Anthropic \u2014 Opus": 2,
+        "OpenAI \u2014 GPT-5.5": 1,
         "OpenAI \u2014 GPT-5.6": 1,
         "Google \u2014 Gemini 3.1 Pro": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -15105,13 +15176,13 @@
           "ins": 3,
           "del": 6
         },
-        "OpenAI \u2014 GPT-5.5": {
-          "ins": 1,
-          "del": 0
-        },
         "Anthropic \u2014 Opus": {
           "ins": 13,
           "del": 4
+        },
+        "OpenAI \u2014 GPT-5.5": {
+          "ins": 1,
+          "del": 0
         },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 7,
@@ -15287,15 +15358,16 @@
       }
     },
     "2026-08-24": {
-      "patches": 17,
+      "patches": 18,
       "lines": {
-        "ins": 190,
-        "del": 102
+        "ins": 192,
+        "del": 104
       },
       "vendors": {
         "OpenAI": 5,
         "Unknown": 2,
-        "Anthropic": 10
+        "Anthropic": 10,
+        "Z.ai": 1
       },
       "models": {
         "OpenAI \u2014 GPT-5.6": 5,
@@ -15303,13 +15375,14 @@
         "Unknown \u2014 4.6": 1,
         "Anthropic \u2014 Opus 4.8": 1,
         "Anthropic \u2014 claude-fable-5": 2,
-        "Anthropic \u2014 Opus": 7
+        "Anthropic \u2014 Opus": 7,
+        "Z.ai \u2014 GLM-5.2": 1
       },
       "tools": {
         "Codex": 5,
         "Unknown": 1,
         "Cursor": 1,
-        "Direct / API": 9,
+        "Direct / API": 10,
         "Kiro": 1
       },
       "vendor_lines": {
@@ -15324,6 +15397,10 @@
         "Anthropic": {
           "ins": 129,
           "del": 59
+        },
+        "Z.ai": {
+          "ins": 2,
+          "del": 2
         }
       },
       "model_lines": {
@@ -15350,6 +15427,10 @@
         "Anthropic \u2014 Opus": {
           "ins": 45,
           "del": 25
+        },
+        "Z.ai \u2014 GLM-5.2": {
+          "ins": 2,
+          "del": 2
         }
       },
       "tool_lines": {
@@ -15366,8 +15447,8 @@
           "del": 23
         },
         "Direct / API": {
-          "ins": 120,
-          "del": 52
+          "ins": 122,
+          "del": 54
         },
         "Kiro": {
           "ins": 9,
@@ -15830,15 +15911,15 @@
       }
     },
     "2026-09-01": {
-      "patches": 26,
+      "patches": 28,
       "lines": {
-        "ins": 213,
-        "del": 66
+        "ins": 233,
+        "del": 72
       },
       "vendors": {
         "Unknown": 4,
-        "OpenAI": 4,
-        "Anthropic": 14,
+        "OpenAI": 5,
+        "Anthropic": 15,
         "DeepSeek": 2,
         "Z.ai": 1,
         "Google": 1,
@@ -15856,13 +15937,16 @@
         "Google \u2014 Gemini 3.5 Pro": 1,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 1,
         "Anthropic \u2014 unspecified": 3,
+        "OpenAI \u2014 GPT-5.4": 1,
+        "Anthropic \u2014 Opus 4.6": 1,
         "Unknown \u2014 omp:gpt-5.6-luna sashiko": 1
       },
       "tools": {
         "Unknown": 4,
-        "Codex": 4,
+        "Codex": 5,
         "Direct / API": 17,
-        "Local LLM fuzzer": 1
+        "Local LLM fuzzer": 1,
+        "GitHub Copilot": 1
       },
       "vendor_lines": {
         "Unknown": {
@@ -15870,12 +15954,12 @@
           "del": 7
         },
         "OpenAI": {
-          "ins": 11,
-          "del": 2
+          "ins": 16,
+          "del": 3
         },
         "Anthropic": {
-          "ins": 109,
-          "del": 22
+          "ins": 124,
+          "del": 27
         },
         "DeepSeek": {
           "ins": 69,
@@ -15939,6 +16023,14 @@
           "ins": 3,
           "del": 4
         },
+        "OpenAI \u2014 GPT-5.4": {
+          "ins": 5,
+          "del": 1
+        },
+        "Anthropic \u2014 Opus 4.6": {
+          "ins": 15,
+          "del": 5
+        },
         "Unknown \u2014 omp:gpt-5.6-luna sashiko": {
           "ins": 2,
           "del": 2
@@ -15950,8 +16042,8 @@
           "del": 7
         },
         "Codex": {
-          "ins": 11,
-          "del": 2
+          "ins": 16,
+          "del": 3
         },
         "Direct / API": {
           "ins": 180,
@@ -15960,6 +16052,10 @@
         "Local LLM fuzzer": {
           "ins": 2,
           "del": 2
+        },
+        "GitHub Copilot": {
+          "ins": 15,
+          "del": 5
         }
       }
     },
@@ -16177,53 +16273,79 @@
       }
     },
     "2026-09-04": {
-      "patches": 4,
+      "patches": 13,
       "lines": {
-        "ins": 6,
-        "del": 5
+        "ins": 93,
+        "del": 26
       },
       "vendors": {
-        "OpenAI": 1,
-        "Unknown": 2,
-        "Anthropic": 1
+        "OpenAI": 3,
+        "Unknown": 5,
+        "Anthropic": 4,
+        "Z.ai": 2
       },
       "models": {
-        "OpenAI \u2014 GPT-5": 1,
+        "OpenAI \u2014 GPT-5": 3,
         "Unknown \u2014 Kimi:Kimi-K3 # debug and root-cause analysis": 1,
-        "Anthropic \u2014 Opus": 1,
+        "Anthropic \u2014 Opus": 4,
+        "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": 1,
+        "Z.ai \u2014 GLM:5.3": 2,
+        "Unknown \u2014 Kimi:K3": 1,
+        "Unknown \u2014 0sec:multi-model": 1,
         "Unknown \u2014 LLM": 1
       },
       "tools": {
-        "Codex": 1,
-        "Unknown": 2,
-        "Cursor": 1
+        "Codex": 3,
+        "Unknown": 5,
+        "Cursor": 1,
+        "Direct / API": 5
       },
       "vendor_lines": {
         "OpenAI": {
-          "ins": 3,
-          "del": 0
+          "ins": 30,
+          "del": 12
         },
         "Unknown": {
-          "ins": 2,
-          "del": 4
+          "ins": 35,
+          "del": 9
         },
         "Anthropic": {
-          "ins": 1,
-          "del": 1
+          "ins": 19,
+          "del": 2
+        },
+        "Z.ai": {
+          "ins": 17,
+          "del": 5
         }
       },
       "model_lines": {
         "OpenAI \u2014 GPT-5": {
-          "ins": 3,
-          "del": 0
+          "ins": 30,
+          "del": 12
         },
         "Unknown \u2014 Kimi:Kimi-K3 # debug and root-cause analysis": {
           "ins": 0,
           "del": 2
         },
         "Anthropic \u2014 Opus": {
-          "ins": 1,
-          "del": 1
+          "ins": 19,
+          "del": 2
+        },
+        "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
+          "ins": 3,
+          "del": 0
+        },
+        "Z.ai \u2014 GLM:5.3": {
+          "ins": 17,
+          "del": 5
+        },
+        "Unknown \u2014 Kimi:K3": {
+          "ins": 8,
+          "del": 2
+        },
+        "Unknown \u2014 0sec:multi-model": {
+          "ins": 22,
+          "del": 3
         },
         "Unknown \u2014 LLM": {
           "ins": 2,
@@ -16232,16 +16354,20 @@
       },
       "tool_lines": {
         "Codex": {
-          "ins": 3,
-          "del": 0
+          "ins": 30,
+          "del": 12
         },
         "Unknown": {
-          "ins": 2,
-          "del": 4
+          "ins": 35,
+          "del": 9
         },
         "Cursor": {
           "ins": 1,
           "del": 1
+        },
+        "Direct / API": {
+          "ins": 35,
+          "del": 6
         }
       }
     },
@@ -16413,33 +16539,33 @@
       }
     },
     "2026-09-08": {
-      "patches": 15,
+      "patches": 17,
       "lines": {
-        "ins": 139,
-        "del": 48
+        "ins": 165,
+        "del": 57
       },
       "vendors": {
-        "Unknown": 10,
+        "Unknown": 12,
         "Anthropic": 3,
         "Google": 1,
         "OpenAI": 1
       },
       "models": {
-        "Unknown \u2014 LLM": 10,
+        "Unknown \u2014 LLM": 12,
         "Anthropic \u2014 qwen3.8-max": 2,
         "Google \u2014 Gemini 3.7": 1,
         "Anthropic \u2014 Opus": 1,
         "OpenAI \u2014 GPT-5.6": 1
       },
       "tools": {
-        "Unknown": 10,
+        "Unknown": 12,
         "Direct / API": 4,
         "Codex": 1
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 60,
-          "del": 43
+          "ins": 86,
+          "del": 52
         },
         "Anthropic": {
           "ins": 19,
@@ -16456,8 +16582,8 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 60,
-          "del": 43
+          "ins": 86,
+          "del": 52
         },
         "Anthropic \u2014 qwen3.8-max": {
           "ins": 16,
@@ -16478,8 +16604,8 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 60,
-          "del": 43
+          "ins": 86,
+          "del": 52
         },
         "Direct / API": {
           "ins": 34,
@@ -16492,27 +16618,27 @@
       }
     },
     "2026-09-09": {
-      "patches": 7,
+      "patches": 40,
       "lines": {
-        "ins": 81,
-        "del": 29
+        "ins": 516,
+        "del": 201
       },
       "vendors": {
         "OpenAI": 2,
         "Anthropic": 3,
-        "Unknown": 2
+        "Unknown": 35
       },
       "models": {
         "OpenAI \u2014 GPT-5.6": 2,
         "Anthropic \u2014 Opus": 2,
-        "Unknown \u2014 LLM": 1,
+        "Unknown \u2014 LLM": 34,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": 1,
         "Anthropic \u2014 Opus 4.6": 1
       },
       "tools": {
         "Codex": 2,
         "Direct / API": 1,
-        "Unknown": 2,
+        "Unknown": 35,
         "Kiro": 2
       },
       "vendor_lines": {
@@ -16525,8 +16651,8 @@
           "del": 19
         },
         "Unknown": {
-          "ins": 15,
-          "del": 1
+          "ins": 450,
+          "del": 173
         }
       },
       "model_lines": {
@@ -16539,8 +16665,8 @@
           "del": 14
         },
         "Unknown \u2014 LLM": {
-          "ins": 3,
-          "del": 1
+          "ins": 438,
+          "del": 173
         },
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": {
           "ins": 12,
@@ -16561,8 +16687,8 @@
           "del": 1
         },
         "Unknown": {
-          "ins": 15,
-          "del": 1
+          "ins": 450,
+          "del": 173
         },
         "Kiro": {
           "ins": 33,
@@ -16744,75 +16870,582 @@
       }
     },
     "2026-09-12": {
-      "patches": 2,
+      "patches": 5,
       "lines": {
-        "ins": 2,
-        "del": 2
+        "ins": 27,
+        "del": 15
       },
       "vendors": {
-        "Unknown": 2
+        "Unknown": 2,
+        "Anthropic": 3
       },
       "models": {
-        "Unknown \u2014 LLM": 2
+        "Unknown \u2014 LLM": 2,
+        "Anthropic \u2014 Opus 4.6": 1,
+        "Anthropic \u2014 Opus": 1,
+        "Anthropic \u2014 claude-fable-5": 1
       },
       "tools": {
-        "Unknown": 2
+        "Unknown": 2,
+        "GitHub Copilot": 1,
+        "Direct / API": 2
       },
       "vendor_lines": {
         "Unknown": {
           "ins": 2,
           "del": 2
+        },
+        "Anthropic": {
+          "ins": 25,
+          "del": 13
         }
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
           "ins": 2,
           "del": 2
+        },
+        "Anthropic \u2014 Opus 4.6": {
+          "ins": 14,
+          "del": 6
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 10,
+          "del": 4
+        },
+        "Anthropic \u2014 claude-fable-5": {
+          "ins": 1,
+          "del": 3
         }
       },
       "tool_lines": {
         "Unknown": {
           "ins": 2,
           "del": 2
+        },
+        "GitHub Copilot": {
+          "ins": 14,
+          "del": 6
+        },
+        "Direct / API": {
+          "ins": 11,
+          "del": 7
         }
       }
     },
     "2026-09-13": {
-      "patches": 1,
+      "patches": 2,
       "lines": {
-        "ins": 24,
-        "del": 0
+        "ins": 32,
+        "del": 5
       },
       "vendors": {
-        "Anthropic": 1
+        "Anthropic": 2
       },
       "models": {
-        "Anthropic \u2014 Opus": 1
+        "Anthropic \u2014 Opus": 2
       },
       "tools": {
-        "Claude Code": 1
+        "Claude Code": 1,
+        "Direct / API": 1
       },
       "vendor_lines": {
         "Anthropic": {
-          "ins": 24,
-          "del": 0
+          "ins": 32,
+          "del": 5
         }
       },
       "model_lines": {
         "Anthropic \u2014 Opus": {
-          "ins": 24,
-          "del": 0
+          "ins": 32,
+          "del": 5
         }
       },
       "tool_lines": {
         "Claude Code": {
           "ins": 24,
           "del": 0
+        },
+        "Direct / API": {
+          "ins": 8,
+          "del": 5
+        }
+      }
+    },
+    "2026-09-14": {
+      "patches": 6,
+      "lines": {
+        "ins": 23,
+        "del": 11
+      },
+      "vendors": {
+        "Unknown": 6
+      },
+      "models": {
+        "Unknown \u2014 LLM": 6
+      },
+      "tools": {
+        "Unknown": 6
+      },
+      "vendor_lines": {
+        "Unknown": {
+          "ins": 23,
+          "del": 11
+        }
+      },
+      "model_lines": {
+        "Unknown \u2014 LLM": {
+          "ins": 23,
+          "del": 11
+        }
+      },
+      "tool_lines": {
+        "Unknown": {
+          "ins": 23,
+          "del": 11
+        }
+      }
+    },
+    "2026-09-15": {
+      "patches": 9,
+      "lines": {
+        "ins": 139,
+        "del": 25
+      },
+      "vendors": {
+        "Anthropic": 6,
+        "OpenAI": 1,
+        "Unknown": 2
+      },
+      "models": {
+        "Anthropic \u2014 Opus": 4,
+        "Anthropic \u2014 claude-fable-5": 2,
+        "OpenAI \u2014 GPT-5": 1,
+        "Anthropic \u2014 Sonnet": 1,
+        "Unknown \u2014 LLM (Claude Sonnet 5, Anthropic)": 1,
+        "Unknown \u2014 LLM KASAN": 1
+      },
+      "tools": {
+        "Direct / API": 5,
+        "Codex": 1,
+        "GitHub Copilot": 1,
+        "Unknown": 2
+      },
+      "vendor_lines": {
+        "Anthropic": {
+          "ins": 73,
+          "del": 3
+        },
+        "OpenAI": {
+          "ins": 47,
+          "del": 21
+        },
+        "Unknown": {
+          "ins": 19,
+          "del": 1
+        }
+      },
+      "model_lines": {
+        "Anthropic \u2014 Opus": {
+          "ins": 65,
+          "del": 3
+        },
+        "Anthropic \u2014 claude-fable-5": {
+          "ins": 15,
+          "del": 0
+        },
+        "OpenAI \u2014 GPT-5": {
+          "ins": 47,
+          "del": 21
+        },
+        "Anthropic \u2014 Sonnet": {
+          "ins": 6,
+          "del": 0
+        },
+        "Unknown \u2014 LLM (Claude Sonnet 5, Anthropic)": {
+          "ins": 17,
+          "del": 0
+        },
+        "Unknown \u2014 LLM KASAN": {
+          "ins": 2,
+          "del": 1
+        }
+      },
+      "tool_lines": {
+        "Direct / API": {
+          "ins": 67,
+          "del": 3
+        },
+        "Codex": {
+          "ins": 47,
+          "del": 21
+        },
+        "GitHub Copilot": {
+          "ins": 6,
+          "del": 0
+        },
+        "Unknown": {
+          "ins": 19,
+          "del": 1
+        }
+      }
+    },
+    "2026-09-16": {
+      "patches": 2,
+      "lines": {
+        "ins": 7,
+        "del": 3
+      },
+      "vendors": {
+        "Anthropic": 1,
+        "Unknown": 1
+      },
+      "models": {
+        "Anthropic \u2014 Opus": 1,
+        "Unknown \u2014 LLM": 1
+      },
+      "tools": {
+        "Direct / API": 1,
+        "Unknown": 1
+      },
+      "vendor_lines": {
+        "Anthropic": {
+          "ins": 5,
+          "del": 1
+        },
+        "Unknown": {
+          "ins": 2,
+          "del": 2
+        }
+      },
+      "model_lines": {
+        "Anthropic \u2014 Opus": {
+          "ins": 5,
+          "del": 1
+        },
+        "Unknown \u2014 LLM": {
+          "ins": 2,
+          "del": 2
+        }
+      },
+      "tool_lines": {
+        "Direct / API": {
+          "ins": 5,
+          "del": 1
+        },
+        "Unknown": {
+          "ins": 2,
+          "del": 2
+        }
+      }
+    },
+    "2026-09-17": {
+      "patches": 1,
+      "lines": {
+        "ins": 9,
+        "del": 0
+      },
+      "vendors": {
+        "Unknown": 1
+      },
+      "models": {
+        "Unknown \u2014 LLM": 1
+      },
+      "tools": {
+        "Unknown": 1
+      },
+      "vendor_lines": {
+        "Unknown": {
+          "ins": 9,
+          "del": 0
+        }
+      },
+      "model_lines": {
+        "Unknown \u2014 LLM": {
+          "ins": 9,
+          "del": 0
+        }
+      },
+      "tool_lines": {
+        "Unknown": {
+          "ins": 9,
+          "del": 0
         }
       }
     }
   },
   "commits": [
+    {
+      "sha": "9ca4ba24259183ce15665be86b2956cd896c4687",
+      "author": "James Clark",
+      "author_email": "jjc@jclark.com",
+      "committer": "Paolo Abeni",
+      "committer_email": "pabeni@redhat.com",
+      "author_date": "2026-09-15T11:58:17+07:00",
+      "commit_date": "2026-09-17T14:25:52+02:00",
+      "subject": "net: macb: fix ordering around PTP timestamp read",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 9,
+      "deletions": 0
+    },
+    {
+      "sha": "c17ae8c26eac16ad244daef44044d714f68a2ddc",
+      "author": "HyeongJun An",
+      "author_email": "sammiee5311@gmail.com",
+      "committer": "Mark Brown",
+      "committer_email": "broonie@kernel.org",
+      "author_date": "2026-09-15T18:25:15+09:00",
+      "commit_date": "2026-09-16T20:05:19+01:00",
+      "subject": "ASoC: hdmi-codec: Report a change when the channel status moves",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 5,
+      "deletions": 1
+    },
+    {
+      "sha": "11fc0048a6930f4fca44fe3bd16a0023e78846a2",
+      "author": "Sasha Levin",
+      "author_email": "sashal@kernel.org",
+      "committer": "Mark Brown",
+      "committer_email": "broonie@kernel.org",
+      "author_date": "2026-09-13T13:31:32-04:00",
+      "commit_date": "2026-09-16T20:04:26+01:00",
+      "subject": "ASoC: ux500: Parenthesize MSP_{RX,TX}_CLKPOL_BIT() arguments",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "555cd2bd860e7c4bdc3f4e4405b05515b0d9bc87",
+      "author": "Radek Podgorny",
+      "author_email": "radek@podgorny.cz",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-13T22:28:02+02:00",
+      "commit_date": "2026-09-15T14:55:32-04:00",
+      "subject": "Bluetooth: keep dst_type with dst when reusing an LE connection",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 8,
+      "deletions": 0
+    },
+    {
+      "sha": "8879e3e0a84a86954c855caceead4867e74a9a27",
+      "author": "Chris Lu",
+      "author_email": "chris.lu@mediatek.com",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-14T14:56:54+08:00",
+      "commit_date": "2026-09-15T14:54:54-04:00",
+      "subject": "Bluetooth: btmtksdio, btmtkuart: validate WMT event length before struct access",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 38,
+      "deletions": 2
+    },
+    {
+      "sha": "78b6abd6c7a7591aacdae657f813214dae4fcd3b",
+      "author": "Chris Lu",
+      "author_email": "chris.lu@mediatek.com",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-14T14:56:53+08:00",
+      "commit_date": "2026-09-15T14:54:48-04:00",
+      "subject": "Bluetooth: btmtk: fix wrong status for short WMT FUNC_CTRL events",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 6,
+      "deletions": 1
+    },
+    {
+      "sha": "4914c499896121ae8b9d5b90f0abc5c8287ff396",
+      "author": "Radek Podgorny",
+      "author_email": "radek@podgorny.cz",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-09T00:29:37+02:00",
+      "commit_date": "2026-09-15T14:50:25-04:00",
+      "subject": "Bluetooth: put the peer's on-air address on air when we cannot resolve",
+      "tags": [
+        "Claude:claude-opus-5",
+        "Claude:claude-fable-5"
+      ],
+      "insertions": 13,
+      "deletions": 0
+    },
+    {
+      "sha": "d236517c264e41dc09833c708ef23bccb7a91219",
+      "author": "Weiming Shi",
+      "author_email": "bestswngs@gmail.com",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-06T23:43:32+08:00",
+      "commit_date": "2026-09-15T14:49:41-04:00",
+      "subject": "Bluetooth: coredump: Quiesce dump work on unregister",
+      "tags": [
+        "OpenAI Codex:gpt-5"
+      ],
+      "insertions": 47,
+      "deletions": 21
+    },
+    {
+      "sha": "4b837ebd0ea21ae5cc26f02dc042edc6fe7b46b9",
+      "author": "Chandrashekar Devegowda",
+      "author_email": "chandrashekar.devegowda@intel.com",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-08T15:26:58+05:30",
+      "commit_date": "2026-09-15T14:49:34-04:00",
+      "subject": "Bluetooth: btintel_pcie: validate TX skb length in send_sync",
+      "tags": [
+        "Copilot:claude-sonnet-5 code-review code-generation"
+      ],
+      "insertions": 6,
+      "deletions": 0
+    },
+    {
+      "sha": "2b50adefed9808a56d84d1de803cad882cc787fa",
+      "author": "Nicolas Thibert",
+      "author_email": "nithibert@gmail.com",
+      "committer": "Luiz Augusto von Dentz",
+      "committer_email": "luiz.von.dentz@intel.com",
+      "author_date": "2026-09-08T10:01:08+02:00",
+      "commit_date": "2026-09-15T14:26:10-04:00",
+      "subject": "Bluetooth: btusb: fix NXP IW610 composite device handling",
+      "tags": [
+        "LLM (Claude Sonnet 5, Anthropic)"
+      ],
+      "insertions": 17,
+      "deletions": 0
+    },
+    {
+      "sha": "621d90169cef6c8da5b6134db5c0c4e23cdd09ce",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-11T10:27:02+02:00",
+      "commit_date": "2026-09-15T11:52:24+02:00",
+      "subject": "wifi: brcmfmac: fix lost 802.1x TX completion wakeup",
+      "tags": [
+        "Claude:claude-fable-5"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "7c8810c2e69c3d9ca6df870b40ae9218e50b4fb1",
+      "author": "Hohyun Sim",
+      "author_email": "tlaghgus0425@korea.ac.kr",
+      "committer": "Paolo Abeni",
+      "committer_email": "pabeni@redhat.com",
+      "author_date": "2026-09-10T15:37:43+09:00",
+      "commit_date": "2026-09-15T10:31:54+02:00",
+      "subject": "net: fddi: skfp: fix NULL deref when setting the MAC address while down",
+      "tags": [
+        "LLM KASAN"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "d9be5e75530772fc31637070d51e5717d6aeaa2a",
+      "author": "Fan Wu",
+      "author_email": "fanwu01@zju.edu.cn",
+      "committer": "Jeff Johnson",
+      "committer_email": "jeff.johnson@oss.qualcomm.com",
+      "author_date": "2026-09-10T02:09:07Z",
+      "commit_date": "2026-09-14T11:43:30-07:00",
+      "subject": "wifi: wcn36xx: Fix potential use-after-free in TX ack timer teardown",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "c9e6e5f38bf75276605f1952b22285f5f3abcaff",
+      "author": "Slavin Liu",
+      "author_email": "bolin.liu@seu.edu.cn",
+      "committer": "Takashi Iwai",
+      "committer_email": "tiwai@suse.de",
+      "author_date": "2026-09-13T20:51:54+08:00",
+      "commit_date": "2026-09-14T18:09:41+02:00",
+      "subject": "ALSA: hda: trace PCM open only after assigning a stream",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "06f42accaf3c6aecab1dcc57f68dde6c06c8b380",
+      "author": "Daehyeon Ko",
+      "author_email": "4ncienth@gmail.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-09T15:11:24+09:00",
+      "commit_date": "2026-09-14T14:48:20+02:00",
+      "subject": "wifi: libipw: reject TKIP frames without a full MIC",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 7,
+      "deletions": 5
+    },
+    {
+      "sha": "e5c8d7acd31b27057ea42cd405d0b3ece097bc89",
+      "author": "Zihan Xi",
+      "author_email": "zihanx@nebusec.ai",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-09T12:37:18Z",
+      "commit_date": "2026-09-14T14:48:01+02:00",
+      "subject": "wifi: virt_wifi: don't transfer operstate before register",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "1589afe2d099d3e817873bc474676968d7080410",
+      "author": "Xiang Mei",
+      "author_email": "xmei5@asu.edu",
+      "committer": "Takashi Iwai",
+      "committer_email": "tiwai@suse.de",
+      "author_date": "2026-09-14T00:43:24-07:00",
+      "commit_date": "2026-09-14T11:45:24+02:00",
+      "subject": "ALSA: 6fire: fix OOB write from device-reported iso length",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 10,
+      "deletions": 2
+    },
+    {
+      "sha": "50fd0ada8d37587223001600933270b59cb30e19",
+      "author": "Runyu Xiao",
+      "author_email": "runyu.xiao@seu.edu.cn",
+      "committer": "Bartosz Golaszewski",
+      "committer_email": "bartosz.golaszewski@oss.qualcomm.com",
+      "author_date": "2026-09-14T13:15:37+08:00",
+      "commit_date": "2026-09-14T10:51:01+02:00",
+      "subject": "gpio: virtuser: skip free_irq when no IRQ is installed",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
     {
       "sha": "856c562c94964a74f63c6d5f38a1509a59a2357d",
       "author": "Sergey Zagursky",
@@ -16827,6 +17460,21 @@
       ],
       "insertions": 24,
       "deletions": 0
+    },
+    {
+      "sha": "76a986c980bb502c7688d605ac7a67fd257a9a1b",
+      "author": "Xiang Mei",
+      "author_email": "xmei5@asu.edu",
+      "committer": "Takashi Iwai",
+      "committer_email": "tiwai@suse.de",
+      "author_date": "2026-09-12T13:05:30-07:00",
+      "commit_date": "2026-09-13T09:04:03+02:00",
+      "subject": "ALSA: usb-audio: Clamp implicit feedback packet count to URB capacity",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 8,
+      "deletions": 5
     },
     {
       "sha": "59351365ac271b5e0eb180f211c531476a36221f",
@@ -16857,6 +17505,51 @@
       ],
       "insertions": 1,
       "deletions": 1
+    },
+    {
+      "sha": "8697c431e297eb0d0ab13dda6bc172b48a34f05c",
+      "author": "Cen Zhang",
+      "author_email": "cenzhang@linux.microsoft.com",
+      "committer": "Jarkko Sakkinen",
+      "committer_email": "jarkko@kernel.org",
+      "author_date": "2026-09-12T00:31:16+03:00",
+      "commit_date": "2026-09-12T00:43:45+03:00",
+      "subject": "KEYS: encrypted: fix integer overflow of datablob_len",
+      "tags": [
+        "GitHub-Copilot:claude-opus-4.6"
+      ],
+      "insertions": 14,
+      "deletions": 6
+    },
+    {
+      "sha": "0d6a4268b06084baafd8ee5d66955c7e1c2e053b",
+      "author": "Maoyi Xie",
+      "author_email": "maoyixie.tju@gmail.com",
+      "committer": "Jarkko Sakkinen",
+      "committer_email": "jarkko@kernel.org",
+      "author_date": "2026-08-21T17:59:35+08:00",
+      "commit_date": "2026-09-12T00:43:45+03:00",
+      "subject": "keys: translate request_key_auth pid for the reading procfs instance",
+      "tags": [
+        "Claude:claude-opus-5 codeql"
+      ],
+      "insertions": 10,
+      "deletions": 4
+    },
+    {
+      "sha": "2725ab3f5ad1c5f375c7c9fee4af02a9b138f701",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Jarkko Sakkinen",
+      "committer_email": "jarkko@kernel.org",
+      "author_date": "2026-08-21T04:53:27+02:00",
+      "commit_date": "2026-09-12T00:43:45+03:00",
+      "subject": "keys: fix lost wakeup when reaping a dead key type",
+      "tags": [
+        "Claude:claude-fable-5"
+      ],
+      "insertions": 1,
+      "deletions": 3
     },
     {
       "sha": "7e645147dfba67edb3ed3090a1ed1d89df77fc27",
@@ -17324,6 +18017,501 @@
       "deletions": 5
     },
     {
+      "sha": "50d3d79dc0743b616afb00d01a626c76758721f7",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:21+02:00",
+      "commit_date": "2026-09-09T14:51:31+02:00",
+      "subject": "wifi: mac80211: set up the TX info early to fix failure paths",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 20,
+      "deletions": 18
+    },
+    {
+      "sha": "ae97fff6495a8764bc0ef281cfe5444f701e527f",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:20+02:00",
+      "commit_date": "2026-09-09T14:51:31+02:00",
+      "subject": "wifi: mac80211: mesh: release the channel if start fails",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 5,
+      "deletions": 1
+    },
+    {
+      "sha": "860134b3af77970e006feab7e5decb8c84771c7f",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:19+02:00",
+      "commit_date": "2026-09-09T14:51:31+02:00",
+      "subject": "wifi: mac80211: mesh: reset the CSA state when leaving",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 18,
+      "deletions": 11
+    },
+    {
+      "sha": "cd54bf333f5631d3630bab0a832e9ae648f73515",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:18+02:00",
+      "commit_date": "2026-09-09T14:51:31+02:00",
+      "subject": "wifi: mac80211: add HE 6 GHz capability in the scan elems len",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 0
+    },
+    {
+      "sha": "0b1de9feeb8651f7a3bb53ed7c9006e3b5298c01",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:17+02:00",
+      "commit_date": "2026-09-09T14:51:31+02:00",
+      "subject": "wifi: mac80211: don't access the TSF of a down interface",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 6,
+      "deletions": 0
+    },
+    {
+      "sha": "b481e64e4498e2c053d5954f546ee02338f6ab63",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:16+02:00",
+      "commit_date": "2026-09-09T14:51:31+02:00",
+      "subject": "wifi: mac80211: don't RCU-dereference the mesh CSA settings we just set",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 0,
+      "deletions": 1
+    },
+    {
+      "sha": "370872d30349d81dec519e15ea2949fd63511cf7",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:15+02:00",
+      "commit_date": "2026-09-09T14:51:30+02:00",
+      "subject": "wifi: mac80211: don't allow link changes when iface is down",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "038e1d126304fd25d507fd4e671232df57bd1799",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:14+02:00",
+      "commit_date": "2026-09-09T14:51:30+02:00",
+      "subject": "wifi: mac80211: require a peer station for TDLS setup confirm",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 18,
+      "deletions": 1
+    },
+    {
+      "sha": "4504f3960dc4501c73be9f99eabda2e26e9db41e",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:13+02:00",
+      "commit_date": "2026-09-09T14:51:30+02:00",
+      "subject": "wifi: mac80211: reset the AP_VLAN tailroom counter on ifdown",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "e14bf37bb2b3853012ff160131d1c6233f7a9cc9",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-08T14:28:12+02:00",
+      "commit_date": "2026-09-09T14:51:30+02:00",
+      "subject": "wifi: mac80211: don't allow injecting frames wider than the chanctx",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 31,
+      "deletions": 4
+    },
+    {
+      "sha": "c1ba7f7f18465e259cf1b4d9c73fc73853d7f790",
+      "author": "Tianchu Chen",
+      "author_email": "flynnnchen@tencent.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T13:39:34Z",
+      "commit_date": "2026-09-09T14:51:30+02:00",
+      "subject": "wifi: wilc1000: fix RX buffer OOB-write in wilc_wlan_handle_isr_ext()",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 9,
+      "deletions": 0
+    },
+    {
+      "sha": "e6c5ed7a98d7bc8b0f7918246f1c90ddb3f79dfa",
+      "author": "Tianchu Chen",
+      "author_email": "flynnnchen@tencent.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T14:24:45Z",
+      "commit_date": "2026-09-09T14:51:30+02:00",
+      "subject": "wifi: rsi: fix heap OOB write on key removal",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 0,
+      "deletions": 2
+    },
+    {
+      "sha": "87840d4a3a21b1c19b867a80e16ba69dff284de2",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T17:01:35+02:00",
+      "commit_date": "2026-09-09T14:51:29+02:00",
+      "subject": "wifi: mac80211_hwsim: don't hand frames to mac80211 while stopping",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 24,
+      "deletions": 15
+    },
+    {
+      "sha": "4635b1a1c1d693178a537446a6e09963f0fdae52",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T17:02:02+02:00",
+      "commit_date": "2026-09-09T14:51:29+02:00",
+      "subject": "wifi: cfg80211: get the wiphy out of a dying network namespace",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 25,
+      "deletions": 12
+    },
+    {
+      "sha": "eee2efd82867b623982ac51925b5a1812a74c50d",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T17:02:01+02:00",
+      "commit_date": "2026-09-09T14:51:29+02:00",
+      "subject": "wifi: mac80211: unlist vifs when their netdev is unregistered",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 25,
+      "deletions": 1
+    },
+    {
+      "sha": "a41bd1938a9bfe226d444172a7e20e4bd5097960",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T17:02:00+02:00",
+      "commit_date": "2026-09-09T14:51:29+02:00",
+      "subject": "wifi: cfg80211: undo netns switch if renaming the wiphy fails",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 50,
+      "deletions": 38
+    },
+    {
+      "sha": "eeee52cfd1d639774c9812e8890631404a057dd2",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T17:01:59+02:00",
+      "commit_date": "2026-09-09T14:51:29+02:00",
+      "subject": "wifi: cfg80211: restore netns_immutable on failures",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "6f0a100df8539ce90f37c14e1945f396ca2410bc",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:14+02:00",
+      "commit_date": "2026-09-09T14:51:29+02:00",
+      "subject": "wifi: mac80211: only operate on TDLS peers in the TDLS code",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 9,
+      "deletions": 12
+    },
+    {
+      "sha": "78183e8331958fda11cd2b6850bb424a9747c4b2",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:13+02:00",
+      "commit_date": "2026-09-09T14:51:28+02:00",
+      "subject": "wifi: mac80211: reset the LED state when ifup fails",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 5,
+      "deletions": 1
+    },
+    {
+      "sha": "3f28551d0241254a75626d868041c6340285088b",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:12+02:00",
+      "commit_date": "2026-09-09T14:51:28+02:00",
+      "subject": "wifi: mac80211: reset state when starting AP fails",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "ac7472a24bd433b81c06582835dd1d5547c10da9",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:11+02:00",
+      "commit_date": "2026-09-09T14:51:28+02:00",
+      "subject": "wifi: mac80211: abort chanswitch when leaving a mesh",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 0
+    },
+    {
+      "sha": "bf29d085e0eba92388518719d044f4702a8c6644",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:10+02:00",
+      "commit_date": "2026-09-09T14:51:28+02:00",
+      "subject": "wifi: mac80211: suppress chanctx warning for debugfs reset",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 8,
+      "deletions": 6
+    },
+    {
+      "sha": "362bd5bce29ed0f6fd3d39a7065567777d70606e",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:09+02:00",
+      "commit_date": "2026-09-09T14:51:28+02:00",
+      "subject": "wifi: mac80211: don't offload TC setup on AP_VLAN interfaces",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "a7491b7efbd9136b120a12ed72af9c12121dd134",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:08+02:00",
+      "commit_date": "2026-09-09T14:51:28+02:00",
+      "subject": "wifi: mac80211: don't warn when an IBSS has no channel to scan",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "733f0fde95392ed5f61a4e36aee661ea8d0e8581",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:07+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: mac80211: don't start a ROC while scanning",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 7,
+      "deletions": 0
+    },
+    {
+      "sha": "23c68b4aaf5e18ab95532fc6714b737d5b7c701c",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:06+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: mac80211: don't drop scan probe requests for lack of peer rates",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 5,
+      "deletions": 3
+    },
+    {
+      "sha": "f5dd0626d2b07c6f5c8c763d75d13c6307393bca",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:57:05+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: mac80211: don't apply peer rates to off-channel frames",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 8,
+      "deletions": 0
+    },
+    {
+      "sha": "f4e72e3758072d7b063e0d8b93419eb915b69c2c",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:08+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: cfg80211: reduce RTNL holding in regulatory enforcement",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 63,
+      "deletions": 8
+    },
+    {
+      "sha": "17a5f8571d1d40c88b78cfc154a7da0d60f13f37",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:07+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: cfg80211: fix NAN regulatory enforcement",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "708f9d43d6a2eb9c6b83fe62af628de9dffd9314",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:06+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: cfg80211: ibss: ref BSS entry for joined event",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 23,
+      "deletions": 22
+    },
+    {
+      "sha": "b377e1000d963e7182a987082b4b06580bd7ac84",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:05+02:00",
+      "commit_date": "2026-09-09T14:51:27+02:00",
+      "subject": "wifi: cfg80211: don't filter by BSS type when removing stale entries",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 0,
+      "deletions": 5
+    },
+    {
+      "sha": "068843ed0902c552a13860c5ec6b2ca65b57a065",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:04+02:00",
+      "commit_date": "2026-09-09T14:51:26+02:00",
+      "subject": "wifi: cfg80211: only group hidden BSSes with beacon entries",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 7,
+      "deletions": 0
+    },
+    {
+      "sha": "dab68a74e90b8e07f08ed9deaa5884857a3cfe89",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:03+02:00",
+      "commit_date": "2026-09-09T14:51:14+02:00",
+      "subject": "wifi: cfg80211: don't free driver-owned scan requests",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 47,
+      "deletions": 8
+    },
+    {
       "sha": "f4c3e38111fd84c2c7ae5785755f4a4d476e1cba",
       "author": "Miguel Ojeda",
       "author_email": "ojeda@kernel.org",
@@ -17427,6 +18615,36 @@
       ],
       "insertions": 0,
       "deletions": 1
+    },
+    {
+      "sha": "48b2c5c628b09cf36cbeca53e0432fc2a7518be7",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:02+02:00",
+      "commit_date": "2026-09-08T13:09:38+02:00",
+      "subject": "wifi: cfg80211: check IP header size in cfg80211_classify8021d()",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 22,
+      "deletions": 4
+    },
+    {
+      "sha": "a7783e585360ee05dfe21d3173dbbe985c94f29e",
+      "author": "Johannes Berg",
+      "author_email": "johannes.berg@intel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-09-04T16:55:01+02:00",
+      "commit_date": "2026-09-08T13:09:38+02:00",
+      "subject": "wifi: cfg80211: don't get the radio mask for netdev-less wdevs",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 5
     },
     {
       "sha": "e89e88ad41d9f31c829c2af39c48313e8e48d5b0",
@@ -18434,6 +19652,142 @@
       "deletions": 1
     },
     {
+      "sha": "da2ca406f45a6e21760243152ed8d2e8e72915c2",
+      "author": "Rik van Riel",
+      "author_email": "riel@surriel.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-08T10:47:55-04:00",
+      "commit_date": "2026-09-04T12:21:46+02:00",
+      "subject": "wifi: mac80211: avoid WARN in set_bitrate_mask when sdata not in driver",
+      "tags": [
+        "Hermes:muse-spark-1.2 syzkaller"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "d8efd84f49379ed28624098821f80e992657d935",
+      "author": "Shengzhuo Wei",
+      "author_email": "me@cherr.cc",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-31T02:42:13+08:00",
+      "commit_date": "2026-09-04T10:12:59+02:00",
+      "subject": "wifi: p54: require a full exp_if record in PDR_INTERFACE_LIST",
+      "tags": [
+        "GLM:5.3"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "ce858fa6b8a214dee5adb82358885fa024cdd887",
+      "author": "Shengzhuo Wei",
+      "author_email": "me@cherr.cc",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-31T02:42:12+08:00",
+      "commit_date": "2026-09-04T10:12:59+02:00",
+      "subject": "wifi: p54: validate curve data length in the calibration curve converters",
+      "tags": [
+        "GLM:5.3"
+      ],
+      "insertions": 15,
+      "deletions": 4
+    },
+    {
+      "sha": "c46cfaf8db42de0806076139fb40744d23041377",
+      "author": "Shmulik Cohen",
+      "author_email": "anuk909@gmail.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-12T22:04:12+03:00",
+      "commit_date": "2026-09-04T10:12:29+02:00",
+      "subject": "wifi: ipw2x00: bound management frame length to the receive buffer",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 12,
+      "deletions": 1
+    },
+    {
+      "sha": "adb7118b7d2cfd7e8213c17d7d2829f353017754",
+      "author": "Shmulik Cohen",
+      "author_email": "anuk909@gmail.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-12T22:04:11+03:00",
+      "commit_date": "2026-09-04T10:12:29+02:00",
+      "subject": "wifi: libipw: reject too-short association responses",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "5ce5721e8cbe3e80db8f43851cc2a2a92485ef4b",
+      "author": "Shmulik Cohen",
+      "author_email": "anuk909@gmail.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-12T22:04:10+03:00",
+      "commit_date": "2026-09-04T10:12:29+02:00",
+      "subject": "wifi: libipw: reject too-short beacon and probe responses",
+      "tags": [
+        "Claude:claude-opus-5"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "3687d7d48070838cc2953431b3a27717cab0aaf6",
+      "author": "Pengpeng Hou",
+      "author_email": "pengpeng@iscas.ac.cn",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-15T21:52:27+08:00",
+      "commit_date": "2026-09-04T10:11:13+02:00",
+      "subject": "wifi: mwifiex: validate scan response extents",
+      "tags": [
+        "Codex:gpt-5"
+      ],
+      "insertions": 19,
+      "deletions": 10
+    },
+    {
+      "sha": "1c25bfad93e69ce13f744a2fb919f02ea396a985",
+      "author": "Zhao Li",
+      "author_email": "enderaoelyther@gmail.com",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-25T19:25:23+08:00",
+      "commit_date": "2026-09-04T10:10:47+02:00",
+      "subject": "wifi: mwifiex: validate action frame fixed fields",
+      "tags": [
+        "Codex:gpt-5",
+        "Kimi:K3"
+      ],
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "sha": "e667aee1c192d67d27c803007bfa9c6e0873e959",
+      "author": "Doruk Tan Ozturk",
+      "author_email": "doruk@0sec.ai",
+      "committer": "Johannes Berg",
+      "committer_email": "johannes.berg@intel.com",
+      "author_date": "2026-08-14T15:47:04+02:00",
+      "commit_date": "2026-09-04T10:10:07+02:00",
+      "subject": "wifi: mwifiex: bound the pairwise-cipher OUI walk to the IE length",
+      "tags": [
+        "0sec:multi-model"
+      ],
+      "insertions": 22,
+      "deletions": 3
+    },
+    {
       "sha": "97f8cb91a8c5658fe2ae6f5c2ff6e95474a5eb2f",
       "author": "Miguel Ojeda",
       "author_email": "ojeda@kernel.org",
@@ -19333,6 +20687,36 @@
       ],
       "insertions": 2,
       "deletions": 0
+    },
+    {
+      "sha": "96f01b53c2d05e003b040892256de54a586e8529",
+      "author": "Wyatt Feng",
+      "author_email": "wf.kernel.dev@gmail.com",
+      "committer": "Steffen Klassert",
+      "committer_email": "steffen.klassert@secunet.com",
+      "author_date": "2026-08-29T23:44:32+08:00",
+      "commit_date": "2026-09-01T12:24:11+02:00",
+      "subject": "net: xfrm: reject unrepresentable espintcp transport headers",
+      "tags": [
+        "Codex:GPT-5.4"
+      ],
+      "insertions": 5,
+      "deletions": 1
+    },
+    {
+      "sha": "9fa903b24b1f46b4ff5443bcd4aca23e5c57f9c1",
+      "author": "Cen Zhang (Microsoft Security FORGE Labs)",
+      "author_email": "blbllhy@gmail.com",
+      "committer": "Steffen Klassert",
+      "committer_email": "steffen.klassert@secunet.com",
+      "author_date": "2026-08-26T16:17:45-04:00",
+      "commit_date": "2026-09-01T12:24:10+02:00",
+      "subject": "xfrm: hold net_device reference under RCU in bundle creation",
+      "tags": [
+        "GitHub-Copilot:claude-opus-4.6"
+      ],
+      "insertions": 15,
+      "deletions": 5
     },
     {
       "sha": "c2256c044a1df39c8aad4dd2d6f709b2533e2d7a",
@@ -20582,6 +21966,21 @@
       "deletions": 9
     },
     {
+      "sha": "2afb8dc1f4390f164db8352f8e685e126e9db566",
+      "author": "Siwei Zhang",
+      "author_email": "fourdizhang@tencent.com",
+      "committer": "Steffen Klassert",
+      "committer_email": "steffen.klassert@secunet.com",
+      "author_date": "2026-07-30T19:40:08+08:00",
+      "commit_date": "2026-08-24T07:27:48+02:00",
+      "subject": "xfrm: use hlist_del_init_rcu for state_cache and state_cache_input",
+      "tags": [
+        "CodeBuddy:GLM-5.2"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
       "sha": "5febf432df1cfa5b25d99b54c32103fafbdd0eb9",
       "author": "Miguel Ojeda",
       "author_email": "ojeda@kernel.org",
@@ -20971,6 +22370,36 @@
       ],
       "insertions": 26,
       "deletions": 0
+    },
+    {
+      "sha": "d1ebd9081879fd9ae9c8fb7e8928f19cc88ae320",
+      "author": "Kyle Zeng",
+      "author_email": "kylebot@openai.com",
+      "committer": "Steffen Klassert",
+      "committer_email": "steffen.klassert@secunet.com",
+      "author_date": "2026-08-04T06:10:37Z",
+      "commit_date": "2026-08-18T12:16:19+02:00",
+      "subject": "xfrm: fix compat ALLOCSPI request use-after-free",
+      "tags": [
+        "Codex:gpt-5.6-sol Codex:gpt-5.5-cyber"
+      ],
+      "insertions": 0,
+      "deletions": 12
+    },
+    {
+      "sha": "42d100f5232f39b8ea7b00a7c2482325c7f032a4",
+      "author": "Aleksandr Nogikh",
+      "author_email": "nogikh@google.com",
+      "committer": "Steffen Klassert",
+      "committer_email": "steffen.klassert@secunet.com",
+      "author_date": "2026-07-31T10:06:20Z",
+      "commit_date": "2026-08-18T12:16:17+02:00",
+      "subject": "xfrm: add missing RCU read lock in xfrm_send_migrate_state()",
+      "tags": [
+        "Gemini:gemini-3.5-flash Gemini:gemini-3.1-pro-preview syzbot"
+      ],
+      "insertions": 5,
+      "deletions": 1
     },
     {
       "sha": "4332cf75e4dafbe0981356d1b898d23104acd5db",
