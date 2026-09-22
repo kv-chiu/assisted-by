@@ -1,8 +1,8 @@
 {
-  "total_commits": 3035,
-  "total_tags": 3125,
-  "total_insertions": 146080,
-  "total_deletions": 49721,
+  "total_commits": 3056,
+  "total_tags": 3146,
+  "total_insertions": 146205,
+  "total_deletions": 49775,
   "vendor_counts": [
     [
       "Anthropic",
@@ -10,7 +10,7 @@
     ],
     [
       "Unknown",
-      519
+      540
     ],
     [
       "OpenAI",
@@ -77,7 +77,7 @@
     },
     "Unknown": {
       "LLM": 155,
-      "LOLLM # finding obvious bugs": 70,
+      "LOLLM # finding obvious bugs": 91,
       "big-pickle": 37,
       "hy3-free": 27,
       "kres:claude-opus-4-7": 24,
@@ -221,8 +221,8 @@
       "del": 149
     },
     "Unknown": {
-      "ins": 10216,
-      "del": 5433
+      "ins": 10341,
+      "del": 5487
     },
     "OpenAI": {
       "ins": 16015,
@@ -287,12 +287,12 @@
       114
     ],
     [
-      "OpenAI \u2014 GPT-5",
-      79
+      "Unknown \u2014 LOLLM # finding obvious bugs",
+      91
     ],
     [
-      "Unknown \u2014 LOLLM # finding obvious bugs",
-      70
+      "OpenAI \u2014 GPT-5",
+      79
     ],
     [
       "Anthropic \u2014 Sonnet",
@@ -888,6 +888,10 @@
       "ins": 2815,
       "del": 1213
     },
+    "Unknown \u2014 LOLLM # finding obvious bugs": {
+      "ins": 854,
+      "del": 334
+    },
     "Unknown \u2014 Qoder:Qwen3.8-Max": {
       "ins": 64,
       "del": 42
@@ -939,10 +943,6 @@
     "Google \u2014 Gemini 3.8": {
       "ins": 27,
       "del": 11
-    },
-    "Unknown \u2014 LOLLM # finding obvious bugs": {
-      "ins": 729,
-      "del": 280
     },
     "Anthropic \u2014 Opus 4.8": {
       "ins": 36306,
@@ -1504,7 +1504,7 @@
     ],
     [
       "Unknown",
-      430
+      451
     ],
     [
       "Codex",
@@ -1557,8 +1557,8 @@
       "del": 20114
     },
     "Unknown": {
-      "ins": 8934,
-      "del": 3648
+      "ins": 9059,
+      "del": 3702
     },
     "OpenCode": {
       "ins": 6127,
@@ -1623,6 +1623,9 @@
     "Unknown \u2014 LLM": {
       "Unknown": 155
     },
+    "Unknown \u2014 LOLLM # finding obvious bugs": {
+      "Unknown": 91
+    },
     "Unknown \u2014 Qoder:Qwen3.8-Max": {
       "Unknown": 1
     },
@@ -1671,9 +1674,6 @@
     },
     "Google \u2014 Gemini 3.8": {
       "Antigravity": 2
-    },
-    "Unknown \u2014 LOLLM # finding obvious bugs": {
-      "Unknown": 70
     },
     "Anthropic \u2014 Opus 4.8": {
       "Direct / API": 270,
@@ -2139,7 +2139,7 @@
     ],
     [
       "Darrick J. Wong",
-      70
+      91
     ],
     [
       "Jeff Layton",
@@ -2200,6 +2200,10 @@
       100
     ],
     [
+      "Carlos Maiolino",
+      93
+    ],
+    [
       "Andrew Morton",
       86
     ],
@@ -2210,10 +2214,6 @@
     [
       "Mark Brown",
       82
-    ],
-    [
-      "Carlos Maiolino",
-      72
     ],
     [
       "Takashi Iwai",
@@ -2415,9 +2415,9 @@
     "2026-09-12": 5,
     "2026-09-13": 8,
     "2026-09-14": 19,
-    "2026-09-15": 13,
+    "2026-09-15": 25,
     "2026-09-16": 4,
-    "2026-09-17": 4,
+    "2026-09-17": 13,
     "2026-09-18": 1,
     "2026-09-20": 4
   },
@@ -3135,16 +3135,16 @@
       "del": 114
     },
     "2026-09-15": {
-      "ins": 301,
-      "del": 61
+      "ins": 356,
+      "del": 85
     },
     "2026-09-16": {
       "ins": 91,
       "del": 48
     },
     "2026-09-17": {
-      "ins": 65,
-      "del": 6
+      "ins": 135,
+      "del": 36
     },
     "2026-09-18": {
       "ins": 4,
@@ -4200,8 +4200,8 @@
       "models": {
         "Anthropic \u2014 Sonnet 4.5": 2,
         "DeepSeek \u2014 DeepSeek V3.2": 4,
-        "Anthropic \u2014 Opus 4.6": 3,
         "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1,
+        "Anthropic \u2014 Opus 4.6": 3,
         "Anthropic \u2014 Sonnet 4.6": 1
       },
       "tools": {
@@ -4232,13 +4232,13 @@
           "ins": 6,
           "del": 7
         },
-        "Anthropic \u2014 Opus 4.6": {
-          "ins": 102,
-          "del": 17
-        },
         "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
           "ins": 11,
           "del": 1
+        },
+        "Anthropic \u2014 Opus 4.6": {
+          "ins": 102,
+          "del": 17
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "ins": 171,
@@ -5083,8 +5083,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.7": 2,
-        "OpenAI \u2014 GPT-5.4": 3,
         "Anthropic \u2014 Opus 4.6": 4,
+        "OpenAI \u2014 GPT-5.4": 3,
         "Anthropic \u2014 Sonnet 4.6": 2,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": 1
       },
@@ -5112,12 +5112,12 @@
           "ins": 17,
           "del": 3
         },
-        "OpenAI \u2014 GPT-5.4": {
-          "ins": 97,
-          "del": 33
-        },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 98,
+          "del": 33
+        },
+        "OpenAI \u2014 GPT-5.4": {
+          "ins": 97,
           "del": 33
         },
         "Anthropic \u2014 Sonnet 4.6": {
@@ -6108,8 +6108,8 @@
         "Unknown": 2
       },
       "models": {
-        "OpenAI \u2014 GPT-5.4": 1,
         "Anthropic \u2014 Opus 4.7": 6,
+        "OpenAI \u2014 GPT-5.4": 1,
         "Anthropic \u2014 Opus 4.6": 2,
         "Unknown \u2014 GitHub_Copilot:claude-opus-4.6": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
@@ -6135,13 +6135,13 @@
         }
       },
       "model_lines": {
-        "OpenAI \u2014 GPT-5.4": {
-          "ins": 3,
-          "del": 0
-        },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 34,
           "del": 9
+        },
+        "OpenAI \u2014 GPT-5.4": {
+          "ins": 3,
+          "del": 0
         },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 4,
@@ -6736,16 +6736,16 @@
         "Anthropic \u2014 Opus 4.6": 2,
         "Google \u2014 gemini-3-flash": 2,
         "Google \u2014 Gemini 3.1 Pro": 1,
-        "Anthropic \u2014 Sonnet 4.5": 15,
         "Z.ai \u2014 GLM-4.7": 15,
+        "Anthropic \u2014 Sonnet 4.5": 15,
         "Unknown \u2014 kres (claude-opus-4-7)": 1,
         "Google \u2014 gemini": 1
       },
       "tools": {
         "Direct / API": 9,
         "Antigravity": 3,
-        "Cursor": 15,
         "OpenCode": 15,
+        "Cursor": 15,
         "Unknown": 1
       },
       "vendor_lines": {
@@ -6783,11 +6783,11 @@
           "ins": 1,
           "del": 0
         },
-        "Anthropic \u2014 Sonnet 4.5": {
+        "Z.ai \u2014 GLM-4.7": {
           "ins": 4326,
           "del": 11
         },
-        "Z.ai \u2014 GLM-4.7": {
+        "Anthropic \u2014 Sonnet 4.5": {
           "ins": 4326,
           "del": 11
         },
@@ -6809,11 +6809,11 @@
           "ins": 448,
           "del": 100
         },
-        "Cursor": {
+        "OpenCode": {
           "ins": 4326,
           "del": 11
         },
-        "OpenCode": {
+        "Cursor": {
           "ins": 4326,
           "del": 11
         },
@@ -8859,8 +8859,8 @@
         "Unknown \u2014 Sashiko-Review:gemini-3.1-pro-preview": 2,
         "Anthropic \u2014 Opus 4.6": 4,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
-        "Anthropic \u2014 Sonnet 4.6": 2,
         "Anthropic \u2014 Opus 4.8": 1,
+        "Anthropic \u2014 Sonnet 4.6": 2,
         "OpenAI \u2014 GPT-5.5": 1
       },
       "tools": {
@@ -8896,13 +8896,13 @@
           "ins": 2,
           "del": 2
         },
-        "Anthropic \u2014 Sonnet 4.6": {
-          "ins": 39,
-          "del": 15
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 35,
           "del": 14
+        },
+        "Anthropic \u2014 Sonnet 4.6": {
+          "ins": 39,
+          "del": 15
         },
         "OpenAI \u2014 GPT-5.5": {
           "ins": 3,
@@ -9561,8 +9561,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.6": 5,
-        "Anthropic \u2014 Opus 4.7": 4,
         "Unknown \u2014 Sashiko:claude-opus-4-7": 1,
+        "Anthropic \u2014 Opus 4.7": 4,
         "Anthropic \u2014 Opus 4.8": 13,
         "OpenAI \u2014 GPT-5.5": 5,
         "OpenAI \u2014 GPT-5": 2,
@@ -9593,13 +9593,13 @@
           "ins": 112,
           "del": 92
         },
-        "Anthropic \u2014 Opus 4.7": {
-          "ins": 87,
-          "del": 20
-        },
         "Unknown \u2014 Sashiko:claude-opus-4-7": {
           "ins": 17,
           "del": 6
+        },
+        "Anthropic \u2014 Opus 4.7": {
+          "ins": 87,
+          "del": 20
         },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 177,
@@ -10145,8 +10145,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.6": 2,
-        "Unknown \u2014 Fable:5": 1,
         "Anthropic \u2014 Opus 4.8": 16,
+        "Unknown \u2014 Fable:5": 1,
         "Anthropic \u2014 Opus 4.7": 3,
         "OpenAI \u2014 GPT-5.5": 14,
         "Unknown \u2014 Bynario AI": 1,
@@ -10178,13 +10178,13 @@
           "ins": 15,
           "del": 45
         },
-        "Unknown \u2014 Fable:5": {
-          "ins": 13,
-          "del": 2
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 339,
           "del": 165
+        },
+        "Unknown \u2014 Fable:5": {
+          "ins": 13,
+          "del": 2
         },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 53,
@@ -11743,8 +11743,8 @@
         "Anthropic \u2014 Sonnet": 1,
         "OpenAI \u2014 GPT-5.3": 1,
         "OpenAI \u2014 GPT-5.5": 3,
-        "OpenAI \u2014 GPT-5": 4,
         "Anthropic \u2014 Opus 4.8": 10,
+        "OpenAI \u2014 GPT-5": 4,
         "Unknown \u2014 AuditCode-AI:2026.07": 1,
         "OpenAI \u2014 GPT-5.6": 2,
         "Unknown \u2014 0sec:multi-model": 1,
@@ -11791,13 +11791,13 @@
           "ins": 32,
           "del": 30
         },
-        "OpenAI \u2014 GPT-5": {
-          "ins": 21,
-          "del": 7
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 103,
           "del": 18
+        },
+        "OpenAI \u2014 GPT-5": {
+          "ins": 21,
+          "del": 7
         },
         "Unknown \u2014 AuditCode-AI:2026.07": {
           "ins": 3,
@@ -11860,8 +11860,8 @@
       "vendors": {
         "Anthropic": 14,
         "Google": 3,
-        "OpenAI": 2,
         "Z.ai": 1,
+        "OpenAI": 2,
         "Unknown": 8
       },
       "models": {
@@ -11894,13 +11894,13 @@
           "ins": 14,
           "del": 8
         },
-        "OpenAI": {
-          "ins": 8,
-          "del": 2
-        },
         "Z.ai": {
           "ins": 6,
           "del": 1
+        },
+        "OpenAI": {
+          "ins": 8,
+          "del": 2
         },
         "Unknown": {
           "ins": 73,
@@ -12680,8 +12680,8 @@
       "models": {
         "Anthropic \u2014 claude-fable-5": 1,
         "Unknown \u2014 big-pickle": 1,
-        "Anthropic \u2014 Opus": 2,
         "OpenAI \u2014 GPT-5.6": 3,
+        "Anthropic \u2014 Opus": 2,
         "OpenAI \u2014 GPT-5.4": 1,
         "Anthropic \u2014 Opus 4.6": 1,
         "Google \u2014 Gemini 3.5": 2,
@@ -12733,13 +12733,13 @@
           "ins": 1,
           "del": 1
         },
-        "Anthropic \u2014 Opus": {
-          "ins": 92,
-          "del": 64
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 95,
           "del": 68
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 92,
+          "del": 64
         },
         "OpenAI \u2014 GPT-5.4": {
           "ins": 4,
@@ -12829,8 +12829,8 @@
       "models": {
         "Google \u2014 unknown-version": 4,
         "Google \u2014 unknown-model": 1,
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
         "OpenAI \u2014 GPT-5.2": 1,
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
         "Anthropic \u2014 Sonnet 4.6": 4,
         "Unknown \u2014 big-pickle": 1,
         "Anthropic \u2014 Opus": 3,
@@ -12880,11 +12880,11 @@
           "ins": 2,
           "del": 3
         },
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
+        "OpenAI \u2014 GPT-5.2": {
           "ins": 3,
           "del": 0
         },
-        "OpenAI \u2014 GPT-5.2": {
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
           "ins": 3,
           "del": 0
         },
@@ -12977,8 +12977,8 @@
         "Anthropic \u2014 Opus": 1,
         "Anthropic \u2014 Opus 4.8": 5,
         "Anthropic \u2014 deepseek-v4-pro": 1,
-        "Z.ai \u2014 GLM-5.2": 1,
         "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
+        "Z.ai \u2014 GLM-5.2": 1,
         "Unknown \u2014 hy3-free": 1,
         "Unknown \u2014 big-pickle": 2,
         "Google \u2014 Gemini 3.1 Pro": 1
@@ -13057,11 +13057,11 @@
           "ins": 17,
           "del": 3
         },
-        "Z.ai \u2014 GLM-5.2": {
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
           "ins": 5,
           "del": 0
         },
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
+        "Z.ai \u2014 GLM-5.2": {
           "ins": 5,
           "del": 0
         },
@@ -13176,8 +13176,8 @@
         "Google \u2014 Gemini 3.5": 1,
         "Google \u2014 Gemini 3.1 Pro": 2,
         "OpenAI \u2014 GPT-5.6": 2,
-        "OpenAI \u2014 GPT-5": 2,
         "Anthropic \u2014 Opus 4.8": 2,
+        "OpenAI \u2014 GPT-5": 2,
         "Google \u2014 Gemini 3.5 Pro": 1,
         "Unknown \u2014 Kimi:K3": 2,
         "Anthropic \u2014 Sonnet 4.6": 11,
@@ -13223,11 +13223,11 @@
           "ins": 4,
           "del": 1
         },
-        "OpenAI \u2014 GPT-5": {
+        "Anthropic \u2014 Opus 4.8": {
           "ins": 7,
           "del": 6
         },
-        "Anthropic \u2014 Opus 4.8": {
+        "OpenAI \u2014 GPT-5": {
           "ins": 7,
           "del": 6
         },
@@ -13473,8 +13473,8 @@
         "Anthropic \u2014 Opus 4.6": 15,
         "OpenAI \u2014 deepseek-v4-flash": 1,
         "Unknown \u2014 Cline:claude-sonnet [read_file, search_files, git]": 1,
-        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": 2,
         "OpenAI \u2014 GPT-5.6": 5,
+        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": 2,
         "Anthropic \u2014 Sonnet": 1,
         "Anthropic \u2014 claude-fable-5": 1,
         "Unknown \u2014 LLM (reproduction, analysis)": 1
@@ -13534,13 +13534,13 @@
           "ins": 1,
           "del": 1
         },
-        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": {
-          "ins": 91,
-          "del": 0
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 118,
           "del": 11
+        },
+        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": {
+          "ins": 91,
+          "del": 0
         },
         "Anthropic \u2014 Sonnet": {
           "ins": 6,
@@ -13727,8 +13727,8 @@
         "Anthropic \u2014 claude-fable-5": 5,
         "Anthropic \u2014 Sonnet": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 6,
-        "Anthropic \u2014 Opus": 4,
         "OpenAI \u2014 GPT-5.6": 2,
+        "Anthropic \u2014 Opus": 4,
         "Anthropic \u2014 unspecified": 2,
         "Anthropic \u2014 Opus 4.8": 18,
         "Unknown \u2014 ChatGPT:GPT-5.5-Thinking": 1,
@@ -13778,13 +13778,13 @@
           "ins": 425,
           "del": 52
         },
-        "Anthropic \u2014 Opus": {
-          "ins": 14,
-          "del": 4
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 10,
           "del": 2
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 14,
+          "del": 4
         },
         "Anthropic \u2014 unspecified": {
           "ins": 54,
@@ -14138,8 +14138,8 @@
         "Anthropic \u2014 Opus 4.8": 40,
         "Anthropic \u2014 Sonnet": 3,
         "Unknown \u2014 LLM": 7,
-        "Google \u2014 Gemini 3.1 Pro": 1,
         "Anthropic \u2014 Opus 4.7": 3,
+        "Google \u2014 Gemini 3.1 Pro": 1,
         "OpenAI \u2014 GPT-5": 2,
         "OpenAI \u2014 GPT-5.6": 4,
         "OpenAI \u2014 GPT-5.4": 1,
@@ -14196,13 +14196,13 @@
           "ins": 542,
           "del": 59
         },
-        "Google \u2014 Gemini 3.1 Pro": {
-          "ins": 591,
-          "del": 1
-        },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 689,
           "del": 17
+        },
+        "Google \u2014 Gemini 3.1 Pro": {
+          "ins": 591,
+          "del": 1
         },
         "OpenAI \u2014 GPT-5": {
           "ins": 5,
@@ -15522,8 +15522,8 @@
         "Unknown \u2014 AuditCode-AI:2026.07": 1,
         "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
         "Anthropic \u2014 Opus": 3,
-        "Google \u2014 Gemini 3.1 Pro": 1,
-        "OpenAI \u2014 GPT-5.6": 1
+        "OpenAI \u2014 GPT-5.6": 1,
+        "Google \u2014 Gemini 3.1 Pro": 1
       },
       "tools": {
         "Direct / API": 7,
@@ -15574,11 +15574,11 @@
           "ins": 12,
           "del": 7
         },
-        "Google \u2014 Gemini 3.1 Pro": {
+        "OpenAI \u2014 GPT-5.6": {
           "ins": 10,
           "del": 4
         },
-        "OpenAI \u2014 GPT-5.6": {
+        "Google \u2014 Gemini 3.1 Pro": {
           "ins": 10,
           "del": 4
         }
@@ -17048,8 +17048,8 @@
         "Google \u2014 Gemini-Next": 1,
         "Unknown \u2014 LLM": 1,
         "Anthropic \u2014 Opus": 2,
-        "Unknown \u2014 CodeBuddy:Hy4 preview": 1,
-        "Unknown \u2014 UOS-AI": 1
+        "Unknown \u2014 UOS-AI": 1,
+        "Unknown \u2014 CodeBuddy:Hy4 preview": 1
       },
       "tools": {
         "Codex": 3,
@@ -17097,11 +17097,11 @@
           "ins": 32,
           "del": 5
         },
-        "Unknown \u2014 CodeBuddy:Hy4 preview": {
+        "Unknown \u2014 UOS-AI": {
           "ins": 3,
           "del": 7
         },
-        "Unknown \u2014 UOS-AI": {
+        "Unknown \u2014 CodeBuddy:Hy4 preview": {
           "ins": 3,
           "del": 7
         }
@@ -17214,13 +17214,13 @@
       }
     },
     "2026-09-15": {
-      "patches": 13,
+      "patches": 25,
       "lines": {
-        "ins": 301,
-        "del": 61
+        "ins": 356,
+        "del": 85
       },
       "vendors": {
-        "Unknown": 6,
+        "Unknown": 18,
         "Anthropic": 6,
         "OpenAI": 1
       },
@@ -17231,18 +17231,19 @@
         "OpenAI \u2014 GPT-5": 1,
         "Anthropic \u2014 Sonnet": 1,
         "Unknown \u2014 LLM (Claude Sonnet 5, Anthropic)": 1,
-        "Unknown \u2014 LLM KASAN": 1
+        "Unknown \u2014 LLM KASAN": 1,
+        "Unknown \u2014 LOLLM # finding obvious bugs": 12
       },
       "tools": {
-        "Unknown": 6,
+        "Unknown": 18,
         "Direct / API": 5,
         "Codex": 1,
         "GitHub Copilot": 1
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 181,
-          "del": 37
+          "ins": 236,
+          "del": 61
         },
         "Anthropic": {
           "ins": 73,
@@ -17281,12 +17282,16 @@
         "Unknown \u2014 LLM KASAN": {
           "ins": 2,
           "del": 1
+        },
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "ins": 55,
+          "del": 24
         }
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 181,
-          "del": 37
+          "ins": 236,
+          "del": 61
         },
         "Direct / API": {
           "ins": 67,
@@ -17367,22 +17372,23 @@
       }
     },
     "2026-09-17": {
-      "patches": 4,
+      "patches": 13,
       "lines": {
-        "ins": 65,
-        "del": 6
+        "ins": 135,
+        "del": 36
       },
       "vendors": {
         "Anthropic": 2,
-        "Unknown": 2
+        "Unknown": 11
       },
       "models": {
         "Anthropic \u2014 Opus": 2,
-        "Unknown \u2014 LLM": 2
+        "Unknown \u2014 LLM": 2,
+        "Unknown \u2014 LOLLM # finding obvious bugs": 9
       },
       "tools": {
         "Direct / API": 2,
-        "Unknown": 2
+        "Unknown": 11
       },
       "vendor_lines": {
         "Anthropic": {
@@ -17390,8 +17396,8 @@
           "del": 2
         },
         "Unknown": {
-          "ins": 19,
-          "del": 4
+          "ins": 89,
+          "del": 34
         }
       },
       "model_lines": {
@@ -17402,6 +17408,10 @@
         "Unknown \u2014 LLM": {
           "ins": 19,
           "del": 4
+        },
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "ins": 70,
+          "del": 30
         }
       },
       "tool_lines": {
@@ -17410,8 +17420,8 @@
           "del": 2
         },
         "Unknown": {
-          "ins": 19,
-          "del": 4
+          "ins": 89,
+          "del": 34
         }
       }
     },
@@ -17629,6 +17639,141 @@
       ],
       "insertions": 9,
       "deletions": 0
+    },
+    {
+      "sha": "fe2f9135df43db849e74f03956d322ac20b59af7",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:39:25-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: fix wild memcpy access when formatting ondisk rtrefcount btree roots",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "476582d754cdc5110f806001417fea6c77824c13",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:39:10-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: don't let hidden_space go negative in xfs_metafile_resv_init",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 4
+    },
+    {
+      "sha": "ffb48dccce1960a9ea24463a2f3c21d124d6b672",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:38:54-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: drop dquot flush lock when we can't find a buffer to flush",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
+      "sha": "65f39d09d73718611cee40399179323b5d4ead00",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:38:38-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: fix cursor and pointer handling when recovering iunlink buckets",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 8,
+      "deletions": 5
+    },
+    {
+      "sha": "f8f6382ff13109e19d0fc1d0224ff7d29641e56a",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:38:23-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: fix blockgc group quota scanning when usrquota isn't enforced",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "d80993655f7be2a461c0a63e2022da5757f47dac",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:38:07-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: don't merge different file IO error types",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "ab1c416d2377cdc16123ef521aac4da1c468c3d4",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:37:52-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: don't let memory failures leak blocks and kill repairs",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 3
+    },
+    {
+      "sha": "d7b92cbe566f6fe54368f62e4b515d9f80c43a18",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:37:36-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: don't cross reference rmapbt with bitmaps if they're incomplete",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 14,
+      "deletions": 6
+    },
+    {
+      "sha": "41c4c41cf6c44f98db2916e1781f537d9ba6461a",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-14T22:37:20-07:00",
+      "commit_date": "2026-09-17T11:27:41+02:00",
+      "subject": "xfs: fix rtgroup repair estimations",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 25,
+      "deletions": 6
     },
     {
       "sha": "c17ae8c26eac16ad244daef44044d714f68a2ddc",
@@ -17870,6 +18015,186 @@
       ],
       "insertions": 2,
       "deletions": 1
+    },
+    {
+      "sha": "e9193f2f1ce32d02b9230094ffdbfab715ab6137",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-10T22:54:58-07:00",
+      "commit_date": "2026-09-15T10:11:11+02:00",
+      "subject": "xfs: check di_forkoff correctly in scrub",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "c54110d814c3e8ed6bbbb5e02874994ed9f668ac",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-10T22:54:42-07:00",
+      "commit_date": "2026-09-15T10:11:11+02:00",
+      "subject": "xfs: only flag zero padding for dir3 data blocks, not dir3 block blocks",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "46c1b6674a7b3a8385e7fa27f4efc6f45eddf967",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-10T22:54:26-07:00",
+      "commit_date": "2026-09-15T10:11:11+02:00",
+      "subject": "xfs: fix integer overflows in xbitmap set functions",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 18,
+      "deletions": 8
+    },
+    {
+      "sha": "471e0b6e2ddac9e16b8dc2153d6e5575fefb8a2f",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-10T22:54:11-07:00",
+      "commit_date": "2026-09-15T10:11:11+02:00",
+      "subject": "xfs: use the correct reservations for rtrmap/refcount recovery",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 12,
+      "deletions": 4
+    },
+    {
+      "sha": "8fc18580ec17f90beac4c933fbe4c74dcd3b7f36",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-10T22:53:55-07:00",
+      "commit_date": "2026-09-15T10:11:11+02:00",
+      "subject": "xfs: don't call xfs_exchange_range_finish for a dry run",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 8,
+      "deletions": 3
+    },
+    {
+      "sha": "3083ba8dde765a9ab2337f3db68d00724a6b1202",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-10T22:53:39-07:00",
+      "commit_date": "2026-09-15T10:11:11+02:00",
+      "subject": "xfs: check padding field in xfs_ioc_commit_range",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "984aab2d905a8557fafb27cd9e8713d6d12b3437",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-09T23:01:18-07:00",
+      "commit_date": "2026-09-15T10:09:57+02:00",
+      "subject": "xfs: use correct jiffies comparison function in xchk_maybe_relax",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "8b4ad2814274d43ed8bdfcf857efb8c79815d9c6",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-09T23:01:03-07:00",
+      "commit_date": "2026-09-15T10:09:57+02:00",
+      "subject": "xfs: release AGFL after walking it during rmapbt repair",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "sha": "1c32cdc986467eaffeedb6c5334852809555b82d",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-09T23:00:47-07:00",
+      "commit_date": "2026-09-15T10:09:57+02:00",
+      "subject": "xfs: release orphanage dir inode if chown fails",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 1
+    },
+    {
+      "sha": "bb991b7f79dd34cc5f24db0f736bf75630c970e7",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-09T23:00:31-07:00",
+      "commit_date": "2026-09-15T10:09:57+02:00",
+      "subject": "xfs: fix attr fork block count checks in xrep_inode_blockcounts",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "afbccf99f7f82117cba9ad4b0b006692030f49e8",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-09T23:00:16-07:00",
+      "commit_date": "2026-09-15T10:09:57+02:00",
+      "subject": "xfs: don't assert when XFS_SCRUB_TYPE_HEALTHY scans return corruption",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 3
+    },
+    {
+      "sha": "5b644229bd677d52c4efa5973c1fab842c57f896",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-09T22:59:59-07:00",
+      "commit_date": "2026-09-15T10:09:57+02:00",
+      "subject": "xfs: guard against igrab failure in xrep_findparent_from_dcache",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 0
     },
     {
       "sha": "2028280686f4fa78e2f1f6dede4b6c1fd782b9e3",
