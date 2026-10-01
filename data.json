@@ -4307,8 +4307,8 @@
       "models": {
         "Anthropic \u2014 Sonnet 4.5": 2,
         "DeepSeek \u2014 DeepSeek V3.2": 4,
-        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1,
         "Anthropic \u2014 Opus 4.6": 3,
+        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1,
         "Anthropic \u2014 Sonnet 4.6": 1
       },
       "tools": {
@@ -4339,13 +4339,13 @@
           "ins": 6,
           "del": 7
         },
-        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
-          "ins": 11,
-          "del": 1
-        },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 102,
           "del": 17
+        },
+        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
+          "ins": 11,
+          "del": 1
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "ins": 171,
@@ -4589,8 +4589,8 @@
       },
       "tools": {
         "GitHub Copilot": 6,
-        "Codex": 1,
-        "Direct / API": 1
+        "Direct / API": 1,
+        "Codex": 1
       },
       "vendor_lines": {
         "Anthropic": {
@@ -4617,11 +4617,11 @@
           "ins": 106,
           "del": 106
         },
-        "Codex": {
+        "Direct / API": {
           "ins": 7,
           "del": 1
         },
-        "Direct / API": {
+        "Codex": {
           "ins": 7,
           "del": 1
         }
@@ -5190,8 +5190,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.7": 2,
-        "OpenAI \u2014 GPT-5.4": 3,
         "Anthropic \u2014 Opus 4.6": 4,
+        "OpenAI \u2014 GPT-5.4": 3,
         "Anthropic \u2014 Sonnet 4.6": 2,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": 1
       },
@@ -5219,12 +5219,12 @@
           "ins": 17,
           "del": 3
         },
-        "OpenAI \u2014 GPT-5.4": {
-          "ins": 97,
-          "del": 33
-        },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 98,
+          "del": 33
+        },
+        "OpenAI \u2014 GPT-5.4": {
+          "ins": 97,
           "del": 33
         },
         "Anthropic \u2014 Sonnet 4.6": {
@@ -6210,31 +6210,31 @@
         "del": 27
       },
       "vendors": {
-        "Anthropic": 8,
         "OpenAI": 2,
+        "Anthropic": 8,
         "Unknown": 2
       },
       "models": {
-        "Anthropic \u2014 Opus 4.7": 6,
         "OpenAI \u2014 GPT-5.4": 1,
+        "Anthropic \u2014 Opus 4.7": 6,
         "Anthropic \u2014 Opus 4.6": 2,
         "Unknown \u2014 GitHub_Copilot:claude-opus-4.6": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
         "OpenAI \u2014 26.506.31004": 1
       },
       "tools": {
-        "Codex": 2,
         "Direct / API": 8,
+        "Codex": 2,
         "Unknown": 2
       },
       "vendor_lines": {
-        "Anthropic": {
-          "ins": 38,
-          "del": 14
-        },
         "OpenAI": {
           "ins": 19,
           "del": 3
+        },
+        "Anthropic": {
+          "ins": 38,
+          "del": 14
         },
         "Unknown": {
           "ins": 8,
@@ -6242,13 +6242,13 @@
         }
       },
       "model_lines": {
-        "Anthropic \u2014 Opus 4.7": {
-          "ins": 34,
-          "del": 9
-        },
         "OpenAI \u2014 GPT-5.4": {
           "ins": 3,
           "del": 0
+        },
+        "Anthropic \u2014 Opus 4.7": {
+          "ins": 34,
+          "del": 9
         },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 4,
@@ -6268,13 +6268,13 @@
         }
       },
       "tool_lines": {
-        "Codex": {
-          "ins": 19,
-          "del": 3
-        },
         "Direct / API": {
           "ins": 38,
           "del": 14
+        },
+        "Codex": {
+          "ins": 19,
+          "del": 3
         },
         "Unknown": {
           "ins": 8,
@@ -6851,8 +6851,8 @@
       "tools": {
         "Direct / API": 9,
         "Antigravity": 3,
-        "OpenCode": 15,
         "Cursor": 15,
+        "OpenCode": 15,
         "Unknown": 1
       },
       "vendor_lines": {
@@ -6916,11 +6916,11 @@
           "ins": 448,
           "del": 100
         },
-        "OpenCode": {
+        "Cursor": {
           "ins": 4326,
           "del": 11
         },
-        "Cursor": {
+        "OpenCode": {
           "ins": 4326,
           "del": 11
         },
@@ -8966,8 +8966,8 @@
         "Unknown \u2014 Sashiko-Review:gemini-3.1-pro-preview": 2,
         "Anthropic \u2014 Opus 4.6": 4,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
-        "Anthropic \u2014 Sonnet 4.6": 2,
         "Anthropic \u2014 Opus 4.8": 1,
+        "Anthropic \u2014 Sonnet 4.6": 2,
         "OpenAI \u2014 GPT-5.5": 1
       },
       "tools": {
@@ -9003,13 +9003,13 @@
           "ins": 2,
           "del": 2
         },
-        "Anthropic \u2014 Sonnet 4.6": {
-          "ins": 39,
-          "del": 15
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 35,
           "del": 14
+        },
+        "Anthropic \u2014 Sonnet 4.6": {
+          "ins": 39,
+          "del": 15
         },
         "OpenAI \u2014 GPT-5.5": {
           "ins": 3,
@@ -10252,8 +10252,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.6": 2,
-        "Unknown \u2014 Fable:5": 1,
         "Anthropic \u2014 Opus 4.8": 16,
+        "Unknown \u2014 Fable:5": 1,
         "Anthropic \u2014 Opus 4.7": 3,
         "OpenAI \u2014 GPT-5.5": 14,
         "Unknown \u2014 Bynario AI": 1,
@@ -10285,13 +10285,13 @@
           "ins": 15,
           "del": 45
         },
-        "Unknown \u2014 Fable:5": {
-          "ins": 13,
-          "del": 2
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 339,
           "del": 165
+        },
+        "Unknown \u2014 Fable:5": {
+          "ins": 13,
+          "del": 2
         },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 53,
@@ -11850,8 +11850,8 @@
         "Anthropic \u2014 Sonnet": 1,
         "OpenAI \u2014 GPT-5.3": 1,
         "OpenAI \u2014 GPT-5.5": 3,
-        "OpenAI \u2014 GPT-5": 4,
         "Anthropic \u2014 Opus 4.8": 10,
+        "OpenAI \u2014 GPT-5": 4,
         "Unknown \u2014 AuditCode-AI:2026.07": 1,
         "OpenAI \u2014 GPT-5.6": 2,
         "Unknown \u2014 0sec:multi-model": 1,
@@ -11898,13 +11898,13 @@
           "ins": 32,
           "del": 30
         },
-        "OpenAI \u2014 GPT-5": {
-          "ins": 21,
-          "del": 7
-        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 103,
           "del": 18
+        },
+        "OpenAI \u2014 GPT-5": {
+          "ins": 21,
+          "del": 7
         },
         "Unknown \u2014 AuditCode-AI:2026.07": {
           "ins": 3,
@@ -12928,8 +12928,8 @@
       },
       "vendors": {
         "Google": 13,
-        "Unknown": 7,
         "OpenAI": 4,
+        "Unknown": 7,
         "Anthropic": 7,
         "DeepSeek": 1
       },
@@ -12950,8 +12950,8 @@
       },
       "tools": {
         "Direct / API": 13,
-        "Unknown": 3,
         "GitHub Copilot": 1,
+        "Unknown": 3,
         "OpenCode": 6,
         "Antigravity": 8,
         "Codex": 1
@@ -12961,13 +12961,13 @@
           "ins": 504,
           "del": 444
         },
-        "Unknown": {
-          "ins": 682,
-          "del": 116
-        },
         "OpenAI": {
           "ins": 512,
           "del": 684
+        },
+        "Unknown": {
+          "ins": 682,
+          "del": 116
         },
         "Anthropic": {
           "ins": 38,
@@ -13037,13 +13037,13 @@
           "ins": 144,
           "del": 51
         },
-        "Unknown": {
-          "ins": 618,
-          "del": 13
-        },
         "GitHub Copilot": {
           "ins": 3,
           "del": 0
+        },
+        "Unknown": {
+          "ins": 618,
+          "del": 13
         },
         "OpenCode": {
           "ins": 279,
@@ -13283,8 +13283,8 @@
         "Google \u2014 Gemini 3.5": 1,
         "Google \u2014 Gemini 3.1 Pro": 2,
         "OpenAI \u2014 GPT-5.6": 2,
-        "OpenAI \u2014 GPT-5": 2,
         "Anthropic \u2014 Opus 4.8": 2,
+        "OpenAI \u2014 GPT-5": 2,
         "Google \u2014 Gemini 3.5 Pro": 1,
         "Unknown \u2014 Kimi:K3": 2,
         "Anthropic \u2014 Sonnet 4.6": 11,
@@ -13330,11 +13330,11 @@
           "ins": 4,
           "del": 1
         },
-        "OpenAI \u2014 GPT-5": {
+        "Anthropic \u2014 Opus 4.8": {
           "ins": 7,
           "del": 6
         },
-        "Anthropic \u2014 Opus 4.8": {
+        "OpenAI \u2014 GPT-5": {
           "ins": 7,
           "del": 6
         },
@@ -13580,8 +13580,8 @@
         "Anthropic \u2014 Opus 4.6": 15,
         "OpenAI \u2014 deepseek-v4-flash": 1,
         "Unknown \u2014 Cline:claude-sonnet [read_file, search_files, git]": 1,
-        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": 2,
         "OpenAI \u2014 GPT-5.6": 5,
+        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": 2,
         "Anthropic \u2014 Sonnet": 1,
         "Anthropic \u2014 claude-fable-5": 1,
         "Unknown \u2014 LLM (reproduction, analysis)": 1
@@ -13641,13 +13641,13 @@
           "ins": 1,
           "del": 1
         },
-        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": {
-          "ins": 91,
-          "del": 0
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 118,
           "del": 11
+        },
+        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": {
+          "ins": 91,
+          "del": 0
         },
         "Anthropic \u2014 Sonnet": {
           "ins": 6,
@@ -13697,17 +13697,17 @@
       },
       "vendors": {
         "Google": 7,
-        "Unknown": 4,
         "DeepSeek": 2,
         "Anthropic": 12,
+        "Unknown": 4,
         "OpenAI": 5
       },
       "models": {
         "Google \u2014 Gemini 3.6": 2,
         "Google \u2014 Gemini 3.5": 5,
-        "Unknown \u2014 mimo-v2.5-free": 2,
         "Anthropic \u2014 Opus 4.6": 8,
         "DeepSeek \u2014 DeepSeek V4": 2,
+        "Unknown \u2014 mimo-v2.5-free": 2,
         "Anthropic \u2014 Sonnet 4.6": 1,
         "Unknown \u2014 LLM": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -13718,8 +13718,8 @@
       },
       "tools": {
         "Antigravity": 7,
-        "OpenCode": 3,
         "Direct / API": 12,
+        "OpenCode": 3,
         "Unknown": 1,
         "Codex": 5
       },
@@ -13728,10 +13728,6 @@
           "ins": 280,
           "del": 215
         },
-        "Unknown": {
-          "ins": 141,
-          "del": 72
-        },
         "DeepSeek": {
           "ins": 130,
           "del": 52
@@ -13739,6 +13735,10 @@
         "Anthropic": {
           "ins": 849,
           "del": 554
+        },
+        "Unknown": {
+          "ins": 141,
+          "del": 72
         },
         "OpenAI": {
           "ins": 288,
@@ -13754,15 +13754,15 @@
           "ins": 268,
           "del": 213
         },
-        "Unknown \u2014 mimo-v2.5-free": {
-          "ins": 130,
-          "del": 52
-        },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 526,
           "del": 459
         },
         "DeepSeek \u2014 DeepSeek V4": {
+          "ins": 130,
+          "del": 52
+        },
+        "Unknown \u2014 mimo-v2.5-free": {
           "ins": 130,
           "del": 52
         },
@@ -13800,13 +13800,13 @@
           "ins": 280,
           "del": 215
         },
-        "OpenCode": {
-          "ins": 137,
-          "del": 69
-        },
         "Direct / API": {
           "ins": 849,
           "del": 554
+        },
+        "OpenCode": {
+          "ins": 137,
+          "del": 69
         },
         "Unknown": {
           "ins": 4,
@@ -14245,8 +14245,8 @@
         "Anthropic \u2014 Opus 4.8": 40,
         "Anthropic \u2014 Sonnet": 3,
         "Unknown \u2014 LLM": 7,
-        "Anthropic \u2014 Opus 4.7": 3,
         "Google \u2014 Gemini 3.1 Pro": 1,
+        "Anthropic \u2014 Opus 4.7": 3,
         "OpenAI \u2014 GPT-5": 2,
         "OpenAI \u2014 GPT-5.6": 4,
         "OpenAI \u2014 GPT-5.4": 1,
@@ -14303,13 +14303,13 @@
           "ins": 542,
           "del": 59
         },
-        "Anthropic \u2014 Opus 4.7": {
-          "ins": 689,
-          "del": 17
-        },
         "Google \u2014 Gemini 3.1 Pro": {
           "ins": 591,
           "del": 1
+        },
+        "Anthropic \u2014 Opus 4.7": {
+          "ins": 689,
+          "del": 17
         },
         "OpenAI \u2014 GPT-5": {
           "ins": 5,
@@ -15629,8 +15629,8 @@
         "Unknown \u2014 AuditCode-AI:2026.07": 1,
         "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
         "Anthropic \u2014 Opus": 3,
-        "OpenAI \u2014 GPT-5.6": 1,
-        "Google \u2014 Gemini 3.1 Pro": 1
+        "Google \u2014 Gemini 3.1 Pro": 1,
+        "OpenAI \u2014 GPT-5.6": 1
       },
       "tools": {
         "Direct / API": 7,
@@ -15681,11 +15681,11 @@
           "ins": 12,
           "del": 7
         },
-        "OpenAI \u2014 GPT-5.6": {
+        "Google \u2014 Gemini 3.1 Pro": {
           "ins": 10,
           "del": 4
         },
-        "Google \u2014 Gemini 3.1 Pro": {
+        "OpenAI \u2014 GPT-5.6": {
           "ins": 10,
           "del": 4
         }
@@ -17170,8 +17170,8 @@
         "Google \u2014 Gemini-Next": 1,
         "Unknown \u2014 LLM": 1,
         "Anthropic \u2014 Opus": 2,
-        "Unknown \u2014 CodeBuddy:Hy4 preview": 1,
-        "Unknown \u2014 UOS-AI": 1
+        "Unknown \u2014 UOS-AI": 1,
+        "Unknown \u2014 CodeBuddy:Hy4 preview": 1
       },
       "tools": {
         "Codex": 3,
@@ -17219,11 +17219,11 @@
           "ins": 32,
           "del": 5
         },
-        "Unknown \u2014 CodeBuddy:Hy4 preview": {
+        "Unknown \u2014 UOS-AI": {
           "ins": 3,
           "del": 7
         },
-        "Unknown \u2014 UOS-AI": {
+        "Unknown \u2014 CodeBuddy:Hy4 preview": {
           "ins": 3,
           "del": 7
         }
@@ -17614,8 +17614,8 @@
         "OpenAI": 1
       },
       "models": {
-        "Anthropic \u2014 Sonnet": 2,
         "Anthropic \u2014 claude-fable-5 checkpatch": 1,
+        "Anthropic \u2014 Sonnet": 2,
         "Unknown \u2014 LLM": 6,
         "Anthropic \u2014 Opus": 1,
         "Unknown \u2014 CodeBuddy:Kimi-K3": 1,
@@ -17642,12 +17642,12 @@
         }
       },
       "model_lines": {
-        "Anthropic \u2014 Sonnet": {
-          "ins": 21,
-          "del": 6
-        },
         "Anthropic \u2014 claude-fable-5 checkpatch": {
           "ins": 17,
+          "del": 6
+        },
+        "Anthropic \u2014 Sonnet": {
+          "ins": 21,
           "del": 6
         },
         "Unknown \u2014 LLM": {
@@ -18043,35 +18043,35 @@
         "del": 39
       },
       "vendors": {
-        "Unknown": 4,
-        "Z.ai": 1
+        "Z.ai": 1,
+        "Unknown": 4
       },
       "models": {
-        "Unknown \u2014 Qoder:Qwen3.8-Max": 1,
         "Z.ai \u2014 GLM-5.3": 1,
+        "Unknown \u2014 Qoder:Qwen3.8-Max": 1,
         "Unknown \u2014 LLM": 2,
         "Unknown \u2014 gpt 5": 1
       },
       "tools": {
-        "Unknown": 4,
-        "Direct / API": 1
+        "Direct / API": 1,
+        "Unknown": 4
       },
       "vendor_lines": {
-        "Unknown": {
-          "ins": 80,
-          "del": 39
-        },
         "Z.ai": {
           "ins": 24,
           "del": 11
+        },
+        "Unknown": {
+          "ins": 80,
+          "del": 39
         }
       },
       "model_lines": {
-        "Unknown \u2014 Qoder:Qwen3.8-Max": {
+        "Z.ai \u2014 GLM-5.3": {
           "ins": 24,
           "del": 11
         },
-        "Z.ai \u2014 GLM-5.3": {
+        "Unknown \u2014 Qoder:Qwen3.8-Max": {
           "ins": 24,
           "del": 11
         },
@@ -18085,13 +18085,13 @@
         }
       },
       "tool_lines": {
-        "Unknown": {
-          "ins": 80,
-          "del": 39
-        },
         "Direct / API": {
           "ins": 24,
           "del": 11
+        },
+        "Unknown": {
+          "ins": 80,
+          "del": 39
         }
       }
     },
