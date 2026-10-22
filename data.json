@@ -1,20 +1,20 @@
 {
-  "total_commits": 3613,
-  "total_tags": 3740,
-  "total_insertions": 160918,
-  "total_deletions": 53941,
+  "total_commits": 3773,
+  "total_tags": 3900,
+  "total_insertions": 177519,
+  "total_deletions": 58151,
   "vendor_counts": [
     [
       "Anthropic",
-      1801
+      1812
     ],
     [
       "Unknown",
-      808
+      947
     ],
     [
       "OpenAI",
-      546
+      554
     ],
     [
       "Google",
@@ -26,11 +26,11 @@
     ],
     [
       "DeepSeek",
-      67
+      68
     ],
     [
       "Z.ai",
-      43
+      44
     ],
     [
       "Cursor (in-house)",
@@ -41,19 +41,19 @@
     "Anthropic": {
       "Opus 4.6": 487,
       "Opus 4.8": 434,
-      "Opus": 312,
+      "Opus": 317,
       "Sonnet 4.6": 166,
       "Opus 4.7": 158,
       "Sonnet": 63,
-      "claude-fable-5": 54,
-      "Opus 5.5": 35,
+      "claude-fable-5": 55,
+      "Opus 5.5": 38,
       "Sonnet 4.5": 32,
       "unspecified": 17,
       "GLM-5.2": 9,
+      "claude-mythos-5": 4,
       "claude-fable-5-1": 4,
       "claude-fable-5 [Claude Code]": 4,
       "Opus 4.5": 3,
-      "claude-mythos-5": 2,
       "qwen3.8-max": 2,
       "deepseek-v4-pro": 2,
       "Sonnet 5.5": 1,
@@ -75,8 +75,8 @@
       "Claude (Anthropic Claude Code)": 1
     },
     "Unknown": {
-      "LLM": 372,
-      "LOLLM # finding obvious bugs": 91,
+      "LLM": 431,
+      "LOLLM # finding obvious bugs": 165,
       "big-pickle": 37,
       "hy3-free": 27,
       "kres:claude-opus-4-7": 24,
@@ -86,6 +86,7 @@
       "AuditCode-AI:2026.07": 13,
       "0sec:claude-opus-4-8": 8,
       "GitHub_Copilot:claude-opus-4.8": 8,
+      "gpt 5": 6,
       "unspecified": 6,
       "Kimi:K3": 6,
       "Qoder:Qwen-3.8-MAX-Preview": 6,
@@ -108,9 +109,9 @@
       "LLM (debugging, commit message)": 3,
       "avom-custom-harness:gpt-5.5-qwen3.6-mod-mix": 3,
       "Henry (Claude):claude-opus-4": 3,
+      "LLM codeql": 2,
       "LLM sparse checkpatch": 2,
       "LLM (found the bug)": 2,
-      "gpt 5": 2,
       "LLM Codex": 2,
       "Qoder:Qwen3.8-Max": 2,
       "ChatGPT:GPT-5.6 Sol": 2,
@@ -180,6 +181,19 @@
       "GPT-Codex:gpt-5.2-codex": 1,
       "AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1
     },
+    "OpenAI": {
+      "GPT-5.5": 207,
+      "GPT-5.6": 148,
+      "GPT-5": 94,
+      "GPT-5.4": 56,
+      "GPT-5.3": 35,
+      "GPT-6": 7,
+      "": 2,
+      "deepseek-v4-flash": 2,
+      "GPT-5.2": 1,
+      "GPT-4": 1,
+      "26.506.31004": 1
+    },
     "Google": {
       "Gemini 3.1 Pro": 196,
       "Gemini 3.5": 115,
@@ -202,24 +216,11 @@
       "Pro": 1,
       "Gemini 3.1": 1
     },
-    "OpenAI": {
-      "GPT-5.5": 204,
-      "GPT-5.6": 145,
-      "GPT-5": 93,
-      "GPT-5.4": 56,
-      "GPT-5.3": 35,
-      "GPT-6": 7,
-      "deepseek-v4-flash": 2,
-      "": 1,
-      "GPT-5.2": 1,
-      "GPT-4": 1,
-      "26.506.31004": 1
-    },
     "DeepSeek": {
       "DeepSeek V3.2": 35,
       "DeepSeek V4": 27,
-      "DeepSeek V3": 3,
-      "DeepSeek V4.1": 2
+      "DeepSeek V4.1": 3,
+      "DeepSeek V3": 3
     },
     "Greg KH (local LLM fuzzer)": {
       "gregkh_clanker_t1000": 28,
@@ -228,7 +229,7 @@
       "gkh-clanker-2000": 1
     },
     "Z.ai": {
-      "GLM-5.2": 16,
+      "GLM-5.2": 17,
       "GLM-4.7": 15,
       "GLM:5.3": 5,
       "GLM-5.3": 3,
@@ -243,23 +244,23 @@
   },
   "vendor_lines": {
     "Anthropic": {
-      "ins": 104032,
-      "del": 28777
+      "ins": 104376,
+      "del": 28809
     },
     "Unknown": {
-      "ins": 14140,
-      "del": 6849
+      "ins": 29724,
+      "del": 10901
+    },
+    "OpenAI": {
+      "ins": 17061,
+      "del": 7068
     },
     "Google": {
       "ins": 24600,
       "del": 9786
     },
-    "OpenAI": {
-      "ins": 16392,
-      "del": 6944
-    },
     "DeepSeek": {
-      "ins": 1329,
+      "ins": 1332,
       "del": 382
     },
     "Greg KH (local LLM fuzzer)": {
@@ -267,8 +268,8 @@
       "del": 87
     },
     "Z.ai": {
-      "ins": 4703,
-      "del": 162
+      "ins": 4704,
+      "del": 164
     },
     "Cursor (in-house)": {
       "ins": 1825,
@@ -286,15 +287,15 @@
     ],
     [
       "Unknown \u2014 LLM",
-      372
+      431
     ],
     [
       "Anthropic \u2014 Opus",
-      312
+      317
     ],
     [
       "OpenAI \u2014 GPT-5.5",
-      204
+      207
     ],
     [
       "Google \u2014 Gemini 3.1 Pro",
@@ -305,12 +306,16 @@
       166
     ],
     [
+      "Unknown \u2014 LOLLM # finding obvious bugs",
+      165
+    ],
+    [
       "Anthropic \u2014 Opus 4.7",
       158
     ],
     [
       "OpenAI \u2014 GPT-5.6",
-      145
+      148
     ],
     [
       "Google \u2014 Gemini 3.5",
@@ -318,11 +323,7 @@
     ],
     [
       "OpenAI \u2014 GPT-5",
-      93
-    ],
-    [
-      "Unknown \u2014 LOLLM # finding obvious bugs",
-      91
+      94
     ],
     [
       "Anthropic \u2014 Sonnet",
@@ -334,15 +335,15 @@
     ],
     [
       "Anthropic \u2014 claude-fable-5",
-      54
+      55
+    ],
+    [
+      "Anthropic \u2014 Opus 5.5",
+      38
     ],
     [
       "Unknown \u2014 big-pickle",
       37
-    ],
-    [
-      "Anthropic \u2014 Opus 5.5",
-      35
     ],
     [
       "OpenAI \u2014 GPT-5.3",
@@ -389,16 +390,16 @@
       17
     ],
     [
+      "Z.ai \u2014 GLM-5.2",
+      17
+    ],
+    [
       "Unknown \u2014 kres (claude-opus-4-7)",
       17
     ],
     [
       "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6",
       17
-    ],
-    [
-      "Z.ai \u2014 GLM-5.2",
-      16
     ],
     [
       "Unknown \u2014 Bynario AI",
@@ -437,6 +438,10 @@
       7
     ],
     [
+      "Unknown \u2014 gpt 5",
+      6
+    ],
+    [
       "Unknown \u2014 unspecified",
       6
     ],
@@ -471,6 +476,10 @@
     [
       "Google \u2014 gemini-3-flash",
       5
+    ],
+    [
+      "Anthropic \u2014 claude-mythos-5",
+      4
     ],
     [
       "Anthropic \u2014 claude-fable-5-1",
@@ -518,6 +527,10 @@
     ],
     [
       "Google \u2014 Gemini 3.8",
+      3
+    ],
+    [
+      "DeepSeek \u2014 DeepSeek V4.1",
       3
     ],
     [
@@ -573,6 +586,10 @@
       3
     ],
     [
+      "Unknown \u2014 LLM codeql",
+      2
+    ],
+    [
       "Unknown \u2014 LLM sparse checkpatch",
       2
     ],
@@ -581,23 +598,15 @@
       2
     ],
     [
-      "DeepSeek \u2014 DeepSeek V4.1",
-      2
-    ],
-    [
-      "Anthropic \u2014 claude-mythos-5",
-      2
-    ],
-    [
-      "Unknown \u2014 gpt 5",
-      2
-    ],
-    [
       "Unknown \u2014 LLM Codex",
       2
     ],
     [
       "Unknown \u2014 Qoder:Qwen3.8-Max",
+      2
+    ],
+    [
+      "OpenAI \u2014 ",
       2
     ],
     [
@@ -802,10 +811,6 @@
     ],
     [
       "Unknown \u2014 abaci:qwen3.8-max",
-      1
-    ],
-    [
-      "OpenAI \u2014 ",
       1
     ],
     [
@@ -1023,32 +1028,48 @@
   ],
   "model_lines": {
     "Anthropic \u2014 Opus 5.5": {
-      "ins": 928,
-      "del": 98
+      "ins": 944,
+      "del": 99
     },
     "Anthropic \u2014 Opus 4.6": {
       "ins": 32654,
       "del": 18184
     },
     "Anthropic \u2014 Opus": {
-      "ins": 10887,
-      "del": 2754
+      "ins": 10900,
+      "del": 2767
     },
     "Unknown \u2014 LLM": {
-      "ins": 5881,
-      "del": 2400
+      "ins": 20463,
+      "del": 6173
+    },
+    "OpenAI \u2014 GPT-5.6": {
+      "ins": 2585,
+      "del": 4139
+    },
+    "Unknown \u2014 gpt 5": {
+      "ins": 47,
+      "del": 9
     },
     "Google \u2014 Gemini 3.8": {
       "ins": 28,
       "del": 16
     },
     "Anthropic \u2014 claude-fable-5": {
-      "ins": 1167,
-      "del": 175
+      "ins": 1169,
+      "del": 176
     },
     "Anthropic \u2014 Sonnet": {
       "ins": 2087,
       "del": 846
+    },
+    "Unknown \u2014 LOLLM # finding obvious bugs": {
+      "ins": 1823,
+      "del": 606
+    },
+    "Unknown \u2014 LLM codeql": {
+      "ins": 14,
+      "del": 3
     },
     "Anthropic \u2014 unspecified": {
       "ins": 160,
@@ -1065,6 +1086,10 @@
     "Unknown \u2014 Bynario AI": {
       "ins": 188,
       "del": 50
+    },
+    "Anthropic \u2014 claude-mythos-5": {
+      "ins": 364,
+      "del": 17
     },
     "Unknown \u2014 LLM (exposing this pre-existing problem)": {
       "ins": 1,
@@ -1087,20 +1112,16 @@
       "del": 11
     },
     "OpenAI \u2014 GPT-5": {
-      "ins": 1305,
-      "del": 315
+      "ins": 1324,
+      "del": 322
     },
     "Unknown \u2014 CodeBuddy:Kimi-K3": {
       "ins": 51,
       "del": 7
     },
     "DeepSeek \u2014 DeepSeek V4.1": {
-      "ins": 15,
+      "ins": 18,
       "del": 8
-    },
-    "Anthropic \u2014 claude-mythos-5": {
-      "ins": 51,
-      "del": 0
     },
     "Unknown \u2014 LLM, in-house static analysis tool": {
       "ins": 4,
@@ -1109,10 +1130,6 @@
     "OpenAI \u2014 GPT-6": {
       "ins": 134,
       "del": 20
-    },
-    "Unknown \u2014 gpt 5": {
-      "ins": 28,
-      "del": 5
     },
     "Unknown \u2014 GPT-6 Astra": {
       "ins": 57,
@@ -1138,10 +1155,6 @@
       "ins": 4,
       "del": 1
     },
-    "OpenAI \u2014 GPT-5.6": {
-      "ins": 2441,
-      "del": 4125
-    },
     "Google \u2014 Gemini 3.1 Pro": {
       "ins": 11825,
       "del": 3412
@@ -1153,6 +1166,10 @@
     "Anthropic \u2014 Sonnet 5.5": {
       "ins": 1,
       "del": 0
+    },
+    "OpenAI \u2014 GPT-5.5": {
+      "ins": 11066,
+      "del": 1929
     },
     "Unknown \u2014 GPT-6-Astra": {
       "ins": 13,
@@ -1218,13 +1235,13 @@
       "ins": 1,
       "del": 1
     },
+    "OpenAI \u2014 ": {
+      "ins": 482,
+      "del": 96
+    },
     "Unknown \u2014 LLM sparse smatch coccinelle kasan": {
       "ins": 4,
       "del": 2
-    },
-    "OpenAI \u2014 GPT-5.5": {
-      "ins": 11035,
-      "del": 1922
     },
     "Z.ai \u2014 GLM:5.3": {
       "ins": 37,
@@ -1238,13 +1255,13 @@
       "ins": 1,
       "del": 1
     },
+    "Z.ai \u2014 GLM-5.2": {
+      "ins": 246,
+      "del": 125
+    },
     "Anthropic \u2014 claude-fable-5 [Claude Code]": {
       "ins": 10,
       "del": 5
-    },
-    "Unknown \u2014 LOLLM # finding obvious bugs": {
-      "ins": 854,
-      "del": 334
     },
     "Unknown \u2014 big-pickle": {
       "ins": 293,
@@ -1370,10 +1387,6 @@
       "ins": 6,
       "del": 1
     },
-    "OpenAI \u2014 ": {
-      "ins": 7,
-      "del": 0
-    },
     "Unknown \u2014 tencentos-corvus-ai:kimi-k3": {
       "ins": 70,
       "del": 30
@@ -1385,10 +1398,6 @@
     "Unknown \u2014 4.6": {
       "ins": 21,
       "del": 23
-    },
-    "Z.ai \u2014 GLM-5.2": {
-      "ins": 245,
-      "del": 123
     },
     "Anthropic \u2014 claude-fable-5 coccinelle": {
       "ins": 2,
@@ -1770,15 +1779,15 @@
   "tool_counts": [
     [
       "Direct / API",
-      1695
+      1703
     ],
     [
       "Unknown",
-      710
+      849
     ],
     [
       "Codex",
-      471
+      478
     ],
     [
       "GitHub Copilot",
@@ -1798,14 +1807,14 @@
     ],
     [
       "Cursor",
-      53
-    ],
-    [
-      "Claude Code",
-      23
+      58
     ],
     [
       "Kiro",
+      24
+    ],
+    [
+      "Claude Code",
       23
     ],
     [
@@ -1823,12 +1832,16 @@
   ],
   "tool_lines": {
     "Direct / API": {
-      "ins": 57837,
-      "del": 22296
+      "ins": 58172,
+      "del": 22317
     },
     "Unknown": {
-      "ins": 12724,
-      "del": 5020
+      "ins": 28308,
+      "del": 9072
+    },
+    "Kiro": {
+      "ins": 794,
+      "del": 179
     },
     "GitHub Copilot": {
       "ins": 59408,
@@ -1839,12 +1852,12 @@
       "del": 50
     },
     "Cursor": {
-      "ins": 6943,
-      "del": 1809
+      "ins": 6956,
+      "del": 1822
     },
     "Codex": {
-      "ins": 12873,
-      "del": 6504
+      "ins": 13541,
+      "del": 6627
     },
     "Local LLM fuzzer": {
       "ins": 391,
@@ -1862,10 +1875,6 @@
       "ins": 6127,
       "del": 1712
     },
-    "Kiro": {
-      "ins": 793,
-      "del": 178
-    },
     "Unnamed": {
       "ins": 1,
       "del": 4
@@ -1877,7 +1886,7 @@
   },
   "model_tools": {
     "Anthropic \u2014 Opus 5.5": {
-      "Direct / API": 34,
+      "Direct / API": 37,
       "GitHub Copilot": 1
     },
     "Anthropic \u2014 Opus 4.6": {
@@ -1889,24 +1898,39 @@
     },
     "Anthropic \u2014 Opus": {
       "Direct / API": 263,
+      "Cursor": 24,
       "GitHub Copilot": 21,
-      "Cursor": 19,
       "Kiro": 7,
       "Claude Code": 2
     },
     "Unknown \u2014 LLM": {
-      "Unknown": 372
+      "Unknown": 431
+    },
+    "OpenAI \u2014 GPT-5.6": {
+      "Codex": 128,
+      "OpenCode": 12,
+      "GitHub Copilot": 7,
+      "Kiro": 1
+    },
+    "Unknown \u2014 gpt 5": {
+      "Unknown": 6
     },
     "Google \u2014 Gemini 3.8": {
       "Antigravity": 2,
       "Direct / API": 1
     },
     "Anthropic \u2014 claude-fable-5": {
-      "Direct / API": 54
+      "Direct / API": 55
     },
     "Anthropic \u2014 Sonnet": {
       "Direct / API": 61,
       "GitHub Copilot": 2
+    },
+    "Unknown \u2014 LOLLM # finding obvious bugs": {
+      "Unknown": 165
+    },
+    "Unknown \u2014 LLM codeql": {
+      "Unknown": 2
     },
     "Anthropic \u2014 unspecified": {
       "Direct / API": 14,
@@ -1926,6 +1950,9 @@
     "Unknown \u2014 Bynario AI": {
       "Bynario AI": 15
     },
+    "Anthropic \u2014 claude-mythos-5": {
+      "Direct / API": 4
+    },
     "Unknown \u2014 LLM (exposing this pre-existing problem)": {
       "Unknown": 1
     },
@@ -1943,17 +1970,14 @@
       "Unknown": 1
     },
     "OpenAI \u2014 GPT-5": {
-      "Codex": 91,
+      "Codex": 92,
       "GitHub Copilot": 2
     },
     "Unknown \u2014 CodeBuddy:Kimi-K3": {
       "Unknown": 4
     },
     "DeepSeek \u2014 DeepSeek V4.1": {
-      "Direct / API": 2
-    },
-    "Anthropic \u2014 claude-mythos-5": {
-      "Direct / API": 2
+      "Direct / API": 3
     },
     "Unknown \u2014 LLM, in-house static analysis tool": {
       "Unknown": 1
@@ -1961,9 +1985,6 @@
     "OpenAI \u2014 GPT-6": {
       "Codex": 5,
       "GitHub Copilot": 2
-    },
-    "Unknown \u2014 gpt 5": {
-      "Unknown": 2
     },
     "Unknown \u2014 GPT-6 Astra": {
       "Unknown": 4
@@ -1988,11 +2009,6 @@
     "Unknown \u2014 Pi:gpt-5.6-sol": {
       "Unknown": 1
     },
-    "OpenAI \u2014 GPT-5.6": {
-      "Codex": 126,
-      "OpenCode": 12,
-      "GitHub Copilot": 7
-    },
     "Google \u2014 Gemini 3.1 Pro": {
       "Direct / API": 152,
       "Antigravity": 38,
@@ -2003,6 +2019,11 @@
     },
     "Anthropic \u2014 Sonnet 5.5": {
       "Direct / API": 1
+    },
+    "OpenAI \u2014 GPT-5.5": {
+      "Codex": 193,
+      "OpenCode": 8,
+      "GitHub Copilot": 6
     },
     "Unknown \u2014 GPT-6-Astra": {
       "Unknown": 1
@@ -2053,13 +2074,11 @@
     "Unknown \u2014 smatch:2.0 [static analysis]": {
       "Unknown": 1
     },
+    "OpenAI \u2014 ": {
+      "Codex": 2
+    },
     "Unknown \u2014 LLM sparse smatch coccinelle kasan": {
       "Unknown": 1
-    },
-    "OpenAI \u2014 GPT-5.5": {
-      "Codex": 190,
-      "OpenCode": 8,
-      "GitHub Copilot": 6
     },
     "Z.ai \u2014 GLM:5.3": {
       "Direct / API": 5
@@ -2070,11 +2089,12 @@
     "Anthropic \u2014 gpt-5": {
       "Direct / API": 1
     },
+    "Z.ai \u2014 GLM-5.2": {
+      "OpenCode": 10,
+      "Direct / API": 7
+    },
     "Anthropic \u2014 claude-fable-5 [Claude Code]": {
       "Direct / API": 4
-    },
-    "Unknown \u2014 LOLLM # finding obvious bugs": {
-      "Unknown": 91
     },
     "Unknown \u2014 big-pickle": {
       "OpenCode": 37
@@ -2172,9 +2192,6 @@
     "Google \u2014 Gemini 3.6 Pro": {
       "Direct / API": 2
     },
-    "OpenAI \u2014 ": {
-      "Codex": 1
-    },
     "Unknown \u2014 tencentos-corvus-ai:kimi-k3": {
       "Unknown": 4
     },
@@ -2183,10 +2200,6 @@
     },
     "Unknown \u2014 4.6": {
       "Cursor": 1
-    },
-    "Z.ai \u2014 GLM-5.2": {
-      "OpenCode": 10,
-      "Direct / API": 6
     },
     "Anthropic \u2014 claude-fable-5 coccinelle": {
       "Direct / API": 1
@@ -2478,6 +2491,10 @@
   },
   "top_authors": [
     [
+      "Darrick J. Wong",
+      165
+    ],
+    [
       "Arnaldo Carvalho de Melo",
       163
     ],
@@ -2503,11 +2520,7 @@
     ],
     [
       "Karl Mehltretter",
-      98
-    ],
-    [
-      "Darrick J. Wong",
-      91
+      109
     ],
     [
       "Jeff Layton",
@@ -2548,6 +2561,10 @@
       185
     ],
     [
+      "Carlos Maiolino",
+      173
+    ],
+    [
       "Greg Kroah-Hartman",
       151
     ],
@@ -2566,10 +2583,6 @@
     [
       "Mark Brown",
       96
-    ],
-    [
-      "Carlos Maiolino",
-      94
     ],
     [
       "Andrew Morton",
@@ -2764,52 +2777,52 @@
     "2026-08-27": 9,
     "2026-08-28": 1,
     "2026-08-30": 3,
-    "2026-08-31": 43,
+    "2026-08-31": 44,
     "2026-09-01": 34,
-    "2026-09-02": 32,
+    "2026-09-02": 33,
     "2026-09-03": 9,
-    "2026-09-04": 23,
+    "2026-09-04": 24,
     "2026-09-05": 3,
     "2026-09-06": 1,
-    "2026-09-07": 73,
+    "2026-09-07": 75,
     "2026-09-08": 20,
     "2026-09-09": 43,
-    "2026-09-10": 25,
-    "2026-09-11": 26,
-    "2026-09-12": 6,
+    "2026-09-10": 26,
+    "2026-09-11": 29,
+    "2026-09-12": 7,
     "2026-09-13": 8,
     "2026-09-14": 24,
     "2026-09-15": 43,
-    "2026-09-16": 15,
-    "2026-09-17": 29,
+    "2026-09-16": 16,
+    "2026-09-17": 37,
     "2026-09-18": 12,
     "2026-09-19": 1,
     "2026-09-20": 12,
-    "2026-09-21": 107,
+    "2026-09-21": 108,
     "2026-09-22": 27,
     "2026-09-23": 26,
-    "2026-09-24": 9,
+    "2026-09-24": 13,
     "2026-09-25": 15,
-    "2026-09-26": 11,
-    "2026-09-27": 3,
-    "2026-09-28": 21,
-    "2026-09-29": 8,
-    "2026-09-30": 13,
-    "2026-10-01": 22,
-    "2026-10-02": 8,
+    "2026-09-26": 28,
+    "2026-09-27": 4,
+    "2026-09-28": 22,
+    "2026-09-29": 10,
+    "2026-09-30": 14,
+    "2026-10-01": 24,
+    "2026-10-02": 9,
     "2026-10-03": 5,
     "2026-10-04": 13,
-    "2026-10-05": 12,
-    "2026-10-06": 7,
-    "2026-10-07": 6,
-    "2026-10-08": 3,
-    "2026-10-09": 6,
-    "2026-10-11": 1,
-    "2026-10-12": 33,
-    "2026-10-13": 23,
-    "2026-10-14": 7,
-    "2026-10-15": 10,
-    "2026-10-16": 4,
+    "2026-10-05": 34,
+    "2026-10-06": 27,
+    "2026-10-07": 8,
+    "2026-10-08": 14,
+    "2026-10-09": 11,
+    "2026-10-11": 3,
+    "2026-10-12": 37,
+    "2026-10-13": 24,
+    "2026-10-14": 41,
+    "2026-10-15": 19,
+    "2026-10-16": 5,
     "2026-10-18": 18
   },
   "by_date_lines": {
@@ -3466,15 +3479,15 @@
       "del": 8
     },
     "2026-08-31": {
-      "ins": 798,
-      "del": 488
+      "ins": 839,
+      "del": 489
     },
     "2026-09-01": {
       "ins": 457,
       "del": 239
     },
     "2026-09-02": {
-      "ins": 550,
+      "ins": 567,
       "del": 299
     },
     "2026-09-03": {
@@ -3482,8 +3495,8 @@
       "del": 60
     },
     "2026-09-04": {
-      "ins": 143,
-      "del": 48
+      "ins": 144,
+      "del": 49
     },
     "2026-09-05": {
       "ins": 20,
@@ -3494,8 +3507,8 @@
       "del": 0
     },
     "2026-09-07": {
-      "ins": 773,
-      "del": 177
+      "ins": 780,
+      "del": 183
     },
     "2026-09-08": {
       "ins": 175,
@@ -3507,15 +3520,15 @@
     },
     "2026-09-10": {
       "ins": 235,
-      "del": 103
+      "del": 116
     },
     "2026-09-11": {
-      "ins": 173,
-      "del": 63
+      "ins": 186,
+      "del": 70
     },
     "2026-09-12": {
-      "ins": 48,
-      "del": 18
+      "ins": 49,
+      "del": 19
     },
     "2026-09-13": {
       "ins": 56,
@@ -3530,12 +3543,12 @@
       "del": 163
     },
     "2026-09-16": {
-      "ins": 142,
+      "ins": 145,
       "del": 55
     },
     "2026-09-17": {
-      "ins": 248,
-      "del": 89
+      "ins": 850,
+      "del": 191
     },
     "2026-09-18": {
       "ins": 94,
@@ -3550,8 +3563,8 @@
       "del": 27
     },
     "2026-09-21": {
-      "ins": 8041,
-      "del": 1866
+      "ins": 8516,
+      "del": 1962
     },
     "2026-09-22": {
       "ins": 471,
@@ -3562,39 +3575,39 @@
       "del": 90
     },
     "2026-09-24": {
-      "ins": 95,
-      "del": 45
+      "ins": 372,
+      "del": 53
     },
     "2026-09-25": {
       "ins": 139,
       "del": 62
     },
     "2026-09-26": {
-      "ins": 425,
-      "del": 12
+      "ins": 1592,
+      "del": 489
     },
     "2026-09-27": {
-      "ins": 21,
-      "del": 1
+      "ins": 22,
+      "del": 2
     },
     "2026-09-28": {
-      "ins": 190,
-      "del": 69
+      "ins": 196,
+      "del": 74
     },
     "2026-09-29": {
-      "ins": 55,
-      "del": 3
+      "ins": 75,
+      "del": 5
     },
     "2026-09-30": {
-      "ins": 555,
-      "del": 23
+      "ins": 556,
+      "del": 24
     },
     "2026-10-01": {
-      "ins": 582,
-      "del": 275
+      "ins": 690,
+      "del": 322
     },
     "2026-10-02": {
-      "ins": 231,
+      "ins": 233,
       "del": 28
     },
     "2026-10-03": {
@@ -3606,48 +3619,48 @@
       "del": 54
     },
     "2026-10-05": {
-      "ins": 210,
-      "del": 63
+      "ins": 615,
+      "del": 223
     },
     "2026-10-06": {
-      "ins": 42,
-      "del": 29
+      "ins": 243,
+      "del": 114
     },
     "2026-10-07": {
-      "ins": 100,
-      "del": 6
+      "ins": 102,
+      "del": 7
     },
     "2026-10-08": {
-      "ins": 54,
-      "del": 3
+      "ins": 109,
+      "del": 16
     },
     "2026-10-09": {
-      "ins": 27,
-      "del": 20
+      "ins": 48,
+      "del": 22
     },
     "2026-10-11": {
-      "ins": 10,
-      "del": 89
+      "ins": 37,
+      "del": 113
     },
     "2026-10-12": {
-      "ins": 500,
-      "del": 190
+      "ins": 817,
+      "del": 207
     },
     "2026-10-13": {
-      "ins": 457,
-      "del": 328
+      "ins": 465,
+      "del": 331
     },
     "2026-10-14": {
-      "ins": 88,
-      "del": 13
+      "ins": 613,
+      "del": 117
     },
     "2026-10-15": {
-      "ins": 63,
-      "del": 32
+      "ins": 12360,
+      "del": 3064
     },
     "2026-10-16": {
-      "ins": 25,
-      "del": 5
+      "ins": 26,
+      "del": 6
     },
     "2026-10-18": {
       "ins": 307,
@@ -7235,16 +7248,16 @@
         "Anthropic \u2014 Opus 4.6": 2,
         "Google \u2014 gemini-3-flash": 2,
         "Google \u2014 Gemini 3.1 Pro": 1,
-        "Anthropic \u2014 Sonnet 4.5": 15,
         "Z.ai \u2014 GLM-4.7": 15,
+        "Anthropic \u2014 Sonnet 4.5": 15,
         "Unknown \u2014 kres (claude-opus-4-7)": 1,
         "Google \u2014 gemini": 1
       },
       "tools": {
         "Direct / API": 9,
         "Antigravity": 3,
-        "Cursor": 15,
         "OpenCode": 15,
+        "Cursor": 15,
         "Unknown": 1
       },
       "vendor_lines": {
@@ -7282,11 +7295,11 @@
           "ins": 1,
           "del": 0
         },
-        "Anthropic \u2014 Sonnet 4.5": {
+        "Z.ai \u2014 GLM-4.7": {
           "ins": 4326,
           "del": 11
         },
-        "Z.ai \u2014 GLM-4.7": {
+        "Anthropic \u2014 Sonnet 4.5": {
           "ins": 4326,
           "del": 11
         },
@@ -7308,11 +7321,11 @@
           "ins": 448,
           "del": 100
         },
-        "Cursor": {
+        "OpenCode": {
           "ins": 4326,
           "del": 11
         },
-        "OpenCode": {
+        "Cursor": {
           "ins": 4326,
           "del": 11
         },
@@ -10060,8 +10073,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.6": 5,
-        "Unknown \u2014 Sashiko:claude-opus-4-7": 1,
         "Anthropic \u2014 Opus 4.7": 4,
+        "Unknown \u2014 Sashiko:claude-opus-4-7": 1,
         "Anthropic \u2014 Opus 4.8": 13,
         "OpenAI \u2014 GPT-5.5": 5,
         "OpenAI \u2014 GPT-5": 2,
@@ -10092,13 +10105,13 @@
           "ins": 112,
           "del": 92
         },
-        "Unknown \u2014 Sashiko:claude-opus-4-7": {
-          "ins": 17,
-          "del": 6
-        },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 87,
           "del": 20
+        },
+        "Unknown \u2014 Sashiko:claude-opus-4-7": {
+          "ins": 17,
+          "del": 6
         },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 177,
@@ -10644,8 +10657,8 @@
       },
       "models": {
         "Anthropic \u2014 Opus 4.6": 2,
-        "Anthropic \u2014 Opus 4.8": 16,
         "Unknown \u2014 Fable:5": 1,
+        "Anthropic \u2014 Opus 4.8": 16,
         "Anthropic \u2014 Opus 4.7": 3,
         "OpenAI \u2014 GPT-5.5": 14,
         "Unknown \u2014 Bynario AI": 1,
@@ -10677,13 +10690,13 @@
           "ins": 15,
           "del": 45
         },
-        "Anthropic \u2014 Opus 4.8": {
-          "ins": 339,
-          "del": 165
-        },
         "Unknown \u2014 Fable:5": {
           "ins": 13,
           "del": 2
+        },
+        "Anthropic \u2014 Opus 4.8": {
+          "ins": 339,
+          "del": 165
         },
         "Anthropic \u2014 Opus 4.7": {
           "ins": 53,
@@ -13179,8 +13192,8 @@
       "models": {
         "Anthropic \u2014 claude-fable-5": 1,
         "Unknown \u2014 big-pickle": 1,
-        "Anthropic \u2014 Opus": 2,
         "OpenAI \u2014 GPT-5.6": 3,
+        "Anthropic \u2014 Opus": 2,
         "OpenAI \u2014 GPT-5.4": 1,
         "Anthropic \u2014 Opus 4.6": 1,
         "Google \u2014 Gemini 3.5": 2,
@@ -13232,13 +13245,13 @@
           "ins": 1,
           "del": 1
         },
-        "Anthropic \u2014 Opus": {
-          "ins": 92,
-          "del": 64
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 95,
           "del": 68
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 92,
+          "del": 64
         },
         "OpenAI \u2014 GPT-5.4": {
           "ins": 4,
@@ -13320,8 +13333,8 @@
       },
       "vendors": {
         "Google": 13,
-        "OpenAI": 4,
         "Unknown": 7,
+        "OpenAI": 4,
         "Anthropic": 7,
         "DeepSeek": 1
       },
@@ -13353,13 +13366,13 @@
           "ins": 504,
           "del": 444
         },
-        "OpenAI": {
-          "ins": 512,
-          "del": 684
-        },
         "Unknown": {
           "ins": 682,
           "del": 116
+        },
+        "OpenAI": {
+          "ins": 512,
+          "del": 684
         },
         "Anthropic": {
           "ins": 38,
@@ -13972,8 +13985,8 @@
         "Anthropic \u2014 Opus 4.6": 15,
         "OpenAI \u2014 deepseek-v4-flash": 1,
         "Unknown \u2014 Cline:claude-sonnet [read_file, search_files, git]": 1,
-        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": 2,
         "OpenAI \u2014 GPT-5.6": 5,
+        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": 2,
         "Anthropic \u2014 Sonnet": 1,
         "Anthropic \u2014 claude-fable-5": 1,
         "Unknown \u2014 LLM (reproduction, analysis)": 1
@@ -14033,13 +14046,13 @@
           "ins": 1,
           "del": 1
         },
-        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": {
-          "ins": 91,
-          "del": 0
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 118,
           "del": 11
+        },
+        "Unknown \u2014 ChatGPT:GPT-5.6-Pro": {
+          "ins": 91,
+          "del": 0
         },
         "Anthropic \u2014 Sonnet": {
           "ins": 6,
@@ -14097,9 +14110,9 @@
       "models": {
         "Google \u2014 Gemini 3.6": 2,
         "Google \u2014 Gemini 3.5": 5,
+        "DeepSeek \u2014 DeepSeek V4": 2,
         "Unknown \u2014 mimo-v2.5-free": 2,
         "Anthropic \u2014 Opus 4.6": 8,
-        "DeepSeek \u2014 DeepSeek V4": 2,
         "Anthropic \u2014 Sonnet 4.6": 1,
         "Unknown \u2014 LLM": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -14146,6 +14159,10 @@
           "ins": 268,
           "del": 213
         },
+        "DeepSeek \u2014 DeepSeek V4": {
+          "ins": 130,
+          "del": 52
+        },
         "Unknown \u2014 mimo-v2.5-free": {
           "ins": 130,
           "del": 52
@@ -14153,10 +14170,6 @@
         "Anthropic \u2014 Opus 4.6": {
           "ins": 526,
           "del": 459
-        },
-        "DeepSeek \u2014 DeepSeek V4": {
-          "ins": 130,
-          "del": 52
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "ins": 112,
@@ -14226,8 +14239,8 @@
         "Anthropic \u2014 claude-fable-5": 5,
         "Anthropic \u2014 Sonnet": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 6,
-        "Anthropic \u2014 Opus": 4,
         "OpenAI \u2014 GPT-5.6": 2,
+        "Anthropic \u2014 Opus": 4,
         "Anthropic \u2014 unspecified": 2,
         "Anthropic \u2014 Opus 4.8": 18,
         "Unknown \u2014 ChatGPT:GPT-5.5-Thinking": 1,
@@ -14277,13 +14290,13 @@
           "ins": 425,
           "del": 52
         },
-        "Anthropic \u2014 Opus": {
-          "ins": 14,
-          "del": 4
-        },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 10,
           "del": 2
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 14,
+          "del": 4
         },
         "Anthropic \u2014 unspecified": {
           "ins": 54,
@@ -15678,8 +15691,8 @@
         "Anthropic \u2014 claude-fable-5 coccinelle": 1,
         "Anthropic \u2014 Opus 4.8": 2,
         "Unknown \u2014 hy3-free": 1,
-        "Anthropic \u2014 Opus": 2,
         "OpenAI \u2014 GPT-5.5": 1,
+        "Anthropic \u2014 Opus": 2,
         "OpenAI \u2014 GPT-5.6": 1,
         "Google \u2014 Gemini 3.1 Pro": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -15722,13 +15735,13 @@
           "ins": 3,
           "del": 6
         },
-        "Anthropic \u2014 Opus": {
-          "ins": 13,
-          "del": 4
-        },
         "OpenAI \u2014 GPT-5.5": {
           "ins": 1,
           "del": 0
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 13,
+          "del": 4
         },
         "OpenAI \u2014 GPT-5.6": {
           "ins": 7,
@@ -16021,8 +16034,8 @@
         "Unknown \u2014 AuditCode-AI:2026.07": 1,
         "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
         "Anthropic \u2014 Opus": 3,
-        "Google \u2014 Gemini 3.1 Pro": 1,
-        "OpenAI \u2014 GPT-5.6": 1
+        "OpenAI \u2014 GPT-5.6": 1,
+        "Google \u2014 Gemini 3.1 Pro": 1
       },
       "tools": {
         "Direct / API": 7,
@@ -16073,11 +16086,11 @@
           "ins": 12,
           "del": 7
         },
-        "Google \u2014 Gemini 3.1 Pro": {
+        "OpenAI \u2014 GPT-5.6": {
           "ins": 10,
           "del": 4
         },
-        "OpenAI \u2014 GPT-5.6": {
+        "Google \u2014 Gemini 3.1 Pro": {
           "ins": 10,
           "del": 4
         }
@@ -16363,23 +16376,23 @@
       }
     },
     "2026-08-31": {
-      "patches": 43,
+      "patches": 44,
       "lines": {
-        "ins": 798,
-        "del": 488
+        "ins": 839,
+        "del": 489
       },
       "vendors": {
         "DeepSeek": 1,
+        "OpenAI": 21,
         "Anthropic": 10,
         "Unknown": 10,
-        "OpenAI": 20,
         "Google": 2
       },
       "models": {
         "DeepSeek \u2014 DeepSeek V3": 1,
+        "OpenAI \u2014 GPT-5.6": 19,
         "Anthropic \u2014 Opus 4.8": 1,
         "Unknown \u2014 LLM": 9,
-        "OpenAI \u2014 GPT-5.6": 18,
         "Google \u2014 Gemini 3.7 Pro": 1,
         "Google \u2014 Gemini 3.1 Pro": 1,
         "Anthropic \u2014 Opus": 5,
@@ -16390,14 +16403,18 @@
       },
       "tools": {
         "Direct / API": 12,
+        "Codex": 21,
         "Unknown": 10,
-        "Codex": 20,
         "GitHub Copilot": 1
       },
       "vendor_lines": {
         "DeepSeek": {
           "ins": 3,
           "del": 3
+        },
+        "OpenAI": {
+          "ins": 132,
+          "del": 28
         },
         "Anthropic": {
           "ins": 320,
@@ -16406,10 +16423,6 @@
         "Unknown": {
           "ins": 359,
           "del": 417
-        },
-        "OpenAI": {
-          "ins": 91,
-          "del": 27
         },
         "Google": {
           "ins": 25,
@@ -16421,6 +16434,10 @@
           "ins": 3,
           "del": 3
         },
+        "OpenAI \u2014 GPT-5.6": {
+          "ins": 127,
+          "del": 23
+        },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 129,
           "del": 6
@@ -16428,10 +16445,6 @@
         "Unknown \u2014 LLM": {
           "ins": 348,
           "del": 415
-        },
-        "OpenAI \u2014 GPT-5.6": {
-          "ins": 86,
-          "del": 22
         },
         "Google \u2014 Gemini 3.7 Pro": {
           "ins": 3,
@@ -16467,13 +16480,13 @@
           "ins": 328,
           "del": 34
         },
+        "Codex": {
+          "ins": 132,
+          "del": 28
+        },
         "Unknown": {
           "ins": 359,
           "del": 417
-        },
-        "Codex": {
-          "ins": 91,
-          "del": 27
         },
         "GitHub Copilot": {
           "ins": 20,
@@ -16641,16 +16654,16 @@
       }
     },
     "2026-09-02": {
-      "patches": 32,
+      "patches": 33,
       "lines": {
-        "ins": 550,
+        "ins": 567,
         "del": 299
       },
       "vendors": {
         "Unknown": 22,
         "Greg KH (local LLM fuzzer)": 1,
         "Anthropic": 3,
-        "OpenAI": 5,
+        "OpenAI": 6,
         "Google": 1
       },
       "models": {
@@ -16663,6 +16676,7 @@
         "OpenAI \u2014 GPT-5": 4,
         "Unknown \u2014 GitHub_Copilot:claude-opus-5": 1,
         "Anthropic \u2014 Opus 4.8": 1,
+        "OpenAI \u2014 GPT-5.5": 1,
         "Unknown \u2014 Antiproof:GPT-5.6-Sol": 1,
         "OpenAI \u2014 GPT-5.6": 1,
         "Google \u2014 Gemini 3.1 Pro": 1
@@ -16672,7 +16686,7 @@
         "Bynario AI": 2,
         "Local LLM fuzzer": 1,
         "Direct / API": 4,
-        "Codex": 5
+        "Codex": 6
       },
       "vendor_lines": {
         "Unknown": {
@@ -16688,7 +16702,7 @@
           "del": 2
         },
         "OpenAI": {
-          "ins": 7,
+          "ins": 24,
           "del": 5
         },
         "Google": {
@@ -16733,6 +16747,10 @@
           "ins": 2,
           "del": 0
         },
+        "OpenAI \u2014 GPT-5.5": {
+          "ins": 17,
+          "del": 0
+        },
         "Unknown \u2014 Antiproof:GPT-5.6-Sol": {
           "ins": 11,
           "del": 1
@@ -16764,7 +16782,7 @@
           "del": 10
         },
         "Codex": {
-          "ins": 7,
+          "ins": 24,
           "del": 5
         }
       }
@@ -16864,35 +16882,39 @@
       }
     },
     "2026-09-04": {
-      "patches": 23,
+      "patches": 24,
       "lines": {
-        "ins": 143,
-        "del": 48
+        "ins": 144,
+        "del": 49
       },
       "vendors": {
+        "Anthropic": 6,
         "OpenAI": 10,
         "Unknown": 7,
-        "Anthropic": 5,
         "Z.ai": 2
       },
       "models": {
+        "Anthropic \u2014 Opus": 6,
         "OpenAI \u2014 GPT-5": 4,
         "Unknown \u2014 LLM": 3,
         "OpenAI \u2014 GPT-5.6": 6,
         "Unknown \u2014 Kimi:Kimi-K3 # debug and root-cause analysis": 1,
-        "Anthropic \u2014 Opus": 5,
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": 1,
         "Z.ai \u2014 GLM:5.3": 2,
         "Unknown \u2014 Kimi:K3": 1,
         "Unknown \u2014 0sec:multi-model": 1
       },
       "tools": {
+        "Cursor": 3,
         "Codex": 10,
         "Unknown": 7,
-        "Cursor": 2,
         "Direct / API": 5
       },
       "vendor_lines": {
+        "Anthropic": {
+          "ins": 21,
+          "del": 4
+        },
         "OpenAI": {
           "ins": 50,
           "del": 17
@@ -16901,16 +16923,16 @@
           "ins": 64,
           "del": 25
         },
-        "Anthropic": {
-          "ins": 20,
-          "del": 3
-        },
         "Z.ai": {
           "ins": 17,
           "del": 5
         }
       },
       "model_lines": {
+        "Anthropic \u2014 Opus": {
+          "ins": 21,
+          "del": 4
+        },
         "OpenAI \u2014 GPT-5": {
           "ins": 33,
           "del": 15
@@ -16926,10 +16948,6 @@
         "Unknown \u2014 Kimi:Kimi-K3 # debug and root-cause analysis": {
           "ins": 0,
           "del": 2
-        },
-        "Anthropic \u2014 Opus": {
-          "ins": 20,
-          "del": 3
         },
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
           "ins": 3,
@@ -16949,6 +16967,10 @@
         }
       },
       "tool_lines": {
+        "Cursor": {
+          "ins": 3,
+          "del": 3
+        },
         "Codex": {
           "ins": 50,
           "del": 17
@@ -16956,10 +16978,6 @@
         "Unknown": {
           "ins": 64,
           "del": 25
-        },
-        "Cursor": {
-          "ins": 2,
-          "del": 2
         },
         "Direct / API": {
           "ins": 35,
@@ -17051,20 +17069,21 @@
       }
     },
     "2026-09-07": {
-      "patches": 73,
+      "patches": 75,
       "lines": {
-        "ins": 773,
-        "del": 177
+        "ins": 780,
+        "del": 183
       },
       "vendors": {
         "Unknown": 50,
         "OpenAI": 4,
-        "Anthropic": 19
+        "Anthropic": 21
       },
       "models": {
         "Unknown \u2014 LLM": 18,
         "OpenAI \u2014 GPT-5": 2,
-        "Anthropic \u2014 Opus": 11,
+        "Anthropic \u2014 Opus": 12,
+        "Anthropic \u2014 claude-fable-5": 1,
         "Unknown \u2014 ChatGPT:GPT-5.5": 1,
         "OpenAI \u2014 GPT-5.6": 2,
         "Anthropic \u2014 Opus 4.8": 8,
@@ -17073,9 +17092,9 @@
       "tools": {
         "Unknown": 50,
         "Codex": 4,
-        "Direct / API": 11,
+        "Direct / API": 12,
         "Kiro": 1,
-        "Cursor": 7
+        "Cursor": 8
       },
       "vendor_lines": {
         "Unknown": {
@@ -17087,8 +17106,8 @@
           "del": 6
         },
         "Anthropic": {
-          "ins": 202,
-          "del": 36
+          "ins": 209,
+          "del": 42
         }
       },
       "model_lines": {
@@ -17101,8 +17120,12 @@
           "del": 2
         },
         "Anthropic \u2014 Opus": {
-          "ins": 57,
-          "del": 17
+          "ins": 62,
+          "del": 22
+        },
+        "Anthropic \u2014 claude-fable-5": {
+          "ins": 2,
+          "del": 1
         },
         "Unknown \u2014 ChatGPT:GPT-5.5": {
           "ins": 131,
@@ -17131,16 +17154,16 @@
           "del": 6
         },
         "Direct / API": {
-          "ins": 157,
-          "del": 21
+          "ins": 159,
+          "del": 22
         },
         "Kiro": {
           "ins": 34,
           "del": 4
         },
         "Cursor": {
-          "ins": 11,
-          "del": 11
+          "ins": 16,
+          "del": 16
         }
       }
     },
@@ -17318,18 +17341,18 @@
       }
     },
     "2026-09-10": {
-      "patches": 25,
+      "patches": 26,
       "lines": {
         "ins": 235,
-        "del": 103
+        "del": 116
       },
       "vendors": {
-        "Unknown": 11,
+        "Unknown": 12,
         "OpenAI": 4,
         "Anthropic": 10
       },
       "models": {
-        "Unknown \u2014 LLM": 5,
+        "Unknown \u2014 LLM": 6,
         "OpenAI \u2014 GPT-5": 2,
         "Anthropic \u2014 Opus": 6,
         "Anthropic \u2014 Opus 4.8": 2,
@@ -17341,7 +17364,7 @@
         "Unknown \u2014 ChatGPT:GPT-5.6 Sol": 1
       },
       "tools": {
-        "Unknown": 11,
+        "Unknown": 12,
         "Codex": 4,
         "Kiro": 1,
         "GitHub Copilot": 1,
@@ -17350,7 +17373,7 @@
       "vendor_lines": {
         "Unknown": {
           "ins": 105,
-          "del": 67
+          "del": 80
         },
         "OpenAI": {
           "ins": 23,
@@ -17364,7 +17387,7 @@
       "model_lines": {
         "Unknown \u2014 LLM": {
           "ins": 45,
-          "del": 43
+          "del": 56
         },
         "OpenAI \u2014 GPT-5": {
           "ins": 9,
@@ -17406,7 +17429,7 @@
       "tool_lines": {
         "Unknown": {
           "ins": 105,
-          "del": 67
+          "del": 80
         },
         "Codex": {
           "ins": 23,
@@ -17427,46 +17450,47 @@
       }
     },
     "2026-09-11": {
-      "patches": 26,
+      "patches": 29,
       "lines": {
-        "ins": 173,
-        "del": 63
+        "ins": 186,
+        "del": 70
       },
       "vendors": {
-        "OpenAI": 3,
-        "Unknown": 11,
-        "Anthropic": 10,
+        "OpenAI": 4,
+        "Unknown": 12,
+        "Anthropic": 11,
         "Google": 2,
         "Z.ai": 1
       },
       "models": {
         "OpenAI \u2014 GPT-5": 3,
-        "Unknown \u2014 LLM": 5,
-        "Anthropic \u2014 Opus": 6,
+        "Unknown \u2014 LLM": 6,
+        "Anthropic \u2014 Opus": 7,
         "Anthropic \u2014 Opus 4.6": 4,
         "Google \u2014 Gemini 3.8": 2,
         "Z.ai \u2014 GLM-5.3": 1,
+        "OpenAI \u2014 GPT-5.5": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 6
       },
       "tools": {
-        "Codex": 3,
-        "Unknown": 11,
-        "Cursor": 2,
+        "Codex": 4,
+        "Unknown": 12,
+        "Cursor": 3,
         "Direct / API": 8,
         "Antigravity": 2
       },
       "vendor_lines": {
         "OpenAI": {
-          "ins": 23,
-          "del": 11
+          "ins": 31,
+          "del": 13
         },
         "Unknown": {
-          "ins": 104,
-          "del": 32
+          "ins": 105,
+          "del": 33
         },
         "Anthropic": {
-          "ins": 19,
-          "del": 9
+          "ins": 23,
+          "del": 13
         },
         "Google": {
           "ins": 27,
@@ -17483,12 +17507,12 @@
           "del": 11
         },
         "Unknown \u2014 LLM": {
-          "ins": 55,
-          "del": 10
+          "ins": 56,
+          "del": 11
         },
         "Anthropic \u2014 Opus": {
-          "ins": 14,
-          "del": 8
+          "ins": 18,
+          "del": 12
         },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 5,
@@ -17502,6 +17526,10 @@
           "ins": 3,
           "del": 2
         },
+        "OpenAI \u2014 GPT-5.5": {
+          "ins": 8,
+          "del": 2
+        },
         "Unknown \u2014 LOLLM # finding obvious bugs": {
           "ins": 49,
           "del": 22
@@ -17509,16 +17537,16 @@
       },
       "tool_lines": {
         "Codex": {
-          "ins": 23,
-          "del": 11
+          "ins": 31,
+          "del": 13
         },
         "Unknown": {
-          "ins": 104,
-          "del": 32
+          "ins": 105,
+          "del": 33
         },
         "Cursor": {
-          "ins": 2,
-          "del": 2
+          "ins": 6,
+          "del": 6
         },
         "Direct / API": {
           "ins": 17,
@@ -17531,30 +17559,30 @@
       }
     },
     "2026-09-12": {
-      "patches": 6,
+      "patches": 7,
       "lines": {
-        "ins": 48,
-        "del": 18
+        "ins": 49,
+        "del": 19
       },
       "vendors": {
-        "Unknown": 3,
+        "Unknown": 4,
         "Anthropic": 3
       },
       "models": {
-        "Unknown \u2014 LLM": 3,
+        "Unknown \u2014 LLM": 4,
         "Anthropic \u2014 Opus 4.6": 1,
         "Anthropic \u2014 Opus": 1,
         "Anthropic \u2014 claude-fable-5": 1
       },
       "tools": {
-        "Unknown": 3,
+        "Unknown": 4,
         "GitHub Copilot": 1,
         "Direct / API": 2
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 23,
-          "del": 5
+          "ins": 24,
+          "del": 6
         },
         "Anthropic": {
           "ins": 25,
@@ -17563,8 +17591,8 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 23,
-          "del": 5
+          "ins": 24,
+          "del": 6
         },
         "Anthropic \u2014 Opus 4.6": {
           "ins": 14,
@@ -17581,8 +17609,8 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 23,
-          "del": 5
+          "ins": 24,
+          "del": 6
         },
         "GitHub Copilot": {
           "ins": 14,
@@ -17902,19 +17930,19 @@
       }
     },
     "2026-09-16": {
-      "patches": 15,
+      "patches": 16,
       "lines": {
-        "ins": 142,
+        "ins": 145,
         "del": 55
       },
       "vendors": {
         "Anthropic": 1,
-        "Unknown": 11,
+        "Unknown": 12,
         "OpenAI": 3
       },
       "models": {
         "Anthropic \u2014 Opus": 1,
-        "Unknown \u2014 LLM": 9,
+        "Unknown \u2014 LLM": 10,
         "Unknown \u2014 Qoder:Qwen3.8-Max": 1,
         "OpenAI \u2014 GPT-5.5": 1,
         "OpenAI \u2014 GPT-5.6": 2,
@@ -17922,7 +17950,7 @@
       },
       "tools": {
         "Direct / API": 1,
-        "Unknown": 10,
+        "Unknown": 11,
         "Codex": 3,
         "OpenCode": 1
       },
@@ -17932,7 +17960,7 @@
           "del": 1
         },
         "Unknown": {
-          "ins": 129,
+          "ins": 132,
           "del": 51
         },
         "OpenAI": {
@@ -17946,7 +17974,7 @@
           "del": 1
         },
         "Unknown \u2014 LLM": {
-          "ins": 45,
+          "ins": 48,
           "del": 6
         },
         "Unknown \u2014 Qoder:Qwen3.8-Max": {
@@ -17972,7 +18000,7 @@
           "del": 1
         },
         "Unknown": {
-          "ins": 109,
+          "ins": 112,
           "del": 48
         },
         "Codex": {
@@ -17986,50 +18014,64 @@
       }
     },
     "2026-09-17": {
-      "patches": 29,
+      "patches": 37,
       "lines": {
-        "ins": 248,
-        "del": 89
+        "ins": 850,
+        "del": 191
       },
       "vendors": {
-        "OpenAI": 3,
-        "Anthropic": 8,
-        "Unknown": 18
+        "OpenAI": 4,
+        "Unknown": 24,
+        "Z.ai": 1,
+        "Anthropic": 8
       },
       "models": {
-        "OpenAI \u2014 GPT-5.6": 2,
+        "OpenAI \u2014 GPT-5.6": 3,
+        "Unknown \u2014 LLM": 15,
+        "Z.ai \u2014 GLM-5.2": 1,
         "Anthropic \u2014 claude-fable-5 [Claude Code]": 3,
         "OpenAI \u2014 GPT-5.5": 1,
         "Anthropic \u2014 Opus 4.8": 1,
-        "Unknown \u2014 LLM": 9,
         "Anthropic \u2014 Opus": 4,
         "Unknown \u2014 LOLLM # finding obvious bugs": 9
       },
       "tools": {
-        "Codex": 3,
-        "Direct / API": 6,
-        "Unknown": 18,
+        "Codex": 4,
+        "Unknown": 24,
+        "Direct / API": 7,
         "Claude Code": 1,
         "Cursor": 1
       },
       "vendor_lines": {
         "OpenAI": {
-          "ins": 23,
-          "del": 3
+          "ins": 125,
+          "del": 15
+        },
+        "Unknown": {
+          "ins": 623,
+          "del": 134
+        },
+        "Z.ai": {
+          "ins": 1,
+          "del": 2
         },
         "Anthropic": {
           "ins": 101,
           "del": 40
-        },
-        "Unknown": {
-          "ins": 124,
-          "del": 46
         }
       },
       "model_lines": {
         "OpenAI \u2014 GPT-5.6": {
-          "ins": 12,
-          "del": 1
+          "ins": 114,
+          "del": 13
+        },
+        "Unknown \u2014 LLM": {
+          "ins": 553,
+          "del": 104
+        },
+        "Z.ai \u2014 GLM-5.2": {
+          "ins": 1,
+          "del": 2
         },
         "Anthropic \u2014 claude-fable-5 [Claude Code]": {
           "ins": 9,
@@ -18043,10 +18085,6 @@
           "ins": 4,
           "del": 0
         },
-        "Unknown \u2014 LLM": {
-          "ins": 54,
-          "del": 16
-        },
         "Anthropic \u2014 Opus": {
           "ins": 88,
           "del": 36
@@ -18058,16 +18096,16 @@
       },
       "tool_lines": {
         "Codex": {
-          "ins": 23,
-          "del": 3
-        },
-        "Direct / API": {
-          "ins": 59,
-          "del": 6
+          "ins": 125,
+          "del": 15
         },
         "Unknown": {
-          "ins": 124,
-          "del": 46
+          "ins": 623,
+          "del": 134
+        },
+        "Direct / API": {
+          "ins": 60,
+          "del": 8
         },
         "Claude Code": {
           "ins": 35,
@@ -18091,8 +18129,8 @@
         "OpenAI": 1
       },
       "models": {
-        "Anthropic \u2014 Sonnet": 2,
         "Anthropic \u2014 claude-fable-5 checkpatch": 1,
+        "Anthropic \u2014 Sonnet": 2,
         "Unknown \u2014 LLM": 6,
         "Anthropic \u2014 Opus": 1,
         "Unknown \u2014 CodeBuddy:Kimi-K3": 1,
@@ -18119,12 +18157,12 @@
         }
       },
       "model_lines": {
-        "Anthropic \u2014 Sonnet": {
-          "ins": 21,
-          "del": 6
-        },
         "Anthropic \u2014 claude-fable-5 checkpatch": {
           "ins": 17,
+          "del": 6
+        },
+        "Anthropic \u2014 Sonnet": {
+          "ins": 21,
           "del": 6
         },
         "Unknown \u2014 LLM": {
@@ -18282,20 +18320,21 @@
       }
     },
     "2026-09-21": {
-      "patches": 107,
+      "patches": 108,
       "lines": {
-        "ins": 8041,
-        "del": 1866
+        "ins": 8516,
+        "del": 1962
       },
       "vendors": {
         "Unknown": 30,
-        "OpenAI": 1,
+        "OpenAI": 2,
         "Anthropic": 76
       },
       "models": {
         "Unknown \u2014 LLM": 25,
         "OpenAI \u2014 GPT-5": 1,
         "Unknown \u2014 smatch:2.0 [static analysis]": 1,
+        "OpenAI \u2014 ": 1,
         "Unknown \u2014 LLM Codex": 1,
         "Unknown \u2014 LLM sparse smatch coccinelle kasan": 1,
         "Unknown \u2014 LLM sparse kasan": 2,
@@ -18303,7 +18342,7 @@
       },
       "tools": {
         "Unknown": 30,
-        "Codex": 1,
+        "Codex": 2,
         "Direct / API": 76
       },
       "vendor_lines": {
@@ -18312,8 +18351,8 @@
           "del": 122
         },
         "OpenAI": {
-          "ins": 6,
-          "del": 5
+          "ins": 481,
+          "del": 101
         },
         "Anthropic": {
           "ins": 7678,
@@ -18332,6 +18371,10 @@
         "Unknown \u2014 smatch:2.0 [static analysis]": {
           "ins": 1,
           "del": 1
+        },
+        "OpenAI \u2014 ": {
+          "ins": 475,
+          "del": 96
         },
         "Unknown \u2014 LLM Codex": {
           "ins": 37,
@@ -18356,8 +18399,8 @@
           "del": 122
         },
         "Codex": {
-          "ins": 6,
-          "del": 5
+          "ins": 481,
+          "del": 101
         },
         "Direct / API": {
           "ins": 7678,
@@ -18569,30 +18612,30 @@
       }
     },
     "2026-09-24": {
-      "patches": 9,
+      "patches": 13,
       "lines": {
-        "ins": 95,
-        "del": 45
+        "ins": 372,
+        "del": 53
       },
       "vendors": {
-        "Unknown": 9,
+        "Unknown": 13,
         "Z.ai": 1
       },
       "models": {
-        "Unknown \u2014 LLM": 6,
-        "Z.ai \u2014 GLM-5.3": 1,
+        "Unknown \u2014 LLM": 10,
         "Unknown \u2014 Qoder:Qwen3.8-Max": 1,
+        "Z.ai \u2014 GLM-5.3": 1,
         "Unknown \u2014 gpt 5": 1,
         "Unknown \u2014 LLM # dicovery and verification": 1
       },
       "tools": {
-        "Unknown": 9,
+        "Unknown": 13,
         "Direct / API": 1
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 95,
-          "del": 45
+          "ins": 372,
+          "del": 53
         },
         "Z.ai": {
           "ins": 24,
@@ -18601,14 +18644,14 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 55,
-          "del": 28
+          "ins": 332,
+          "del": 36
         },
-        "Z.ai \u2014 GLM-5.3": {
+        "Unknown \u2014 Qoder:Qwen3.8-Max": {
           "ins": 24,
           "del": 11
         },
-        "Unknown \u2014 Qoder:Qwen3.8-Max": {
+        "Z.ai \u2014 GLM-5.3": {
           "ins": 24,
           "del": 11
         },
@@ -18623,8 +18666,8 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 95,
-          "del": 45
+          "ins": 372,
+          "del": 53
         },
         "Direct / API": {
           "ins": 24,
@@ -18712,62 +18755,62 @@
       }
     },
     "2026-09-26": {
-      "patches": 11,
+      "patches": 28,
       "lines": {
-        "ins": 425,
-        "del": 12
+        "ins": 1592,
+        "del": 489
       },
       "vendors": {
-        "Unknown": 11
+        "Unknown": 28
       },
       "models": {
-        "Unknown \u2014 LLM": 11
+        "Unknown \u2014 LLM": 28
       },
       "tools": {
-        "Unknown": 11
+        "Unknown": 28
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 425,
-          "del": 12
+          "ins": 1592,
+          "del": 489
         }
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 425,
-          "del": 12
+          "ins": 1592,
+          "del": 489
         }
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 425,
-          "del": 12
+          "ins": 1592,
+          "del": 489
         }
       }
     },
     "2026-09-27": {
-      "patches": 3,
+      "patches": 4,
       "lines": {
-        "ins": 21,
-        "del": 1
+        "ins": 22,
+        "del": 2
       },
       "vendors": {
-        "Unknown": 1,
+        "Unknown": 2,
         "Anthropic": 2
       },
       "models": {
-        "Unknown \u2014 LLM": 1,
+        "Unknown \u2014 LLM": 2,
         "Anthropic \u2014 claude-fable-5 # Wrote Apollo DN3000 emulator using QEMU": 1,
         "Anthropic \u2014 Opus": 1
       },
       "tools": {
-        "Unknown": 1,
+        "Unknown": 2,
         "Direct / API": 2
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 13,
-          "del": 1
+          "ins": 14,
+          "del": 2
         },
         "Anthropic": {
           "ins": 8,
@@ -18776,8 +18819,8 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 13,
-          "del": 1
+          "ins": 14,
+          "del": 2
         },
         "Anthropic \u2014 claude-fable-5 # Wrote Apollo DN3000 emulator using QEMU": {
           "ins": 6,
@@ -18790,8 +18833,8 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 13,
-          "del": 1
+          "ins": 14,
+          "del": 2
         },
         "Direct / API": {
           "ins": 8,
@@ -18800,33 +18843,34 @@
       }
     },
     "2026-09-28": {
-      "patches": 21,
+      "patches": 22,
       "lines": {
-        "ins": 190,
-        "del": 69
+        "ins": 196,
+        "del": 74
       },
       "vendors": {
         "Unknown": 15,
+        "OpenAI": 4,
         "Anthropic": 4,
-        "OpenAI": 3,
         "DeepSeek": 1
       },
       "models": {
         "Unknown \u2014 LLM": 12,
+        "OpenAI \u2014 GPT-5.5": 1,
         "Anthropic \u2014 Opus": 1,
         "OpenAI \u2014 GPT-5": 1,
         "Unknown \u2014 GPT-6-Astra": 1,
         "Unknown \u2014 Gpt-5.6 Sol": 1,
-        "OpenAI \u2014 GPT-6": 2,
         "Anthropic \u2014 Opus 5.5": 2,
+        "OpenAI \u2014 GPT-6": 2,
         "Unknown \u2014 LLM-assisted source analysis": 1,
         "DeepSeek \u2014 DeepSeek V4.1": 1,
         "Anthropic \u2014 Opus 4.6": 1
       },
       "tools": {
         "Unknown": 15,
+        "Codex": 4,
         "Direct / API": 4,
-        "Codex": 3,
         "GitHub Copilot": 1
       },
       "vendor_lines": {
@@ -18834,13 +18878,13 @@
           "ins": 146,
           "del": 54
         },
+        "OpenAI": {
+          "ins": 28,
+          "del": 12
+        },
         "Anthropic": {
           "ins": 32,
           "del": 15
-        },
-        "OpenAI": {
-          "ins": 22,
-          "del": 7
         },
         "DeepSeek": {
           "ins": 11,
@@ -18851,6 +18895,10 @@
         "Unknown \u2014 LLM": {
           "ins": 87,
           "del": 28
+        },
+        "OpenAI \u2014 GPT-5.5": {
+          "ins": 6,
+          "del": 5
         },
         "Anthropic \u2014 Opus": {
           "ins": 4,
@@ -18868,11 +18916,11 @@
           "ins": 44,
           "del": 19
         },
-        "OpenAI \u2014 GPT-6": {
+        "Anthropic \u2014 Opus 5.5": {
           "ins": 21,
           "del": 7
         },
-        "Anthropic \u2014 Opus 5.5": {
+        "OpenAI \u2014 GPT-6": {
           "ins": 21,
           "del": 7
         },
@@ -18894,13 +18942,13 @@
           "ins": 146,
           "del": 54
         },
+        "Codex": {
+          "ins": 28,
+          "del": 12
+        },
         "Direct / API": {
           "ins": 36,
           "del": 8
-        },
-        "Codex": {
-          "ins": 22,
-          "del": 7
         },
         "GitHub Copilot": {
           "ins": 7,
@@ -18909,28 +18957,28 @@
       }
     },
     "2026-09-29": {
-      "patches": 8,
+      "patches": 10,
       "lines": {
-        "ins": 55,
-        "del": 3
+        "ins": 75,
+        "del": 5
       },
       "vendors": {
-        "Unknown": 6,
+        "Unknown": 8,
         "Anthropic": 2
       },
       "models": {
-        "Unknown \u2014 LLM": 6,
+        "Unknown \u2014 LLM": 8,
         "Anthropic \u2014 Opus 5.5": 1,
         "Anthropic \u2014 Sonnet 5.5": 1
       },
       "tools": {
-        "Unknown": 6,
+        "Unknown": 8,
         "Direct / API": 2
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 51,
-          "del": 3
+          "ins": 71,
+          "del": 5
         },
         "Anthropic": {
           "ins": 4,
@@ -18939,8 +18987,8 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 51,
-          "del": 3
+          "ins": 71,
+          "del": 5
         },
         "Anthropic \u2014 Opus 5.5": {
           "ins": 3,
@@ -18953,8 +19001,8 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 51,
-          "del": 3
+          "ins": 71,
+          "del": 5
         },
         "Direct / API": {
           "ins": 4,
@@ -18963,29 +19011,29 @@
       }
     },
     "2026-09-30": {
-      "patches": 13,
+      "patches": 14,
       "lines": {
-        "ins": 555,
-        "del": 23
+        "ins": 556,
+        "del": 24
       },
       "vendors": {
-        "Unknown": 10,
+        "Unknown": 11,
         "Anthropic": 3
       },
       "models": {
-        "Unknown \u2014 LLM": 8,
+        "Unknown \u2014 LLM": 9,
         "Anthropic \u2014 Opus 5.5": 3,
         "Unknown \u2014 CodeBuddy:Kimi-K3": 1,
         "Unknown \u2014 LLM sparse": 1
       },
       "tools": {
-        "Unknown": 10,
+        "Unknown": 11,
         "Direct / API": 3
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 72,
-          "del": 19
+          "ins": 73,
+          "del": 20
         },
         "Anthropic": {
           "ins": 483,
@@ -18994,8 +19042,8 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 60,
-          "del": 18
+          "ins": 61,
+          "del": 19
         },
         "Anthropic \u2014 Opus 5.5": {
           "ins": 483,
@@ -19012,8 +19060,8 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 72,
-          "del": 19
+          "ins": 73,
+          "del": 20
         },
         "Direct / API": {
           "ins": 483,
@@ -19022,15 +19070,15 @@
       }
     },
     "2026-10-01": {
-      "patches": 22,
+      "patches": 24,
       "lines": {
-        "ins": 582,
-        "del": 275
+        "ins": 690,
+        "del": 322
       },
       "vendors": {
         "Anthropic": 7,
         "Greg KH (local LLM fuzzer)": 1,
-        "Unknown": 9,
+        "Unknown": 11,
         "OpenAI": 4,
         "Google": 1
       },
@@ -19039,7 +19087,7 @@
         "Anthropic \u2014 Opus": 3,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 1,
         "Anthropic \u2014 claude-fable-5-1": 2,
-        "Unknown \u2014 LLM": 8,
+        "Unknown \u2014 LLM": 10,
         "Anthropic \u2014 Opus 4.8": 1,
         "Unknown \u2014 Pi:gpt-5.6-sol": 1,
         "OpenAI \u2014 GPT-6": 1,
@@ -19050,7 +19098,7 @@
         "Direct / API": 4,
         "Local LLM fuzzer": 1,
         "Claude Code": 2,
-        "Unknown": 9,
+        "Unknown": 11,
         "Cursor": 1,
         "Codex": 4,
         "Antigravity": 1
@@ -19065,8 +19113,8 @@
           "del": 1
         },
         "Unknown": {
-          "ins": 31,
-          "del": 50
+          "ins": 139,
+          "del": 97
         },
         "OpenAI": {
           "ins": 119,
@@ -19095,8 +19143,8 @@
           "del": 3
         },
         "Unknown \u2014 LLM": {
-          "ins": 27,
-          "del": 49
+          "ins": 135,
+          "del": 96
         },
         "Anthropic \u2014 Opus 4.8": {
           "ins": 80,
@@ -19133,8 +19181,8 @@
           "del": 3
         },
         "Unknown": {
-          "ins": 31,
-          "del": 50
+          "ins": 139,
+          "del": 97
         },
         "Cursor": {
           "ins": 80,
@@ -19151,30 +19199,30 @@
       }
     },
     "2026-10-02": {
-      "patches": 8,
+      "patches": 9,
       "lines": {
-        "ins": 231,
+        "ins": 233,
         "del": 28
       },
       "vendors": {
-        "Unknown": 8
+        "Unknown": 9
       },
       "models": {
-        "Unknown \u2014 LLM": 7,
+        "Unknown \u2014 LLM": 8,
         "Unknown \u2014 kres": 1
       },
       "tools": {
-        "Unknown": 8
+        "Unknown": 9
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 231,
+          "ins": 233,
           "del": 28
         }
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 225,
+          "ins": 227,
           "del": 24
         },
         "Unknown \u2014 kres": {
@@ -19184,7 +19232,7 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 231,
+          "ins": 233,
           "del": 28
         }
       }
@@ -19308,27 +19356,42 @@
       }
     },
     "2026-10-05": {
-      "patches": 12,
+      "patches": 34,
       "lines": {
-        "ins": 210,
-        "del": 63
+        "ins": 615,
+        "del": 223
       },
       "vendors": {
-        "Unknown": 12
+        "Unknown": 32,
+        "Anthropic": 1,
+        "OpenAI": 1
       },
       "models": {
         "Unknown \u2014 gpt 5": 1,
-        "Unknown \u2014 LLM": 6,
+        "Unknown \u2014 LLM": 7,
         "Unknown \u2014 GPT-6 Astra": 4,
-        "Unknown \u2014 LLM (found the bug)": 1
+        "Anthropic \u2014 Opus": 1,
+        "OpenAI \u2014 GPT-5": 1,
+        "Unknown \u2014 LLM (found the bug)": 1,
+        "Unknown \u2014 LOLLM # finding obvious bugs": 19
       },
       "tools": {
-        "Unknown": 12
+        "Unknown": 32,
+        "Cursor": 1,
+        "Codex": 1
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 210,
-          "del": 63
+          "ins": 594,
+          "del": 214
+        },
+        "Anthropic": {
+          "ins": 2,
+          "del": 2
+        },
+        "OpenAI": {
+          "ins": 19,
+          "del": 7
         }
       },
       "model_lines": {
@@ -19337,70 +19400,96 @@
           "del": 2
         },
         "Unknown \u2014 LLM": {
-          "ins": 135,
-          "del": 46
+          "ins": 151,
+          "del": 52
         },
         "Unknown \u2014 GPT-6 Astra": {
           "ins": 57,
           "del": 11
         },
+        "Anthropic \u2014 Opus": {
+          "ins": 2,
+          "del": 2
+        },
+        "OpenAI \u2014 GPT-5": {
+          "ins": 19,
+          "del": 7
+        },
         "Unknown \u2014 LLM (found the bug)": {
           "ins": 2,
           "del": 4
+        },
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "ins": 368,
+          "del": 145
         }
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 210,
-          "del": 63
+          "ins": 594,
+          "del": 214
+        },
+        "Cursor": {
+          "ins": 2,
+          "del": 2
+        },
+        "Codex": {
+          "ins": 19,
+          "del": 7
         }
       }
     },
     "2026-10-06": {
-      "patches": 7,
+      "patches": 27,
       "lines": {
-        "ins": 42,
-        "del": 29
+        "ins": 243,
+        "del": 114
       },
       "vendors": {
-        "Anthropic": 5,
-        "OpenAI": 2,
-        "Unknown": 1
+        "Unknown": 20,
+        "Anthropic": 6,
+        "OpenAI": 2
       },
       "models": {
+        "Unknown \u2014 LLM": 6,
+        "Anthropic \u2014 Opus": 4,
         "Anthropic \u2014 unspecified": 1,
-        "Anthropic \u2014 Opus": 3,
         "OpenAI \u2014 GPT-6": 2,
         "Anthropic \u2014 Opus 5.5": 1,
-        "Unknown \u2014 LLM": 1
+        "Unknown \u2014 LOLLM # finding obvious bugs": 14
       },
       "tools": {
+        "Unknown": 20,
+        "Cursor": 1,
         "Direct / API": 4,
-        "GitHub Copilot": 2,
-        "Unknown": 1
+        "GitHub Copilot": 2
       },
       "vendor_lines": {
+        "Unknown": {
+          "ins": 203,
+          "del": 87
+        },
         "Anthropic": {
-          "ins": 38,
-          "del": 25
+          "ins": 39,
+          "del": 26
         },
         "OpenAI": {
           "ins": 3,
           "del": 2
-        },
-        "Unknown": {
-          "ins": 3,
-          "del": 3
         }
       },
       "model_lines": {
+        "Unknown \u2014 LLM": {
+          "ins": 108,
+          "del": 56
+        },
+        "Anthropic \u2014 Opus": {
+          "ins": 10,
+          "del": 8
+        },
         "Anthropic \u2014 unspecified": {
           "ins": 8,
           "del": 0
-        },
-        "Anthropic \u2014 Opus": {
-          "ins": 9,
-          "del": 7
         },
         "OpenAI \u2014 GPT-6": {
           "ins": 3,
@@ -19410,12 +19499,20 @@
           "ins": 21,
           "del": 18
         },
-        "Unknown \u2014 LLM": {
-          "ins": 3,
-          "del": 3
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "ins": 95,
+          "del": 31
         }
       },
       "tool_lines": {
+        "Unknown": {
+          "ins": 203,
+          "del": 87
+        },
+        "Cursor": {
+          "ins": 1,
+          "del": 1
+        },
         "Direct / API": {
           "ins": 36,
           "del": 24
@@ -19423,49 +19520,45 @@
         "GitHub Copilot": {
           "ins": 3,
           "del": 2
-        },
-        "Unknown": {
-          "ins": 3,
-          "del": 3
         }
       }
     },
     "2026-10-07": {
-      "patches": 6,
+      "patches": 8,
       "lines": {
-        "ins": 100,
-        "del": 6
+        "ins": 102,
+        "del": 7
       },
       "vendors": {
-        "Unknown": 4,
-        "Anthropic": 2
+        "Unknown": 5,
+        "Anthropic": 3
       },
       "models": {
-        "Unknown \u2014 LLM": 3,
-        "Anthropic \u2014 Opus 5.5": 2,
+        "Unknown \u2014 LLM": 4,
+        "Anthropic \u2014 Opus 5.5": 3,
         "Unknown \u2014 LLM, in-house static analysis tool": 1
       },
       "tools": {
-        "Unknown": 4,
-        "Direct / API": 2
+        "Unknown": 5,
+        "Direct / API": 3
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 27,
-          "del": 3
+          "ins": 28,
+          "del": 4
         },
         "Anthropic": {
-          "ins": 73,
+          "ins": 74,
           "del": 3
         }
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 23,
-          "del": 2
+          "ins": 24,
+          "del": 3
         },
         "Anthropic \u2014 Opus 5.5": {
-          "ins": 73,
+          "ins": 74,
           "del": 3
         },
         "Unknown \u2014 LLM, in-house static analysis tool": {
@@ -19475,41 +19568,52 @@
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 27,
-          "del": 3
+          "ins": 28,
+          "del": 4
         },
         "Direct / API": {
-          "ins": 73,
+          "ins": 74,
           "del": 3
         }
       }
     },
     "2026-10-08": {
-      "patches": 3,
+      "patches": 14,
       "lines": {
-        "ins": 54,
-        "del": 3
+        "ins": 109,
+        "del": 16
       },
       "vendors": {
-        "Anthropic": 3
+        "Anthropic": 3,
+        "Unknown": 11
       },
       "models": {
         "Anthropic \u2014 claude-mythos-5": 2,
+        "Unknown \u2014 LOLLM # finding obvious bugs": 11,
         "Anthropic \u2014 unspecified": 1
       },
       "tools": {
-        "Direct / API": 3
+        "Direct / API": 3,
+        "Unknown": 11
       },
       "vendor_lines": {
         "Anthropic": {
           "ins": 54,
           "del": 3
+        },
+        "Unknown": {
+          "ins": 55,
+          "del": 13
         }
       },
       "model_lines": {
         "Anthropic \u2014 claude-mythos-5": {
           "ins": 51,
           "del": 0
+        },
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "ins": 55,
+          "del": 13
         },
         "Anthropic \u2014 unspecified": {
           "ins": 3,
@@ -19520,57 +19624,61 @@
         "Direct / API": {
           "ins": 54,
           "del": 3
+        },
+        "Unknown": {
+          "ins": 55,
+          "del": 13
         }
       }
     },
     "2026-10-09": {
-      "patches": 6,
+      "patches": 11,
       "lines": {
-        "ins": 27,
-        "del": 20
+        "ins": 48,
+        "del": 22
       },
       "vendors": {
-        "Anthropic": 3,
-        "DeepSeek": 1,
-        "Unknown": 2
+        "Unknown": 4,
+        "Anthropic": 5,
+        "DeepSeek": 2
       },
       "models": {
-        "Anthropic \u2014 Opus 5.5": 2,
-        "DeepSeek \u2014 DeepSeek V4.1": 1,
-        "Unknown \u2014 LLM": 2,
+        "Unknown \u2014 LLM": 4,
+        "Anthropic \u2014 Opus 5.5": 4,
+        "DeepSeek \u2014 DeepSeek V4.1": 2,
         "Anthropic \u2014 Opus": 1
       },
       "tools": {
-        "Direct / API": 3,
-        "Unknown": 2,
+        "Unknown": 4,
+        "Direct / API": 6,
         "Cursor": 1
       },
       "vendor_lines": {
+        "Unknown": {
+          "ins": 5,
+          "del": 5
+        },
         "Anthropic": {
-          "ins": 21,
-          "del": 8
+          "ins": 36,
+          "del": 9
         },
         "DeepSeek": {
-          "ins": 4,
+          "ins": 7,
           "del": 8
-        },
-        "Unknown": {
-          "ins": 2,
-          "del": 4
         }
       },
       "model_lines": {
+        "Unknown \u2014 LLM": {
+          "ins": 5,
+          "del": 5
+        },
         "Anthropic \u2014 Opus 5.5": {
-          "ins": 15,
-          "del": 2
+          "ins": 30,
+          "del": 3
         },
         "DeepSeek \u2014 DeepSeek V4.1": {
-          "ins": 4,
+          "ins": 7,
           "del": 8
-        },
-        "Unknown \u2014 LLM": {
-          "ins": 2,
-          "del": 4
         },
         "Anthropic \u2014 Opus": {
           "ins": 6,
@@ -19578,13 +19686,13 @@
         }
       },
       "tool_lines": {
-        "Direct / API": {
-          "ins": 19,
-          "del": 10
-        },
         "Unknown": {
-          "ins": 2,
-          "del": 4
+          "ins": 5,
+          "del": 5
+        },
+        "Direct / API": {
+          "ins": 37,
+          "del": 11
         },
         "Cursor": {
           "ins": 6,
@@ -19593,52 +19701,53 @@
       }
     },
     "2026-10-11": {
-      "patches": 1,
+      "patches": 3,
       "lines": {
-        "ins": 10,
-        "del": 89
+        "ins": 37,
+        "del": 113
       },
       "vendors": {
-        "Unknown": 1
+        "Unknown": 3
       },
       "models": {
-        "Unknown \u2014 LLM": 1
+        "Unknown \u2014 LLM": 3
       },
       "tools": {
-        "Unknown": 1
+        "Unknown": 3
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 10,
-          "del": 89
+          "ins": 37,
+          "del": 113
         }
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 10,
-          "del": 89
+          "ins": 37,
+          "del": 113
         }
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 10,
-          "del": 89
+          "ins": 37,
+          "del": 113
         }
       }
     },
     "2026-10-12": {
-      "patches": 33,
+      "patches": 37,
       "lines": {
-        "ins": 500,
-        "del": 190
+        "ins": 817,
+        "del": 207
       },
       "vendors": {
-        "Unknown": 21,
-        "Anthropic": 10,
+        "Anthropic": 12,
+        "Unknown": 23,
         "OpenAI": 2
       },
       "models": {
-        "Unknown \u2014 LLM": 17,
+        "Anthropic \u2014 claude-mythos-5": 2,
+        "Unknown \u2014 LLM": 19,
         "Anthropic \u2014 Opus 5.5": 7,
         "Unknown \u2014 LLM (exposing this pre-existing problem)": 1,
         "Unknown \u2014 LLM (found the bug)": 1,
@@ -19650,19 +19759,19 @@
         "Unknown \u2014 CodeBuddy:Kimi-K3": 1
       },
       "tools": {
-        "Unknown": 21,
-        "Direct / API": 9,
+        "Direct / API": 11,
+        "Unknown": 23,
         "Cursor": 1,
         "Codex": 2
       },
       "vendor_lines": {
-        "Unknown": {
-          "ins": 412,
-          "del": 143
-        },
         "Anthropic": {
-          "ins": 42,
-          "del": 43
+          "ins": 355,
+          "del": 60
+        },
+        "Unknown": {
+          "ins": 416,
+          "del": 143
         },
         "OpenAI": {
           "ins": 46,
@@ -19670,8 +19779,12 @@
         }
       },
       "model_lines": {
+        "Anthropic \u2014 claude-mythos-5": {
+          "ins": 313,
+          "del": 17
+        },
         "Unknown \u2014 LLM": {
-          "ins": 340,
+          "ins": 344,
           "del": 128
         },
         "Anthropic \u2014 Opus 5.5": {
@@ -19712,13 +19825,13 @@
         }
       },
       "tool_lines": {
-        "Unknown": {
-          "ins": 412,
-          "del": 143
-        },
         "Direct / API": {
-          "ins": 30,
-          "del": 28
+          "ins": 343,
+          "del": 45
+        },
+        "Unknown": {
+          "ins": 416,
+          "del": 143
         },
         "Cursor": {
           "ins": 12,
@@ -19731,18 +19844,19 @@
       }
     },
     "2026-10-13": {
-      "patches": 23,
+      "patches": 24,
       "lines": {
-        "ins": 457,
-        "del": 328
+        "ins": 465,
+        "del": 331
       },
       "vendors": {
         "Anthropic": 4,
-        "Unknown": 19
+        "Unknown": 20
       },
       "models": {
         "Anthropic \u2014 unspecified": 1,
         "Anthropic \u2014 Opus 5.5": 2,
+        "Unknown \u2014 LLM codeql": 1,
         "Unknown \u2014 LLM": 10,
         "Anthropic \u2014 Opus 4.8": 1,
         "Unknown \u2014 LLM sparse checkpatch": 2,
@@ -19750,7 +19864,7 @@
       },
       "tools": {
         "Direct / API": 3,
-        "Unknown": 12,
+        "Unknown": 13,
         "GitHub Copilot": 1,
         "Bynario AI": 7
       },
@@ -19760,8 +19874,8 @@
           "del": 15
         },
         "Unknown": {
-          "ins": 420,
-          "del": 313
+          "ins": 428,
+          "del": 316
         }
       },
       "model_lines": {
@@ -19772,6 +19886,10 @@
         "Anthropic \u2014 Opus 5.5": {
           "ins": 21,
           "del": 11
+        },
+        "Unknown \u2014 LLM codeql": {
+          "ins": 8,
+          "del": 3
         },
         "Unknown \u2014 LLM": {
           "ins": 283,
@@ -19796,8 +19914,8 @@
           "del": 15
         },
         "Unknown": {
-          "ins": 288,
-          "del": 271
+          "ins": 296,
+          "del": 274
         },
         "GitHub Copilot": {
           "ins": 6,
@@ -19810,25 +19928,28 @@
       }
     },
     "2026-10-14": {
-      "patches": 7,
+      "patches": 41,
       "lines": {
-        "ins": 88,
-        "del": 13
+        "ins": 613,
+        "del": 117
       },
       "vendors": {
         "Google": 1,
         "Anthropic": 4,
-        "Unknown": 2
+        "Unknown": 36
       },
       "models": {
         "Google \u2014 Gemini 3.8": 1,
         "Anthropic \u2014 claude-fable-5": 2,
-        "Unknown \u2014 LLM": 2,
-        "Anthropic \u2014 Sonnet": 2
+        "Unknown \u2014 LLM": 4,
+        "Anthropic \u2014 Sonnet": 2,
+        "Unknown \u2014 LOLLM # finding obvious bugs": 30,
+        "Unknown \u2014 gpt 5": 1,
+        "Unknown \u2014 LLM codeql": 1
       },
       "tools": {
         "Direct / API": 5,
-        "Unknown": 2
+        "Unknown": 36
       },
       "vendor_lines": {
         "Google": {
@@ -19840,8 +19961,8 @@
           "del": 7
         },
         "Unknown": {
-          "ins": 2,
-          "del": 1
+          "ins": 527,
+          "del": 105
         }
       },
       "model_lines": {
@@ -19854,12 +19975,24 @@
           "del": 2
         },
         "Unknown \u2014 LLM": {
-          "ins": 2,
-          "del": 1
+          "ins": 63,
+          "del": 19
         },
         "Anthropic \u2014 Sonnet": {
           "ins": 83,
           "del": 5
+        },
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "ins": 451,
+          "del": 83
+        },
+        "Unknown \u2014 gpt 5": {
+          "ins": 7,
+          "del": 3
+        },
+        "Unknown \u2014 LLM codeql": {
+          "ins": 6,
+          "del": 0
         }
       },
       "tool_lines": {
@@ -19868,33 +20001,34 @@
           "del": 12
         },
         "Unknown": {
-          "ins": 2,
-          "del": 1
+          "ins": 527,
+          "del": 105
         }
       }
     },
     "2026-10-15": {
-      "patches": 10,
+      "patches": 19,
       "lines": {
-        "ins": 63,
-        "del": 32
+        "ins": 12360,
+        "del": 3064
       },
       "vendors": {
-        "Unknown": 9,
+        "Unknown": 18,
         "Anthropic": 1
       },
       "models": {
-        "Unknown \u2014 LLM": 9,
-        "Anthropic \u2014 Opus 5.5": 1
+        "Unknown \u2014 LLM": 15,
+        "Anthropic \u2014 Opus 5.5": 1,
+        "Unknown \u2014 gpt 5": 3
       },
       "tools": {
-        "Unknown": 9,
+        "Unknown": 18,
         "Direct / API": 1
       },
       "vendor_lines": {
         "Unknown": {
-          "ins": 60,
-          "del": 29
+          "ins": 12357,
+          "del": 3061
         },
         "Anthropic": {
           "ins": 3,
@@ -19903,18 +20037,22 @@
       },
       "model_lines": {
         "Unknown \u2014 LLM": {
-          "ins": 60,
-          "del": 29
+          "ins": 12345,
+          "del": 3060
         },
         "Anthropic \u2014 Opus 5.5": {
           "ins": 3,
           "del": 3
+        },
+        "Unknown \u2014 gpt 5": {
+          "ins": 12,
+          "del": 1
         }
       },
       "tool_lines": {
         "Unknown": {
-          "ins": 60,
-          "del": 29
+          "ins": 12357,
+          "del": 3061
         },
         "Direct / API": {
           "ins": 3,
@@ -19923,36 +20061,51 @@
       }
     },
     "2026-10-16": {
-      "patches": 4,
+      "patches": 5,
       "lines": {
-        "ins": 25,
-        "del": 5
+        "ins": 26,
+        "del": 6
       },
       "vendors": {
-        "Anthropic": 4
+        "Anthropic": 4,
+        "OpenAI": 1
       },
       "models": {
-        "Anthropic \u2014 Opus 5.5": 4
+        "Anthropic \u2014 Opus 5.5": 4,
+        "OpenAI \u2014 GPT-5.6": 1
       },
       "tools": {
-        "Direct / API": 4
+        "Direct / API": 4,
+        "Kiro": 1
       },
       "vendor_lines": {
         "Anthropic": {
           "ins": 25,
           "del": 5
+        },
+        "OpenAI": {
+          "ins": 1,
+          "del": 1
         }
       },
       "model_lines": {
         "Anthropic \u2014 Opus 5.5": {
           "ins": 25,
           "del": 5
+        },
+        "OpenAI \u2014 GPT-5.6": {
+          "ins": 1,
+          "del": 1
         }
       },
       "tool_lines": {
         "Direct / API": {
           "ins": 25,
           "del": 5
+        },
+        "Kiro": {
+          "ins": 1,
+          "del": 1
         }
       }
     },
@@ -20363,6 +20516,21 @@
       "deletions": 5
     },
     {
+      "sha": "90b7e4a7a16443d9f6807b5c1dde52074d9f74c0",
+      "author": "Gyokhan Kochmarla",
+      "author_email": "gyokhan@amazon.de",
+      "committer": "Gao Xiang",
+      "committer_email": "xiang@kernel.org",
+      "author_date": "2026-10-13T11:48:52Z",
+      "commit_date": "2026-10-16T00:37:51+02:00",
+      "subject": "erofs: use on-disk blkszbits for lz4 max pcluster bound",
+      "tags": [
+        "Kirocrew:gpt-5.6-sol"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
       "sha": "59eb22641f0c526dd064390b11cff99ae87c2858",
       "author": "Richard Leitner",
       "author_email": "richard.leitner@linux.dev",
@@ -20468,6 +20636,111 @@
       "deletions": 3
     },
     {
+      "sha": "5b6e2a46b80ddbc93e72eb4f01519b0c8c3e0ef0",
+      "author": "Igor Velkov",
+      "author_email": "iav@iav.lv",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-10-10T18:20:30Z",
+      "commit_date": "2026-10-15T12:07:02+02:00",
+      "subject": "irqchip/meson-gpio: Allow the GPIO interrupts to wake the system",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "f556f008f704a8777c73fb3a4177dc57c0dbe769",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-28T05:54:08+02:00",
+      "commit_date": "2026-10-15T11:59:22+02:00",
+      "subject": "irqchip/jcore-aic: Fix lost IPIs on SMP",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "0ca21fe111457c843624a835641bb490e704bb2f",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-26T02:41:24+02:00",
+      "commit_date": "2026-10-15T11:59:22+02:00",
+      "subject": "irqchip/atmel-aic[5]: Disable interrupts in the irq_pm_shutdown() callbacks",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "8caa8fcec8db5358437b9b7ca456bc3093d2a4d0",
+      "author": "Pengpeng Hou",
+      "author_email": "hppiscas@163.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-20T21:07:54+08:00",
+      "commit_date": "2026-10-15T11:50:48+02:00",
+      "subject": "irqchip/riscv-imsic: Reject overlapping group index fields",
+      "tags": [
+        "gpt 5"
+      ],
+      "insertions": 8,
+      "deletions": 0
+    },
+    {
+      "sha": "0f214e5bbee59d5952d3c061fd65ed9a1e175981",
+      "author": "Pengpeng Hou",
+      "author_email": "hppiscas@163.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-20T21:06:53+08:00",
+      "commit_date": "2026-10-15T11:50:47+02:00",
+      "subject": "irqchip/sifive-plic: Avoid signed shift in interrupt enable mask",
+      "tags": [
+        "gpt 5"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "16f25d326e5d3b9fd51bc5e3916ecbffbca63e7b",
+      "author": "Pengpeng Hou",
+      "author_email": "hppiscas@163.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-20T11:42:36+08:00",
+      "commit_date": "2026-10-15T11:50:47+02:00",
+      "subject": "irqchip/mst-intc: Validate the DT interrupt range",
+      "tags": [
+        "gpt 5"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "feb5c9a2447a7d65a17d949c81c1f21864cde172",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-10-11T08:07:42+02:00",
+      "commit_date": "2026-10-15T10:38:13+02:00",
+      "subject": "softirq: Preserve interrupt context on return from interrupt",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 57,
+      "deletions": 19
+    },
+    {
       "sha": "f88bb3606e4bd11ee035b682cddc2999e604609a",
       "author": "Kyle Zeng",
       "author_email": "kylebot@openai.com",
@@ -20481,6 +20754,36 @@
       ],
       "insertions": 3,
       "deletions": 3
+    },
+    {
+      "sha": "7c306f00835a237a70024a8f968dbc3bc8db8fcf",
+      "author": "Miguel Ojeda",
+      "author_email": "ojeda@kernel.org",
+      "committer": "Miguel Ojeda",
+      "committer_email": "ojeda@kernel.org",
+      "author_date": "2026-10-13T20:48:08+02:00",
+      "commit_date": "2026-10-15T09:14:38+02:00",
+      "subject": "rust: zerocopy: update to v0.8.62",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 12220,
+      "deletions": 3006
+    },
+    {
+      "sha": "d61be5c960e4b89b2e6fa8cedc1d9aa64401ae13",
+      "author": "Miguel Ojeda",
+      "author_email": "ojeda@kernel.org",
+      "committer": "Miguel Ojeda",
+      "committer_email": "ojeda@kernel.org",
+      "author_date": "2026-10-13T20:48:07+02:00",
+      "commit_date": "2026-10-15T09:14:02+02:00",
+      "subject": "rust: zerocopy: fix link to upstream `README.md`",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 2
     },
     {
       "sha": "89bab1dba8a0167ef0d819e0f55b6bafa038e87f",
@@ -20588,6 +20891,516 @@
       "deletions": 1
     },
     {
+      "sha": "ec8f62cc109a3f596b3c65dc0f1011c209239051",
+      "author": "Pankaj Raghav",
+      "author_email": "p.raghav@samsung.com",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-08T13:11:47+02:00",
+      "commit_date": "2026-10-14T10:18:10+02:00",
+      "subject": "xfs: don't limit software atomic writes by the group alignment",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 59,
+      "deletions": 17
+    },
+    {
+      "sha": "a55686b2f50500d0a453b43d45677c9824fb4437",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:10:25-07:00",
+      "commit_date": "2026-10-14T10:13:51+02:00",
+      "subject": "xfs: drop unnecessary sa parameter from the xrep_ag init functions",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 16,
+      "deletions": 17
+    },
+    {
+      "sha": "5d470234d04dae6fe2ca2cf4b9ef277b78c7e05a",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:10:09-07:00",
+      "commit_date": "2026-10-14T10:13:51+02:00",
+      "subject": "xfs: improve dirent bounds checking in scrub and repair",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 91,
+      "deletions": 14
+    },
+    {
+      "sha": "6e82b7641889ad0198f3bf17a5e4c6fe7aab0850",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:09:22-07:00",
+      "commit_date": "2026-10-14T10:13:51+02:00",
+      "subject": "xfs: don't try to repair rtsummary if the summary file isn't computed",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 10,
+      "deletions": 2
+    },
+    {
+      "sha": "47b1e941bb55f735d82ba2649412260da78b98f8",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:09:07-07:00",
+      "commit_date": "2026-10-14T10:13:51+02:00",
+      "subject": "xfs: rescan the AGs if incore delalloc counter is negative",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 15,
+      "deletions": 2
+    },
+    {
+      "sha": "18028768415e3c05ab7edb22d740e2f4dc52836a",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:08:51-07:00",
+      "commit_date": "2026-10-14T10:13:51+02:00",
+      "subject": "xfs: don't rescan ifree and icount when frozen",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 0
+    },
+    {
+      "sha": "c9f98b0f4f70c8cfd617dc2886bf2fc0a36ab9da",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:08:35-07:00",
+      "commit_date": "2026-10-14T10:13:51+02:00",
+      "subject": "xfs: don't set a metadata directory's parent to sb_rootino",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 1
+    },
+    {
+      "sha": "03ce4ca43c00394364493865f417d646e252bac2",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:08:20-07:00",
+      "commit_date": "2026-10-14T10:08:08+02:00",
+      "subject": "xfs: don't scan across metadata/regular directory trees for dirents",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "1ccc8f553d885d49c1bfe141ea1f331511940b3a",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:08:04-07:00",
+      "commit_date": "2026-10-14T10:08:07+02:00",
+      "subject": "xfs: always report scrub errors in tracepoints",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 17,
+      "deletions": 4
+    },
+    {
+      "sha": "4ce244b234c251963fca6dff9de6edf26a209d08",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:07:48-07:00",
+      "commit_date": "2026-10-14T10:08:06+02:00",
+      "subject": "xfs: opportunistically skip btree block checks",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 8,
+      "deletions": 0
+    },
+    {
+      "sha": "eb20a959760c21e3547cd811d0d9b0b29df98959",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:07:33-07:00",
+      "commit_date": "2026-10-14T10:08:06+02:00",
+      "subject": "xfs: clear set[ug]id mode bits when zapping attr fork",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 6,
+      "deletions": 1
+    },
+    {
+      "sha": "3978b1f3109dfd5c648442bb040f9abd58608226",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:07:17-07:00",
+      "commit_date": "2026-10-14T10:08:04+02:00",
+      "subject": "xfs: don't clear COWEXTSIZE on directories on reflink filesystems",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "95e213c1ddb40dfb0a8178ed35c9f29992a320e1",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:07:01-07:00",
+      "commit_date": "2026-10-14T10:07:15+02:00",
+      "subject": "xfs: check for fragments when full-extent sharing matches",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 1
+    },
+    {
+      "sha": "634b63baf05062988456a0bd5df2696c14ea2949",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:06:46-07:00",
+      "commit_date": "2026-10-14T10:04:27+02:00",
+      "subject": "xfs: only written file data blocks can be shared",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 12,
+      "deletions": 0
+    },
+    {
+      "sha": "219ff8a734d8438e24eb346a847c9b1ad9b7ab5d",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:06:30-07:00",
+      "commit_date": "2026-10-14T09:49:28+02:00",
+      "subject": "xfs: don't queue rmap update twice when reaping a fork",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "80f13dc7225eec318da7499c7a562d7a34d25e6a",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:06:14-07:00",
+      "commit_date": "2026-10-14T09:49:28+02:00",
+      "subject": "xfs: reduce new btree slack factor if free space is negative",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "ca12256b7f9820aafb361ac496f048d2d4a71c23",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:05:59-07:00",
+      "commit_date": "2026-10-14T09:49:28+02:00",
+      "subject": "xfs: avoid oversized space allocations when regenerating metadata",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "147f9f8300cb284923e08bb8a7b32ba9681c45ed",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:05:43-07:00",
+      "commit_date": "2026-10-14T09:49:28+02:00",
+      "subject": "xfs: fix data fork block count check in xrep_inode_blockcounts",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "c28b4b48deac17749ed1ebe4289a4ba73541ddc6",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T23:05:28-07:00",
+      "commit_date": "2026-10-14T09:49:28+02:00",
+      "subject": "xfs: don't overrun incore inode when cleaning attr forks",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "2dc1f296b5754dd2441fc8b6613a362a47f6b98f",
+      "author": "Pengpeng Hou",
+      "author_email": "hppiscas@163.com",
+      "committer": "Daniel Lezcano",
+      "committer_email": "daniel.lezcano@kernel.org",
+      "author_date": "2026-10-14T11:18:14+08:00",
+      "commit_date": "2026-10-14T09:46:07+02:00",
+      "subject": "thermal/drivers/rzg3e: Propagate reset assertion failure from suspend",
+      "tags": [
+        "gpt 5"
+      ],
+      "insertions": 7,
+      "deletions": 3
+    },
+    {
+      "sha": "82bb005cd9cf5a9df4cfe4a52db90346ac5fd17a",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Daniel Lezcano",
+      "committer_email": "daniel.lezcano@kernel.org",
+      "author_date": "2026-09-12T08:22:52+02:00",
+      "commit_date": "2026-10-14T09:45:41+02:00",
+      "subject": "thermal: ti-soc-thermal: Fix the return value in ti_bandgap_get_sensor_data() kernel-doc",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "b17d799ce49bfaad68be5ff3df995b3bd021a9d7",
+      "author": "Weigang He",
+      "author_email": "geoffreyhe2@gmail.com",
+      "committer": "Daniel Lezcano",
+      "committer_email": "daniel.lezcano@kernel.org",
+      "author_date": "2026-09-26T14:27:57+10:00",
+      "commit_date": "2026-10-14T09:45:40+02:00",
+      "subject": "thermal/drivers/sprd: validate the sensor id from the device tree",
+      "tags": [
+        "LLM codeql"
+      ],
+      "insertions": 6,
+      "deletions": 0
+    },
+    {
+      "sha": "e09438cab72c2c6a32665829d4186155346bfee8",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:23:43-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: complain loudly when dirtree checker finds broken links",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "00f32fdf54983371d39162efef7df693e2842ffb",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:23:27-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: clarify various parts of the bitmap API",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 20,
+      "deletions": 0
+    },
+    {
+      "sha": "91c41f9524906a8ebd2ae68c98a07b4bd5255ddb",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:23:12-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: check for buffer overruns when examining local/remote xattr entries",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 25,
+      "deletions": 3
+    },
+    {
+      "sha": "fd012955641881169a9f01a00f656f6ca73842ec",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:22:41-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: reject absurdly large xattr value lengths in xchk_xattr_actor",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 10,
+      "deletions": 0
+    },
+    {
+      "sha": "73b7276b8a4b5eb272f3c3b36ea3042e786f4741",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:22:25-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: range-check bc_levels array access in scrub tracepoints",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 18,
+      "deletions": 5
+    },
+    {
+      "sha": "ce9098338a7e1a77246684242d10779fc4d4a539",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:22:09-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: always report inode repair setup failures",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "6f2792720673f569fa3e1f68181b9d6fd26802b5",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:21:54-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: fix correction of unwritten extents in quota file data fork",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 23,
+      "deletions": 2
+    },
+    {
+      "sha": "ddf4fe30c3fd7d37cf9bad3887ddb69984954cf4",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:21:38-07:00",
+      "commit_date": "2026-10-14T09:34:54+02:00",
+      "subject": "xfs: never reset the default quota timer",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "2f528e4a8f89daa6d0cc64b044f6f94c018fe9ae",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:21:22-07:00",
+      "commit_date": "2026-10-14T09:34:53+02:00",
+      "subject": "xfs: reattach dquots after changing inode ids",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 132,
+      "deletions": 1
+    },
+    {
+      "sha": "4582327e7068194d55941b49dd66be211b9e3f90",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:21:07-07:00",
+      "commit_date": "2026-10-14T09:34:53+02:00",
+      "subject": "xfs: abort directory tree repair whenever dl->aborted is set",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 9,
+      "deletions": 0
+    },
+    {
+      "sha": "4439b626fb5104204952aa2f169451688fb6be26",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:20:51-07:00",
+      "commit_date": "2026-10-14T09:34:53+02:00",
+      "subject": "xfs: don't subtract excess usage twice when computing agf_btreeblks",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 19
+    },
+    {
+      "sha": "1fc241cdeab276dc6c3ec14840faa706ed7712ff",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-12T08:20:35-07:00",
+      "commit_date": "2026-10-14T09:34:53+02:00",
+      "subject": "xfs: check for termination during rmap btree walk",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 1
+    },
+    {
       "sha": "c9e9f024dd4f61f0f6636c9f2ed0830f87060e11",
       "author": "Laurence Oberman",
       "author_email": "loberman@redhat.com",
@@ -20631,6 +21444,21 @@
       ],
       "insertions": 9,
       "deletions": 8
+    },
+    {
+      "sha": "aaa6c8dec49339710f9fd2a2af5646cf4111dbd4",
+      "author": "Weigang He",
+      "author_email": "geoffreyhe2@gmail.com",
+      "committer": "Daniel Lezcano",
+      "committer_email": "daniel.lezcano@kernel.org",
+      "author_date": "2026-09-26T22:49:31+10:00",
+      "commit_date": "2026-10-13T16:26:37+02:00",
+      "subject": "thermal/drivers/ti-soc-thermal: Cancel pending alert work on remove",
+      "tags": [
+        "LLM codeql"
+      ],
+      "insertions": 8,
+      "deletions": 3
     },
     {
       "sha": "d2ce8fcd778ee6d92748c92d23a56d4416c29d86",
@@ -20916,6 +21744,36 @@
       ],
       "insertions": 13,
       "deletions": 1
+    },
+    {
+      "sha": "a48669f0c49c4074079f5d96478a3d47f66135fd",
+      "author": "Paul E. McKenney",
+      "author_email": "paulmck@kernel.org",
+      "committer": "Paul E. McKenney",
+      "committer_email": "paulmck@kernel.org",
+      "author_date": "2026-08-18T17:10:15-07:00",
+      "commit_date": "2026-10-12T16:49:40-07:00",
+      "subject": "srcutiny: Add an atomic Tiny SRCU",
+      "tags": [
+        "Claude:claude-mythos-5"
+      ],
+      "insertions": 86,
+      "deletions": 0
+    },
+    {
+      "sha": "60df507b60919bdd44ab4ca7352b5ed24808746c",
+      "author": "Paul E. McKenney",
+      "author_email": "paulmck@kernel.org",
+      "committer": "Paul E. McKenney",
+      "committer_email": "paulmck@kernel.org",
+      "author_date": "2026-08-18T17:10:15-07:00",
+      "commit_date": "2026-10-12T16:49:08-07:00",
+      "subject": "srcutree: Add an atomic Tree SRCU",
+      "tags": [
+        "Claude:claude-mythos-5"
+      ],
+      "insertions": 227,
+      "deletions": 17
     },
     {
       "sha": "8cb5c17be3a2fadc41075d04ce1c24c831546aaf",
@@ -21414,6 +22272,36 @@
       "deletions": 7
     },
     {
+      "sha": "71245acb8c937382fc31806572314d36667b17f6",
+      "author": "Ryan Brue",
+      "author_email": "ryanbrue.dev@gmail.com",
+      "committer": "Viresh Kumar",
+      "committer_email": "viresh.kumar@linaro.org",
+      "author_date": "2026-10-09T14:44:44-05:00",
+      "commit_date": "2026-10-12T09:48:39+05:30",
+      "subject": "arm64: dts: mediatek: mt8173: Mark the lowest CPU OPPs for suspend",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "a4b90518dd01f85e1e4bf7e9361396b2eded1f7e",
+      "author": "Ryan Brue",
+      "author_email": "ryanbrue.dev@gmail.com",
+      "committer": "Viresh Kumar",
+      "committer_email": "viresh.kumar@linaro.org",
+      "author_date": "2026-10-09T14:44:43-05:00",
+      "commit_date": "2026-10-12T09:48:39+05:30",
+      "subject": "cpufreq: mediatek: Enter system sleep at the suspend OPP",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
       "sha": "a1ddc2721467fb68241372db77657fd0dcf6cda5",
       "author": "Sasha Levin",
       "author_email": "sashal@kernel.org",
@@ -21442,6 +22330,96 @@
       ],
       "insertions": 10,
       "deletions": 89
+    },
+    {
+      "sha": "ae5f6044c4cdffe2b3361b15c1d6fc67b339f2a4",
+      "author": "Kees Cook",
+      "author_email": "kees@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-10T01:19:11-07:00",
+      "commit_date": "2026-10-11T01:20:05+01:00",
+      "subject": "kbuild: Mark the initcall ordering recipe as recursive",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "0d4d70da348b066b02f5aa4b893b13c4e32dc838",
+      "author": "Kees Cook",
+      "author_email": "kees@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-10T01:19:10-07:00",
+      "commit_date": "2026-10-11T01:20:04+01:00",
+      "subject": "kbuild: Mark the gzip recipes as recursive",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 26,
+      "deletions": 23
+    },
+    {
+      "sha": "3bf2237f59af842e546fa4b2c146198db95d1519",
+      "author": "Ting-Han Hou",
+      "author_email": "ue081723@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-06T08:19:54-07:00",
+      "commit_date": "2026-10-09T22:40:27+02:00",
+      "subject": "scripts/make_fit: Ignore schema checks when decomposing DTBs",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "d26ab84593e63bc5395ed9b518502830fda3367c",
+      "author": "Ting-Han Hou",
+      "author_email": "ue081723@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-10T01:58:32+08:00",
+      "commit_date": "2026-10-09T22:39:52+02:00",
+      "subject": "clang-tools: Import os for broken pipe handling",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "sha": "a8f72a75b38a153d32a59b2ebca1d7079db1dd1a",
+      "author": "Leizhen Zhang",
+      "author_email": "lzsx618@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-08T11:45:40-05:00",
+      "commit_date": "2026-10-09T22:31:53+02:00",
+      "subject": "kconfig: use the value argument in sym_get_near_range_bound()",
+      "tags": [
+        "Claude:claude-opus-5-5"
+      ],
+      "insertions": 12,
+      "deletions": 1
+    },
+    {
+      "sha": "52f26261e27dbdb7c6dea75d8f1a92ea805b2c58",
+      "author": "Leizhen Zhang",
+      "author_email": "lzsx618@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-08T11:45:21-05:00",
+      "commit_date": "2026-10-09T22:30:48+02:00",
+      "subject": "kconfig: fix infinite loop in conf_choice() when no choice value is visible",
+      "tags": [
+        "Claude:claude-opus-5-5 libFuzzer"
+      ],
+      "insertions": 3,
+      "deletions": 0
     },
     {
       "sha": "f9282b8aa85a8c97c50d656db75feb6d76fc7cbe",
@@ -21534,6 +22512,21 @@
       "deletions": 6
     },
     {
+      "sha": "6fa50b1988b8dfd2e92a9cecba073fe4347a5e23",
+      "author": "Haotian Zhang",
+      "author_email": "vulab@iscas.ac.cn",
+      "committer": "Viresh Kumar",
+      "committer_email": "viresh.kumar@linaro.org",
+      "author_date": "2026-10-09T01:24:42+08:00",
+      "commit_date": "2026-10-09T10:02:39+05:30",
+      "subject": "cpufreq: qcom-cpufreq-hw: fix device node refcount leak in phandle parsing",
+      "tags": [
+        "DeepSeek-V4.1-Flash"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
       "sha": "de7f49c12566cc5c7437a2f26c6c754b9d4d5648",
       "author": "Jake Labelle",
       "author_email": "southampton.jake.labelle@gmail.com",
@@ -21561,6 +22554,171 @@
         "Claude:claude-mythos-5"
       ],
       "insertions": 17,
+      "deletions": 0
+    },
+    {
+      "sha": "41ee987f53785b9443388a756912b1a0fe3c9592",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:58:25-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: always forget cached ACLs if the attr fork swap succeeds",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 3
+    },
+    {
+      "sha": "52aa50cea408e27454d206cccecbe4f694a6c1e1",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:58:09-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: always zero the whole shortform header when zeroing attr fork",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "e98643f794d0d7a7fde8b29276d74e09fa0d5d19",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:57:38-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: init inode number for tracepoint",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "20c5a56bc4f2329872d21561e4a2d4b8576004c9",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:57:22-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: don't allow sm_agno for non-group metadir path checking",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 6,
+      "deletions": 0
+    },
+    {
+      "sha": "1e7337a3ecebab1bb2ba02187d88b94e5146e4f0",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:57:07-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: don't try to scrub self-referential dirent in metapath checker",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 7,
+      "deletions": 0
+    },
+    {
+      "sha": "e5bde75a816b3549942f4b09a8bf09006b7ea9de",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:56:51-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: propagate errors while checking null siblings",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 2
+    },
+    {
+      "sha": "71cb13685e72a3c5d118732559c727a0c9090b7f",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:56:35-07:00",
+      "commit_date": "2026-10-08T12:33:45+02:00",
+      "subject": "xfs: always reset incore attr fork buffer when resetting fork",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "7f5e8bf335e5e257fb82cf5b3521980ded60e863",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:56:20-07:00",
+      "commit_date": "2026-10-08T12:33:44+02:00",
+      "subject": "xfs: don't pass iget failures up when marking ondisk inodes",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 1
+    },
+    {
+      "sha": "780212c8d8105eadb5f56b4c7aafb94937755582",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:56:04-07:00",
+      "commit_date": "2026-10-08T12:33:44+02:00",
+      "subject": "xfs: forcibly reset quota timers when upgrading to bigtime during repair",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 16,
+      "deletions": 1
+    },
+    {
+      "sha": "f5b4d8c8ce16675f77c25a4ff06caaa9a2739f31",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:55:48-07:00",
+      "commit_date": "2026-10-08T12:33:44+02:00",
+      "subject": "xfs: zero out di_metatype when removing the metadir file iflag",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "2b47be015a5e54f4a3d62afa636ba593de9b67f6",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-04T22:55:33-07:00",
+      "commit_date": "2026-10-08T12:33:44+02:00",
+      "subject": "xfs: flag excessive delalloc rt extents as corruption",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 7,
       "deletions": 0
     },
     {
@@ -21624,6 +22782,21 @@
       "deletions": 1
     },
     {
+      "sha": "72a61a7fef954152abd9df9def4f94816eb344ca",
+      "author": "Ting-Han Hou",
+      "author_email": "ue081723@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-07T03:44:13-05:00",
+      "commit_date": "2026-10-07T14:22:39+02:00",
+      "subject": "checkkconfigsymbols.py: Parse Git status output line by line",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
       "sha": "08a3f02fea636e97a7422d1512f76dacdb5b0887",
       "author": "Michele Dionisio",
       "author_email": "michele.dionisio@gmail.com",
@@ -21654,6 +22827,21 @@
       "deletions": 0
     },
     {
+      "sha": "c8dd1aa0274d8ad3df82ec1b064065f410ce99ed",
+      "author": "Leizhen Zhang",
+      "author_email": "lzsx618@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-10-05T03:57:29-05:00",
+      "commit_date": "2026-10-07T12:11:14+02:00",
+      "subject": "gen_init_cpio: stop parsing on lines with a missing argument list",
+      "tags": [
+        "Claude:claude-opus-5-5 ASan UBSan"
+      ],
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
       "sha": "a9cd14bfb0c113f1cd77be4349784663bec71bb4",
       "author": "Karl Mehltretter",
       "author_email": "kmehltretter@gmail.com",
@@ -21667,6 +22855,36 @@
       ],
       "insertions": 3,
       "deletions": 0
+    },
+    {
+      "sha": "852fbf7fc857fd375d8caccbce576aefc37fb065",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Paul E. McKenney",
+      "committer_email": "paulmck@kernel.org",
+      "author_date": "2026-09-11T23:36:43+02:00",
+      "commit_date": "2026-10-06T11:56:16-07:00",
+      "subject": "rcuref: Fix the rcuread_is_dead reference in rcuref_read() kernel-doc",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "2eaee974b5da25b55ae72cb6c649524410316ae8",
+      "author": "Hemanth Selam",
+      "author_email": "hemanth.selam@gmail.com",
+      "committer": "Paul E. McKenney",
+      "committer_email": "paulmck@kernel.org",
+      "author_date": "2026-09-07T12:06:22+05:30",
+      "commit_date": "2026-10-06T11:56:16-07:00",
+      "subject": "rcu: Fix typo \"upto\" in comment",
+      "tags": [
+        "Cursor:claude-opus-5"
+      ],
+      "insertions": 1,
+      "deletions": 1
     },
     {
       "sha": "7529254014764ae0b8c33d5c61a58f36c65b1a1c",
@@ -21760,6 +22978,66 @@
       "deletions": 18
     },
     {
+      "sha": "a644af916cf14daba9a4fd6413565c7bd34b5bdc",
+      "author": "Brian Foster",
+      "author_email": "bfoster@redhat.com",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-05T08:01:18-04:00",
+      "commit_date": "2026-10-06T10:21:57+02:00",
+      "subject": "xfs: incorporate increased AGFL min requirement for minleft allocs",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 47,
+      "deletions": 20
+    },
+    {
+      "sha": "831f4c28b5dca287422613fe1c1bf4ff1ad13cd1",
+      "author": "Brian Foster",
+      "author_email": "bfoster@redhat.com",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-05T08:01:17-04:00",
+      "commit_date": "2026-10-06T10:21:57+02:00",
+      "subject": "xfs: calculate AGFL max to support multiple-alloc transactions",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 30,
+      "deletions": 18
+    },
+    {
+      "sha": "ad4c2c4630b743c6a3bc1198faaadffd35c94268",
+      "author": "Brian Foster",
+      "author_email": "bfoster@redhat.com",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-05T08:01:16-04:00",
+      "commit_date": "2026-10-06T10:21:57+02:00",
+      "subject": "xfs: support additional levels in the agfl minimum calculation",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 23,
+      "deletions": 8
+    },
+    {
+      "sha": "a9a984a1e6ea1314a3285402fec9cf8e9ef0e355",
+      "author": "Brian Foster",
+      "author_email": "bfoster@redhat.com",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-10-05T08:01:15-04:00",
+      "commit_date": "2026-10-06T10:21:57+02:00",
+      "subject": "xfs: set minleft correctly for sparse chunk errortag allocation",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 6
+    },
+    {
       "sha": "709ba1c547eaf37da36ded2ecf3ea4e304cdfa9a",
       "author": "Adriel Santos",
       "author_email": "adriel@adriel.eu",
@@ -21773,6 +23051,216 @@
       ],
       "insertions": 3,
       "deletions": 3
+    },
+    {
+      "sha": "c8226f3d1a7eafe472addc232689e9c9a0c36a1c",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:18:57-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: don't fix the directory tree if live update fails",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 0
+    },
+    {
+      "sha": "833f98b3be45bc7c6ce4c87bdc4892f546ab72ee",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:18:41-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: don't proceed with xattr repair if the live update fails",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "8c4f172c246717b1420f138a159ed15c315a58bd",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:18:10-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: fix lost errno returned from xfarray_foliosort",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "fe67a493c7a76cf75556152af24285a114f69d34",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:17:54-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: assign an owner to scrub_stats_fops",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "342c2e00b3a99099a7088f7b8c8f075670c603a9",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:17:38-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: allow softlimit with no hardlimit in quota scrub",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 7,
+      "deletions": 7
+    },
+    {
+      "sha": "22a8a7501c0146dba4ce99b8256975ffe945125d",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:17:23-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: don't repair fs summary counters with garbage",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 1
+    },
+    {
+      "sha": "6c64d650460b455980a6023d43bc6c8859c1cfd2",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:17:07-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: fix revalidation of xchk_dquot_iter cached mappings",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 0
+    },
+    {
+      "sha": "d83ca4e7cc65dce6a02fd3427cefd174517657a3",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:16:51-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: bail out of directory tree repairs on error",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 36,
+      "deletions": 21
+    },
+    {
+      "sha": "07732dea4f5d0410e1566b81a58a1154bf9dcb29",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-27T23:16:36-07:00",
+      "commit_date": "2026-10-06T09:53:24+02:00",
+      "subject": "xfs: abort dirtree repair if the live update hook dies",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 0
+    },
+    {
+      "sha": "43030b72a11a532e7e3c21ac84a8625425b4201b",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-24T21:13:38-07:00",
+      "commit_date": "2026-10-06T09:39:20+02:00",
+      "subject": "xfs: check fork type against dabtree block magic number",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 12,
+      "deletions": 0
+    },
+    {
+      "sha": "f61c91a2e5994fa81141d6c06dadae1fed206018",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-24T21:13:22-07:00",
+      "commit_date": "2026-10-06T09:39:20+02:00",
+      "subject": "xfs: mark overfull dabtree node blocks as corrupt",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 0
+    },
+    {
+      "sha": "49d300a51442bd64b627645b7b0b1cd66e492905",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-24T21:13:06-07:00",
+      "commit_date": "2026-10-06T09:39:20+02:00",
+      "subject": "xfs: jump out of xchk_bmap_check_rmap if fatal signals",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 7,
+      "deletions": 0
+    },
+    {
+      "sha": "6b8d60784b61a17bd591cb4c6e8aa9ed29c24f5c",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-24T21:11:17-07:00",
+      "commit_date": "2026-10-06T09:37:36+02:00",
+      "subject": "xfs: fix xchk_stats_estimate_bufsize to allow for the trailing null",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "436ae68743a6974021fefa21fd3093d9bf8e66e4",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-24T21:11:01-07:00",
+      "commit_date": "2026-10-06T09:37:36+02:00",
+      "subject": "xfs: actually check XFS_DIFLAG2_METADATA for metadata btree data forks",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 5,
+      "deletions": 0
     },
     {
       "sha": "78e04810542da416d3bead707b60cec773f1524d",
@@ -21895,6 +23383,36 @@
       "deletions": 0
     },
     {
+      "sha": "82bcb7b05ad90de126e9c09a7b46a81be799620e",
+      "author": "Hemanth Selam",
+      "author_email": "hemanth.selam@gmail.com",
+      "committer": "David Teigland",
+      "committer_email": "teigland@redhat.com",
+      "author_date": "2026-10-02T17:11:30-04:00",
+      "commit_date": "2026-10-05T09:26:02-05:00",
+      "subject": "dlm: fix typos in comments",
+      "tags": [
+        "Cursor:claude-opus-5"
+      ],
+      "insertions": 2,
+      "deletions": 2
+    },
+    {
+      "sha": "7f662eb1807ed732ac7d5e119753c8185f241bb8",
+      "author": "Qing Ming",
+      "author_email": "a0yami@mailbox.org",
+      "committer": "David Teigland",
+      "committer_email": "teigland@redhat.com",
+      "author_date": "2026-10-02T17:11:28-04:00",
+      "commit_date": "2026-10-05T09:26:02-05:00",
+      "subject": "dlm: validate node weights before building member array",
+      "tags": [
+        "Codex:gpt-5"
+      ],
+      "insertions": 19,
+      "deletions": 7
+    },
+    {
       "sha": "41c8899d59898f6fa51ceebd2b6e55257191a8ee",
       "author": "Filipe Manana",
       "author_email": "fdmanana@suse.com",
@@ -21938,6 +23456,306 @@
       ],
       "insertions": 2,
       "deletions": 1
+    },
+    {
+      "sha": "d7c204d4ea7ef0cf0dac908388984c2936f1f94e",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:03:52-07:00",
+      "commit_date": "2026-10-05T12:06:27+02:00",
+      "subject": "xfs: avoid cross-rtgroup reaping after a repair",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 48,
+      "deletions": 11
+    },
+    {
+      "sha": "e53c620b3670fc0c162b5f768a10a3a17d0c04f6",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:03:36-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: actually lock the metafile reservation when adjusting after repair",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 12,
+      "deletions": 6
+    },
+    {
+      "sha": "f60a2ef8d8a7ac6dedf4d0c3325cc3fc2fe0d948",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:03:20-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: fix unnecessary dapos truncation in xchk_dir_walk",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "017dd7a84ff4cd2275eb62f4ee6d63c705bac107",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:02:34-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: fix buffer overflow in corrupt inline attr structure",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 12,
+      "deletions": 2
+    },
+    {
+      "sha": "7e55f84434f3a63d59feb8f89076d280ea9aa8e5",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:02:18-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: fix integer overflow problem when setting large free areas",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "65b89ac3e8c2f041384f715a71b9d113edfa32e5",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:02:02-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: fix inode btree repair when a cluster is larger than a chunk",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 4
+    },
+    {
+      "sha": "faa9aa9e846332aaad78096a2cebfeafe68a7776",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:01:47-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: reinitialize dquot block if non-first dquot can't load",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 11,
+      "deletions": 5
+    },
+    {
+      "sha": "f8d0d90f2e24b1f4a14796ae63cebfd820cadfcd",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:01:31-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: clear the symlink zapped flag if inline symlink is ok",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 8,
+      "deletions": 9
+    },
+    {
+      "sha": "2ffc0619c9c2881443c5fffb10db8f2bc0aa2ce8",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:01:16-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: mark cow extents bad if there's no rmap mapping for them",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 55,
+      "deletions": 29
+    },
+    {
+      "sha": "f98d007017acf0eaec2e116ff9c0ece735f61bb3",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:01:00-07:00",
+      "commit_date": "2026-10-05T12:05:29+02:00",
+      "subject": "xfs: compute the correct fdblocks/frextents for repair when they're negative",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 4,
+      "deletions": 1
+    },
+    {
+      "sha": "ddeb5fe2d8a8645d033d868117571649184d64ab",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T23:00:44-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfarray: warn against sorting arrays with identical elements",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 12,
+      "deletions": 0
+    },
+    {
+      "sha": "329750292e9dfbb594b375d7b30cf5ddb58b7bb9",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:59:42-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfarray: don't crash when sorting if array element crosses a folio",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 47,
+      "deletions": 22
+    },
+    {
+      "sha": "23067b4f98f536ff3341fde04d52a331b2ebdf76",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:59:26-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfs: add missing healthmon trace strings",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 25,
+      "deletions": 3
+    },
+    {
+      "sha": "aafe21c23ad8263251085291019d8860ddc51da9",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:59:11-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfs: fix ondisk symlink target validation in xrep_dinode_check_dfork",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 33,
+      "deletions": 7
+    },
+    {
+      "sha": "a800b926346c3aa2482421f5c0272280ee7d32e8",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:58:55-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfs: fix xfs_rename_space_res for non-pptr filesystems",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 3,
+      "deletions": 3
+    },
+    {
+      "sha": "035d27cb2ae7f9a2f2e2625671086995c6b45433",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:58:39-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfs: pass xfs_trans_resv object to reservation calculation helpers",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 20,
+      "deletions": 18
+    },
+    {
+      "sha": "0b9081a774ee7b9dff1e9ac3765b73c1d6bba5b2",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:58:08-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfs: fix buffer overruns in xfs_ioc_attr_list",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "244425cf63d7e3a0ff5736b41f0e0afe807f7031",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:57:53-07:00",
+      "commit_date": "2026-10-05T10:04:42+02:00",
+      "subject": "xfs: online quotacheck must dirty dquot if enforcement adjustments needed",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 51,
+      "deletions": 0
+    },
+    {
+      "sha": "da483b8a9c2c3e7b23655699680feb57a194000c",
+      "author": "Darrick J. Wong",
+      "author_email": "djwong@kernel.org",
+      "committer": "Carlos Maiolino",
+      "committer_email": "cem@kernel.org",
+      "author_date": "2026-09-22T22:57:37-07:00",
+      "commit_date": "2026-10-05T10:04:41+02:00",
+      "subject": "xfs: fix missing xfs_qm_adjust_dqlimits call in quotacheck repair",
+      "tags": [
+        "LOLLM # finding obvious bugs"
+      ],
+      "insertions": 20,
+      "deletions": 22
+    },
+    {
+      "sha": "02c5d7bfa8724789f6620f7787532666edc891a1",
+      "author": "Mehmet Koseoglu",
+      "author_email": "mehmet.mkoseoglu@gmail.com",
+      "committer": "Viresh Kumar",
+      "committer_email": "viresh.kumar@linaro.org",
+      "author_date": "2026-10-01T13:19:15+03:00",
+      "commit_date": "2026-10-05T09:25:54+05:30",
+      "subject": "rust: cpufreq: reject NULL from cpufreq_cpu_get()",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 16,
+      "deletions": 6
     },
     {
       "sha": "5158353121bae4f552cb677ce8c5c3ef52f93a0d",
@@ -22270,6 +24088,21 @@
       "deletions": 1
     },
     {
+      "sha": "8f30b035a6676e292ee8e54334711d9905dd0495",
+      "author": "Slavin Liu",
+      "author_email": "bolin.liu@seu.edu.cn",
+      "committer": "Daniel Lezcano",
+      "committer_email": "daniel.lezcano@kernel.org",
+      "author_date": "2026-09-11T14:09:17+08:00",
+      "commit_date": "2026-10-02T12:05:28+02:00",
+      "subject": "clocksource/drivers/dbx500-prcmu: Check timer register mapping",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
       "sha": "f35e3b5784221654f9cdbd6222275a7fa203f6c3",
       "author": "Chris Mason",
       "author_email": "mason@kernel.org",
@@ -22480,6 +24313,21 @@
       "deletions": 2
     },
     {
+      "sha": "1a58c47fae2a3982b38ec6348c739a7c60833189",
+      "author": "Dave Jiang",
+      "author_email": "dave.jiang@intel.com",
+      "committer": "Rafael J. Wysocki",
+      "committer_email": "rafael.j.wysocki@intel.com",
+      "author_date": "2026-09-11T09:47:05-07:00",
+      "commit_date": "2026-10-01T18:42:02+02:00",
+      "subject": "PCI/AER: Map a raw AER Capability image field by field",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 107,
+      "deletions": 46
+    },
+    {
       "sha": "71cc2c67fb8f8d5aa8154eb482e9846d2214f11b",
       "author": "Mostafa Saleh",
       "author_email": "smostafa@google.com",
@@ -22645,6 +24493,21 @@
       "deletions": 1
     },
     {
+      "sha": "706081c6b9327dd611dd72b20130a77f0f059b6e",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Viresh Kumar",
+      "committer_email": "viresh.kumar@linaro.org",
+      "author_date": "2026-09-12T00:14:43+02:00",
+      "commit_date": "2026-10-01T11:40:49+05:30",
+      "subject": "OPP: Fix the return value in dev_pm_opp_get_of_node() kernel-doc",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
       "sha": "0e8baa78d872f2db440d8b9ded946ab8dceb89eb",
       "author": "Hui Peng",
       "author_email": "benquike@gmail.com",
@@ -22778,6 +24641,21 @@
       ],
       "insertions": 1,
       "deletions": 0
+    },
+    {
+      "sha": "f9a6960c7b27c03becd50a2a7620273d80e4040d",
+      "author": "Miguel Ojeda",
+      "author_email": "ojeda@kernel.org",
+      "committer": "Miguel Ojeda",
+      "committer_email": "ojeda@kernel.org",
+      "author_date": "2026-09-30T14:36:45+02:00",
+      "commit_date": "2026-09-30T16:41:24+02:00",
+      "subject": "rust: bindings: fix `VM_MAYSHARE` blocklist entry",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
     },
     {
       "sha": "97384ef06c4fa79f7265ecd65c240bf40a8a9c41",
@@ -22930,6 +24808,36 @@
       "deletions": 1
     },
     {
+      "sha": "3945c4a3ea151f777b4b098ebeecd2f85c20244f",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-25T18:57:02+02:00",
+      "commit_date": "2026-09-29T21:18:42+02:00",
+      "subject": "time/kunit: Add time64_to_tm() case beyond 32-bit day count",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 16,
+      "deletions": 0
+    },
+    {
+      "sha": "2927f7ca78448781e11a4623d347cd653c28adf6",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-25T18:57:01+02:00",
+      "commit_date": "2026-09-29T21:18:42+02:00",
+      "subject": "time: Prevent time64_to_tm() day truncation on 32-bit",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 2
+    },
+    {
       "sha": "015fb29a748342a186f37b602ac70017098c8251",
       "author": "Surendran Kanagaraj",
       "author_email": "surenkj@amazon.com",
@@ -23018,6 +24926,21 @@
       ],
       "insertions": 29,
       "deletions": 8
+    },
+    {
+      "sha": "4f6d1a9ea172c22e6c67e2ec06fb0f20e07e7225",
+      "author": "Rob Herring (Arm)",
+      "author_email": "robh@kernel.org",
+      "committer": "Daniel Lezcano",
+      "committer_email": "daniel.lezcano@kernel.org",
+      "author_date": "2026-06-12T16:50:09-05:00",
+      "commit_date": "2026-09-28T17:54:14+02:00",
+      "subject": "thermal: of: Match trip property helper types",
+      "tags": [
+        "Codex:gpt-5-5"
+      ],
+      "insertions": 6,
+      "deletions": 5
     },
     {
       "sha": "9d1afbf60ed53c5b051cd124153e0ae3078c8b93",
@@ -23322,6 +25245,21 @@
       "deletions": 1
     },
     {
+      "sha": "a98db7418797bc27bef53c861b97ac748f598414",
+      "author": "Sasha Levin",
+      "author_email": "sashal@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-27T12:12:27-04:00",
+      "commit_date": "2026-09-27T20:35:12+02:00",
+      "subject": "kbuild: keep .modinfo when vmlinux is linked with --gc-sections",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
       "sha": "6cdbe63badcb524c88f2c8b3cee08f2ffc099a1b",
       "author": "Daniel Palmer",
       "author_email": "daniel@0x0f.com",
@@ -23472,6 +25410,96 @@
       "deletions": 1
     },
     {
+      "sha": "452a6d5b5e0556848a8c28428c8f86874ea4ee02",
+      "author": "Shashank Mohan Jain",
+      "author_email": "jain.sm@gmail.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-26T06:56:51+05:30",
+      "commit_date": "2026-09-26T10:21:24-04:00",
+      "subject": "bitmap: test bitmap_parselist() with a group size close to UINT_MAX",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "d075c4dc0b3c8ed91a4f67ebdf3384aa59fd4fbb",
+      "author": "Shashank Mohan Jain",
+      "author_email": "jain.sm@gmail.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-26T06:56:50+05:30",
+      "commit_date": "2026-09-26T10:21:23-04:00",
+      "subject": "bitmap: bitmap_parselist(): don't wrap around on a huge group size",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 5,
+      "deletions": 2
+    },
+    {
+      "sha": "f2c318d812f9b108c4808342ea135e2788c5fd6e",
+      "author": "Shashank Mohan Jain",
+      "author_email": "jain.sm@gmail.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-26T06:56:49+05:30",
+      "commit_date": "2026-09-26T10:21:23-04:00",
+      "subject": "bitmap: test bitmap_parselist() with text after the group size",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 0
+    },
+    {
+      "sha": "c55d102257fa31271c6f11fea595b78c48fd7aa2",
+      "author": "Shashank Mohan Jain",
+      "author_email": "jain.sm@gmail.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-26T06:56:48+05:30",
+      "commit_date": "2026-09-26T10:21:23-04:00",
+      "subject": "bitmap: bitmap_parselist(): reject trailing characters after group size",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 8,
+      "deletions": 1
+    },
+    {
+      "sha": "bf7e3cb42c8b5d52fa4232c11bae40e9a2509f95",
+      "author": "Shashank Mohan Jain",
+      "author_email": "jain.sm@gmail.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-26T06:56:47+05:30",
+      "commit_date": "2026-09-26T10:21:23-04:00",
+      "subject": "bitmap: test bitmap_parse() with an illegal character before 8 hex digits",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 0
+    },
+    {
+      "sha": "7cee2fb210a198667d3d4200705215e6f315cab0",
+      "author": "Shashank Mohan Jain",
+      "author_email": "jain.sm@gmail.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-26T06:56:46+05:30",
+      "commit_date": "2026-09-26T10:21:23-04:00",
+      "subject": "bitmap: bitmap_parse(): reject non-hex character before 8 digits",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 6,
+      "deletions": 2
+    },
+    {
       "sha": "6a8fa40b03f7f111eba4ece966ec4762728378ad",
       "author": "Danish Khateeb",
       "author_email": "danishkhateeb03@gmail.com",
@@ -23560,6 +25588,171 @@
       ],
       "insertions": 8,
       "deletions": 8
+    },
+    {
+      "sha": "48ebe1cbbeb51879ba4d22775fee1654d94d1cc6",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:18:11+01:00",
+      "commit_date": "2026-09-26T00:16:36+01:00",
+      "subject": "kbuild: compress the kernel with pigz if available",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 52,
+      "deletions": 5
+    },
+    {
+      "sha": "454e00cf8ee5aff555ad5865b8c3dbf3731afcc9",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:18:01+01:00",
+      "commit_date": "2026-09-26T00:16:36+01:00",
+      "subject": "kbuild: avoid re-running compiler and linker probes",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 126,
+      "deletions": 34
+    },
+    {
+      "sha": "f85147b291e355b34dfbe3c343c3682d488a8f07",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:18:00+01:00",
+      "commit_date": "2026-09-26T00:16:36+01:00",
+      "subject": "kbuild: move the toolchain checks into scripts/Kconfig.toolchain",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 200,
+      "deletions": 196
+    },
+    {
+      "sha": "531980b4b17e916f5955bcc53a188827624f5a0f",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:57+01:00",
+      "commit_date": "2026-09-26T00:16:35+01:00",
+      "subject": "kallsyms: reimplement mksysmap in C",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 395,
+      "deletions": 173
+    },
+    {
+      "sha": "5005f8043c092777b853663845da8facb5eb1385",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:56+01:00",
+      "commit_date": "2026-09-26T00:16:35+01:00",
+      "subject": "elf-parse: add section flags, symbol binding and mapping helpers",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 144,
+      "deletions": 13
+    },
+    {
+      "sha": "8050568e0a46f944117970c3969f9316125bc34d",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:55+01:00",
+      "commit_date": "2026-09-26T00:16:35+01:00",
+      "subject": "kbuild: only emit vmlinux relocations when required",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 7,
+      "deletions": 1
+    },
+    {
+      "sha": "c2970d8b52d132bf5152fba592205a2204d7be5a",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:54+01:00",
+      "commit_date": "2026-09-26T00:16:34+01:00",
+      "subject": "kbuild: do not sort nm output where the order is irrelevant",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 5,
+      "deletions": 4
+    },
+    {
+      "sha": "4719513c0fa2a39a2410448120a83cb1a416b194",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:53+01:00",
+      "commit_date": "2026-09-26T00:16:34+01:00",
+      "subject": "sorttable: parse nm output correctly",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 14,
+      "deletions": 1
+    },
+    {
+      "sha": "83da9f3197e50d2e2c5b8b8d8358b6be6e867d7f",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:52+01:00",
+      "commit_date": "2026-09-26T00:16:34+01:00",
+      "subject": "kallsyms: output binary data to speed output and kallsyms assembly",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 64,
+      "deletions": 22
+    },
+    {
+      "sha": "6f014bf46faf1645b6336f47390167de5c88e9d1",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:51+01:00",
+      "commit_date": "2026-09-26T00:16:33+01:00",
+      "subject": "kallsyms: index symbols by token to speed up table compression",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 129,
+      "deletions": 14
+    },
+    {
+      "sha": "5fe4dd59664105a9ea1a9468aa7391806b80364a",
+      "author": "Lorenzo Stoakes (ARM)",
+      "author_email": "ljs@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-23T18:17:50+01:00",
+      "commit_date": "2026-09-26T00:16:33+01:00",
+      "subject": "kbuild: do not allocate .modinfo in vmlinux",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 9
     },
     {
       "sha": "2776e9c28513a1c855a94792b292cbcc533418c8",
@@ -23754,6 +25947,66 @@
         "LLM"
       ],
       "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "cfcc465018818fb4f08148a28adb5b0cb40a9ec1",
+      "author": "Kees Cook",
+      "author_email": "kees@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-18T17:59:27-07:00",
+      "commit_date": "2026-09-24T11:37:05-04:00",
+      "subject": "kconfig: Add \"ld-option-str\"",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 11,
+      "deletions": 1
+    },
+    {
+      "sha": "889a621272f9b7e19f35efa3d836347b4e209290",
+      "author": "Kees Cook",
+      "author_email": "kees@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-18T17:59:26-07:00",
+      "commit_date": "2026-09-24T11:37:05-04:00",
+      "subject": "kconfig: Replace \"cc-option-bit\" with \"cc-option-str\"",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 13,
+      "deletions": 4
+    },
+    {
+      "sha": "651fb291c4c86b7be96720b129ef4619fbcef53c",
+      "author": "Kees Cook",
+      "author_email": "kees@kernel.org",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-18T17:59:25-07:00",
+      "commit_date": "2026-09-24T11:37:05-04:00",
+      "subject": "kconfig: Add \"def_string\", \"def_int\" and \"def_hex\"",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 90,
+      "deletions": 2
+    },
+    {
+      "sha": "9f01cd3a324390b235c67ae4ca3d35085369ebdd",
+      "author": "Dmitrii Tulnov",
+      "author_email": "tulnov.dl@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-19T00:34:30+03:00",
+      "commit_date": "2026-09-24T11:30:42-04:00",
+      "subject": "kconfig: warn about malformed KCONFIG_PROBABILITY values",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 163,
       "deletions": 1
     },
     {
@@ -24897,6 +27150,21 @@
       ],
       "insertions": 1,
       "deletions": 0
+    },
+    {
+      "sha": "1c88ceb09d5e5506456a625043bc9b35ce86fc41",
+      "author": "Yury Norov",
+      "author_email": "ynorov@nvidia.com",
+      "committer": "Yury Norov",
+      "committer_email": "ynorov@nvidia.com",
+      "author_date": "2026-09-14T16:49:29-04:00",
+      "commit_date": "2026-09-21T12:28:21-04:00",
+      "subject": "bitfield: get rid of __MAKE_OP machinery",
+      "tags": [
+        "OpenAI Codex"
+      ],
+      "insertions": 475,
+      "deletions": 96
     },
     {
       "sha": "5bfd4b0b40b79781d900cb2f7da0685070f53c67",
@@ -26699,6 +28967,111 @@
       "deletions": 0
     },
     {
+      "sha": "9b8719973ee2c5ec23aab9b958e5c6fbdf352f90",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-15T22:15:08+01:00",
+      "commit_date": "2026-09-17T16:31:01-07:00",
+      "subject": "kconfig: use unsigned integers for hex range checks",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 36,
+      "deletions": 11
+    },
+    {
+      "sha": "54f11924e4854177b357af499ebc447dc8c3c590",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-15T22:15:07+01:00",
+      "commit_date": "2026-09-17T16:31:00-07:00",
+      "subject": "kconfig: prevent out-of-bounds user input for numeric options",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 121,
+      "deletions": 26
+    },
+    {
+      "sha": "d13bad83d89d1022fee254c08f6e01084eb4395e",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-15T22:15:06+01:00",
+      "commit_date": "2026-09-17T16:31:00-07:00",
+      "subject": "kconfig: check for hex and int mismatches",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 52,
+      "deletions": 1
+    },
+    {
+      "sha": "a5e84d6f6df1fdb64c06fdb64894199aaf5ec899",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-15T22:15:05+01:00",
+      "commit_date": "2026-09-17T16:31:00-07:00",
+      "subject": "kconfig: check for out-of-bounds numeric constants",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 160,
+      "deletions": 31
+    },
+    {
+      "sha": "95fde4bcc0b7c78b2db6e89a43d47074b79f2afa",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-15T22:15:04+01:00",
+      "commit_date": "2026-09-17T16:31:00-07:00",
+      "subject": "kconfig: promote invalid numeric reference from warning to error",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 126,
+      "deletions": 15
+    },
+    {
+      "sha": "dbe1ae2304a3b02c3bf6ae82895ff232a29f3fee",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-08-30T23:11:29+01:00",
+      "commit_date": "2026-09-17T16:19:02-07:00",
+      "subject": "kconfig: fix extra output from savedefconfig on out-of-range defaults",
+      "tags": [
+        "Codex:gpt-5.6-sol"
+      ],
+      "insertions": 102,
+      "deletions": 12
+    },
+    {
+      "sha": "4c714f015d9ecc37d7a330b31822ccbcaff5ddc9",
+      "author": "Longlong Xia",
+      "author_email": "xialonglong@kylinos.cn",
+      "committer": "Paul E. McKenney",
+      "committer_email": "paulmck@kernel.org",
+      "author_date": "2026-08-26T16:21:50+08:00",
+      "commit_date": "2026-09-17T15:42:03-07:00",
+      "subject": "rcu: fix shrink budget underflow in lazy_rcu_shrink_scan",
+      "tags": [
+        "Zcode:GLM-5.2"
+      ],
+      "insertions": 1,
+      "deletions": 2
+    },
+    {
       "sha": "21c89ff1fc86ffa517f3a9ca1ba5c48e9e37c1ba",
       "author": "Abdurrahman Hussain",
       "author_email": "abdurrahman@nexthop.ai",
@@ -26832,6 +29205,21 @@
       ],
       "insertions": 4,
       "deletions": 1
+    },
+    {
+      "sha": "ff87968e4e564acb2fadce363b1b41e7fa3aad2f",
+      "author": "Erkan Erdem",
+      "author_email": "hexvalid@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-07T13:37:37+03:00",
+      "commit_date": "2026-09-17T10:41:03-07:00",
+      "subject": "docs: kconfig: fix shell function syntax in caveats",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 4,
+      "deletions": 4
     },
     {
       "sha": "3565893cc72cdf6b795cf6a33e7ff9605322334d",
@@ -27327,6 +29715,21 @@
       ],
       "insertions": 16,
       "deletions": 2
+    },
+    {
+      "sha": "047c834d939df75386cfc0603c7ddeaa23a349a4",
+      "author": "Slavin Liu",
+      "author_email": "bolin.liu@seu.edu.cn",
+      "committer": "Rafael J. Wysocki",
+      "committer_email": "rafael.j.wysocki@intel.com",
+      "author_date": "2026-09-13T20:51:23+08:00",
+      "commit_date": "2026-09-16T15:08:17+02:00",
+      "subject": "ACPI: tables: handle failed initrd override mappings",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 3,
+      "deletions": 0
     },
     {
       "sha": "53cf0f26eece095a3752642151150404bc3351cc",
@@ -28516,6 +30919,21 @@
       "deletions": 3
     },
     {
+      "sha": "700a0a6892f7c0c541d5d23837cfab98cc744d17",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Andreas Gruenbacher",
+      "committer_email": "agruenba@redhat.com",
+      "author_date": "2026-09-12T08:26:14+02:00",
+      "commit_date": "2026-09-12T15:40:25+02:00",
+      "subject": "gfs2: Fix the return value in gfs2_get_link() kernel-doc",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
       "sha": "8697c431e297eb0d0ab13dda6bc172b48a34f05c",
       "author": "Cen Zhang",
       "author_email": "cenzhang@linux.microsoft.com",
@@ -28817,6 +31235,51 @@
       "deletions": 2
     },
     {
+      "sha": "277536c882467e348173238e4ff701a4e4d2fb9e",
+      "author": "Hemanth Selam",
+      "author_email": "hemanth.selam@gmail.com",
+      "committer": "Andreas Gruenbacher",
+      "committer_email": "agruenba@redhat.com",
+      "author_date": "2026-09-04T16:54:27+05:30",
+      "commit_date": "2026-09-11T15:08:36+02:00",
+      "subject": "gfs2: fix typos in comments",
+      "tags": [
+        "Cursor:claude-opus-5"
+      ],
+      "insertions": 4,
+      "deletions": 4
+    },
+    {
+      "sha": "a52652efd8f985397e87669f505af83f06e335cf",
+      "author": "Jan Kara",
+      "author_email": "jack@suse.cz",
+      "committer": "Andreas Gruenbacher",
+      "committer_email": "agruenba@redhat.com",
+      "author_date": "2026-09-02T16:36:57+02:00",
+      "commit_date": "2026-09-11T15:08:36+02:00",
+      "subject": "gfs2: Fix journaled truncate range end offset",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
+      "sha": "33ed0a0567e0abe66ea65e89dad2e35082890fbe",
+      "author": "Jiaming Zhang",
+      "author_email": "r772577952@gmail.com",
+      "committer": "Andreas Gruenbacher",
+      "committer_email": "agruenba@redhat.com",
+      "author_date": "2026-08-31T18:54:25+08:00",
+      "commit_date": "2026-09-11T15:08:22+02:00",
+      "subject": "gfs2: reject invalid inode sizes",
+      "tags": [
+        "Codex:gpt-5.5-xhigh"
+      ],
+      "insertions": 8,
+      "deletions": 2
+    },
+    {
       "sha": "8c51ea651d043c786c37668c51624bd6b338a0ef",
       "author": "Pannarat Wiriyaarritham",
       "author_email": "pannarat.wiriyaarritham@danielcorp.dev",
@@ -28995,6 +31458,21 @@
       ],
       "insertions": 2,
       "deletions": 0
+    },
+    {
+      "sha": "c8663e0457e6e6c72006478f4b6da99060030ec1",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Mario Limonciello",
+      "committer_email": "superm1@kernel.org",
+      "author_date": "2026-09-05T03:07:06+02:00",
+      "commit_date": "2026-09-10T14:33:59-05:00",
+      "subject": "cpufreq/amd-pstate: Remove obsolete amd_dynamic_epp documentation",
+      "tags": [
+        "LLM"
+      ],
+      "insertions": 0,
+      "deletions": 13
     },
     {
       "sha": "8061ee61b9426fe38350fa9eead2d9c50b03deb6",
@@ -30377,6 +32855,36 @@
       "deletions": 4
     },
     {
+      "sha": "135d9e67f7ab4f261c2157ee2de1f93a4de39a41",
+      "author": "Karl Mehltretter",
+      "author_email": "kmehltretter@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-08-11T11:55:32+02:00",
+      "commit_date": "2026-09-07T21:53:05+02:00",
+      "subject": "irqchip/gic-v3-its: Don't WARN on LPI free allocation failure",
+      "tags": [
+        "Claude:claude-fable-5"
+      ],
+      "insertions": 2,
+      "deletions": 1
+    },
+    {
+      "sha": "726285316f8fd8965d360ea6546da9b2677e7c7c",
+      "author": "Hemanth Selam",
+      "author_email": "hemanth.selam@gmail.com",
+      "committer": "Thomas Gleixner",
+      "committer_email": "tglx@kernel.org",
+      "author_date": "2026-09-07T12:23:28+05:30",
+      "commit_date": "2026-09-07T21:47:51+02:00",
+      "subject": "irqchip: Fix typos and repeated words in comments",
+      "tags": [
+        "Cursor:claude-opus-5"
+      ],
+      "insertions": 5,
+      "deletions": 5
+    },
+    {
       "sha": "c59ddba036a4bc3c0f5705dd6b37c7889b191bcc",
       "author": "Hemanth Selam",
       "author_email": "hemanth.selam@gmail.com",
@@ -31427,6 +33935,21 @@
       "deletions": 3
     },
     {
+      "sha": "68b2e64129185d6de3495ec8c73b219938115045",
+      "author": "Hemanth Selam",
+      "author_email": "hemanth.selam@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-09-04T17:50:01+05:30",
+      "commit_date": "2026-09-04T15:32:19-07:00",
+      "subject": "kbuild: fix typo \"funtions\" in comment",
+      "tags": [
+        "Cursor:claude-opus-5"
+      ],
+      "insertions": 1,
+      "deletions": 1
+    },
+    {
       "sha": "21f027016b1290d13c30b198ae7a00e6b3d1d5a5",
       "author": "Runyu Xiao",
       "author_email": "runyu.xiao@seu.edu.cn",
@@ -32055,6 +34578,21 @@
         "Claude:claude-opus-4-8"
       ],
       "insertions": 2,
+      "deletions": 0
+    },
+    {
+      "sha": "953753f8ae9b9d159d48acbf7ffec40366e7b0a1",
+      "author": "Samuel Moelius",
+      "author_email": "sam.moelius@trailofbits.com",
+      "committer": "David Teigland",
+      "committer_email": "teigland@redhat.com",
+      "author_date": "2026-09-01T13:47:10-04:00",
+      "commit_date": "2026-09-02T09:01:51-05:00",
+      "subject": "dlm: validate userspace lock resource name length",
+      "tags": [
+        "Codex:gpt-5.5-cyber-preview"
+      ],
+      "insertions": 17,
       "deletions": 0
     },
     {
@@ -32912,6 +35450,21 @@
       ],
       "insertions": 2,
       "deletions": 2
+    },
+    {
+      "sha": "f9f31f5f13b5e5459e2d3322fe6b5e19d511919a",
+      "author": "Julian Braha",
+      "author_email": "julianbraha@gmail.com",
+      "committer": "Nathan Chancellor",
+      "committer_email": "nathan@kernel.org",
+      "author_date": "2026-08-16T22:53:54+01:00",
+      "commit_date": "2026-08-31T16:56:48-07:00",
+      "subject": "kconfig: error out for recursive range",
+      "tags": [
+        "Codex:gpt-5.6-sol"
+      ],
+      "insertions": 41,
+      "deletions": 1
     },
     {
       "sha": "c4126f1db36e6b2e1c79b0e30a8a2de91c568f4c",
