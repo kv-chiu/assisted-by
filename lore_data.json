@@ -1,12 +1,12 @@
 {
-  "input_messages": 73493,
-  "non_patch_or_reply": 25653,
+  "input_messages": 73789,
+  "non_patch_or_reply": 25775,
   "bot_dropped": 499,
   "quote_only_skipped": 6,
-  "patch_messages_with_tag": 46736,
-  "unique_patches_with_tag": 37025,
+  "patch_messages_with_tag": 46901,
+  "unique_patches_with_tag": 37099,
   "earliest": "2026-01-16",
-  "latest": "2026-11-12",
+  "latest": "2026-11-13",
   "by_date": {
     "2026-01-16": 1,
     "2026-01-26": 1,
@@ -185,7 +185,7 @@
     "2026-08-13": 113,
     "2026-08-14": 114,
     "2026-08-15": 77,
-    "2026-08-16": 118,
+    "2026-08-16": 117,
     "2026-08-17": 389,
     "2026-08-18": 177,
     "2026-08-19": 123,
@@ -229,7 +229,7 @@
     "2026-09-26": 172,
     "2026-09-27": 136,
     "2026-09-28": 380,
-    "2026-09-29": 301,
+    "2026-09-29": 300,
     "2026-09-30": 1209,
     "2026-10-01": 203,
     "2026-10-02": 223,
@@ -245,7 +245,7 @@
     "2026-10-12": 203,
     "2026-10-13": 574,
     "2026-10-14": 264,
-    "2026-10-15": 382,
+    "2026-10-15": 381,
     "2026-10-16": 332,
     "2026-10-17": 481,
     "2026-10-18": 174,
@@ -256,24 +256,25 @@
     "2026-10-23": 262,
     "2026-10-24": 81,
     "2026-10-25": 60,
-    "2026-10-26": 172,
+    "2026-10-26": 170,
     "2026-10-27": 182,
-    "2026-10-28": 1054,
-    "2026-10-29": 191,
+    "2026-10-28": 1055,
+    "2026-10-29": 190,
     "2026-10-30": 172,
     "2026-10-31": 81,
     "2026-11-01": 74,
     "2026-11-02": 181,
-    "2026-11-03": 370,
+    "2026-11-03": 371,
     "2026-11-04": 692,
-    "2026-11-05": 175,
+    "2026-11-05": 174,
     "2026-11-06": 155,
-    "2026-11-07": 860,
+    "2026-11-07": 859,
     "2026-11-08": 23,
     "2026-11-09": 112,
     "2026-11-10": 167,
-    "2026-11-11": 202,
-    "2026-11-12": 53
+    "2026-11-11": 193,
+    "2026-11-12": 131,
+    "2026-11-13": 11
   },
   "daily_dimensions": {
     "2026-01-16": {
@@ -1425,8 +1426,8 @@
         "Anthropic \u2014 unspecified": 1,
         "Anthropic \u2014 Opus": 1,
         "Anthropic \u2014 Sonnet 4.6": 3,
-        "Anthropic \u2014 Opus 4.6": 3,
-        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1
+        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1,
+        "Anthropic \u2014 Opus 4.6": 3
       },
       "tools": {
         "Direct / API": 5,
@@ -1454,12 +1455,12 @@
           "927d8a299479121d": 1,
           "5314852614b81f8b": 1
         },
+        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
+          "d760f5f0500a6f24": 1
+        },
         "Anthropic \u2014 Opus 4.6": {
           "d760f5f0500a6f24": 1,
           "2ffbd9518f470882": 2
-        },
-        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
-          "d760f5f0500a6f24": 1
         }
       }
     },
@@ -1516,8 +1517,8 @@
       "authors": {
         "58261090b8927e15": 1,
         "d760f5f0500a6f24": 10,
-        "fa886a638ef8164a": 1,
         "3eb659c7a3e26042": 3,
+        "fa886a638ef8164a": 1,
         "5bb7676b90cb6772": 1
       },
       "model_authors": {
@@ -1695,16 +1696,16 @@
     "2026-04-04": {
       "patches": 2,
       "vendors": {
-        "OpenAI": 2,
-        "Anthropic": 2
+        "Anthropic": 2,
+        "OpenAI": 2
       },
       "models": {
         "OpenAI \u2014 GPT-5.4": 2,
         "Anthropic \u2014 Opus 4.6": 2
       },
       "tools": {
-        "Direct / API": 2,
-        "Codex": 2
+        "Codex": 2,
+        "Direct / API": 2
       },
       "authors": {
         "3eb659c7a3e26042": 2
@@ -1966,8 +1967,8 @@
       },
       "tools": {
         "Claude Code": 12,
-        "Direct / API": 6,
-        "Codex": 1
+        "Codex": 1,
+        "Direct / API": 6
       },
       "authors": {
         "0a4a777e562c115f": 12,
@@ -2054,8 +2055,8 @@
     "2026-04-13": {
       "patches": 42,
       "vendors": {
-        "OpenAI": 4,
         "Anthropic": 11,
+        "OpenAI": 4,
         "Google": 6,
         "Greg KH (local LLM fuzzer)": 24,
         "Unknown": 1
@@ -2070,8 +2071,8 @@
         "Unknown \u2014 Google:Gemini-3-Flash [DSDT/XML-Data-Aggregation & Formatting]": 1
       },
       "tools": {
-        "Direct / API": 17,
         "Codex": 4,
+        "Direct / API": 17,
         "Local LLM fuzzer": 24,
         "Unknown": 1
       },
@@ -2130,8 +2131,8 @@
       },
       "tools": {
         "GitHub Copilot": 4,
-        "Direct / API": 25,
         "Codex": 4,
+        "Direct / API": 25,
         "OpenCode": 1,
         "Claude Code": 4,
         "Local LLM fuzzer": 1,
@@ -2279,8 +2280,8 @@
         "Unknown \u2014 Google:Gemini-3-Flash [DSDT/XML-Data-Aggregation & Formatting]": 2,
         "Anthropic \u2014 Opus 4.5": 1,
         "Unknown \u2014 qoder:(unknown)": 2,
-        "Anthropic \u2014 Sonnet 4.6": 1,
-        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1
+        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 1,
+        "Anthropic \u2014 Sonnet 4.6": 1
       },
       "tools": {
         "Direct / API": 17,
@@ -2333,10 +2334,10 @@
         "Unknown \u2014 qoder:(unknown)": {
           "9b0c73b93dcf8e4f": 2
         },
-        "Anthropic \u2014 Sonnet 4.6": {
+        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
           "4d17b675c977ea68": 1
         },
-        "Unknown \u2014 AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": {
+        "Anthropic \u2014 Sonnet 4.6": {
           "4d17b675c977ea68": 1
         }
       }
@@ -2381,8 +2382,8 @@
       "patches": 14,
       "vendors": {
         "Unknown": 1,
-        "OpenAI": 3,
-        "Anthropic": 13
+        "Anthropic": 13,
+        "OpenAI": 3
       },
       "models": {
         "Unknown \u2014 Google Gemini": 1,
@@ -2393,8 +2394,8 @@
       },
       "tools": {
         "Unknown": 1,
-        "Direct / API": 13,
-        "Codex": 3
+        "Codex": 3,
+        "Direct / API": 13
       },
       "authors": {
         "2f1c49b5fe3fe5c5": 1,
@@ -2462,8 +2463,8 @@
         "575919a97a544412": 3,
         "8b82bfba2ab926f8": 1,
         "9c8bd3b6373c44aa": 18,
-        "f9085885f93e847c": 1,
         "0ae21a1c77194903": 1,
+        "f9085885f93e847c": 1,
         "fb1c479e1af2f74b": 1,
         "c362454348f00f25": 1
       },
@@ -3074,8 +3075,8 @@
     "2026-04-30": {
       "patches": 66,
       "vendors": {
-        "Unknown": 1,
         "Anthropic": 62,
+        "Unknown": 1,
         "OpenAI": 1,
         "Google": 2,
         "Z.ai": 1
@@ -3570,8 +3571,8 @@
       },
       "tools": {
         "Codex": 3,
-        "Direct / API": 31,
         "Cursor": 11,
+        "Direct / API": 31,
         "GitHub Copilot": 3,
         "Kiro": 2,
         "Unknown": 5,
@@ -4174,8 +4175,8 @@
         "Anthropic \u2014 Sonnet": 1,
         "Z.ai \u2014 GLM-5.1": 1,
         "DeepSeek \u2014 DeepSeek V3.2": 2,
-        "Google \u2014 gemini-3-flash": 1,
-        "OpenAI \u2014 GPT-5": 1
+        "OpenAI \u2014 GPT-5": 1,
+        "Google \u2014 gemini-3-flash": 1
       },
       "tools": {
         "Codex": 4,
@@ -4243,11 +4244,11 @@
         "DeepSeek \u2014 DeepSeek V3.2": {
           "2087fc45adbc9641": 2
         },
-        "Google \u2014 gemini-3-flash": {
-          "cfbff7ece5681541": 1
-        },
         "OpenAI \u2014 GPT-5": {
           "33a030031a58410c": 1
+        },
+        "Google \u2014 gemini-3-flash": {
+          "cfbff7ece5681541": 1
         }
       }
     },
@@ -4554,8 +4555,8 @@
       "models": {
         "Anthropic \u2014 Opus 4.7": 26,
         "Anthropic \u2014 Sonnet 4.6": 4,
-        "Anthropic \u2014 Opus 4.6": 4,
         "Unknown \u2014 sashiko:gemini-3.1-pro-preview": 1,
+        "Anthropic \u2014 Opus 4.6": 4,
         "Anthropic \u2014 unspecified": 1,
         "Unknown \u2014 kres (claude-opus-4-7)": 3,
         "Google \u2014 Gemini 3.1 Pro": 3,
@@ -4576,8 +4577,8 @@
       "authors": {
         "c5b26186767c4e85": 1,
         "33a030031a58410c": 20,
-        "d4dcac9fa69d2bf5": 1,
         "6795539ae86397c2": 1,
+        "d4dcac9fa69d2bf5": 1,
         "29a317ced6664dfc": 1,
         "e3a74caa0f2c1b07": 3,
         "8319ecfe4c0f07f7": 3,
@@ -4618,13 +4619,13 @@
           "33a030031a58410c": 3,
           "fb97b37f50a80198": 1
         },
+        "Unknown \u2014 sashiko:gemini-3.1-pro-preview": {
+          "6795539ae86397c2": 1
+        },
         "Anthropic \u2014 Opus 4.6": {
           "d4dcac9fa69d2bf5": 1,
           "927d8a299479121d": 2,
           "8d96981855ae53b4": 1
-        },
-        "Unknown \u2014 sashiko:gemini-3.1-pro-preview": {
-          "6795539ae86397c2": 1
         },
         "Anthropic \u2014 unspecified": {
           "29a317ced6664dfc": 1
@@ -4663,8 +4664,8 @@
     "2026-05-20": {
       "patches": 182,
       "vendors": {
-        "Unknown": 8,
         "Anthropic": 146,
+        "Unknown": 8,
         "OpenAI": 17,
         "Greg KH (local LLM fuzzer)": 4,
         "Google": 9,
@@ -7398,15 +7399,15 @@
     "2026-06-14": {
       "patches": 45,
       "vendors": {
-        "Anthropic": 26,
         "Unknown": 1,
+        "Anthropic": 26,
         "Google": 5,
         "Z.ai": 3,
         "OpenAI": 10
       },
       "models": {
-        "Anthropic \u2014 Opus 4.8": 23,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
+        "Anthropic \u2014 Opus 4.8": 23,
         "Anthropic \u2014 Sonnet 4.6": 3,
         "Google \u2014 Gemini 3.1 Pro": 3,
         "Google \u2014 Gemini 3.5": 2,
@@ -7415,8 +7416,8 @@
         "OpenAI \u2014 GPT-5.5": 7
       },
       "tools": {
-        "GitHub Copilot": 1,
         "Unknown": 1,
+        "GitHub Copilot": 1,
         "Direct / API": 29,
         "Antigravity": 4,
         "Codex": 10
@@ -7437,15 +7438,15 @@
         "551dfd576fcc0e95": 6
       },
       "model_authors": {
+        "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": {
+          "0daeb7ec8d63c1ac": 1
+        },
         "Anthropic \u2014 Opus 4.8": {
           "0daeb7ec8d63c1ac": 1,
           "f189165a6e508ebf": 6,
           "cef2fdc927ec2872": 14,
           "7bf93c37b713a325": 1,
           "8d9e287b3eec2479": 1
-        },
-        "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": {
-          "0daeb7ec8d63c1ac": 1
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "ec5ecd235a20c882": 1,
@@ -7761,8 +7762,8 @@
         "Unknown \u2014 Bob:Claude-3.7-Sonnet Bob-Shell": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 1,
         "DeepSeek \u2014 DeepSeek V4": 1,
-        "Anthropic \u2014 Sonnet 4.6": 3,
         "Unknown \u2014 GPT:gpt-5.4-mini": 1,
+        "Anthropic \u2014 Sonnet 4.6": 3,
         "Anthropic \u2014 Opus 4.6": 3
       },
       "tools": {
@@ -7838,12 +7839,12 @@
         "DeepSeek \u2014 DeepSeek V4": {
           "2d8a81459e9707e4": 1
         },
+        "Unknown \u2014 GPT:gpt-5.4-mini": {
+          "cbb9ea6466bbaa14": 1
+        },
         "Anthropic \u2014 Sonnet 4.6": {
           "cbb9ea6466bbaa14": 1,
           "da07edf91fdb4cfe": 2
-        },
-        "Unknown \u2014 GPT:gpt-5.4-mini": {
-          "cbb9ea6466bbaa14": 1
         },
         "Anthropic \u2014 Opus 4.6": {
           "9c8bd3b6373c44aa": 1,
@@ -8742,8 +8743,8 @@
       "tools": {
         "OpenCode": 10,
         "Codex": 17,
-        "Direct / API": 10,
-        "Cursor": 2
+        "Cursor": 2,
+        "Direct / API": 10
       },
       "authors": {
         "33a030031a58410c": 11,
@@ -9027,8 +9028,8 @@
         "Anthropic \u2014 Opus 4.7": 2,
         "Anthropic \u2014 Sonnet 4.6": 4,
         "Anthropic \u2014 Opus 4.6": 7,
-        "Unknown \u2014 Coding Assistant": 1,
         "Unknown \u2014 LLM": 1,
+        "Unknown \u2014 Coding Assistant": 1,
         "Google \u2014 Gemini 3.5": 4,
         "Anthropic \u2014 Sonnet 4.5": 2,
         "OpenAI \u2014 GPT-5": 1,
@@ -9036,8 +9037,8 @@
         "DeepSeek \u2014 DeepSeek V4": 3,
         "Unknown \u2014 Opus 4.7": 5,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 2,
-        "OpenAI \u2014 GPT-5.2": 1,
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
+        "OpenAI \u2014 GPT-5.2": 1
       },
       "tools": {
         "Direct / API": 35,
@@ -9095,10 +9096,10 @@
           "c4d5fb9170d013ee": 1,
           "a166ba790d909263": 5
         },
-        "Unknown \u2014 Coding Assistant": {
+        "Unknown \u2014 LLM": {
           "9c420738aef4a368": 1
         },
-        "Unknown \u2014 LLM": {
+        "Unknown \u2014 Coding Assistant": {
           "9c420738aef4a368": 1
         },
         "Google \u2014 Gemini 3.5": {
@@ -9123,10 +9124,10 @@
           "8327b0c88396321a": 1,
           "0daeb7ec8d63c1ac": 1
         },
-        "OpenAI \u2014 GPT-5.2": {
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
           "ecfee9447dfc198c": 1
         },
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
+        "OpenAI \u2014 GPT-5.2": {
           "ecfee9447dfc198c": 1
         }
       }
@@ -9189,8 +9190,8 @@
         "e42afd1900fa7263": 4,
         "b8a3d999dd1a6171": 14,
         "7ff99678b23b4ca7": 1,
-        "1f8f4fd2b4f8171a": 1,
         "e6d9136f6e3bdcb5": 79,
+        "1f8f4fd2b4f8171a": 1,
         "5f96d7a384ec91ce": 1,
         "9bd46e6bc07fcdd2": 1,
         "6882c162767b33f7": 1,
@@ -10249,8 +10250,8 @@
         "3e3870dd86412dec": 2,
         "b94d4558c8703f66": 1,
         "33a030031a58410c": 1,
-        "e4d1ac3df3d57863": 1,
         "78a5cba24bb7637b": 10,
+        "e4d1ac3df3d57863": 1,
         "cef2fdc927ec2872": 10,
         "3fb395e0acd93bba": 1
       },
@@ -10798,8 +10799,8 @@
         "3f705aa836514913": 1,
         "01e48698dd73558a": 1,
         "fb3d0a40896096a4": 3,
-        "2bc8585a7a620253": 2,
         "30446e121e35f4dd": 3,
+        "2bc8585a7a620253": 2,
         "49b1d90db437e19d": 1,
         "a7b809b33684168f": 1,
         "3076f8abcf037914": 1,
@@ -11829,8 +11830,8 @@
         "Anthropic \u2014 Opus": 1,
         "OpenAI \u2014 ": 1,
         "Cursor (in-house) \u2014 Composer": 1,
-        "Unknown \u2014 LOLLM # finding obvious bugs": 10,
-        "Anthropic \u2014 claude-fable-5 tla+": 1
+        "Anthropic \u2014 claude-fable-5 tla+": 1,
+        "Unknown \u2014 LOLLM # finding obvious bugs": 10
       },
       "tools": {
         "Antigravity": 44,
@@ -11872,8 +11873,8 @@
         "2bc8585a7a620253": 3,
         "22e091f40885c834": 2,
         "2bd0e2a3c4edb94e": 1,
-        "88c42d91d0f63611": 10,
         "9aa2f4635fb023e9": 1,
+        "88c42d91d0f63611": 10,
         "a9273e88acaca46c": 1
       },
       "model_authors": {
@@ -12027,11 +12028,11 @@
         "Cursor (in-house) \u2014 Composer": {
           "2bd0e2a3c4edb94e": 1
         },
-        "Unknown \u2014 LOLLM # finding obvious bugs": {
-          "88c42d91d0f63611": 10
-        },
         "Anthropic \u2014 claude-fable-5 tla+": {
           "9aa2f4635fb023e9": 1
+        },
+        "Unknown \u2014 LOLLM # finding obvious bugs": {
+          "88c42d91d0f63611": 10
         }
       }
     },
@@ -12409,8 +12410,8 @@
         "Unknown \u2014 big-pickle": 2,
         "Unknown \u2014 hy3-free": 1,
         "Anthropic \u2014 Opus 4.8": 29,
-        "OpenAI \u2014 GPT-5.5": 4,
         "Anthropic \u2014 Opus": 1,
+        "OpenAI \u2014 GPT-5.5": 4,
         "Unknown \u2014 ChatGPT SOL 5.6": 2,
         "Anthropic \u2014 claude-fable-5": 11,
         "Anthropic \u2014 Opus 4.6": 8,
@@ -12418,8 +12419,8 @@
         "Unknown \u2014 ChatGPT:GPT-5.5-Thinking": 1,
         "Unknown \u2014 0sec:multi-model": 3,
         "Anthropic \u2014 claude-fable-5 sparse unifdef": 1,
-        "Z.ai \u2014 GLM-5.2": 2,
         "Unknown \u2014 Kimi:K3": 1,
+        "Z.ai \u2014 GLM-5.2": 2,
         "Unknown \u2014 AuditCode-AI:2026.07": 2,
         "Anthropic \u2014 Opus 4.7": 2,
         "Anthropic \u2014 claude-5-fable": 1,
@@ -12507,20 +12508,20 @@
         "Anthropic \u2014 Opus 4.8": {
           "de527f3f04a09320": 12,
           "9327ce6ea3f2d8a0": 8,
-          "a09f5908a9df8133": 1,
           "42eaac7bce636726": 1,
+          "a09f5908a9df8133": 1,
           "1c900a0a9d21c941": 1,
           "2e6d90bd122cc9ea": 1,
           "06134b7f742155f7": 4,
           "3f705aa836514913": 1
         },
+        "Anthropic \u2014 Opus": {
+          "b0ab1b016d639906": 1
+        },
         "OpenAI \u2014 GPT-5.5": {
           "b0ab1b016d639906": 1,
           "3932dd4fd22d3195": 1,
           "6acc2fcb5673f855": 2
-        },
-        "Anthropic \u2014 Opus": {
-          "b0ab1b016d639906": 1
         },
         "Unknown \u2014 ChatGPT SOL 5.6": {
           "3eb659c7a3e26042": 2
@@ -12548,12 +12549,12 @@
         "Anthropic \u2014 claude-fable-5 sparse unifdef": {
           "ab30ba47fe8bd51a": 1
         },
+        "Unknown \u2014 Kimi:K3": {
+          "1ad93953bd2cf874": 1
+        },
         "Z.ai \u2014 GLM-5.2": {
           "1ad93953bd2cf874": 1,
           "51297b00bac1d58a": 1
-        },
-        "Unknown \u2014 Kimi:K3": {
-          "1ad93953bd2cf874": 1
         },
         "Unknown \u2014 AuditCode-AI:2026.07": {
           "1474c8ca4dba79cf": 2
@@ -12633,8 +12634,8 @@
         },
         "Anthropic \u2014 claude-fable-5": {
           "58f59d8f6296acf1": 2,
-          "5f6e3ee4cbebe6c8": 3,
-          "a09f5908a9df8133": 1
+          "a09f5908a9df8133": 1,
+          "5f6e3ee4cbebe6c8": 3
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "af3d1948e566bfb2": 2
@@ -12672,8 +12673,8 @@
       },
       "models": {
         "OpenAI \u2014 GPT-5": 1,
-        "OpenAI \u2014 GPT-5.5": 2,
         "Unknown \u2014 ChatGPT:GPT-5.6-Thinking": 2,
+        "OpenAI \u2014 GPT-5.5": 2,
         "Anthropic \u2014 Opus 4.6": 8,
         "Anthropic \u2014 claude-fable-5": 18,
         "Anthropic \u2014 Sonnet 4.6": 11,
@@ -12725,10 +12726,10 @@
         "OpenAI \u2014 GPT-5": {
           "f73c11e37e1f91d2": 1
         },
-        "OpenAI \u2014 GPT-5.5": {
+        "Unknown \u2014 ChatGPT:GPT-5.6-Thinking": {
           "f73c11e37e1f91d2": 2
         },
-        "Unknown \u2014 ChatGPT:GPT-5.6-Thinking": {
+        "OpenAI \u2014 GPT-5.5": {
           "f73c11e37e1f91d2": 2
         },
         "Anthropic \u2014 Opus 4.6": {
@@ -13204,8 +13205,8 @@
         "Anthropic \u2014 Sonnet 4.6": 4,
         "Anthropic \u2014 Sonnet 4.5": 29,
         "Z.ai \u2014 GLM-5.2": 3,
-        "Unknown \u2014 Kimi:K3": 3,
         "OpenAI \u2014 GPT-5.6": 6,
+        "Unknown \u2014 Kimi:K3": 3,
         "OpenAI \u2014 GPT-5.4": 10,
         "DeepSeek \u2014 DeepSeek V4": 5,
         "Anthropic \u2014 unspecified": 2,
@@ -13336,13 +13337,13 @@
         "Z.ai \u2014 GLM-5.2": {
           "ecfee9447dfc198c": 3
         },
-        "Unknown \u2014 Kimi:K3": {
-          "c4a7289b6c522bec": 3
-        },
         "OpenAI \u2014 GPT-5.6": {
           "c4a7289b6c522bec": 3,
           "a5081f9f988d6c49": 2,
           "2bc8585a7a620253": 1
+        },
+        "Unknown \u2014 Kimi:K3": {
+          "c4a7289b6c522bec": 3
         },
         "OpenAI \u2014 GPT-5.4": {
           "d6459a072d86c36f": 2,
@@ -13684,8 +13685,8 @@
         "OpenAI \u2014 GPT-5.4": 2,
         "Unknown \u2014 Big-Pickle": 1,
         "Anthropic \u2014 Sonnet 4.5": 15,
-        "Unknown \u2014 Meta:internal-AI-tooling": 1,
         "OpenAI \u2014 GPT-5.6": 15,
+        "Unknown \u2014 Meta:internal-AI-tooling": 1,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 1,
         "Anthropic \u2014 claude-fable-5": 5,
         "Anthropic \u2014 Opus 4.6": 3,
@@ -13706,8 +13707,8 @@
         "Unknown \u2014 AISLE:Snapshot": 4,
         "Z.ai \u2014 GLM-5.2": 1,
         "Unknown \u2014 1.17.8-Big Pickle": 1,
-        "OpenAI \u2014 GPT-5": 1,
         "Unknown \u2014 Kimi:K3": 1,
+        "OpenAI \u2014 GPT-5": 1,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": 7,
         "Unknown \u2014 hy3-free": 2,
         "Z.ai \u2014 GLM:5.2": 4,
@@ -13743,8 +13744,8 @@
         "9a7f2765a97de27c": 2,
         "b2022847c8fb3d62": 1,
         "e4e9cc30cda5676e": 2,
-        "667f00ebc112f180": 1,
         "4b88a50914811db7": 1,
+        "667f00ebc112f180": 1,
         "e99aec4f216ed684": 5,
         "1422daf9ba64c51e": 1,
         "2822358868283ec1": 1,
@@ -13799,9 +13800,6 @@
           "0a4a777e562c115f": 9,
           "d760f5f0500a6f24": 6
         },
-        "Unknown \u2014 Meta:internal-AI-tooling": {
-          "600fd233deedac26": 1
-        },
         "OpenAI \u2014 GPT-5.6": {
           "600fd233deedac26": 1,
           "fbcbdb36e5846f4c": 1,
@@ -13809,6 +13807,9 @@
           "2bc8585a7a620253": 5,
           "c4a7289b6c522bec": 2,
           "a5ce8d9d3028006d": 1
+        },
+        "Unknown \u2014 Meta:internal-AI-tooling": {
+          "600fd233deedac26": 1
         },
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": {
           "9cbb9ae69c337484": 1
@@ -13873,10 +13874,10 @@
         "Unknown \u2014 1.17.8-Big Pickle": {
           "7de6f5173ca44d4d": 1
         },
-        "OpenAI \u2014 GPT-5": {
+        "Unknown \u2014 Kimi:K3": {
           "c4a7289b6c522bec": 1
         },
-        "Unknown \u2014 Kimi:K3": {
+        "OpenAI \u2014 GPT-5": {
           "c4a7289b6c522bec": 1
         },
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": {
@@ -14122,8 +14123,8 @@
         "Unknown \u2014 big-pickle": 4,
         "OpenAI \u2014 GPT-5.5": 4,
         "Anthropic \u2014 Opus 4.9": 1,
-        "Unknown \u2014 Meta:internal-AI-tooling": 1,
         "OpenAI \u2014 GPT-5.6": 9,
+        "Unknown \u2014 Meta:internal-AI-tooling": 1,
         "Google \u2014 Gemini 3.1 Pro": 20,
         "Anthropic \u2014 Opus 4.6": 1,
         "OpenAI \u2014 GPT-5": 1,
@@ -14215,9 +14216,6 @@
         "Anthropic \u2014 Opus 4.9": {
           "b83ddb9b065bfe0d": 1
         },
-        "Unknown \u2014 Meta:internal-AI-tooling": {
-          "600fd233deedac26": 1
-        },
         "OpenAI \u2014 GPT-5.6": {
           "600fd233deedac26": 1,
           "e99aec4f216ed684": 1,
@@ -14226,6 +14224,9 @@
           "059e7080b5d3bb4e": 1,
           "cfbff7ece5681541": 1,
           "2bc8585a7a620253": 2
+        },
+        "Unknown \u2014 Meta:internal-AI-tooling": {
+          "600fd233deedac26": 1
         },
         "Google \u2014 Gemini 3.1 Pro": {
           "8e9d4c66869da094": 20
@@ -14834,13 +14835,13 @@
         "Greg KH (local LLM fuzzer) \u2014 gregkh_clanker_t1000": 3,
         "Anthropic \u2014 Opus 4.6": 6,
         "Anthropic \u2014 Opus 4.7": 46,
-        "Anthropic \u2014 Opus": 36,
         "OpenAI \u2014 GPT-5.6": 16,
+        "Anthropic \u2014 Opus": 36,
         "Unknown \u2014 GitHub_Copilot:claude-opus-4.8": 3,
         "Anthropic \u2014 Sonnet 4.6": 5,
         "Google \u2014 Gemini 3.5": 8,
-        "Anthropic \u2014 Sonnet": 7,
         "DeepSeek \u2014 DeepSeek V4": 5,
+        "Anthropic \u2014 Sonnet": 7,
         "Unknown \u2014 AuditCode-AI:2026.07": 4,
         "Anthropic \u2014 claude-5-fable": 4,
         "Unknown \u2014 Kimi:K3": 5,
@@ -14875,8 +14876,8 @@
         "7683ecb3f2a04e83": 1,
         "531471dc1f568bf2": 1,
         "d6459a072d86c36f": 1,
-        "2e647a1dc5cfb968": 3,
         "16cf7edb8df6c1dc": 1,
+        "2e647a1dc5cfb968": 3,
         "e6d9136f6e3bdcb5": 222,
         "3f705aa836514913": 2,
         "d8267817a5d8e09e": 1,
@@ -14941,6 +14942,11 @@
         "Anthropic \u2014 Opus 4.7": {
           "e6d9136f6e3bdcb5": 46
         },
+        "OpenAI \u2014 GPT-5.6": {
+          "e6d9136f6e3bdcb5": 12,
+          "ecb023b1a450e7fd": 1,
+          "2bc8585a7a620253": 3
+        },
         "Anthropic \u2014 Opus": {
           "e6d9136f6e3bdcb5": 13,
           "3f705aa836514913": 2,
@@ -14949,11 +14955,6 @@
           "1515c4271fbd09e4": 1,
           "e7cd756c2d3513cf": 1,
           "8d7071b2cbc05f0d": 1
-        },
-        "OpenAI \u2014 GPT-5.6": {
-          "e6d9136f6e3bdcb5": 12,
-          "ecb023b1a450e7fd": 1,
-          "2bc8585a7a620253": 3
         },
         "Unknown \u2014 GitHub_Copilot:claude-opus-4.8": {
           "e6d9136f6e3bdcb5": 3
@@ -14964,16 +14965,16 @@
         "Google \u2014 Gemini 3.5": {
           "e6d9136f6e3bdcb5": 8
         },
+        "DeepSeek \u2014 DeepSeek V4": {
+          "e6d9136f6e3bdcb5": 2,
+          "8d82b9db09d071be": 2,
+          "33a030031a58410c": 1
+        },
         "Anthropic \u2014 Sonnet": {
           "e6d9136f6e3bdcb5": 1,
           "dde69bc696c78ca4": 2,
           "fee7b4cb8c01750f": 3,
           "9cc26dcbd039de29": 1
-        },
-        "DeepSeek \u2014 DeepSeek V4": {
-          "e6d9136f6e3bdcb5": 2,
-          "8d82b9db09d071be": 2,
-          "33a030031a58410c": 1
         },
         "Unknown \u2014 AuditCode-AI:2026.07": {
           "e6d9136f6e3bdcb5": 4
@@ -15375,8 +15376,8 @@
         "OpenAI \u2014 GPT-5.6": 16,
         "Anthropic \u2014 Opus 4.8": 15,
         "DeepSeek \u2014 DeepSeek V4": 28,
-        "Anthropic \u2014 Opus": 19,
         "Anthropic \u2014 claude-fable-5": 12,
+        "Anthropic \u2014 Opus": 19,
         "OpenAI \u2014 GPT-5": 3,
         "Anthropic \u2014 Sonnet": 13,
         "Google \u2014 Gemini 3.6": 1,
@@ -15466,6 +15467,10 @@
           "7de6f5173ca44d4d": 10,
           "0a4a777e562c115f": 7
         },
+        "Anthropic \u2014 claude-fable-5": {
+          "40a15fd88e5efc23": 6,
+          "a09f5908a9df8133": 6
+        },
         "Anthropic \u2014 Opus": {
           "40a15fd88e5efc23": 2,
           "ec5ecd235a20c882": 1,
@@ -15477,10 +15482,6 @@
           "ad9c2e4a73c20f34": 2,
           "6ffaeb8451cb5b9f": 1,
           "28a77f57f81f63cb": 1
-        },
-        "Anthropic \u2014 claude-fable-5": {
-          "40a15fd88e5efc23": 6,
-          "a09f5908a9df8133": 6
         },
         "OpenAI \u2014 GPT-5": {
           "c9c438b3d8e2fe2c": 2,
@@ -15597,8 +15598,8 @@
         "35692f241ef1037d": 2,
         "7a895009cb509314": 3,
         "33a030031a58410c": 2,
-        "be98dcc27364d734": 1,
         "fdecbeef10ab1ed5": 3,
+        "be98dcc27364d734": 1,
         "0b142f8516aab565": 2,
         "13714e05cf4896f4": 1,
         "00de641db4f87508": 1,
@@ -15744,18 +15745,18 @@
     "2026-08-13": {
       "patches": 113,
       "vendors": {
+        "Anthropic": 55,
         "Unknown": 17,
         "OpenAI": 43,
-        "Anthropic": 55,
         "Google": 2,
         "Z.ai": 1
       },
       "models": {
-        "Unknown \u2014 Meta:internal-AI-tooling": 1,
-        "Anthropic \u2014 Opus": 18,
         "OpenAI \u2014 GPT-5.6": 8,
-        "OpenAI \u2014 GPT-5.5": 5,
+        "Anthropic \u2014 Opus": 18,
+        "Unknown \u2014 Meta:internal-AI-tooling": 1,
         "Unknown \u2014 ChatGPT:GPT-5.6-Thinking": 2,
+        "OpenAI \u2014 GPT-5.5": 5,
         "OpenAI \u2014 GPT-5": 28,
         "Anthropic \u2014 claude-fable-5": 18,
         "Anthropic \u2014 Opus 4.8": 6,
@@ -15772,8 +15773,8 @@
       },
       "tools": {
         "Unknown": 17,
-        "Direct / API": 53,
         "Codex": 42,
+        "Direct / API": 53,
         "GitHub Copilot": 5,
         "Antigravity": 1
       },
@@ -15811,8 +15812,13 @@
         "567b557d20a0f2f2": 1
       },
       "model_authors": {
-        "Unknown \u2014 Meta:internal-AI-tooling": {
-          "600fd233deedac26": 1
+        "OpenAI \u2014 GPT-5.6": {
+          "600fd233deedac26": 1,
+          "a09f5908a9df8133": 2,
+          "4229596fa5b68a35": 1,
+          "f625e824f079e1ee": 2,
+          "397650e8ea19e25b": 1,
+          "100938a5fb87fd42": 1
         },
         "Anthropic \u2014 Opus": {
           "600fd233deedac26": 1,
@@ -15824,20 +15830,15 @@
           "d0b3d595db99b788": 8,
           "a7b809b33684168f": 1
         },
-        "OpenAI \u2014 GPT-5.6": {
-          "600fd233deedac26": 1,
-          "a09f5908a9df8133": 2,
-          "4229596fa5b68a35": 1,
-          "f625e824f079e1ee": 2,
-          "397650e8ea19e25b": 1,
-          "100938a5fb87fd42": 1
+        "Unknown \u2014 Meta:internal-AI-tooling": {
+          "600fd233deedac26": 1
+        },
+        "Unknown \u2014 ChatGPT:GPT-5.6-Thinking": {
+          "f73c11e37e1f91d2": 2
         },
         "OpenAI \u2014 GPT-5.5": {
           "f73c11e37e1f91d2": 2,
           "9a54d16c407e7f8d": 3
-        },
-        "Unknown \u2014 ChatGPT:GPT-5.6-Thinking": {
-          "f73c11e37e1f91d2": 2
         },
         "OpenAI \u2014 GPT-5": {
           "f73c11e37e1f91d2": 2,
@@ -15908,8 +15909,8 @@
         "Anthropic \u2014 Opus": 11,
         "OpenAI \u2014 GPT-5": 28,
         "Unknown \u2014 Opus-4.8": 1,
-        "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 2,
         "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": 2,
+        "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": 2,
         "Unknown \u2014 0sec:multi-model": 2,
         "Anthropic \u2014 Sonnet 4.6": 1,
         "Unknown \u2014 GitHub_Copilot:claude-opus-4.8": 1,
@@ -16018,10 +16019,10 @@
         "Unknown \u2014 Opus-4.8": {
           "be98dcc27364d734": 1
         },
-        "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": {
+        "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": {
           "5314852614b81f8b": 2
         },
-        "Unknown \u2014 GitHub_Copilot:claude-sonnet-5": {
+        "Unknown \u2014 GitHub_Copilot:claude-sonnet-4.6": {
           "5314852614b81f8b": 2
         },
         "Unknown \u2014 0sec:multi-model": {
@@ -16200,15 +16201,15 @@
       }
     },
     "2026-08-16": {
-      "patches": 118,
+      "patches": 117,
       "vendors": {
         "OpenAI": 11,
-        "Anthropic": 100,
+        "Anthropic": 99,
         "Unknown": 8
       },
       "models": {
         "OpenAI \u2014 GPT-5.6": 6,
-        "Anthropic \u2014 Opus": 94,
+        "Anthropic \u2014 Opus": 93,
         "Unknown \u2014 GitHub_Copilot:claude-opus-5": 5,
         "OpenAI \u2014 GPT-5": 3,
         "Anthropic \u2014 Sonnet": 5,
@@ -16220,7 +16221,7 @@
       },
       "tools": {
         "Codex": 11,
-        "Direct / API": 100,
+        "Direct / API": 99,
         "Unknown": 8
       },
       "authors": {
@@ -16238,7 +16239,7 @@
         "4254e100781d7d68": 1,
         "7683ecb3f2a04e83": 2,
         "a7321a6656c5d95a": 2,
-        "3c9d8399e4f57c97": 3,
+        "3c9d8399e4f57c97": 2,
         "62c316da7a166eb7": 1,
         "0193eb905cffc057": 1,
         "ee826be7a3087725": 2,
@@ -16258,7 +16259,7 @@
           "4bb4c62aae6e81ce": 1,
           "e4bd02807cff2c80": 5,
           "a7321a6656c5d95a": 2,
-          "3c9d8399e4f57c97": 2,
+          "3c9d8399e4f57c97": 1,
           "0193eb905cffc057": 1
         },
         "Unknown \u2014 GitHub_Copilot:claude-opus-5": {
@@ -17352,8 +17353,8 @@
         "Direct / API": 17,
         "Local LLM fuzzer": 1,
         "Antigravity": 1,
-        "Claude Code": 1,
         "Unknown": 4,
+        "Claude Code": 1,
         "Cursor": 31
       },
       "authors": {
@@ -17567,9 +17568,9 @@
       "models": {
         "Anthropic \u2014 unspecified": 2,
         "Anthropic \u2014 claude-fable-5": 4,
+        "OpenAI \u2014 GPT-5.6": 6,
         "Anthropic \u2014 Opus": 22,
         "Google \u2014 Gemini 3.1 Pro": 10,
-        "OpenAI \u2014 GPT-5.6": 6,
         "Unknown \u2014 claw:muse-spark-1.2 syzkaller": 1,
         "OpenAI \u2014 gpt-daybreak-blue": 1,
         "DeepSeek \u2014 DeepSeek V4": 6,
@@ -17662,6 +17663,13 @@
           "48e6688be961bcf0": 1,
           "2dc392d25b069a3e": 2
         },
+        "OpenAI \u2014 GPT-5.6": {
+          "32435b8ccbf7bf37": 2,
+          "48e6688be961bcf0": 1,
+          "96e40b5c81ca48e0": 1,
+          "575919a97a544412": 1,
+          "4229596fa5b68a35": 1
+        },
         "Anthropic \u2014 Opus": {
           "32435b8ccbf7bf37": 2,
           "ab9665a08b0d414a": 6,
@@ -17680,13 +17688,6 @@
           "32435b8ccbf7bf37": 2,
           "ed353c152b206ef9": 1,
           "78a5cba24bb7637b": 7
-        },
-        "OpenAI \u2014 GPT-5.6": {
-          "32435b8ccbf7bf37": 2,
-          "48e6688be961bcf0": 1,
-          "96e40b5c81ca48e0": 1,
-          "575919a97a544412": 1,
-          "4229596fa5b68a35": 1
         },
         "Unknown \u2014 claw:muse-spark-1.2 syzkaller": {
           "de527f3f04a09320": 1
@@ -17836,8 +17837,8 @@
       "authors": {
         "6abac25231eb97b2": 1,
         "fee1d4d935c0f7ed": 2,
-        "3fb395e0acd93bba": 1,
         "c1b907f4086b3087": 1,
+        "3fb395e0acd93bba": 1,
         "575919a97a544412": 1,
         "5ca4e71f09377f1f": 1,
         "a166ba790d909263": 1,
@@ -19091,8 +19092,8 @@
         "Unknown \u2014 Qwen3.8-27B": 2,
         "Anthropic \u2014 Opus": 49,
         "DeepSeek \u2014 deepseek-4-flash # finding the race condition": 1,
-        "Google \u2014 Gemini 3.1 Pro": 3,
         "OpenAI \u2014 GPT-5.6": 4,
+        "Google \u2014 Gemini 3.1 Pro": 3,
         "Unknown \u2014 big-pickle": 4,
         "Unknown \u2014 LLM": 44,
         "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
@@ -19234,15 +19235,15 @@
         "DeepSeek \u2014 deepseek-4-flash # finding the race condition": {
           "3af8db0fe1e04ad7": 1
         },
-        "Google \u2014 Gemini 3.1 Pro": {
-          "575919a97a544412": 1,
-          "c3e29f75ea5550fd": 2
-        },
         "OpenAI \u2014 GPT-5.6": {
           "575919a97a544412": 1,
           "c374905abe3353b8": 1,
           "4a23851d62b9ed4c": 1,
           "d0d2b11d1442e8f5": 1
+        },
+        "Google \u2014 Gemini 3.1 Pro": {
+          "575919a97a544412": 1,
+          "c3e29f75ea5550fd": 2
         },
         "Unknown \u2014 big-pickle": {
           "33a030031a58410c": 4
@@ -19611,8 +19612,8 @@
         "Anthropic \u2014 Opus": 36,
         "Anthropic \u2014 Sonnet 4.6": 2,
         "Unknown \u2014 LLM": 71,
-        "Anthropic \u2014 Opus 4.7": 4,
         "Unknown \u2014 big-pickle": 1,
+        "Anthropic \u2014 Opus 4.7": 4,
         "Z.ai \u2014 GLM:5.3": 1,
         "Anthropic \u2014 Opus 4.8": 10,
         "Google \u2014 Gemini 3.1 Pro": 1,
@@ -19663,14 +19664,14 @@
         "148005d360347a09": 1,
         "798ac276eac1f530": 1,
         "29a317ced6664dfc": 1,
-        "7591c95f44675e9b": 1,
         "d760f5f0500a6f24": 1,
+        "7591c95f44675e9b": 1,
         "7051b1bcef73a200": 5,
         "2ffbd9518f470882": 4,
         "5ed58966bc5428d0": 2,
         "d908e255dc44721f": 24,
-        "3d600f053fefbce0": 2,
         "8e1f597aca6d02d3": 1,
+        "3d600f053fefbce0": 2,
         "8d96981855ae53b4": 1,
         "145dbf15cf6b56cc": 3,
         "6bdd938b4824d515": 4,
@@ -19741,12 +19742,12 @@
           "906abedda2ca29d0": 4,
           "3ce195fe2e45d307": 1
         },
+        "Unknown \u2014 big-pickle": {
+          "33a030031a58410c": 1
+        },
         "Anthropic \u2014 Opus 4.7": {
           "1982d24e87d29e8c": 1,
           "6ea8a552eff7b378": 3
-        },
-        "Unknown \u2014 big-pickle": {
-          "33a030031a58410c": 1
         },
         "Z.ai \u2014 GLM:5.3": {
           "798ac276eac1f530": 1
@@ -19884,8 +19885,8 @@
         "Unknown \u2014 Bynario AI": 3,
         "Unknown \u2014 kres:claude-opus-4-6": 3,
         "Anthropic \u2014 claude-fable-5 [Claude Code]": 3,
-        "Z.ai \u2014 GLM-5.2": 3,
         "Unknown \u2014 kimi-cli:kimi-k2.7 code": 2,
+        "Z.ai \u2014 GLM-5.2": 3,
         "Unknown \u2014 0sec:multi-model": 2,
         "OpenAI \u2014 deepseek-v4-flash": 2,
         "Unknown \u2014 LLM (debug, reproduce, research fix, review patch)": 1,
@@ -20143,11 +20144,11 @@
         "Anthropic \u2014 claude-fable-5 [Claude Code]": {
           "e6d9136f6e3bdcb5": 3
         },
-        "Z.ai \u2014 GLM-5.2": {
-          "e6d9136f6e3bdcb5": 3
-        },
         "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
           "e6d9136f6e3bdcb5": 2
+        },
+        "Z.ai \u2014 GLM-5.2": {
+          "e6d9136f6e3bdcb5": 3
         },
         "Unknown \u2014 0sec:multi-model": {
           "e6d9136f6e3bdcb5": 2
@@ -20543,8 +20544,8 @@
         "3e3870dd86412dec": 5,
         "854832bc2086d4e4": 4,
         "fcf031658d333cd9": 1,
-        "11cc7aa49884034c": 1,
         "c40c62476ebf9b3d": 1,
+        "11cc7aa49884034c": 1,
         "ecd91682706c1659": 1,
         "2e6d90bd122cc9ea": 1,
         "1ec3a413ad430d49": 1,
@@ -21004,8 +21005,8 @@
         "Unknown \u2014 Qwen:Qwen3.6": 2,
         "Anthropic \u2014 Sonnet 4.5": 1,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 4,
-        "Unknown \u2014 GitHub_Copilot:claude-opus-5": 1,
         "Unknown \u2014 Grok": 1,
+        "Unknown \u2014 GitHub_Copilot:claude-opus-5": 1,
         "Anthropic \u2014 Opus 4.7": 3,
         "Unknown \u2014 unspecified": 4,
         "Anthropic \u2014 fable-5.1": 2,
@@ -21248,11 +21249,11 @@
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": {
           "e6d9136f6e3bdcb5": 4
         },
-        "Unknown \u2014 GitHub_Copilot:claude-opus-5": {
-          "e6d9136f6e3bdcb5": 1
-        },
         "Unknown \u2014 Grok": {
           "49c80f80baf427f4": 1
+        },
+        "Unknown \u2014 GitHub_Copilot:claude-opus-5": {
+          "e6d9136f6e3bdcb5": 1
         },
         "Anthropic \u2014 Opus 4.7": {
           "e6d9136f6e3bdcb5": 3
@@ -21337,8 +21338,8 @@
         "Unknown \u2014 LLM coccinelle": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 6,
         "Unknown \u2014 abaci:qwen3.8-max": 1,
-        "Z.ai \u2014 GLM-5.2": 1,
         "Unknown \u2014 kimi-cli:kimi-k2.7 code": 1,
+        "Z.ai \u2014 GLM-5.2": 1,
         "Unknown \u2014 unspecified": 1
       },
       "tools": {
@@ -21413,8 +21414,8 @@
         "f8b3f8cf1dddb3cd": 1,
         "88c42d91d0f63611": 6,
         "4b483e93295ef3d8": 1,
-        "8a12caa8848b11f5": 5,
         "88dd219217a56712": 11,
+        "8a12caa8848b11f5": 5,
         "3a11218904efb05a": 4,
         "819509c011743c03": 1,
         "16cf7edb8df6c1dc": 1,
@@ -21571,10 +21572,10 @@
         "Unknown \u2014 abaci:qwen3.8-max": {
           "65c214a52fb50fce": 1
         },
-        "Z.ai \u2014 GLM-5.2": {
+        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
           "d99014a8bcbb7aeb": 1
         },
-        "Unknown \u2014 kimi-cli:kimi-k2.7 code": {
+        "Z.ai \u2014 GLM-5.2": {
           "d99014a8bcbb7aeb": 1
         },
         "Unknown \u2014 unspecified": {
@@ -22671,8 +22672,8 @@
         "be95b9dd98be7c70": 3,
         "dff3603c3bd15db3": 2,
         "29a317ced6664dfc": 1,
-        "5c4b86e37542f1aa": 1,
         "326a9921f46b24fa": 1,
+        "5c4b86e37542f1aa": 1,
         "0b142f8516aab565": 5,
         "556fd69cf133b8fb": 9,
         "d08acc3f53a26635": 2,
@@ -23014,8 +23015,8 @@
         "b0ab1b016d639906": 1,
         "c7364421d6402e01": 1,
         "986fa5138ec49f2b": 1,
-        "a8e86c0f9e39c926": 1,
         "dff3603c3bd15db3": 4,
+        "a8e86c0f9e39c926": 1,
         "1d005df7f01ee099": 9,
         "02739d973275dab6": 1,
         "44fa0a8a8ec5f826": 1,
@@ -23558,8 +23559,8 @@
         "Google \u2014 ": 1,
         "Anthropic \u2014 Sonnet": 3,
         "Anthropic \u2014 Sonnet 4.6": 1,
-        "Anthropic \u2014 Opus 4.7": 3,
         "Unknown \u2014 LLM Codex": 2,
+        "Anthropic \u2014 Opus 4.7": 3,
         "Unknown \u2014 CodeBuddy:Kimi-K3": 1,
         "Anthropic \u2014 gpt-5": 1,
         "DeepSeek \u2014 DeepSeek V4": 1,
@@ -23612,8 +23613,8 @@
         "278e2123b7032bd6": 2,
         "7074bc46fe4a4f34": 1,
         "f38198f5b4a33734": 1,
-        "e2c75a31d47a01ed": 3,
         "1536669a16cf19b9": 1,
+        "e2c75a31d47a01ed": 3,
         "722e4e85a2e4a21f": 1,
         "ac44e987b269d420": 2,
         "5f65f1f2cbde5cd8": 1,
@@ -23718,12 +23719,12 @@
         "Anthropic \u2014 Sonnet 4.6": {
           "7074bc46fe4a4f34": 1
         },
-        "Anthropic \u2014 Opus 4.7": {
-          "e2c75a31d47a01ed": 3
-        },
         "Unknown \u2014 LLM Codex": {
           "1536669a16cf19b9": 1,
           "2bd732dec6def804": 1
+        },
+        "Anthropic \u2014 Opus 4.7": {
+          "e2c75a31d47a01ed": 3
         },
         "Unknown \u2014 CodeBuddy:Kimi-K3": {
           "9a7f2765a97de27c": 1
@@ -24325,8 +24326,8 @@
       "models": {
         "Unknown \u2014 LLM": 132,
         "Anthropic \u2014 Opus 4.8": 29,
-        "Anthropic \u2014 claude-fable-5-1": 1,
         "Anthropic \u2014 Opus": 20,
+        "Anthropic \u2014 claude-fable-5-1": 1,
         "OpenAI \u2014 GPT-5": 3,
         "Unknown \u2014 Qoder:Qwen3.8-Max": 4,
         "Anthropic \u2014 Opus 4.6": 3,
@@ -24342,8 +24343,8 @@
         "OpenAI \u2014 GPT-5.3": 3,
         "Unknown \u2014 LOLLM # finding obvious bugs": 18,
         "Anthropic \u2014 Opus 5.1": 2,
-        "Anthropic \u2014 claude-fable-5-1 sparse": 1,
         "Unknown \u2014 GPT-6 Astra": 4,
+        "Anthropic \u2014 claude-fable-5-1 sparse": 1,
         "Anthropic \u2014 claude-fable-5": 11,
         "Unknown \u2014 LLM checkpatch dtbs_check": 2,
         "Unknown \u2014 LLM sparse checkpatch": 8,
@@ -24418,8 +24419,8 @@
         "0c19de35fd6161d4": 1,
         "428dd4b7a58ace41": 1,
         "ed353c152b206ef9": 1,
-        "e8b10d60c2034e4d": 1,
         "2e4ef283efa68578": 4,
+        "e8b10d60c2034e4d": 1,
         "966005dab243fefd": 5,
         "dde69bc696c78ca4": 2,
         "0b36651ba478067a": 1,
@@ -24498,9 +24499,6 @@
           "e14c22cada400f60": 4,
           "2b51f81e2d443d53": 15
         },
-        "Anthropic \u2014 claude-fable-5-1": {
-          "1d005df7f01ee099": 1
-        },
         "Anthropic \u2014 Opus": {
           "1d005df7f01ee099": 9,
           "6df2e2ddd2c4f427": 1,
@@ -24509,6 +24507,9 @@
           "e14c22cada400f60": 1,
           "966005dab243fefd": 1,
           "dde69bc696c78ca4": 2
+        },
+        "Anthropic \u2014 claude-fable-5-1": {
+          "1d005df7f01ee099": 1
         },
         "OpenAI \u2014 GPT-5": {
           "c9c438b3d8e2fe2c": 1,
@@ -24561,11 +24562,11 @@
         "Anthropic \u2014 Opus 5.1": {
           "a287d23f0970a671": 2
         },
-        "Anthropic \u2014 claude-fable-5-1 sparse": {
-          "e8b10d60c2034e4d": 1
-        },
         "Unknown \u2014 GPT-6 Astra": {
           "2e4ef283efa68578": 4
+        },
+        "Anthropic \u2014 claude-fable-5-1 sparse": {
+          "e8b10d60c2034e4d": 1
         },
         "Anthropic \u2014 claude-fable-5": {
           "966005dab243fefd": 4,
@@ -24624,14 +24625,14 @@
         "Anthropic \u2014 Sonnet 4.6": 11,
         "Unknown \u2014 pi:gpt-5.6-sol": 1,
         "Anthropic \u2014 Opus 5.5": 5,
-        "Anthropic \u2014 Opus 4.8": 8,
         "Unknown \u2014 Sashiko:gemini-3.1-pro-preview": 6,
+        "Anthropic \u2014 Opus 4.8": 8,
         "OpenAI \u2014 GPT-5.6": 16,
         "OpenAI \u2014 GPT-6": 18,
         "Unknown \u2014 Qoder:Qwen3.8-Max": 3,
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": 2,
-        "OpenAI \u2014 GPT-5": 15,
         "Unknown \u2014 Kimi:K3": 2,
+        "OpenAI \u2014 GPT-5": 15,
         "Unknown \u2014 0sec:multi-model": 2,
         "Z.ai \u2014 GLM:5.3": 8,
         "Unknown \u2014 ChatGPT:GPT-5.6 Sol": 2,
@@ -24822,13 +24823,13 @@
           "9cca6f54a19c159a": 1,
           "6af0558b5f03aeec": 2
         },
+        "Unknown \u2014 Sashiko:gemini-3.1-pro-preview": {
+          "b825f3366b408a7c": 6
+        },
         "Anthropic \u2014 Opus 4.8": {
           "b825f3366b408a7c": 3,
           "e6d9136f6e3bdcb5": 2,
           "e14c22cada400f60": 3
-        },
-        "Unknown \u2014 Sashiko:gemini-3.1-pro-preview": {
-          "b825f3366b408a7c": 6
         },
         "OpenAI \u2014 GPT-5.6": {
           "b0ab1b016d639906": 2,
@@ -24848,13 +24849,13 @@
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
           "e6d9136f6e3bdcb5": 2
         },
+        "Unknown \u2014 Kimi:K3": {
+          "e6d9136f6e3bdcb5": 2
+        },
         "OpenAI \u2014 GPT-5": {
           "e6d9136f6e3bdcb5": 13,
           "c9c438b3d8e2fe2c": 1,
           "25dfb5060e3c84bf": 1
-        },
-        "Unknown \u2014 Kimi:K3": {
-          "e6d9136f6e3bdcb5": 2
         },
         "Unknown \u2014 0sec:multi-model": {
           "e6d9136f6e3bdcb5": 2
@@ -25571,8 +25572,8 @@
         "Unknown \u2014 LLM sparse": 7,
         "Unknown \u2014 GPT-6-Astra": 4,
         "OpenAI \u2014 GPT-5.6": 5,
-        "Unknown \u2014 https://claude.ai:Sonnet 5": 1,
         "Unknown \u2014 https://gemini.google.com:3.6 Flash": 1,
+        "Unknown \u2014 https://claude.ai:Sonnet 5": 1,
         "DeepSeek \u2014 DeepSeek V4": 1,
         "Unknown \u2014 LLM Codex": 4,
         "Unknown \u2014 Google Gemini": 2,
@@ -25616,8 +25617,8 @@
         "1ac6a18cfb25cf2c": 1,
         "396c82c36521422f": 1,
         "2c70a830da19ddb9": 1,
-        "7de6f5173ca44d4d": 1,
         "2bc8585a7a620253": 2,
+        "7de6f5173ca44d4d": 1,
         "a7112ab6c39e5362": 1,
         "017e52938e8c153d": 1,
         "a7a63691b58a5b22": 25,
@@ -25698,10 +25699,10 @@
           "72f178d9d3052e64": 3,
           "2bc8585a7a620253": 2
         },
-        "Unknown \u2014 https://claude.ai:Sonnet 5": {
+        "Unknown \u2014 https://gemini.google.com:3.6 Flash": {
           "7de6f5173ca44d4d": 1
         },
-        "Unknown \u2014 https://gemini.google.com:3.6 Flash": {
+        "Unknown \u2014 https://claude.ai:Sonnet 5": {
           "7de6f5173ca44d4d": 1
         },
         "DeepSeek \u2014 DeepSeek V4": {
@@ -25760,8 +25761,8 @@
         "Unknown \u2014 LLM [analysis, codegen, tests]": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 11,
         "Anthropic \u2014 claude-fable-5 [Claude Code]": 3,
-        "Unknown \u2014 CodeBuddy:Kimi-K3": 1,
         "Anthropic \u2014 claude-fable-5": 1,
+        "Unknown \u2014 CodeBuddy:Kimi-K3": 1,
         "Unknown \u2014 tencentos-corvus-ai:hy4-preview": 1,
         "Google \u2014 Gemini 3.1": 1
       },
@@ -25802,8 +25803,8 @@
         "78a5cba24bb7637b": 37,
         "299649ebdab2a080": 2,
         "196c83c6c30b5cf5": 8,
-        "741ab13a997adff6": 1,
         "7bb8cf8c4245e545": 2,
+        "741ab13a997adff6": 1,
         "a0f5bf3f6e1ac05f": 4,
         "c30f653ba8cfd5fc": 1,
         "f236b254cfe9dda0": 4,
@@ -25831,8 +25832,8 @@
         "7c1044c089856ccc": 3,
         "537563382bbf9a27": 1,
         "b29f7d30b233bf4e": 2,
-        "4c9b8772648ba9cc": 4,
         "a287d23f0970a671": 2,
+        "4c9b8772648ba9cc": 4,
         "7f216e9fda651a54": 1,
         "25dfb5060e3c84bf": 1,
         "42cf72de8bdf5719": 11,
@@ -26000,10 +26001,10 @@
         "Anthropic \u2014 claude-fable-5 [Claude Code]": {
           "5f2583e4b8dd578b": 3
         },
-        "Unknown \u2014 CodeBuddy:Kimi-K3": {
+        "Anthropic \u2014 claude-fable-5": {
           "966005dab243fefd": 1
         },
-        "Anthropic \u2014 claude-fable-5": {
+        "Unknown \u2014 CodeBuddy:Kimi-K3": {
           "966005dab243fefd": 1
         },
         "Unknown \u2014 tencentos-corvus-ai:hy4-preview": {
@@ -26015,9 +26016,9 @@
       }
     },
     "2026-09-29": {
-      "patches": 301,
+      "patches": 300,
       "vendors": {
-        "Unknown": 188,
+        "Unknown": 187,
         "Anthropic": 77,
         "Google": 18,
         "OpenAI": 13,
@@ -26025,9 +26026,9 @@
         "Z.ai": 4
       },
       "models": {
-        "Unknown \u2014 LLM": 174,
-        "Anthropic \u2014 Opus 5.5": 22,
+        "Unknown \u2014 LLM": 173,
         "Anthropic \u2014 claude-fable-5 [Claude Code]": 2,
+        "Anthropic \u2014 Opus 5.5": 22,
         "Anthropic \u2014 claude-fable-5-1": 7,
         "Anthropic \u2014 Opus": 22,
         "Anthropic \u2014 Opus 4.7": 3,
@@ -26058,7 +26059,7 @@
         "Z.ai \u2014 GLM:5.3": 1
       },
       "tools": {
-        "Unknown": 181,
+        "Unknown": 180,
         "Direct / API": 78,
         "Antigravity": 13,
         "Codex": 8,
@@ -26091,7 +26092,7 @@
         "531471dc1f568bf2": 3,
         "819509c011743c03": 1,
         "ac158e72aa824b41": 2,
-        "e88e0d0142b24fad": 3,
+        "e88e0d0142b24fad": 2,
         "24ec0ddd2af27e17": 1,
         "a8a3451a2bc387cf": 1,
         "7ab443a6d1b14f52": 3,
@@ -26176,7 +26177,7 @@
           "575919a97a544412": 8,
           "819509c011743c03": 1,
           "ac158e72aa824b41": 2,
-          "e88e0d0142b24fad": 3,
+          "e88e0d0142b24fad": 2,
           "24ec0ddd2af27e17": 1,
           "7ab443a6d1b14f52": 3,
           "a7a4be20e263333f": 15,
@@ -26212,6 +26213,9 @@
           "c6c4fea739c740e7": 6,
           "3b10a508fe61f0d6": 1
         },
+        "Anthropic \u2014 claude-fable-5 [Claude Code]": {
+          "5f2583e4b8dd578b": 2
+        },
         "Anthropic \u2014 Opus 5.5": {
           "5f2583e4b8dd578b": 2,
           "710fda3b16f9861f": 1,
@@ -26225,9 +26229,6 @@
           "e7eccf40153cb908": 1,
           "164047caded9f3f3": 1,
           "037ee9253c1bb654": 1
-        },
-        "Anthropic \u2014 claude-fable-5 [Claude Code]": {
-          "5f2583e4b8dd578b": 2
         },
         "Anthropic \u2014 claude-fable-5-1": {
           "196c83c6c30b5cf5": 2,
@@ -27066,8 +27067,8 @@
         "88fabbf6bfd97d3c": 3,
         "0587dc528157d30f": 1,
         "78a5cba24bb7637b": 15,
-        "c3656c79d5575287": 3,
         "31b30205712d5dff": 1,
+        "c3656c79d5575287": 3,
         "5de0dde658e2aa3e": 2,
         "1ac6a18cfb25cf2c": 1,
         "8e1f597aca6d02d3": 5,
@@ -27238,8 +27239,8 @@
         "Z.ai": 5
       },
       "models": {
-        "Anthropic \u2014 Opus 5.5": 14,
         "Anthropic \u2014 claude-fable-5-1 # max effort, review": 4,
+        "Anthropic \u2014 Opus 5.5": 14,
         "Unknown \u2014 LLM": 115,
         "Unknown \u2014 GPT-6.1-Sol": 3,
         "Anthropic \u2014 claude-fable-5": 2,
@@ -27300,6 +27301,9 @@
         "c0e57a8bf52d510d": 2
       },
       "model_authors": {
+        "Anthropic \u2014 claude-fable-5-1 # max effort, review": {
+          "e2b6a8295833e77e": 4
+        },
         "Anthropic \u2014 Opus 5.5": {
           "e2b6a8295833e77e": 4,
           "872d6840fce8d5ba": 1,
@@ -27309,9 +27313,6 @@
           "f255a640d925d0c1": 3,
           "0b959551c022b7d3": 1,
           "a16458a6e0b3b409": 1
-        },
-        "Anthropic \u2014 claude-fable-5-1 # max effort, review": {
-          "e2b6a8295833e77e": 4
         },
         "Unknown \u2014 LLM": {
           "575919a97a544412": 1,
@@ -27818,8 +27819,8 @@
         "6ba0f30e4bc4d406": 2,
         "efc74231eb338c67": 2,
         "ee28cce60c2f3f6e": 1,
-        "722e4e85a2e4a21f": 1,
         "7efddea994b123e5": 3,
+        "722e4e85a2e4a21f": 1,
         "489eb8d323f8ee01": 3,
         "69751eb7a998ef58": 1,
         "7dfe95fb36bdc230": 1,
@@ -30034,16 +30035,16 @@
       }
     },
     "2026-10-15": {
-      "patches": 382,
+      "patches": 381,
       "vendors": {
-        "Unknown": 240,
+        "Unknown": 239,
         "OpenAI": 28,
         "Anthropic": 110,
         "Google": 6,
         "Z.ai": 18
       },
       "models": {
-        "Unknown \u2014 LLM": 238,
+        "Unknown \u2014 LLM": 237,
         "OpenAI \u2014 GPT-5.6": 22,
         "Anthropic \u2014 Opus": 22,
         "Anthropic \u2014 Opus 5.5": 76,
@@ -30062,7 +30063,7 @@
         "OpenAI \u2014 GPT-6": 1
       },
       "tools": {
-        "Unknown": 240,
+        "Unknown": 239,
         "GitHub Copilot": 1,
         "Direct / API": 86,
         "OpenCode": 24,
@@ -30127,7 +30128,6 @@
         "68452358a2c6b34f": 3,
         "99c91aff5d9a51e8": 18,
         "037ee9253c1bb654": 3,
-        "57a52586b0c63668": 1,
         "3a4df412c0282f3c": 5,
         "722e4e85a2e4a21f": 3,
         "1ac6a18cfb25cf2c": 1,
@@ -30188,7 +30188,6 @@
           "9c8bd3b6373c44aa": 6,
           "68452358a2c6b34f": 3,
           "ac44e987b269d420": 1,
-          "57a52586b0c63668": 1,
           "3a4df412c0282f3c": 5,
           "722e4e85a2e4a21f": 3,
           "1ac6a18cfb25cf2c": 1,
@@ -30549,13 +30548,13 @@
         "Greg KH (local LLM fuzzer)": 2
       },
       "models": {
-        "Anthropic \u2014 Opus 5.5": 17,
         "Anthropic \u2014 claude-fable-5-1": 1,
+        "Anthropic \u2014 Opus 5.5": 17,
         "Unknown \u2014 LLM": 207,
         "Unknown \u2014 LLM sparse smatch coccinelle": 1,
         "OpenAI \u2014 GPT-6": 4,
-        "Z.ai \u2014 GLM-5.2": 11,
         "Anthropic \u2014 claude-fable-5": 26,
+        "Z.ai \u2014 GLM-5.2": 11,
         "Unknown \u2014 VSCode:gpt-5.3-codex": 1,
         "Anthropic \u2014 Opus": 34,
         "Google \u2014 Gemini 3.7": 2,
@@ -30563,8 +30562,8 @@
         "DeepSeek \u2014 DeepSeek V3": 1,
         "Unknown \u2014 GitHub_Copilot:gemini-3.1-pro": 2,
         "OpenAI \u2014 GPT-5.5": 20,
-        "Anthropic \u2014 Opus 4.6": 12,
         "Unknown \u2014 Qoder:Qwen-3.8-MAX-Preview": 1,
+        "Anthropic \u2014 Opus 4.6": 12,
         "Anthropic \u2014 Sonnet 4.6": 5,
         "OpenAI \u2014 GPT-5.3": 2,
         "Unknown \u2014 kres (claude-opus-4-7)": 4,
@@ -30573,8 +30572,8 @@
         "Google \u2014 Gemini 3.5": 4,
         "OpenAI \u2014 GPT-5.6": 29,
         "Anthropic \u2014 GLM-5.2": 1,
-        "OpenAI \u2014 GPT-5": 14,
         "Unknown \u2014 Kimi:K3": 2,
+        "OpenAI \u2014 GPT-5": 14,
         "Unknown \u2014 0sec:multi-model": 2,
         "OpenAI \u2014 GPT-5.4": 3,
         "Unknown \u2014 WChat:claude-opus-4-8": 2,
@@ -30666,6 +30665,9 @@
         "b7c432699d9726c9": 11
       },
       "model_authors": {
+        "Anthropic \u2014 claude-fable-5-1": {
+          "3c9fc3e558074290": 1
+        },
         "Anthropic \u2014 Opus 5.5": {
           "3c9fc3e558074290": 2,
           "8c3af7def0c3df81": 1,
@@ -30674,9 +30676,6 @@
           "e6d9136f6e3bdcb5": 7,
           "faa529de58979a9e": 1,
           "9031f3fe4f62264f": 1
-        },
-        "Anthropic \u2014 claude-fable-5-1": {
-          "3c9fc3e558074290": 1
         },
         "Unknown \u2014 LLM": {
           "91a68c33551a3a58": 10,
@@ -30713,13 +30712,13 @@
           "4a23851d62b9ed4c": 1,
           "e6d9136f6e3bdcb5": 3
         },
-        "Z.ai \u2014 GLM-5.2": {
-          "dff3603c3bd15db3": 11
-        },
         "Anthropic \u2014 claude-fable-5": {
           "dff3603c3bd15db3": 4,
           "e6d9136f6e3bdcb5": 8,
           "966005dab243fefd": 14
+        },
+        "Z.ai \u2014 GLM-5.2": {
+          "dff3603c3bd15db3": 11
         },
         "Unknown \u2014 VSCode:gpt-5.3-codex": {
           "dff3603c3bd15db3": 1
@@ -30744,11 +30743,11 @@
         "OpenAI \u2014 GPT-5.5": {
           "e6d9136f6e3bdcb5": 20
         },
-        "Anthropic \u2014 Opus 4.6": {
-          "e6d9136f6e3bdcb5": 12
-        },
         "Unknown \u2014 Qoder:Qwen-3.8-MAX-Preview": {
           "e6d9136f6e3bdcb5": 1
+        },
+        "Anthropic \u2014 Opus 4.6": {
+          "e6d9136f6e3bdcb5": 12
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "e6d9136f6e3bdcb5": 5
@@ -30774,11 +30773,11 @@
         "Anthropic \u2014 GLM-5.2": {
           "e6d9136f6e3bdcb5": 1
         },
-        "OpenAI \u2014 GPT-5": {
-          "e6d9136f6e3bdcb5": 14
-        },
         "Unknown \u2014 Kimi:K3": {
           "e6d9136f6e3bdcb5": 2
+        },
+        "OpenAI \u2014 GPT-5": {
+          "e6d9136f6e3bdcb5": 14
         },
         "Unknown \u2014 0sec:multi-model": {
           "e6d9136f6e3bdcb5": 2
@@ -30950,8 +30949,8 @@
         "2b1cf45712bd6b23": 5,
         "3f705aa836514913": 3,
         "90b6e14cc74c7212": 1,
-        "647d36ff9f176ae1": 1,
         "70e210a366f87535": 1,
+        "647d36ff9f176ae1": 1,
         "16cf7edb8df6c1dc": 2,
         "3965282b11f3e869": 3,
         "8e1f597aca6d02d3": 1,
@@ -31055,12 +31054,13 @@
         "OpenAI \u2014 GPT-5.6": 3,
         "DeepSeek \u2014 deepseek": 1,
         "Anthropic \u2014 Sonnet": 7,
-        "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 2,
-        "OpenAI \u2014 GPT-5": 4,
-        "Anthropic \u2014 Opus 4.8": 12,
-        "OpenAI \u2014 GPT-5.5": 4,
-        "Google \u2014 Gemini 3.5": 1,
         "OpenAI \u2014 GPT-5.3": 2,
+        "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 2,
+        "Anthropic \u2014 Opus 4.8": 12,
+        "OpenAI \u2014 GPT-5": 4,
+        "OpenAI \u2014 GPT-5.5": 4,
+        "Unknown \u2014 Big-Pickle": 1,
+        "Google \u2014 Gemini 3.5": 1,
         "Anthropic \u2014 Sonnet 4.6": 23,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": 1,
         "Unknown \u2014 big-pickle": 2,
@@ -31074,7 +31074,6 @@
         "Anthropic \u2014 Opus 4.6": 1,
         "Anthropic \u2014 deepseek-v4-pro": 1,
         "Anthropic \u2014 claude-fable-5": 1,
-        "Unknown \u2014 Big-Pickle": 1,
         "Unknown \u2014 LLM ASan UBSan": 7
       },
       "tools": {
@@ -31082,11 +31081,11 @@
         "Direct / API": 89,
         "OpenCode": 9,
         "Codex": 10,
+        "GitHub Copilot": 19,
         "Local LLM fuzzer": 7,
         "Antigravity": 1,
-        "GitHub Copilot": 19,
-        "Cursor": 1,
-        "Claude Code": 30
+        "Claude Code": 30,
+        "Cursor": 1
       },
       "authors": {
         "0b36651ba478067a": 11,
@@ -31118,16 +31117,15 @@
         "d7cce41978556728": 1,
         "ad9c2e4a73c20f34": 2,
         "6264484f7d87ecdf": 3,
-        "c12294a959604ca2": 1,
+        "35d30316ddb51441": 1,
         "e08f695669dd49e7": 2,
         "9c8bd3b6373c44aa": 7,
         "56b211e88ce324ad": 1,
         "5b8b8a29ae589e3a": 2,
-        "578fd4d98aa7aadb": 1,
+        "578fd4d98aa7aadb": 2,
         "566b63a15d967a6a": 1,
-        "1bfbd1b4b9a4dfbc": 1,
         "59ac57da4d71d25f": 1,
-        "d3a7c59cd2bc9a90": 1,
+        "ed4bcd6a58839a31": 1,
         "efe67276340af669": 1,
         "361556c4ccecd17a": 1,
         "51a278ed886413bf": 3,
@@ -31143,6 +31141,7 @@
         "da9b6ea04f97ead0": 25,
         "48ad7178233aad0b": 21,
         "6056a185513d9fef": 1,
+        "a9c1b216d7dd6185": 1,
         "ab9665a08b0d414a": 1,
         "9a7f2765a97de27c": 4,
         "e3548a5398b74f2b": 18,
@@ -31159,6 +31158,7 @@
         "91a68c33551a3a58": 2,
         "5554ee9ea68e6539": 1,
         "f0e3660f343f0cb5": 2,
+        "b57b4c4c1fa02e9e": 1,
         "fc6d4be43d7ce947": 2,
         "74f800c5035e295a": 30,
         "829dcbdff5278b67": 3,
@@ -31172,8 +31172,6 @@
         "b52350dea92135c2": 1,
         "fbcbdb36e5846f4c": 1,
         "9df6e7c39b7c2bd6": 1,
-        "b57b4c4c1fa02e9e": 1,
-        "a9c1b216d7dd6185": 1,
         "3c5469477d239ff7": 1,
         "e7eccf40153cb908": 4,
         "0facf4d14cf8c862": 1,
@@ -31202,10 +31200,9 @@
           "9c8bd3b6373c44aa": 7,
           "56b211e88ce324ad": 1,
           "5b8b8a29ae589e3a": 2,
-          "578fd4d98aa7aadb": 1,
-          "1bfbd1b4b9a4dfbc": 1,
+          "578fd4d98aa7aadb": 2,
           "59ac57da4d71d25f": 1,
-          "d3a7c59cd2bc9a90": 1,
+          "ed4bcd6a58839a31": 1,
           "51a278ed886413bf": 3,
           "575919a97a544412": 8,
           "3f92892ce84c8987": 2,
@@ -31213,6 +31210,7 @@
           "2aa8db1d8ffb7776": 1,
           "196c83c6c30b5cf5": 5,
           "6056a185513d9fef": 1,
+          "a9c1b216d7dd6185": 1,
           "ab9665a08b0d414a": 1,
           "9a7f2765a97de27c": 1,
           "e3548a5398b74f2b": 18,
@@ -31234,7 +31232,6 @@
           "b52350dea92135c2": 1,
           "fbcbdb36e5846f4c": 1,
           "9df6e7c39b7c2bd6": 1,
-          "a9c1b216d7dd6185": 1,
           "0facf4d14cf8c862": 1
         },
         "Anthropic \u2014 Opus 5.5": {
@@ -31245,7 +31242,7 @@
           "cb8fbc72b1a50f53": 1,
           "dc82c24a5730b2ec": 1,
           "23a1f83ec68ea927": 2,
-          "c12294a959604ca2": 1,
+          "35d30316ddb51441": 1,
           "e08f695669dd49e7": 2,
           "efe67276340af669": 1,
           "575919a97a544412": 1,
@@ -31255,11 +31252,11 @@
           "99863b5f15610205": 2,
           "2c1b96d3c717eaaf": 1,
           "f0e3660f343f0cb5": 2,
+          "b57b4c4c1fa02e9e": 1,
           "74f800c5035e295a": 20,
           "829dcbdff5278b67": 3,
           "dcdeaaa3634303f4": 3,
           "32435b8ccbf7bf37": 5,
-          "b57b4c4c1fa02e9e": 1,
           "e7eccf40153cb908": 4
         },
         "Unknown \u2014 LLM Codex": {
@@ -31289,25 +31286,28 @@
         "Anthropic \u2014 Sonnet": {
           "575919a97a544412": 7
         },
-        "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": {
+        "OpenAI \u2014 GPT-5.3": {
           "575919a97a544412": 2
         },
-        "OpenAI \u2014 GPT-5": {
-          "575919a97a544412": 3,
-          "9a7f2765a97de27c": 1
+        "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": {
+          "575919a97a544412": 2
         },
         "Anthropic \u2014 Opus 4.8": {
           "575919a97a544412": 3,
           "74f800c5035e295a": 9
         },
+        "OpenAI \u2014 GPT-5": {
+          "575919a97a544412": 3,
+          "9a7f2765a97de27c": 1
+        },
         "OpenAI \u2014 GPT-5.5": {
           "575919a97a544412": 4
         },
-        "Google \u2014 Gemini 3.5": {
+        "Unknown \u2014 Big-Pickle": {
           "575919a97a544412": 1
         },
-        "OpenAI \u2014 GPT-5.3": {
-          "575919a97a544412": 2
+        "Google \u2014 Gemini 3.5": {
+          "575919a97a544412": 1
         },
         "Anthropic \u2014 Sonnet 4.6": {
           "575919a97a544412": 1,
@@ -31322,9 +31322,9 @@
         },
         "Anthropic \u2014 Opus": {
           "575919a97a544412": 1,
-          "da9b6ea04f97ead0": 1,
           "48ad7178233aad0b": 5,
-          "b5ad1e1a4b53dc53": 1
+          "b5ad1e1a4b53dc53": 1,
+          "da9b6ea04f97ead0": 1
         },
         "Greg KH (local LLM fuzzer) \u2014 gkh-clanker-2000": {
           "575919a97a544412": 1
@@ -31352,9 +31352,6 @@
         },
         "Anthropic \u2014 claude-fable-5": {
           "74f800c5035e295a": 1
-        },
-        "Unknown \u2014 Big-Pickle": {
-          "575919a97a544412": 1
         },
         "Unknown \u2014 LLM ASan UBSan": {
           "ceff75782bfeb6b1": 7
@@ -31409,6 +31406,7 @@
         "464f0d2f4b48e1c2": 3,
         "90b6e14cc74c7212": 2,
         "966005dab243fefd": 2,
+        "575919a97a544412": 8,
         "39565ca4f1e7bf6a": 3,
         "133ae5856c21e629": 1,
         "00f1d560f68b350e": 4,
@@ -31429,6 +31427,7 @@
         "23a1f83ec68ea927": 10,
         "f4893b1d8f8d4c2c": 3,
         "e2c75a31d47a01ed": 6,
+        "5b8b8a29ae589e3a": 1,
         "cc7d75e363efe51a": 1,
         "7efddea994b123e5": 4,
         "76a2f58d30d157e9": 1,
@@ -31450,7 +31449,6 @@
         "808db4c36cdfc4a2": 1,
         "7312482f3eab6eb4": 5,
         "f890c226e6ca75a3": 7,
-        "575919a97a544412": 8,
         "955c3e0f5fa137f4": 1,
         "73d0511ef53e22bc": 1,
         "7afd4f07e0cf7d7e": 1,
@@ -31471,8 +31469,7 @@
         "2d3c9881135bdb07": 1,
         "2fdcd68ede617d6b": 5,
         "854832bc2086d4e4": 1,
-        "8688ab300535e420": 1,
-        "5b8b8a29ae589e3a": 1
+        "8688ab300535e420": 1
       },
       "model_authors": {
         "OpenAI \u2014 GPT-6": {
@@ -31500,6 +31497,7 @@
           "196c83c6c30b5cf5": 1,
           "464f0d2f4b48e1c2": 3,
           "90b6e14cc74c7212": 2,
+          "575919a97a544412": 8,
           "39565ca4f1e7bf6a": 3,
           "133ae5856c21e629": 1,
           "00f1d560f68b350e": 4,
@@ -31513,6 +31511,7 @@
           "4fe25dc7ae85dd12": 2,
           "dc27cf110b581841": 1,
           "e2c75a31d47a01ed": 6,
+          "5b8b8a29ae589e3a": 1,
           "cc7d75e363efe51a": 1,
           "5314852614b81f8b": 2,
           "c5c65902edd1f5d9": 1,
@@ -31521,7 +31520,6 @@
           "dc3f531d476fe491": 6,
           "808db4c36cdfc4a2": 1,
           "f890c226e6ca75a3": 6,
-          "575919a97a544412": 8,
           "955c3e0f5fa137f4": 1,
           "73d0511ef53e22bc": 1,
           "7afd4f07e0cf7d7e": 1,
@@ -31536,8 +31534,7 @@
           "2d3c9881135bdb07": 1,
           "2fdcd68ede617d6b": 5,
           "854832bc2086d4e4": 1,
-          "8688ab300535e420": 1,
-          "5b8b8a29ae589e3a": 1
+          "8688ab300535e420": 1
         },
         "Anthropic \u2014 claude-fable-5": {
           "966005dab243fefd": 2,
@@ -31619,8 +31616,8 @@
         "OpenAI \u2014 GPT-6": 8,
         "OpenAI \u2014 GPT-5": 1,
         "Anthropic \u2014 Sonnet 5.5": 1,
-        "OpenAI \u2014 ": 1,
         "Anthropic \u2014 unspecified": 1,
+        "OpenAI \u2014 ": 1,
         "Anthropic \u2014 Opus 4.7": 2,
         "Unknown \u2014 LLM codeql": 1
       },
@@ -31674,8 +31671,8 @@
         "68b5b400cffe2498": 1,
         "faa79e5b6440ff64": 1,
         "3d600f053fefbce0": 2,
-        "0a4a777e562c115f": 1,
         "2556eb229e2ecd10": 1,
+        "0a4a777e562c115f": 1,
         "b7c432699d9726c9": 1,
         "b23f9a55e21b5ee0": 1,
         "dc82c24a5730b2ec": 1,
@@ -31741,8 +31738,8 @@
           "912160b9220e4e93": 11,
           "faa79e5b6440ff64": 1,
           "3d600f053fefbce0": 2,
-          "0a4a777e562c115f": 1,
           "2556eb229e2ecd10": 1,
+          "0a4a777e562c115f": 1,
           "b23f9a55e21b5ee0": 1,
           "55ca5a1c17d871ff": 15,
           "3a11218904efb05a": 2,
@@ -31828,10 +31825,10 @@
         "Anthropic \u2014 Sonnet 5.5": {
           "5ea61cab16c34642": 1
         },
-        "OpenAI \u2014 ": {
+        "Anthropic \u2014 unspecified": {
           "9e767bb4fcfc0476": 1
         },
-        "Anthropic \u2014 unspecified": {
+        "OpenAI \u2014 ": {
           "9e767bb4fcfc0476": 1
         },
         "Anthropic \u2014 Opus 4.7": {
@@ -31854,7 +31851,6 @@
       "models": {
         "Anthropic \u2014 Opus 5.5": 60,
         "Unknown \u2014 LLM": 114,
-        "Unknown \u2014 tencentos-corvus-ai:hy4-preview": 1,
         "DeepSeek \u2014 DeepSeek V4": 1,
         "Unknown \u2014 ARTIST LLM": 4,
         "Anthropic \u2014 claude-fable-5-1": 5,
@@ -31868,7 +31864,8 @@
         "Unknown \u2014 kres:claude-opus-4-7": 1,
         "OpenAI \u2014 GPT-5": 1,
         "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
-        "Unknown \u2014 Grok 4.7": 1
+        "Unknown \u2014 Grok 4.7": 1,
+        "Unknown \u2014 tencentos-corvus-ai:hy4-preview": 1
       },
       "tools": {
         "Direct / API": 80,
@@ -31885,7 +31882,6 @@
         "3fdab3ada64723ef": 1,
         "449393403d9a8630": 2,
         "6882c162767b33f7": 8,
-        "770c05e783e760c5": 1,
         "a2ddf157f5e52be2": 1,
         "fb1c9a6bbc96464a": 5,
         "5546509678f512ab": 1,
@@ -31947,6 +31943,7 @@
         "d6ab14b5a5e54cc6": 1,
         "faa79e5b6440ff64": 1,
         "829a3e56054b0146": 2,
+        "770c05e783e760c5": 1,
         "bfd946b1bdc7e2de": 5,
         "71b4adfe6399579b": 1
       },
@@ -32010,9 +32007,6 @@
           "829a3e56054b0146": 2,
           "bfd946b1bdc7e2de": 5
         },
-        "Unknown \u2014 tencentos-corvus-ai:hy4-preview": {
-          "770c05e783e760c5": 1
-        },
         "DeepSeek \u2014 DeepSeek V4": {
           "5546509678f512ab": 1
         },
@@ -32060,6 +32054,9 @@
         },
         "Unknown \u2014 Grok 4.7": {
           "d6ab14b5a5e54cc6": 1
+        },
+        "Unknown \u2014 tencentos-corvus-ai:hy4-preview": {
+          "770c05e783e760c5": 1
         }
       }
     },
@@ -32468,30 +32465,30 @@
       }
     },
     "2026-10-26": {
-      "patches": 172,
+      "patches": 170,
       "vendors": {
         "Anthropic": 59,
-        "Unknown": 112,
+        "Unknown": 110,
         "OpenAI": 1
       },
       "models": {
         "Anthropic \u2014 Opus 5.5": 40,
-        "Unknown \u2014 LLM": 102,
+        "Unknown \u2014 LLM": 100,
         "Anthropic \u2014 Opus": 7,
         "Unknown \u2014 Devmate:Opus-5.5": 6,
         "Anthropic \u2014 Sonnet": 2,
         "Anthropic \u2014 Opus 4.8": 1,
+        "Unknown \u2014 GPT-6-Astra": 1,
         "Anthropic \u2014 fable-5": 5,
         "Anthropic \u2014 Sonnet 5.5": 1,
         "Anthropic \u2014 Claude Fable 5.1": 1,
         "Unknown \u2014 GPT-6 Astra, GPT-6.1 Sol": 3,
         "Anthropic \u2014 claude-5-fable": 2,
-        "OpenAI \u2014 ": 1,
-        "Unknown \u2014 GPT-6-Astra": 1
+        "OpenAI \u2014 ": 1
       },
       "tools": {
         "Direct / API": 58,
-        "Unknown": 112,
+        "Unknown": 110,
         "Kiro": 1,
         "Codex": 1
       },
@@ -32518,6 +32515,7 @@
         "d91a8e22fc8e1e46": 1,
         "a3903a6f2a831eb8": 2,
         "d15b7efebbf50dfc": 6,
+        "78abceb3b0ff6640": 1,
         "71ceccdbbdfb2f40": 3,
         "576126ef180862d2": 3,
         "2dcb3297004553b8": 4,
@@ -32541,12 +32539,9 @@
         "808db4c36cdfc4a2": 2,
         "cad4d0c36d19ff28": 1,
         "0b335c73a24b28ff": 2,
-        "81bd70642f6bc495": 1,
         "62062afabe8c62a3": 1,
         "64bff73411351e7f": 1,
         "50d61efe642fb1bd": 2,
-        "78abceb3b0ff6640": 1,
-        "d0030adf1a1ccb6b": 1,
         "9bd46e6bc07fcdd2": 2
       },
       "model_authors": {
@@ -32590,10 +32585,8 @@
           "2e56a1cac56aad93": 1,
           "808db4c36cdfc4a2": 2,
           "cad4d0c36d19ff28": 1,
-          "81bd70642f6bc495": 1,
           "64bff73411351e7f": 1,
           "50d61efe642fb1bd": 2,
-          "d0030adf1a1ccb6b": 1,
           "9bd46e6bc07fcdd2": 2
         },
         "Anthropic \u2014 Opus": {
@@ -32609,6 +32602,9 @@
         },
         "Anthropic \u2014 Opus 4.8": {
           "d91a8e22fc8e1e46": 1
+        },
+        "Unknown \u2014 GPT-6-Astra": {
+          "78abceb3b0ff6640": 1
         },
         "Anthropic \u2014 fable-5": {
           "a287d23f0970a671": 5
@@ -32627,9 +32623,6 @@
         },
         "OpenAI \u2014 ": {
           "62062afabe8c62a3": 1
-        },
-        "Unknown \u2014 GPT-6-Astra": {
-          "78abceb3b0ff6640": 1
         }
       }
     },
@@ -32644,26 +32637,26 @@
       "models": {
         "Unknown \u2014 LLM": 84,
         "Unknown \u2014 gpt-6-astra": 1,
-        "Unknown \u2014 opus-5-5": 1,
-        "Unknown \u2014 sashiko-gemini": 1,
         "Google \u2014 ": 1,
         "Unknown \u2014 opus-5": 1,
+        "Unknown \u2014 sashiko-gemini": 1,
         "Unknown \u2014 sonnet-5": 1,
+        "Unknown \u2014 opus-5-5": 1,
         "Anthropic \u2014 Opus 5.5": 59,
         "Unknown \u2014 unspecified": 1,
         "Unknown \u2014 Muse-Code:muse-spark": 3,
         "Unknown \u2014 LLM sparse smatch": 5,
-        "Anthropic \u2014 fable-5": 1,
         "Anthropic \u2014 fable-5.1": 6,
+        "Anthropic \u2014 fable-5": 1,
         "Anthropic \u2014 Opus": 2,
-        "Anthropic \u2014 Opus 4.8": 1,
         "OpenAI \u2014 GPT-5.6": 1,
         "Unknown \u2014 kres:claude-opus-4-7": 1,
         "Anthropic \u2014 Sonnet 4.6": 14,
-        "Google \u2014 Gemini 3.1 Pro": 1,
-        "OpenAI \u2014 GPT-6.1": 1,
+        "Anthropic \u2014 Opus 4.8": 1,
         "OpenAI \u2014 GPT-6": 1,
-        "Unknown \u2014 Yaga Agent HackerSec Claude:claude-opus-5-5": 1
+        "Unknown \u2014 Yaga Agent HackerSec Claude:claude-opus-5-5": 1,
+        "Google \u2014 Gemini 3.1 Pro": 1,
+        "OpenAI \u2014 GPT-6.1": 1
       },
       "tools": {
         "Unknown": 95,
@@ -32678,12 +32671,15 @@
         "6882c162767b33f7": 4,
         "8e59137819eafa6c": 6,
         "9bd46e6bc07fcdd2": 1,
+        "d0030adf1a1ccb6b": 1,
+        "81bd70642f6bc495": 1,
         "8d89860548d34660": 1,
-        "ca98d8ac6fa7adc6": 1,
+        "5386efb50b33f7ef": 1,
         "9733e85f48446fa3": 1,
         "f0dbdfddb3b43f8b": 1,
         "2f4a76643d73956b": 3,
         "21ea96ca9acb376c": 1,
+        "86bca711cbe7da8a": 1,
         "5e79c9525cbee734": 5,
         "a09f5908a9df8133": 1,
         "7db3daf2c6fd6cd9": 1,
@@ -32692,45 +32688,42 @@
         "4b379b0175383b4d": 4,
         "f83318a97cf445f3": 1,
         "d1663e2309e26976": 3,
-        "86bca711cbe7da8a": 1,
-        "f1a511a228084957": 16,
         "1e4a065eea0105d3": 1,
+        "f1a511a228084957": 16,
         "395ef0b4d9d35bba": 3,
         "d78d4d6a24e7bffe": 1,
         "f4893b1d8f8d4c2c": 2,
         "2e56a1cac56aad93": 1,
         "8b3069f519d2b29f": 1,
-        "d0030adf1a1ccb6b": 1,
-        "81bd70642f6bc495": 1,
-        "d15b7efebbf50dfc": 4,
-        "b485b58fc747b065": 12,
-        "da1031e6a9dc9a79": 9,
-        "618d22580002a6ef": 14,
-        "1378dc874debcaa7": 8,
-        "fbc6ae509d498d96": 1,
-        "2aeecefd45ad2bdb": 2,
-        "a7a63691b58a5b22": 5,
         "34a773e877226852": 1,
         "8b4f18eb285b9835": 1,
         "71ceccdbbdfb2f40": 5,
         "f590876ea863a5cb": 1,
         "566b63a15d967a6a": 1,
-        "f868c6ed14c77604": 1,
-        "801fdca691e9b6a5": 2,
+        "b485b58fc747b065": 12,
         "fc6d4be43d7ce947": 9,
+        "da1031e6a9dc9a79": 9,
+        "618d22580002a6ef": 14,
+        "1378dc874debcaa7": 8,
+        "fbc6ae509d498d96": 1,
+        "f868c6ed14c77604": 1,
+        "d15b7efebbf50dfc": 4,
+        "801fdca691e9b6a5": 2,
+        "509d90e29bc74874": 2,
+        "7efddea994b123e5": 1,
+        "5dcd839213590afe": 2,
+        "b504700173f110e0": 1,
         "2ac5fac3d6714dae": 6,
         "483b33a99684f410": 1,
         "78a5cba24bb7637b": 1,
         "f0e6fcef3b2771af": 2,
         "6f9f739f527220c9": 11,
-        "5dcd839213590afe": 2,
-        "509d90e29bc74874": 2,
-        "7efddea994b123e5": 1,
-        "b504700173f110e0": 1,
+        "2aeecefd45ad2bdb": 2,
+        "a7a63691b58a5b22": 5,
         "24ec0ddd2af27e17": 1,
         "531471dc1f568bf2": 4,
-        "5f9f8824160859dd": 2,
-        "da9b6ea04f97ead0": 5
+        "da9b6ea04f97ead0": 5,
+        "5f9f8824160859dd": 2
       },
       "model_authors": {
         "Unknown \u2014 LLM": {
@@ -32738,40 +32731,34 @@
           "6882c162767b33f7": 4,
           "8e59137819eafa6c": 6,
           "9bd46e6bc07fcdd2": 1,
-          "ca98d8ac6fa7adc6": 1,
+          "d0030adf1a1ccb6b": 1,
+          "81bd70642f6bc495": 1,
+          "5386efb50b33f7ef": 1,
+          "86bca711cbe7da8a": 1,
           "a09f5908a9df8133": 1,
           "7db3daf2c6fd6cd9": 1,
           "1daf1b75871aafe3": 1,
           "2e39019137158acc": 3,
           "f83318a97cf445f3": 1,
           "d1663e2309e26976": 3,
-          "86bca711cbe7da8a": 1,
           "1e4a065eea0105d3": 1,
           "395ef0b4d9d35bba": 3,
           "2e56a1cac56aad93": 1,
-          "d0030adf1a1ccb6b": 1,
-          "81bd70642f6bc495": 1,
-          "da1031e6a9dc9a79": 9,
-          "1378dc874debcaa7": 8,
-          "2aeecefd45ad2bdb": 2,
-          "a7a63691b58a5b22": 5,
           "34a773e877226852": 1,
           "8b4f18eb285b9835": 1,
+          "da1031e6a9dc9a79": 9,
+          "1378dc874debcaa7": 8,
           "2ac5fac3d6714dae": 6,
           "483b33a99684f410": 1,
           "f0e6fcef3b2771af": 2,
           "6f9f739f527220c9": 11,
+          "2aeecefd45ad2bdb": 2,
+          "a7a63691b58a5b22": 5,
           "24ec0ddd2af27e17": 1,
           "531471dc1f568bf2": 4,
           "5f9f8824160859dd": 2
         },
         "Unknown \u2014 gpt-6-astra": {
-          "8d89860548d34660": 1
-        },
-        "Unknown \u2014 opus-5-5": {
-          "8d89860548d34660": 1
-        },
-        "Unknown \u2014 sashiko-gemini": {
           "8d89860548d34660": 1
         },
         "Google \u2014 ": {
@@ -32780,7 +32767,13 @@
         "Unknown \u2014 opus-5": {
           "8d89860548d34660": 1
         },
+        "Unknown \u2014 sashiko-gemini": {
+          "8d89860548d34660": 1
+        },
         "Unknown \u2014 sonnet-5": {
+          "8d89860548d34660": 1
+        },
+        "Unknown \u2014 opus-5-5": {
           "8d89860548d34660": 1
         },
         "Anthropic \u2014 Opus 5.5": {
@@ -32791,11 +32784,11 @@
           "d78d4d6a24e7bffe": 1,
           "f4893b1d8f8d4c2c": 2,
           "8b3069f519d2b29f": 1,
-          "d15b7efebbf50dfc": 4,
+          "71ceccdbbdfb2f40": 5,
           "b485b58fc747b065": 12,
           "618d22580002a6ef": 14,
-          "71ceccdbbdfb2f40": 5,
           "f868c6ed14c77604": 1,
+          "d15b7efebbf50dfc": 4,
           "801fdca691e9b6a5": 2,
           "509d90e29bc74874": 2,
           "7efddea994b123e5": 1
@@ -32809,17 +32802,14 @@
         "Unknown \u2014 LLM sparse smatch": {
           "5e79c9525cbee734": 5
         },
-        "Anthropic \u2014 fable-5": {
-          "f1a511a228084957": 1
-        },
         "Anthropic \u2014 fable-5.1": {
           "f1a511a228084957": 6
         },
+        "Anthropic \u2014 fable-5": {
+          "f1a511a228084957": 1
+        },
         "Anthropic \u2014 Opus": {
           "f1a511a228084957": 2
-        },
-        "Anthropic \u2014 Opus 4.8": {
-          "fbc6ae509d498d96": 1
         },
         "OpenAI \u2014 GPT-5.6": {
           "f590876ea863a5cb": 1
@@ -32831,24 +32821,27 @@
           "fc6d4be43d7ce947": 9,
           "da9b6ea04f97ead0": 5
         },
-        "Google \u2014 Gemini 3.1 Pro": {
-          "78a5cba24bb7637b": 1
-        },
-        "OpenAI \u2014 GPT-6.1": {
-          "5dcd839213590afe": 1
+        "Anthropic \u2014 Opus 4.8": {
+          "fbc6ae509d498d96": 1
         },
         "OpenAI \u2014 GPT-6": {
           "5dcd839213590afe": 1
         },
         "Unknown \u2014 Yaga Agent HackerSec Claude:claude-opus-5-5": {
           "b504700173f110e0": 1
+        },
+        "Google \u2014 Gemini 3.1 Pro": {
+          "78a5cba24bb7637b": 1
+        },
+        "OpenAI \u2014 GPT-6.1": {
+          "5dcd839213590afe": 1
         }
       }
     },
     "2026-10-28": {
-      "patches": 1054,
+      "patches": 1055,
       "vendors": {
-        "Unknown": 558,
+        "Unknown": 559,
         "Anthropic": 339,
         "Google": 20,
         "DeepSeek": 10,
@@ -32856,9 +32849,10 @@
         "Greg KH (local LLM fuzzer)": 3
       },
       "models": {
-        "Unknown \u2014 LLM": 458,
+        "Unknown \u2014 LLM": 459,
         "Anthropic \u2014 Opus": 43,
         "Google \u2014 Gemini 3.8": 3,
+        "Unknown \u2014 coccinelle sparse": 1,
         "Unknown \u2014 LLM sparse smatch": 4,
         "Unknown \u2014 AI LLM": 1,
         "Unknown \u2014 unspecified": 2,
@@ -32870,10 +32864,9 @@
         "Unknown \u2014 Grok 4.7": 1,
         "Anthropic \u2014 fable-5.1": 9,
         "Anthropic \u2014 Opus 5.1": 5,
-        "Unknown \u2014 coccinelle sparse": 1,
         "OpenAI \u2014 GPT-6.1": 2,
-        "OpenAI \u2014 ": 6,
         "Anthropic \u2014 unspecified": 24,
+        "OpenAI \u2014 ": 6,
         "Anthropic \u2014 Opus 4.8": 45,
         "Anthropic \u2014 claude-fable-5": 32,
         "OpenAI \u2014 GPT-6": 26,
@@ -32893,10 +32886,10 @@
         "Unknown \u2014 AISLE:Snapshot": 6,
         "Unknown \u2014 Kimi:K2 [Kimi Code CLI]": 3,
         "Unknown \u2014 LLM sparse smatch coccinelle kasan": 3,
+        "Unknown \u2014 LLM sparse kasan": 11,
         "Unknown \u2014 kres (claude-opus-4-7)": 8,
         "Google \u2014 Gemini 3.1 Pro": 4,
         "Unknown \u2014 kimi-k3": 3,
-        "Unknown \u2014 LLM sparse kasan": 11,
         "Unknown \u2014 GPT-6 Astra": 4,
         "Unknown \u2014 0sec:multi-model": 3,
         "Anthropic \u2014 Opus 4.6": 8,
@@ -32911,20 +32904,20 @@
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 3,
         "Unknown \u2014 big-pickle": 1,
         "Unknown \u2014 Jetski:Gemini-3.1-Pro": 1,
-        "Anthropic \u2014 Opus 4.7": 1,
-        "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
-        "Unknown \u2014 WChat:claude-opus-4-8": 1,
+        "Unknown \u2014 AuditCode-AI:2026.07": 1,
         "Anthropic \u2014 GLM-5.2": 1,
         "Unknown \u2014 Kimi:K3": 1,
         "OpenAI \u2014 GPT-5.3": 5,
-        "Unknown \u2014 GitHub_Copilot:gemini-3.1-pro": 1,
-        "Google \u2014 Gemini 3.5": 1,
         "DeepSeek \u2014 DeepSeek V3": 1,
+        "Unknown \u2014 tencentos-corvus-ai:kimi-k3": 1,
+        "Unknown \u2014 WChat:claude-opus-4-8": 1,
+        "Unknown \u2014 GitHub_Copilot:gemini-3.1-pro": 1,
         "Google \u2014 gemini-pro-prerelease": 10,
-        "Unknown \u2014 AuditCode-AI:2026.07": 1
+        "Google \u2014 Gemini 3.5": 1,
+        "Anthropic \u2014 Opus 4.7": 1
       },
       "tools": {
-        "Unknown": 551,
+        "Unknown": 552,
         "Direct / API": 303,
         "OpenCode": 10,
         "Cursor": 1,
@@ -32941,10 +32934,12 @@
         "048e74be1aaa8926": 1,
         "96592881ba1a1022": 2,
         "b1cf3f368f59ecd5": 11,
+        "a32d5468e703243a": 1,
+        "6f9f739f527220c9": 22,
+        "a09f5908a9df8133": 15,
         "5e79c9525cbee734": 4,
         "63c360c4be1e065f": 1,
         "6eb845081481f2bf": 1,
-        "a09f5908a9df8133": 15,
         "f4893b1d8f8d4c2c": 2,
         "8561fdb994bbb93a": 1,
         "fb6d627477c8b30a": 2,
@@ -32957,9 +32952,8 @@
         "058832acb8d613ba": 7,
         "d6ab14b5a5e54cc6": 1,
         "a287d23f0970a671": 19,
-        "6f9f739f527220c9": 22,
-        "a32d5468e703243a": 1,
         "4bb152d1030eea65": 1,
+        "588ee064b81ca9a4": 1,
         "2b51f81e2d443d53": 3,
         "c30f07d04b076c07": 2,
         "9e767bb4fcfc0476": 6,
@@ -32973,6 +32967,7 @@
         "575919a97a544412": 2,
         "e6d9136f6e3bdcb5": 824,
         "872f4282c5482d97": 2,
+        "72181f114b9918a8": 2,
         "98b611df27e70f61": 2,
         "51367ecfed93375b": 2,
         "6962db216dddf27d": 1,
@@ -32984,17 +32979,17 @@
         "10262b7934c22308": 1,
         "24ec0ddd2af27e17": 1,
         "74f800c5035e295a": 45,
-        "b504700173f110e0": 1,
-        "72181f114b9918a8": 2
+        "b504700173f110e0": 1
       },
       "model_authors": {
         "Unknown \u2014 LLM": {
           "51641a74899214aa": 1,
           "b1cf3f368f59ecd5": 11,
+          "6f9f739f527220c9": 22,
           "a09f5908a9df8133": 15,
           "59a87eeec2fe1e00": 2,
           "5314852614b81f8b": 2,
-          "6f9f739f527220c9": 22,
+          "588ee064b81ca9a4": 1,
           "2b51f81e2d443d53": 3,
           "81bd70642f6bc495": 5,
           "c849ff5172b4314e": 1,
@@ -33015,6 +33010,9 @@
         "Google \u2014 Gemini 3.8": {
           "96592881ba1a1022": 2,
           "e6d9136f6e3bdcb5": 1
+        },
+        "Unknown \u2014 coccinelle sparse": {
+          "a32d5468e703243a": 1
         },
         "Unknown \u2014 LLM sparse smatch": {
           "5e79c9525cbee734": 4
@@ -33038,12 +33036,12 @@
           "851362d96563de40": 1,
           "416017ecfa764fea": 1,
           "e6d9136f6e3bdcb5": 74,
+          "72181f114b9918a8": 2,
           "6962db216dddf27d": 1,
           "ac3aa808595e9791": 2,
           "10262b7934c22308": 1,
           "74f800c5035e295a": 30,
-          "b504700173f110e0": 1,
-          "72181f114b9918a8": 2
+          "b504700173f110e0": 1
         },
         "DeepSeek \u2014 DeepSeek V4": {
           "8561fdb994bbb93a": 1
@@ -33067,18 +33065,15 @@
         "Anthropic \u2014 Opus 5.1": {
           "a287d23f0970a671": 5
         },
-        "Unknown \u2014 coccinelle sparse": {
-          "a32d5468e703243a": 1
-        },
         "OpenAI \u2014 GPT-6.1": {
           "c30f07d04b076c07": 2
-        },
-        "OpenAI \u2014 ": {
-          "9e767bb4fcfc0476": 6
         },
         "Anthropic \u2014 unspecified": {
           "9e767bb4fcfc0476": 6,
           "e6d9136f6e3bdcb5": 18
+        },
+        "OpenAI \u2014 ": {
+          "9e767bb4fcfc0476": 6
         },
         "Anthropic \u2014 Opus 4.8": {
           "575919a97a544412": 1,
@@ -33141,6 +33136,9 @@
         "Unknown \u2014 LLM sparse smatch coccinelle kasan": {
           "e6d9136f6e3bdcb5": 3
         },
+        "Unknown \u2014 LLM sparse kasan": {
+          "e6d9136f6e3bdcb5": 11
+        },
         "Unknown \u2014 kres (claude-opus-4-7)": {
           "e6d9136f6e3bdcb5": 8
         },
@@ -33149,9 +33147,6 @@
         },
         "Unknown \u2014 kimi-k3": {
           "e6d9136f6e3bdcb5": 3
-        },
-        "Unknown \u2014 LLM sparse kasan": {
-          "e6d9136f6e3bdcb5": 11
         },
         "Unknown \u2014 GPT-6 Astra": {
           "e6d9136f6e3bdcb5": 4
@@ -33195,13 +33190,7 @@
         "Unknown \u2014 Jetski:Gemini-3.1-Pro": {
           "e6d9136f6e3bdcb5": 1
         },
-        "Anthropic \u2014 Opus 4.7": {
-          "e6d9136f6e3bdcb5": 1
-        },
-        "Unknown \u2014 tencentos-corvus-ai:kimi-k3": {
-          "e6d9136f6e3bdcb5": 1
-        },
-        "Unknown \u2014 WChat:claude-opus-4-8": {
+        "Unknown \u2014 AuditCode-AI:2026.07": {
           "e6d9136f6e3bdcb5": 1
         },
         "Anthropic \u2014 GLM-5.2": {
@@ -33213,44 +33202,50 @@
         "OpenAI \u2014 GPT-5.3": {
           "e6d9136f6e3bdcb5": 5
         },
-        "Unknown \u2014 GitHub_Copilot:gemini-3.1-pro": {
-          "e6d9136f6e3bdcb5": 1
-        },
-        "Google \u2014 Gemini 3.5": {
-          "e6d9136f6e3bdcb5": 1
-        },
         "DeepSeek \u2014 DeepSeek V3": {
+          "e6d9136f6e3bdcb5": 1
+        },
+        "Unknown \u2014 tencentos-corvus-ai:kimi-k3": {
+          "e6d9136f6e3bdcb5": 1
+        },
+        "Unknown \u2014 WChat:claude-opus-4-8": {
+          "e6d9136f6e3bdcb5": 1
+        },
+        "Unknown \u2014 GitHub_Copilot:gemini-3.1-pro": {
           "e6d9136f6e3bdcb5": 1
         },
         "Google \u2014 gemini-pro-prerelease": {
           "a739ce1d9400dca4": 10
         },
-        "Unknown \u2014 AuditCode-AI:2026.07": {
+        "Google \u2014 Gemini 3.5": {
+          "e6d9136f6e3bdcb5": 1
+        },
+        "Anthropic \u2014 Opus 4.7": {
           "e6d9136f6e3bdcb5": 1
         }
       }
     },
     "2026-10-29": {
-      "patches": 191,
+      "patches": 190,
       "vendors": {
         "Unknown": 142,
         "Anthropic": 39,
-        "OpenAI": 10
+        "OpenAI": 9
       },
       "models": {
         "Unknown \u2014 LLM": 122,
         "Anthropic \u2014 Opus 5.5": 28,
-        "OpenAI \u2014 GPT-6": 5,
-        "OpenAI \u2014 GPT-6.1": 1,
         "Unknown \u2014 Yaga Agent HackerSec Claude:claude-opus-5-5": 9,
+        "OpenAI \u2014 GPT-6.1": 1,
+        "OpenAI \u2014 GPT-6": 5,
         "Anthropic \u2014 Sonnet": 2,
-        "Unknown \u2014 unspecified": 1,
-        "OpenAI \u2014 ": 3,
-        "Anthropic \u2014 Opus 4.7": 7,
         "Anthropic \u2014 unspecified": 1,
+        "Unknown \u2014 unspecified": 1,
+        "OpenAI \u2014 ": 2,
+        "Anthropic \u2014 Opus 4.7": 7,
+        "Unknown \u2014 LLM (Split the compiler_attributes.h from the next commit)": 1,
         "Unknown \u2014 LLM (updating configure.ac to error out if no such support)": 1,
         "Unknown \u2014 LLM (generate the commit message with human modification)": 1,
-        "Unknown \u2014 LLM (Split the compiler_attributes.h from the next commit)": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 5,
         "OpenAI \u2014 GPT-5.5": 1,
         "Unknown \u2014 LLM Claude": 1,
@@ -33261,183 +33256,181 @@
       "tools": {
         "Unknown": 141,
         "Direct / API": 29,
+        "Codex": 9,
         "OpenCode": 1,
-        "Codex": 10,
-        "GitHub Copilot": 8,
         "Claude Code": 2,
+        "GitHub Copilot": 8,
         "Kiro": 1
       },
       "authors": {
         "6882c162767b33f7": 12,
         "98b611df27e70f61": 7,
-        "588ee064b81ca9a4": 1,
         "884b085e13d69864": 2,
         "3cebe34d0274fcc0": 1,
         "0d26a0f600768c4e": 4,
-        "c30f07d04b076c07": 4,
-        "5e484bd1f199c52a": 1,
-        "12b32be3331eb7f5": 1,
-        "b3eeaf5c464814d4": 2,
-        "b504700173f110e0": 9,
-        "a09f5908a9df8133": 4,
-        "5b140a6ee3d2d5b9": 1,
         "bebd2e3501a87a4d": 1,
+        "a09f5908a9df8133": 4,
+        "12b32be3331eb7f5": 1,
+        "c30f07d04b076c07": 4,
+        "8694348954d1c26a": 1,
+        "b504700173f110e0": 9,
+        "b3eeaf5c464814d4": 2,
+        "5b140a6ee3d2d5b9": 1,
+        "b15d344b88dba552": 4,
         "6f9f739f527220c9": 3,
         "54bd3a02bd7c94d0": 2,
-        "8694348954d1c26a": 1,
-        "7efddea994b123e5": 4,
+        "6e4ca7fa5f86293a": 1,
+        "86bca711cbe7da8a": 1,
         "ea1e9e71caa538a6": 1,
+        "7efddea994b123e5": 4,
+        "92b7d4a2e13e20eb": 2,
+        "3d7252a723593872": 2,
+        "8c03cbbb6f83a198": 1,
         "76108ea89ad64d04": 1,
         "24e0a5e51be203de": 1,
-        "3d7252a723593872": 2,
-        "b15d344b88dba552": 4,
+        "b5ba7d1b4ca59b96": 1,
         "71ceccdbbdfb2f40": 4,
-        "ee826be7a3087725": 1,
         "5f96d7a384ec91ce": 7,
-        "6e4ca7fa5f86293a": 1,
         "5f65f1f2cbde5cd8": 1,
         "fb6d627477c8b30a": 3,
-        "86bca711cbe7da8a": 1,
         "c64870a0d9797486": 1,
-        "92b7d4a2e13e20eb": 2,
         "31351188e43f95b4": 1,
-        "8c03cbbb6f83a198": 1,
         "f4893b1d8f8d4c2c": 1,
-        "0c19de35fd6161d4": 2,
         "851362d96563de40": 1,
+        "0c19de35fd6161d4": 2,
         "a801bb8de10c2dba": 6,
-        "b5ba7d1b4ca59b96": 1,
-        "758d7892f909aa49": 2,
+        "49b1d90db437e19d": 2,
         "00bd400dad4380be": 1,
         "b3cdc5e1f5bc0f36": 11,
+        "758d7892f909aa49": 2,
         "ed407afb37b82a61": 7,
-        "49b1d90db437e19d": 2,
         "566b63a15d967a6a": 1,
         "79c70d193cd44878": 2,
-        "bed0168ccf083fc1": 1,
-        "ad4837a751d9c9fb": 6,
         "e96258cca99a36ab": 3,
+        "ad4837a751d9c9fb": 6,
         "61f98a88d5803438": 1,
-        "81cd346fd5ed8d85": 1,
         "ad9c2e4a73c20f34": 9,
-        "5f9f8824160859dd": 1,
         "567b557d20a0f2f2": 7,
+        "5f9f8824160859dd": 1,
         "fd426b7a1967e2a9": 1,
+        "81cd346fd5ed8d85": 1,
+        "61041b8d68ded88a": 1,
         "5ba010b444e64137": 3,
         "b90af8f0b3995065": 11,
-        "20c384d5640897c7": 1,
-        "51d263c2fe8bce97": 2,
-        "a159b03092786b6f": 1,
-        "04f254a1a3baeccd": 1,
-        "a6917c27e7cdda75": 2,
-        "2ac5fac3d6714dae": 1,
+        "dfd74634cf68d164": 1,
         "ac3aa808595e9791": 1,
-        "da00cf77c7d25482": 1,
-        "2cbb4cb458cb0f0d": 1,
-        "4b379b0175383b4d": 1,
+        "2ac5fac3d6714dae": 1,
+        "a159b03092786b6f": 2,
         "b45c49e8595e4a17": 2,
-        "9e1ee41e98a9dc14": 1,
         "b5ad1e1a4b53dc53": 1,
+        "f2c2c84db3f39887": 1,
+        "ad8309dabc5e25ab": 1,
+        "a6917c27e7cdda75": 2,
+        "04f254a1a3baeccd": 1,
+        "20c384d5640897c7": 1,
         "1c12c2b9decdd50a": 1,
-        "f2c2c84db3f39887": 1
+        "4b379b0175383b4d": 1,
+        "51d263c2fe8bce97": 1,
+        "2cbb4cb458cb0f0d": 1,
+        "bed0168ccf083fc1": 1,
+        "5e484bd1f199c52a": 1
       },
       "model_authors": {
         "Unknown \u2014 LLM": {
           "6882c162767b33f7": 12,
           "98b611df27e70f61": 7,
-          "588ee064b81ca9a4": 1,
           "884b085e13d69864": 2,
           "3cebe34d0274fcc0": 1,
-          "c30f07d04b076c07": 3,
-          "5e484bd1f199c52a": 1,
-          "12b32be3331eb7f5": 1,
-          "b3eeaf5c464814d4": 2,
-          "a09f5908a9df8133": 4,
-          "5b140a6ee3d2d5b9": 1,
           "bebd2e3501a87a4d": 1,
-          "6f9f739f527220c9": 3,
+          "a09f5908a9df8133": 4,
+          "12b32be3331eb7f5": 1,
+          "c30f07d04b076c07": 3,
           "8694348954d1c26a": 1,
-          "24e0a5e51be203de": 1,
-          "3d7252a723593872": 2,
+          "b3eeaf5c464814d4": 2,
+          "5b140a6ee3d2d5b9": 1,
+          "6f9f739f527220c9": 3,
           "86bca711cbe7da8a": 1,
+          "3d7252a723593872": 2,
+          "24e0a5e51be203de": 1,
+          "b5ba7d1b4ca59b96": 1,
           "0c19de35fd6161d4": 2,
           "a801bb8de10c2dba": 1,
-          "b5ba7d1b4ca59b96": 1,
-          "758d7892f909aa49": 2,
+          "49b1d90db437e19d": 2,
           "00bd400dad4380be": 1,
           "b3cdc5e1f5bc0f36": 11,
+          "758d7892f909aa49": 2,
           "ed407afb37b82a61": 7,
-          "49b1d90db437e19d": 2,
-          "ad4837a751d9c9fb": 6,
           "e96258cca99a36ab": 3,
+          "ad4837a751d9c9fb": 6,
           "ad9c2e4a73c20f34": 9,
-          "5f9f8824160859dd": 1,
           "567b557d20a0f2f2": 7,
+          "5f9f8824160859dd": 1,
           "fd426b7a1967e2a9": 1,
-          "5ba010b444e64137": 2,
           "b90af8f0b3995065": 11,
-          "20c384d5640897c7": 1,
-          "51d263c2fe8bce97": 2,
-          "a159b03092786b6f": 1,
-          "a6917c27e7cdda75": 2,
+          "5ba010b444e64137": 2,
+          "dfd74634cf68d164": 1,
           "2ac5fac3d6714dae": 1,
-          "2cbb4cb458cb0f0d": 1,
-          "9e1ee41e98a9dc14": 1,
+          "a159b03092786b6f": 2,
           "b5ad1e1a4b53dc53": 1,
-          "f2c2c84db3f39887": 1
+          "f2c2c84db3f39887": 1,
+          "ad8309dabc5e25ab": 1,
+          "a6917c27e7cdda75": 2,
+          "20c384d5640897c7": 1,
+          "51d263c2fe8bce97": 1,
+          "2cbb4cb458cb0f0d": 1,
+          "5e484bd1f199c52a": 1
         },
         "Anthropic \u2014 Opus 5.5": {
           "0d26a0f600768c4e": 4,
-          "7efddea994b123e5": 4,
-          "76108ea89ad64d04": 1,
           "b15d344b88dba552": 4,
+          "7efddea994b123e5": 4,
+          "8c03cbbb6f83a198": 1,
+          "76108ea89ad64d04": 1,
           "71ceccdbbdfb2f40": 4,
           "5f65f1f2cbde5cd8": 1,
           "c64870a0d9797486": 1,
           "31351188e43f95b4": 1,
-          "8c03cbbb6f83a198": 1,
           "f4893b1d8f8d4c2c": 1,
           "851362d96563de40": 1,
           "79c70d193cd44878": 2,
+          "61041b8d68ded88a": 1,
           "ac3aa808595e9791": 1,
-          "da00cf77c7d25482": 1,
           "4b379b0175383b4d": 1
-        },
-        "OpenAI \u2014 GPT-6": {
-          "c30f07d04b076c07": 1,
-          "bed0168ccf083fc1": 1,
-          "b45c49e8595e4a17": 2,
-          "1c12c2b9decdd50a": 1
-        },
-        "OpenAI \u2014 GPT-6.1": {
-          "c30f07d04b076c07": 1
         },
         "Unknown \u2014 Yaga Agent HackerSec Claude:claude-opus-5-5": {
           "b504700173f110e0": 9
         },
+        "OpenAI \u2014 GPT-6.1": {
+          "c30f07d04b076c07": 1
+        },
+        "OpenAI \u2014 GPT-6": {
+          "c30f07d04b076c07": 1,
+          "b45c49e8595e4a17": 2,
+          "1c12c2b9decdd50a": 1,
+          "bed0168ccf083fc1": 1
+        },
         "Anthropic \u2014 Sonnet": {
           "54bd3a02bd7c94d0": 2
+        },
+        "Anthropic \u2014 unspecified": {
+          "6e4ca7fa5f86293a": 1
         },
         "Unknown \u2014 unspecified": {
           "ea1e9e71caa538a6": 1
         },
         "OpenAI \u2014 ": {
-          "ee826be7a3087725": 1,
           "92b7d4a2e13e20eb": 2
         },
         "Anthropic \u2014 Opus 4.7": {
           "5f96d7a384ec91ce": 7
         },
-        "Anthropic \u2014 unspecified": {
-          "6e4ca7fa5f86293a": 1
+        "Unknown \u2014 LLM (Split the compiler_attributes.h from the next commit)": {
+          "fb6d627477c8b30a": 1
         },
         "Unknown \u2014 LLM (updating configure.ac to error out if no such support)": {
           "fb6d627477c8b30a": 1
         },
         "Unknown \u2014 LLM (generate the commit message with human modification)": {
-          "fb6d627477c8b30a": 1
-        },
-        "Unknown \u2014 LLM (Split the compiler_attributes.h from the next commit)": {
           "fb6d627477c8b30a": 1
         },
         "Unknown \u2014 LOLLM # finding obvious bugs": {
@@ -33497,7 +33490,6 @@
         "9def51c9e1a5cd12": 1,
         "5f65f1f2cbde5cd8": 2,
         "9657e5496bbf2ec0": 1,
-        "f4893b1d8f8d4c2c": 2,
         "75857961c3e19a8d": 3,
         "eb8a2184fd4fcdf3": 1,
         "509d90e29bc74874": 11,
@@ -33511,8 +33503,8 @@
         "2102b02315cb530e": 3,
         "5a4b44220c0b0c99": 1,
         "566b63a15d967a6a": 1,
-        "bda6503ad955ab34": 1,
         "23a1f83ec68ea927": 21,
+        "f4893b1d8f8d4c2c": 2,
         "7efddea994b123e5": 5,
         "98b611df27e70f61": 4,
         "8e59137819eafa6c": 5,
@@ -33527,52 +33519,51 @@
         "722e4e85a2e4a21f": 6,
         "416017ecfa764fea": 1,
         "d0030adf1a1ccb6b": 5,
+        "bda6503ad955ab34": 1,
         "d33b2993602d5eab": 1,
         "d9dbc40a32d5f247": 3,
         "4ef472d71b6f982d": 6,
         "6e4ca7fa5f86293a": 1,
         "dae370d329a7dd28": 1,
-        "012e2913a92c2dcd": 2,
         "9881dd48aca90009": 2,
-        "1c80c526d4f850ad": 3,
-        "3acb2bb22d26e66a": 3,
         "92ab42cb1eee1051": 2,
         "4ba733226d35013c": 2,
         "59a87eeec2fe1e00": 2,
-        "6c93c72c64a73235": 1,
-        "884b085e13d69864": 1,
         "f3ab44460fb54ff9": 3,
-        "ce7e269aabe729c7": 2,
         "0807236258db36ab": 2,
-        "f078b5cb78422f28": 1,
-        "eec3fe6d6d03fc3b": 1,
         "87919c027382c5d1": 1,
-        "6e43736251cfdbbe": 1,
         "f83318a97cf445f3": 1,
         "6f9f739f527220c9": 1,
-        "b3cdc5e1f5bc0f36": 1
+        "b3cdc5e1f5bc0f36": 1,
+        "6e43736251cfdbbe": 1,
+        "eec3fe6d6d03fc3b": 1,
+        "012e2913a92c2dcd": 2,
+        "f078b5cb78422f28": 1,
+        "884b085e13d69864": 1,
+        "ce7e269aabe729c7": 2,
+        "6c93c72c64a73235": 1,
+        "3acb2bb22d26e66a": 6
       },
       "model_authors": {
         "Anthropic \u2014 Opus 5.5": {
           "767691c743cec551": 3,
           "9657e5496bbf2ec0": 1,
-          "f4893b1d8f8d4c2c": 2,
           "eb8a2184fd4fcdf3": 1,
           "509d90e29bc74874": 11,
           "ac90fe2cc4a0bcbf": 3,
           "5a4b44220c0b0c99": 1,
           "23a1f83ec68ea927": 21,
+          "f4893b1d8f8d4c2c": 2,
           "7efddea994b123e5": 5,
           "6962db216dddf27d": 3,
           "4bba84d9eb6f0121": 1,
           "e6d9136f6e3bdcb5": 3,
           "416017ecfa764fea": 1,
           "9881dd48aca90009": 2,
-          "1c80c526d4f850ad": 3,
-          "3acb2bb22d26e66a": 3,
           "92ab42cb1eee1051": 2,
           "0807236258db36ab": 2,
-          "eec3fe6d6d03fc3b": 1
+          "eec3fe6d6d03fc3b": 1,
+          "3acb2bb22d26e66a": 6
         },
         "Unknown \u2014 LLM": {
           "9def51c9e1a5cd12": 1,
@@ -33580,7 +33571,6 @@
           "67ae26737a291751": 3,
           "0facf4d14cf8c862": 11,
           "2102b02315cb530e": 3,
-          "bda6503ad955ab34": 1,
           "98b611df27e70f61": 4,
           "8e59137819eafa6c": 5,
           "6882c162767b33f7": 3,
@@ -33588,20 +33578,21 @@
           "10eb9a412e084242": 3,
           "722e4e85a2e4a21f": 6,
           "d0030adf1a1ccb6b": 5,
+          "bda6503ad955ab34": 1,
           "d33b2993602d5eab": 1,
           "d9dbc40a32d5f247": 3,
           "4ef472d71b6f982d": 6,
-          "012e2913a92c2dcd": 2,
           "4ba733226d35013c": 2,
           "59a87eeec2fe1e00": 2,
-          "6c93c72c64a73235": 1,
-          "884b085e13d69864": 1,
           "f3ab44460fb54ff9": 3,
-          "ce7e269aabe729c7": 2,
-          "f078b5cb78422f28": 1,
-          "6e43736251cfdbbe": 1,
           "f83318a97cf445f3": 1,
-          "b3cdc5e1f5bc0f36": 1
+          "b3cdc5e1f5bc0f36": 1,
+          "6e43736251cfdbbe": 1,
+          "012e2913a92c2dcd": 2,
+          "f078b5cb78422f28": 1,
+          "884b085e13d69864": 1,
+          "ce7e269aabe729c7": 2,
+          "6c93c72c64a73235": 1
         },
         "Anthropic \u2014 Sonnet 5.5": {
           "5f65f1f2cbde5cd8": 2
@@ -33652,8 +33643,8 @@
         "Unknown \u2014 LLM": 60,
         "Unknown \u2014 pi:claude-opus-5-5": 1,
         "Google \u2014 ": 1,
-        "OpenAI \u2014 GPT-6": 7,
         "OpenAI \u2014 GPT-6.1": 1,
+        "OpenAI \u2014 GPT-6": 7,
         "OpenAI \u2014 ": 1,
         "Anthropic \u2014 Opus 5.5": 5,
         "Unknown \u2014 qwen3.8-flash-next": 1,
@@ -33663,8 +33654,8 @@
       "tools": {
         "Unknown": 61,
         "Direct / API": 11,
-        "OpenCode": 2,
-        "Codex": 8
+        "Codex": 8,
+        "OpenCode": 2
       },
       "authors": {
         "a09f5908a9df8133": 1,
@@ -33719,12 +33710,12 @@
         "Google \u2014 ": {
           "0c24b5df00571b65": 1
         },
+        "OpenAI \u2014 GPT-6.1": {
+          "c30f07d04b076c07": 1
+        },
         "OpenAI \u2014 GPT-6": {
           "c30f07d04b076c07": 1,
           "9e02023996ed5122": 6
-        },
-        "OpenAI \u2014 GPT-6.1": {
-          "c30f07d04b076c07": 1
         },
         "OpenAI \u2014 ": {
           "9bd46e6bc07fcdd2": 1
@@ -33790,8 +33781,8 @@
         "f6aadae230fc1819": 4,
         "07f929f3bdcbd4e3": 1,
         "7efddea994b123e5": 3,
-        "fe2a42641d8ffb18": 1,
         "33a46f49e30fd5d6": 2,
+        "fe2a42641d8ffb18": 1,
         "9e676a484535b689": 2,
         "96592881ba1a1022": 6,
         "ed55453128ef5810": 1,
@@ -34009,16 +34000,16 @@
       }
     },
     "2026-11-03": {
-      "patches": 370,
+      "patches": 371,
       "vendors": {
-        "Unknown": 128,
+        "Unknown": 129,
         "Google": 11,
         "OpenAI": 6,
         "Anthropic": 109,
         "DeepSeek": 116
       },
       "models": {
-        "Unknown \u2014 LLM": 109,
+        "Unknown \u2014 LLM": 110,
         "Google \u2014 Gemini-4-Argon": 2,
         "OpenAI \u2014 GPT-6": 3,
         "Anthropic \u2014 Opus": 1,
@@ -34030,22 +34021,22 @@
         "DeepSeek \u2014 DeepSeek V4.1": 114,
         "Unknown \u2014 tencentos-corvus-ai:hy4-preview": 1,
         "Google \u2014 ": 1,
-        "OpenAI \u2014 GPT-5.6": 1,
         "Google \u2014 Gemini 4 Argon": 2,
         "Unknown \u2014 LLM [codegen, tests]": 5,
         "OpenAI \u2014 ": 1,
         "Unknown \u2014 LLM claude": 1,
         "Unknown \u2014 pi:claude-opus-5-5": 2,
-        "OpenAI \u2014 GPT-5": 1,
         "Unknown \u2014 Opus 5.5 (implementation/testing), GPT-6.1 (review)": 2,
         "Unknown \u2014 gpt-6.1-terra": 1,
         "Google \u2014 Gemini 3.1 Pro": 5,
         "Unknown \u2014 unspecified": 1,
         "Anthropic \u2014 Opus 4.8": 10,
-        "Anthropic \u2014 claude-fable-5": 5
+        "Anthropic \u2014 claude-fable-5": 5,
+        "OpenAI \u2014 GPT-5.6": 1,
+        "OpenAI \u2014 GPT-5": 1
       },
       "tools": {
-        "Unknown": 127,
+        "Unknown": 128,
         "GitHub Copilot": 6,
         "Codex": 5,
         "Direct / API": 188,
@@ -34079,10 +34070,10 @@
         "854832bc2086d4e4": 1,
         "57f90befc6753956": 1,
         "752f7813916ef80a": 3,
-        "d9dbc40a32d5f247": 11,
+        "d9dbc40a32d5f247": 9,
+        "4ef472d71b6f982d": 2,
         "7387ea8a0ce6dbb5": 3,
         "a287d23f0970a671": 5,
-        "c91514d4e1f00cc2": 1,
         "2a343c71b21cd68d": 14,
         "9a7f2765a97de27c": 6,
         "9657e5496bbf2ec0": 6,
@@ -34093,20 +34084,23 @@
         "2a1d8aaa604463ae": 1,
         "2102b02315cb530e": 1,
         "c30f653ba8cfd5fc": 7,
-        "8aac68d3797611ab": 2,
+        "46b655449e44aff6": 2,
         "da1031e6a9dc9a79": 4,
-        "51d263c2fe8bce97": 3,
+        "51d263c2fe8bce97": 2,
+        "a159b03092786b6f": 1,
         "08b254d8f41e85cf": 1,
         "884b085e13d69864": 1,
         "9bd46e6bc07fcdd2": 2,
         "4b4cf4d8fefe64d6": 2,
         "664a465978fdeac6": 6,
-        "e2d896ab29c129a8": 5,
+        "e2d896ab29c129a8": 4,
+        "51a2b67c9431e8ae": 1,
         "96592881ba1a1022": 5,
         "55ca5a1c17d871ff": 13,
-        "0c5684c34aea6ad3": 1,
+        "0c5684c34aea6ad3": 2,
         "04ffcb3d402f2b6e": 6,
-        "74f800c5035e295a": 44
+        "74f800c5035e295a": 44,
+        "c91514d4e1f00cc2": 1
       },
       "model_authors": {
         "Unknown \u2014 LLM": {
@@ -34124,19 +34118,21 @@
           "854832bc2086d4e4": 1,
           "57f90befc6753956": 1,
           "752f7813916ef80a": 2,
-          "d9dbc40a32d5f247": 11,
+          "d9dbc40a32d5f247": 9,
+          "4ef472d71b6f982d": 2,
           "7387ea8a0ce6dbb5": 3,
           "9a7f2765a97de27c": 4,
           "2102b02315cb530e": 1,
           "c30f653ba8cfd5fc": 7,
           "da1031e6a9dc9a79": 4,
-          "51d263c2fe8bce97": 3,
+          "51d263c2fe8bce97": 2,
+          "a159b03092786b6f": 1,
           "08b254d8f41e85cf": 1,
           "884b085e13d69864": 1,
           "9bd46e6bc07fcdd2": 2,
           "664a465978fdeac6": 6,
           "55ca5a1c17d871ff": 13,
-          "0c5684c34aea6ad3": 1
+          "0c5684c34aea6ad3": 2
         },
         "Google \u2014 Gemini-4-Argon": {
           "73cc500786987487": 2
@@ -34169,7 +34165,8 @@
           "9a7f2765a97de27c": 1,
           "9657e5496bbf2ec0": 6,
           "71ceccdbbdfb2f40": 1,
-          "e2d896ab29c129a8": 5,
+          "e2d896ab29c129a8": 4,
+          "51a2b67c9431e8ae": 1,
           "04ffcb3d402f2b6e": 6,
           "74f800c5035e295a": 29
         },
@@ -34185,9 +34182,6 @@
         "Google \u2014 ": {
           "752f7813916ef80a": 1
         },
-        "OpenAI \u2014 GPT-5.6": {
-          "c91514d4e1f00cc2": 1
-        },
         "Google \u2014 Gemini 4 Argon": {
           "5f96d7a384ec91ce": 2
         },
@@ -34201,10 +34195,7 @@
           "575919a97a544412": 1
         },
         "Unknown \u2014 pi:claude-opus-5-5": {
-          "8aac68d3797611ab": 2
-        },
-        "OpenAI \u2014 GPT-5": {
-          "575919a97a544412": 1
+          "46b655449e44aff6": 2
         },
         "Unknown \u2014 Opus 5.5 (implementation/testing), GPT-6.1 (review)": {
           "4b4cf4d8fefe64d6": 2
@@ -34223,6 +34214,12 @@
         },
         "Anthropic \u2014 claude-fable-5": {
           "74f800c5035e295a": 5
+        },
+        "OpenAI \u2014 GPT-5.6": {
+          "c91514d4e1f00cc2": 1
+        },
+        "OpenAI \u2014 GPT-5": {
+          "575919a97a544412": 1
         }
       }
     },
@@ -34242,18 +34239,18 @@
         "OpenAI \u2014 GPT-5.6": 21,
         "Anthropic \u2014 Opus": 26,
         "Anthropic \u2014 Opus 5.5": 49,
-        "OpenAI \u2014 GPT-6.1": 1,
         "DeepSeek \u2014 DeepSeek V4.1": 107,
         "Anthropic \u2014 Opus 4.8": 22,
         "Anthropic \u2014 Sonnet": 9,
         "Anthropic \u2014 Sonnet 5.5": 18,
-        "DeepSeek \u2014 DeepSeek V4": 1,
         "Z.ai \u2014 GLM-4": 13,
         "Anthropic \u2014 unspecified": 1,
+        "OpenAI \u2014 GPT-6.1": 1,
+        "Unknown \u2014 GPT-6.1 Sol": 2,
         "Unknown \u2014 LLM, Specula": 3,
         "OpenAI \u2014 GPT-5": 13,
         "Unknown \u2014 ARTIST LLM": 6,
-        "Unknown \u2014 GPT-6.1 Sol": 2,
+        "DeepSeek \u2014 DeepSeek V4": 1,
         "Unknown \u2014 Bynario AI": 9,
         "Unknown \u2014 Qoder:Qwen3.8-Max": 2,
         "Z.ai \u2014 GLM-5.3": 3,
@@ -34262,11 +34259,11 @@
         "Unknown \u2014 LOLLM # finding obvious bugs": 129,
         "Unknown \u2014 LLM claude": 2,
         "OpenAI \u2014 deepseek-v4-flash": 2,
+        "OpenAI \u2014 ": 2,
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": 2,
         "Unknown \u2014 Kimi:K3": 2,
         "Anthropic \u2014 claude-mythos-5": 5,
         "Unknown \u2014 LLM OpenAI Codex": 1,
-        "Unknown \u2014 LLM codeql": 2,
         "Anthropic \u2014 Opus 4.6": 4,
         "Unknown \u2014 gpt 6 sol with daybreak blue": 2,
         "Anthropic \u2014 claude-fable-5": 7,
@@ -34281,11 +34278,11 @@
         "Greg KH (local LLM fuzzer) \u2014 gregkh_clanker_t1000": 3,
         "Greg KH (local LLM fuzzer) \u2014 gkh-clanker-2000": 1,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": 1,
+        "Google \u2014 Gemini 3.1 Pro": 1,
         "Unknown \u2014 LLM sparse checkpatch": 1,
-        "OpenAI \u2014 ": 2,
+        "Unknown \u2014 LLM codeql": 2,
         "Anthropic \u2014 claude-fable-5.1": 2,
-        "Unknown \u2014 Big-Pickle": 1,
-        "Google \u2014 Gemini 3.1 Pro": 1
+        "Unknown \u2014 Big-Pickle": 1
       },
       "tools": {
         "Unknown": 353,
@@ -34303,52 +34300,52 @@
       "authors": {
         "1e4a065eea0105d3": 1,
         "575919a97a544412": 9,
-        "0c5684c34aea6ad3": 1,
         "509d90e29bc74874": 6,
         "4e952796f511e348": 1,
-        "72f178d9d3052e64": 1,
         "9a1337185bf886a2": 105,
         "dec7ed71cff2201e": 6,
         "8578868121b6e48e": 1,
         "1d979d988f4d9677": 2,
         "f4893b1d8f8d4c2c": 3,
+        "86bca711cbe7da8a": 1,
         "0c19de35fd6161d4": 2,
         "d03f5826ab817b4c": 19,
         "9a7f2765a97de27c": 5,
         "8b8db3f1f95c0f5f": 13,
         "7efddea994b123e5": 3,
-        "fbc6ae509d498d96": 1,
         "752f7813916ef80a": 2,
         "690fae574d825083": 1,
         "5dbb934dac6f047e": 1,
-        "eaf1c575ee4d7e41": 1,
         "576126ef180862d2": 11,
+        "72f178d9d3052e64": 1,
         "8452d8e98daa0d44": 5,
         "851362d96563de40": 6,
+        "a166ba790d909263": 2,
         "a82bf4b4e7deae9f": 1,
-        "b90af8f0b3995065": 1,
         "884b085e13d69864": 3,
         "51641a74899214aa": 1,
         "d8831444040485f3": 1,
         "664a465978fdeac6": 1,
         "c47e193728d0066f": 8,
         "eb172083013da2d4": 10,
-        "8e0caefdd03ef5e2": 1,
-        "a166ba790d909263": 2,
+        "fbc6ae509d498d96": 1,
         "8bd0b9a826fdb1d0": 1,
+        "e9642b248c8dee0a": 1,
         "e6d9136f6e3bdcb5": 435,
+        "eaf1c575ee4d7e41": 1,
         "71ceccdbbdfb2f40": 15,
+        "8e0caefdd03ef5e2": 1,
         "ea1e9e71caa538a6": 1,
         "531471dc1f568bf2": 3,
         "ffad78b8a162eb47": 1,
-        "86bca711cbe7da8a": 1
+        "b90af8f0b3995065": 1
       },
       "model_authors": {
         "Unknown \u2014 LLM": {
           "1e4a065eea0105d3": 1,
-          "0c5684c34aea6ad3": 1,
           "575919a97a544412": 2,
           "dec7ed71cff2201e": 6,
+          "86bca711cbe7da8a": 1,
           "0c19de35fd6161d4": 2,
           "9a7f2765a97de27c": 3,
           "752f7813916ef80a": 2,
@@ -34361,9 +34358,9 @@
           "664a465978fdeac6": 1,
           "c47e193728d0066f": 6,
           "8bd0b9a826fdb1d0": 1,
+          "e9642b248c8dee0a": 1,
           "e6d9136f6e3bdcb5": 149,
-          "531471dc1f568bf2": 3,
-          "86bca711cbe7da8a": 1
+          "531471dc1f568bf2": 3
         },
         "OpenAI \u2014 GPT-5.6": {
           "575919a97a544412": 1,
@@ -34372,8 +34369,8 @@
         "Anthropic \u2014 Opus": {
           "509d90e29bc74874": 6,
           "8578868121b6e48e": 1,
-          "e6d9136f6e3bdcb5": 16,
           "8452d8e98daa0d44": 2,
+          "e6d9136f6e3bdcb5": 16,
           "575919a97a544412": 1
         },
         "Anthropic \u2014 Opus 5.5": {
@@ -34381,21 +34378,18 @@
           "f4893b1d8f8d4c2c": 3,
           "9a7f2765a97de27c": 1,
           "7efddea994b123e5": 3,
-          "fbc6ae509d498d96": 1,
           "8452d8e98daa0d44": 1,
           "851362d96563de40": 6,
           "eb172083013da2d4": 10,
-          "8e0caefdd03ef5e2": 1,
+          "fbc6ae509d498d96": 1,
           "e6d9136f6e3bdcb5": 7,
-          "71ceccdbbdfb2f40": 15
-        },
-        "OpenAI \u2014 GPT-6.1": {
-          "72f178d9d3052e64": 1
+          "71ceccdbbdfb2f40": 15,
+          "8e0caefdd03ef5e2": 1
         },
         "DeepSeek \u2014 DeepSeek V4.1": {
           "9a1337185bf886a2": 105,
-          "b90af8f0b3995065": 1,
-          "e6d9136f6e3bdcb5": 1
+          "e6d9136f6e3bdcb5": 1,
+          "b90af8f0b3995065": 1
         },
         "Anthropic \u2014 Opus 4.8": {
           "1d979d988f4d9677": 2,
@@ -34410,14 +34404,17 @@
         "Anthropic \u2014 Sonnet 5.5": {
           "d03f5826ab817b4c": 18
         },
-        "DeepSeek \u2014 DeepSeek V4": {
-          "9a7f2765a97de27c": 1
-        },
         "Z.ai \u2014 GLM-4": {
           "8b8db3f1f95c0f5f": 13
         },
         "Anthropic \u2014 unspecified": {
           "5dbb934dac6f047e": 1
+        },
+        "OpenAI \u2014 GPT-6.1": {
+          "72f178d9d3052e64": 1
+        },
+        "Unknown \u2014 GPT-6.1 Sol": {
+          "a166ba790d909263": 2
         },
         "Unknown \u2014 LLM, Specula": {
           "575919a97a544412": 1,
@@ -34431,8 +34428,8 @@
           "c47e193728d0066f": 2,
           "e6d9136f6e3bdcb5": 4
         },
-        "Unknown \u2014 GPT-6.1 Sol": {
-          "a166ba790d909263": 2
+        "DeepSeek \u2014 DeepSeek V4": {
+          "9a7f2765a97de27c": 1
         },
         "Unknown \u2014 Bynario AI": {
           "575919a97a544412": 1,
@@ -34460,6 +34457,9 @@
         "OpenAI \u2014 deepseek-v4-flash": {
           "e6d9136f6e3bdcb5": 2
         },
+        "OpenAI \u2014 ": {
+          "e6d9136f6e3bdcb5": 2
+        },
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
           "e6d9136f6e3bdcb5": 2
         },
@@ -34472,9 +34472,6 @@
         },
         "Unknown \u2014 LLM OpenAI Codex": {
           "e6d9136f6e3bdcb5": 1
-        },
-        "Unknown \u2014 LLM codeql": {
-          "e6d9136f6e3bdcb5": 2
         },
         "Anthropic \u2014 Opus 4.6": {
           "e6d9136f6e3bdcb5": 4
@@ -34519,10 +34516,13 @@
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": {
           "e6d9136f6e3bdcb5": 1
         },
+        "Google \u2014 Gemini 3.1 Pro": {
+          "e6d9136f6e3bdcb5": 1
+        },
         "Unknown \u2014 LLM sparse checkpatch": {
           "e6d9136f6e3bdcb5": 1
         },
-        "OpenAI \u2014 ": {
+        "Unknown \u2014 LLM codeql": {
           "e6d9136f6e3bdcb5": 2
         },
         "Anthropic \u2014 claude-fable-5.1": {
@@ -34530,17 +34530,14 @@
         },
         "Unknown \u2014 Big-Pickle": {
           "e6d9136f6e3bdcb5": 1
-        },
-        "Google \u2014 Gemini 3.1 Pro": {
-          "e6d9136f6e3bdcb5": 1
         }
       }
     },
     "2026-11-05": {
-      "patches": 175,
+      "patches": 174,
       "vendors": {
         "Google": 2,
-        "Unknown": 120,
+        "Unknown": 119,
         "OpenAI": 12,
         "Anthropic": 41,
         "DeepSeek": 1
@@ -34549,11 +34546,12 @@
         "Google \u2014 ": 1,
         "Unknown \u2014 LLM": 60,
         "OpenAI \u2014 GPT-6": 9,
-        "Unknown \u2014 unspecified": 33,
         "OpenAI \u2014 GPT-5.6": 3,
         "Unknown \u2014 Kimi:K3": 1,
+        "Google \u2014 Gemini 3.8": 1,
         "Unknown \u2014 LLM OpenAI Codex": 2,
         "Unknown \u2014 Bynario AI": 4,
+        "Unknown \u2014 unspecified": 32,
         "Anthropic \u2014 Opus 5.5": 33,
         "Anthropic \u2014 Opus 4.6": 3,
         "Anthropic \u2014 Opus 4.8": 3,
@@ -34561,29 +34559,30 @@
         "DeepSeek \u2014 DeepSeek V4": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 18,
         "Unknown \u2014 gpt 6 sol with daybreak blue": 1,
-        "Unknown \u2014 ARTIST LLM": 1,
-        "Google \u2014 Gemini 3.8": 1
+        "Unknown \u2014 ARTIST LLM": 1
       },
       "tools": {
         "Direct / API": 41,
         "Unknown": 83,
         "Codex": 12,
-        "OpenCode": 2,
         "Bynario AI": 4,
         "Cursor": 32,
-        "Claude Code": 2
+        "Claude Code": 2,
+        "OpenCode": 1
       },
       "authors": {
-        "9945959ba42c17fc": 3,
+        "9945959ba42c17fc": 2,
         "6f9f739f527220c9": 13,
         "b45c49e8595e4a17": 8,
         "755543dd1bf9e8ac": 1,
         "f85b099bb5da9d66": 7,
         "575919a97a544412": 39,
+        "d50db00391212003": 1,
         "7afd4f07e0cf7d7e": 2,
         "f644f25981f10dcb": 31,
         "884b085e13d69864": 1,
-        "851362d96563de40": 10,
+        "851362d96563de40": 9,
+        "ac3aa808595e9791": 1,
         "3a8ea233a96d583f": 5,
         "7efddea994b123e5": 6,
         "61b5d07c2f2ba683": 2,
@@ -34594,8 +34593,8 @@
         "395ef0b4d9d35bba": 2,
         "9a7f2765a97de27c": 5,
         "32091afdd375a621": 6,
-        "f4893b1d8f8d4c2c": 6,
         "49b1d90db437e19d": 2,
+        "f4893b1d8f8d4c2c": 6,
         "8d20706f6bec7e7a": 2,
         "ff5d54475dc8dd6b": 1,
         "933a78cbb347472b": 1,
@@ -34603,8 +34602,7 @@
         "ed407afb37b82a61": 7,
         "428b60ccc3c475c3": 2,
         "509d90e29bc74874": 1,
-        "eb172083013da2d4": 1,
-        "d50db00391212003": 1
+        "eb172083013da2d4": 1
       },
       "model_authors": {
         "Google \u2014 ": {
@@ -34630,15 +34628,14 @@
           "b45c49e8595e4a17": 8,
           "4a23851d62b9ed4c": 1
         },
-        "Unknown \u2014 unspecified": {
-          "9945959ba42c17fc": 2,
-          "f644f25981f10dcb": 31
-        },
         "OpenAI \u2014 GPT-5.6": {
           "575919a97a544412": 3
         },
         "Unknown \u2014 Kimi:K3": {
           "575919a97a544412": 1
+        },
+        "Google \u2014 Gemini 3.8": {
+          "d50db00391212003": 1
         },
         "Unknown \u2014 LLM OpenAI Codex": {
           "575919a97a544412": 2
@@ -34646,8 +34643,13 @@
         "Unknown \u2014 Bynario AI": {
           "575919a97a544412": 4
         },
+        "Unknown \u2014 unspecified": {
+          "f644f25981f10dcb": 31,
+          "9945959ba42c17fc": 1
+        },
         "Anthropic \u2014 Opus 5.5": {
-          "851362d96563de40": 10,
+          "851362d96563de40": 9,
+          "ac3aa808595e9791": 1,
           "3a8ea233a96d583f": 5,
           "7efddea994b123e5": 6,
           "c2ab4c3c55fe3221": 2,
@@ -34680,9 +34682,6 @@
         },
         "Unknown \u2014 ARTIST LLM": {
           "575919a97a544412": 1
-        },
-        "Google \u2014 Gemini 3.8": {
-          "d50db00391212003": 1
         }
       }
     },
@@ -34690,25 +34689,25 @@
       "patches": 155,
       "vendors": {
         "Unknown": 31,
-        "DeepSeek": 1,
         "Anthropic": 119,
+        "DeepSeek": 1,
         "OpenAI": 4
       },
       "models": {
         "Unknown \u2014 LLM": 27,
-        "DeepSeek \u2014 DeepSeek V4.1": 1,
-        "Anthropic \u2014 Opus 5.5": 90,
         "Anthropic \u2014 claude-fable-5 [Claude Code]": 1,
+        "Anthropic \u2014 Opus 5.5": 90,
+        "DeepSeek \u2014 DeepSeek V4.1": 1,
         "Unknown \u2014 GitHub_Copilot:claude-opus-5.5": 1,
         "Unknown \u2014 LOLLM # finding obvious bugs": 2,
         "Unknown \u2014 Bynario AI": 1,
         "Anthropic \u2014 claude-fable-5": 12,
         "Anthropic \u2014 claude-fable-5-1": 1,
+        "Anthropic \u2014 Opus": 10,
         "OpenAI \u2014 GPT-6": 2,
         "Anthropic \u2014 Opus 4.8": 5,
         "OpenAI \u2014 GPT-5": 2,
         "Anthropic \u2014 claude-mythos-5": 1,
-        "Anthropic \u2014 Opus": 10,
         "OpenAI \u2014 GPT-6.1": 1
       },
       "tools": {
@@ -34722,9 +34721,9 @@
       "authors": {
         "4804cd01c3f3df22": 1,
         "83723c91c48048a3": 2,
-        "9a1337185bf886a2": 1,
         "5f2583e4b8dd578b": 1,
         "8f9f9231d8fec7e3": 1,
+        "9a1337185bf886a2": 1,
         "5314852614b81f8b": 1,
         "6f9f739f527220c9": 1,
         "1ba4e1715d585cb8": 1,
@@ -34745,7 +34744,7 @@
         "b56ec3ad14e7a711": 1,
         "9ed8c08bc2356674": 4,
         "7efddea994b123e5": 1,
-        "851362d96563de40": 2,
+        "ac3aa808595e9791": 2,
         "57afacf1d77f8baf": 2,
         "5aff582710ec750e": 1,
         "8a8628de9274a6fa": 1,
@@ -34779,8 +34778,8 @@
           "b929dea3e7c22cc1": 3,
           "4066fe60def49368": 1
         },
-        "DeepSeek \u2014 DeepSeek V4.1": {
-          "9a1337185bf886a2": 1
+        "Anthropic \u2014 claude-fable-5 [Claude Code]": {
+          "5f2583e4b8dd578b": 1
         },
         "Anthropic \u2014 Opus 5.5": {
           "5f2583e4b8dd578b": 1,
@@ -34795,7 +34794,7 @@
           "ba1f683192632f34": 17,
           "9ed8c08bc2356674": 4,
           "7efddea994b123e5": 1,
-          "851362d96563de40": 2,
+          "ac3aa808595e9791": 2,
           "57afacf1d77f8baf": 2,
           "5aff582710ec750e": 1,
           "32435b8ccbf7bf37": 8,
@@ -34804,8 +34803,8 @@
           "4066fe60def49368": 1,
           "6abac25231eb97b2": 2
         },
-        "Anthropic \u2014 claude-fable-5 [Claude Code]": {
-          "5f2583e4b8dd578b": 1
+        "DeepSeek \u2014 DeepSeek V4.1": {
+          "9a1337185bf886a2": 1
         },
         "Unknown \u2014 GitHub_Copilot:claude-opus-5.5": {
           "5314852614b81f8b": 1
@@ -34823,6 +34822,11 @@
         "Anthropic \u2014 claude-fable-5-1": {
           "575919a97a544412": 1
         },
+        "Anthropic \u2014 Opus": {
+          "966005dab243fefd": 1,
+          "575919a97a544412": 1,
+          "548ce6dbda870bb6": 8
+        },
         "OpenAI \u2014 GPT-6": {
           "c30f07d04b076c07": 2
         },
@@ -34836,33 +34840,32 @@
         "Anthropic \u2014 claude-mythos-5": {
           "575919a97a544412": 1
         },
-        "Anthropic \u2014 Opus": {
-          "575919a97a544412": 1,
-          "548ce6dbda870bb6": 8,
-          "966005dab243fefd": 1
-        },
         "OpenAI \u2014 GPT-6.1": {
           "c30f07d04b076c07": 1
         }
       }
     },
     "2026-11-07": {
-      "patches": 860,
+      "patches": 859,
       "vendors": {
-        "Anthropic": 211,
+        "Anthropic": 210,
         "Unknown": 485,
-        "Z.ai": 30,
         "OpenAI": 120,
+        "DeepSeek": 2,
+        "Z.ai": 30,
         "Greg KH (local LLM fuzzer)": 16,
-        "Google": 9,
-        "DeepSeek": 2
+        "Google": 9
       },
       "models": {
-        "Anthropic \u2014 Opus 5.5": 57,
+        "Anthropic \u2014 Opus 5.5": 56,
         "Unknown \u2014 LLM": 365,
+        "OpenAI \u2014 GPT-6.1": 3,
+        "OpenAI \u2014 GPT-6": 7,
+        "Anthropic \u2014 Opus": 99,
+        "DeepSeek \u2014 DeepSeek V4": 1,
+        "OpenAI \u2014 ": 6,
         "Unknown \u2014 Qoder:Qwen3.8-Max": 10,
         "Z.ai \u2014 GLM-5.3": 27,
-        "Anthropic \u2014 Opus": 99,
         "Unknown \u2014 unspecified": 13,
         "OpenAI \u2014 GPT-5": 43,
         "Unknown \u2014 ARTIST LLM": 4,
@@ -34878,7 +34881,6 @@
         "Anthropic \u2014 claude-mythos-5": 4,
         "OpenAI \u2014 GPT-5.4": 2,
         "Unknown \u2014 LOLLM # finding obvious bugs": 48,
-        "OpenAI \u2014 GPT-6": 7,
         "Unknown \u2014 big-pickle": 5,
         "Unknown \u2014 AuditCode-AI:2026.07": 3,
         "Unknown \u2014 tencent:hy3": 3,
@@ -34886,14 +34888,12 @@
         "Unknown \u2014 gpt 5": 3,
         "OpenAI \u2014 GPT-5.5": 6,
         "Unknown \u2014 LLM coccinelle": 1,
-        "OpenAI \u2014 GPT-6.1": 3,
         "Greg KH (local LLM fuzzer) \u2014 gregkh_clanker_t1000": 12,
         "Z.ai \u2014 GLM:5.3": 3,
         "Unknown \u2014 hy3-free": 1,
         "Google \u2014 Gemini 3.1 Pro": 7,
         "Anthropic \u2014 Opus 4.6": 4,
         "Anthropic \u2014 Opus 4.7": 2,
-        "OpenAI \u2014 ": 6,
         "Unknown \u2014 LLM (debugging)": 1,
         "Unknown \u2014 LLM, Specula": 1,
         "Unknown \u2014 Kimi:K3": 1,
@@ -34901,27 +34901,26 @@
         "Unknown \u2014 gpt 6 sol with daybreak blue": 1,
         "Google \u2014 Gemini 3.6 Pro": 1,
         "Unknown \u2014 Bynario AI": 2,
+        "Anthropic \u2014 Sonnet": 7,
+        "Unknown \u2014 Big-Pickle": 1,
+        "Google \u2014 Gemini 3.5": 1,
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": 1,
+        "Greg KH (local LLM fuzzer) \u2014 gkh-clanker-2000": 1,
         "Unknown \u2014 LLM claude": 1,
         "OpenAI \u2014 deepseek-v4-flash": 1,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": 2,
-        "Anthropic \u2014 Sonnet": 7,
         "DeepSeek \u2014 DeepSeek V4.1": 1,
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": 1,
-        "Greg KH (local LLM fuzzer) \u2014 gkh-clanker-2000": 1,
-        "Google \u2014 Gemini 3.5": 1,
-        "Unknown \u2014 Big-Pickle": 1,
-        "OpenAI \u2014 GPT-5.3": 1,
-        "DeepSeek \u2014 DeepSeek V4": 1
+        "OpenAI \u2014 GPT-5.3": 1
       },
       "tools": {
-        "Direct / API": 240,
+        "Direct / API": 239,
         "Unknown": 463,
-        "Cursor": 13,
         "Codex": 116,
+        "OpenCode": 10,
+        "Cursor": 13,
         "Kiro": 4,
         "GitHub Copilot": 8,
-        "OpenCode": 10,
         "Claude Code": 3,
         "Local LLM fuzzer": 16,
         "Bynario AI": 2,
@@ -34930,57 +34929,71 @@
       "authors": {
         "8e0caefdd03ef5e2": 2,
         "0a1aa17c09990553": 4,
-        "cb1c9f353bac2b96": 1,
-        "f4893b1d8f8d4c2c": 1,
-        "7efddea994b123e5": 1,
-        "9ed8c08bc2356674": 4,
-        "32091afdd375a621": 9,
-        "3965282b11f3e869": 3,
-        "e6d9136f6e3bdcb5": 801,
         "c30f07d04b076c07": 4,
-        "dec7ed71cff2201e": 2,
         "4b379b0175383b4d": 2,
         "73648819e2f55f6a": 2,
+        "dec7ed71cff2201e": 2,
         "1275eb649aeca938": 6,
         "8585176bf06cbfc3": 1,
+        "33a46f49e30fd5d6": 1,
         "69f33127a5f7dc3a": 5,
         "91a0b67f01bb5599": 4,
         "0d3c7c5f529f9db8": 5,
+        "f4893b1d8f8d4c2c": 1,
+        "cb1c9f353bac2b96": 1,
+        "7efddea994b123e5": 1,
+        "9ed8c08bc2356674": 3,
+        "32091afdd375a621": 9,
+        "3965282b11f3e869": 3,
+        "e6d9136f6e3bdcb5": 801,
         "d7966a6d6265d4b3": 1,
-        "895f7a467ffd68f9": 1,
-        "33a46f49e30fd5d6": 1
+        "895f7a467ffd68f9": 1
       },
       "model_authors": {
         "Anthropic \u2014 Opus 5.5": {
           "8e0caefdd03ef5e2": 2,
+          "4b379b0175383b4d": 2,
           "f4893b1d8f8d4c2c": 1,
           "7efddea994b123e5": 1,
-          "9ed8c08bc2356674": 4,
+          "9ed8c08bc2356674": 3,
           "3965282b11f3e869": 3,
-          "e6d9136f6e3bdcb5": 44,
-          "4b379b0175383b4d": 2
+          "e6d9136f6e3bdcb5": 44
         },
         "Unknown \u2014 LLM": {
           "0a1aa17c09990553": 4,
-          "cb1c9f353bac2b96": 1,
-          "32091afdd375a621": 9,
-          "e6d9136f6e3bdcb5": 333,
           "dec7ed71cff2201e": 2,
           "1275eb649aeca938": 6,
           "8585176bf06cbfc3": 1,
           "69f33127a5f7dc3a": 5,
-          "91a0b67f01bb5599": 4
+          "91a0b67f01bb5599": 4,
+          "cb1c9f353bac2b96": 1,
+          "32091afdd375a621": 9,
+          "e6d9136f6e3bdcb5": 333
+        },
+        "OpenAI \u2014 GPT-6.1": {
+          "c30f07d04b076c07": 3
+        },
+        "OpenAI \u2014 GPT-6": {
+          "c30f07d04b076c07": 4,
+          "e6d9136f6e3bdcb5": 3
+        },
+        "Anthropic \u2014 Opus": {
+          "73648819e2f55f6a": 2,
+          "e6d9136f6e3bdcb5": 96,
+          "895f7a467ffd68f9": 1
+        },
+        "DeepSeek \u2014 DeepSeek V4": {
+          "33a46f49e30fd5d6": 1
+        },
+        "OpenAI \u2014 ": {
+          "0d3c7c5f529f9db8": 5,
+          "e6d9136f6e3bdcb5": 1
         },
         "Unknown \u2014 Qoder:Qwen3.8-Max": {
           "e6d9136f6e3bdcb5": 10
         },
         "Z.ai \u2014 GLM-5.3": {
           "e6d9136f6e3bdcb5": 27
-        },
-        "Anthropic \u2014 Opus": {
-          "e6d9136f6e3bdcb5": 96,
-          "73648819e2f55f6a": 2,
-          "895f7a467ffd68f9": 1
         },
         "Unknown \u2014 unspecified": {
           "e6d9136f6e3bdcb5": 13
@@ -35027,10 +35040,6 @@
         "Unknown \u2014 LOLLM # finding obvious bugs": {
           "e6d9136f6e3bdcb5": 48
         },
-        "OpenAI \u2014 GPT-6": {
-          "e6d9136f6e3bdcb5": 3,
-          "c30f07d04b076c07": 4
-        },
         "Unknown \u2014 big-pickle": {
           "e6d9136f6e3bdcb5": 5
         },
@@ -35052,9 +35061,6 @@
         "Unknown \u2014 LLM coccinelle": {
           "e6d9136f6e3bdcb5": 1
         },
-        "OpenAI \u2014 GPT-6.1": {
-          "c30f07d04b076c07": 3
-        },
         "Greg KH (local LLM fuzzer) \u2014 gregkh_clanker_t1000": {
           "e6d9136f6e3bdcb5": 12
         },
@@ -35072,10 +35078,6 @@
         },
         "Anthropic \u2014 Opus 4.7": {
           "e6d9136f6e3bdcb5": 2
-        },
-        "OpenAI \u2014 ": {
-          "0d3c7c5f529f9db8": 5,
-          "e6d9136f6e3bdcb5": 1
         },
         "Unknown \u2014 LLM (debugging)": {
           "d7966a6d6265d4b3": 1
@@ -35098,7 +35100,19 @@
         "Unknown \u2014 Bynario AI": {
           "e6d9136f6e3bdcb5": 2
         },
+        "Anthropic \u2014 Sonnet": {
+          "e6d9136f6e3bdcb5": 7
+        },
+        "Unknown \u2014 Big-Pickle": {
+          "e6d9136f6e3bdcb5": 1
+        },
+        "Google \u2014 Gemini 3.5": {
+          "e6d9136f6e3bdcb5": 1
+        },
         "Unknown \u2014 Hermes:muse-spark-1.2 syzkaller": {
+          "e6d9136f6e3bdcb5": 1
+        },
+        "Greg KH (local LLM fuzzer) \u2014 gkh-clanker-2000": {
           "e6d9136f6e3bdcb5": 1
         },
         "Unknown \u2014 LLM claude": {
@@ -35110,29 +35124,14 @@
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_t1000": {
           "e6d9136f6e3bdcb5": 2
         },
-        "Anthropic \u2014 Sonnet": {
-          "e6d9136f6e3bdcb5": 7
-        },
         "DeepSeek \u2014 DeepSeek V4.1": {
           "e6d9136f6e3bdcb5": 1
         },
         "Greg KH (local LLM fuzzer) \u2014 gkh_clanker_2000": {
           "e6d9136f6e3bdcb5": 1
         },
-        "Greg KH (local LLM fuzzer) \u2014 gkh-clanker-2000": {
-          "e6d9136f6e3bdcb5": 1
-        },
-        "Google \u2014 Gemini 3.5": {
-          "e6d9136f6e3bdcb5": 1
-        },
-        "Unknown \u2014 Big-Pickle": {
-          "e6d9136f6e3bdcb5": 1
-        },
         "OpenAI \u2014 GPT-5.3": {
           "e6d9136f6e3bdcb5": 1
-        },
-        "DeepSeek \u2014 DeepSeek V4": {
-          "33a46f49e30fd5d6": 1
         }
       }
     },
@@ -35220,11 +35219,11 @@
         "Kiro": 1
       },
       "authors": {
+        "dcdeaaa3634303f4": 2,
         "7ba495dcd40a25dc": 1,
         "8eaa4e1248656aeb": 1,
         "fb6d627477c8b30a": 2,
         "6f9f739f527220c9": 27,
-        "dcdeaaa3634303f4": 2,
         "a302715a10f3fc84": 1,
         "6a8bb0b8514ce5ba": 2,
         "30266d06b3c2714a": 1,
@@ -35252,9 +35251,9 @@
       },
       "model_authors": {
         "Anthropic \u2014 Opus 5.5": {
+          "dcdeaaa3634303f4": 2,
           "7ba495dcd40a25dc": 1,
           "8eaa4e1248656aeb": 1,
-          "dcdeaaa3634303f4": 2,
           "a302715a10f3fc84": 1,
           "6a8bb0b8514ce5ba": 2,
           "829dcbdff5278b67": 16,
@@ -35354,6 +35353,7 @@
         "Antigravity": 1
       },
       "authors": {
+        "9ed8c08bc2356674": 4,
         "1290e3fa844f4ef0": 4,
         "575919a97a544412": 73,
         "fb6d627477c8b30a": 2,
@@ -35362,7 +35362,6 @@
         "47b3949dea952438": 6,
         "061b4f3764297313": 6,
         "9eeac3950b522745": 1,
-        "9ed8c08bc2356674": 4,
         "755722cef87ae93f": 1,
         "f50c636e38756839": 1,
         "a005d31a5d05187b": 1,
@@ -35398,10 +35397,10 @@
       },
       "model_authors": {
         "Anthropic \u2014 Opus 5.5": {
+          "9ed8c08bc2356674": 4,
           "1290e3fa844f4ef0": 4,
           "575919a97a544412": 4,
           "509d90e29bc74874": 5,
-          "9ed8c08bc2356674": 4,
           "a005d31a5d05187b": 1,
           "04a9ed4072e80834": 7,
           "f4893b1d8f8d4c2c": 3,
@@ -35511,21 +35510,21 @@
       }
     },
     "2026-11-11": {
-      "patches": 202,
+      "patches": 193,
       "vendors": {
-        "Unknown": 74,
-        "Anthropic": 117,
+        "Unknown": 71,
+        "Anthropic": 111,
         "Google": 2,
         "OpenAI": 9,
         "Z.ai": 2
       },
       "models": {
-        "Unknown \u2014 LLM": 67,
+        "Unknown \u2014 LLM": 64,
         "Anthropic \u2014 Opus": 8,
         "Unknown \u2014 Perfloop Agent <agent@perfloop.ai>": 1,
         "Anthropic \u2014 Sonnet 4.6": 2,
         "Anthropic \u2014 claude-mythos-5": 1,
-        "Anthropic \u2014 Opus 5.5": 70,
+        "Anthropic \u2014 Opus 5.5": 64,
         "Anthropic \u2014 Claude Fable 5.1": 8,
         "Google \u2014 Gemini 3.8": 1,
         "OpenAI \u2014 GPT-6": 5,
@@ -35543,10 +35542,10 @@
         "Anthropic \u2014 Opus 4.8": 1
       },
       "tools": {
-        "Unknown": 70,
+        "Unknown": 67,
         "GitHub Copilot": 6,
         "OpenCode": 14,
-        "Direct / API": 100,
+        "Direct / API": 94,
         "Codex": 9,
         "Claude Code": 2,
         "Cursor": 1,
@@ -35555,7 +35554,6 @@
       "authors": {
         "e1a82e61a44f2519": 1,
         "575919a97a544412": 41,
-        "cad4d0c36d19ff28": 1,
         "f23cafc8a436d4cc": 1,
         "12c7584dd555b9c1": 2,
         "a166ba790d909263": 16,
@@ -35566,7 +35564,7 @@
         "9aa6a428b312d505": 1,
         "ded02fc4af5506da": 1,
         "df9478d97cd199a7": 2,
-        "509d90e29bc74874": 29,
+        "509d90e29bc74874": 23,
         "20397c6d8bd7f9d9": 1,
         "81bd70642f6bc495": 1,
         "d0030adf1a1ccb6b": 1,
@@ -35575,7 +35573,7 @@
         "f72c35386a016bef": 7,
         "7efddea994b123e5": 6,
         "dcc756d4fb590111": 1,
-        "ccbf5ed447617678": 7,
+        "ccbf5ed447617678": 6,
         "a0f4c206e6f7a07f": 1,
         "250b388ea94f45f9": 1,
         "ef71bdd4bf2ad38f": 1,
@@ -35592,7 +35590,6 @@
         "1ea1d01c8bffb045": 2,
         "b7c432699d9726c9": 1,
         "a005d31a5d05187b": 1,
-        "3b10a508fe61f0d6": 1,
         "6f9f739f527220c9": 16,
         "ffc83dd36a269a34": 1,
         "dec7ed71cff2201e": 1,
@@ -35601,19 +35598,17 @@
       "model_authors": {
         "Unknown \u2014 LLM": {
           "e1a82e61a44f2519": 1,
-          "cad4d0c36d19ff28": 1,
           "575919a97a544412": 19,
           "9aa6a428b312d505": 1,
           "df9478d97cd199a7": 2,
           "81bd70642f6bc495": 1,
           "d0030adf1a1ccb6b": 1,
           "dcc756d4fb590111": 1,
-          "ccbf5ed447617678": 7,
+          "ccbf5ed447617678": 6,
           "a0f4c206e6f7a07f": 1,
           "fb0481d75b1010e4": 5,
           "2f13a68bdc5935e7": 1,
           "664a465978fdeac6": 7,
-          "3b10a508fe61f0d6": 1,
           "6f9f739f527220c9": 16,
           "dec7ed71cff2201e": 1,
           "ca98d8ac6fa7adc6": 1
@@ -35638,7 +35633,7 @@
           "e1ed44870c23f1ca": 2,
           "6bfa6a69d5f8c07d": 1,
           "ded02fc4af5506da": 1,
-          "509d90e29bc74874": 21,
+          "509d90e29bc74874": 15,
           "575919a97a544412": 7,
           "74f800c5035e295a": 2,
           "f72c35386a016bef": 7,
@@ -35704,50 +35699,119 @@
       }
     },
     "2026-11-12": {
-      "patches": 53,
+      "patches": 131,
       "vendors": {
-        "Anthropic": 21,
-        "Unknown": 23,
-        "OpenAI": 7,
+        "Anthropic": 58,
+        "Unknown": 57,
+        "OpenAI": 20,
+        "Google": 2,
         "DeepSeek": 1,
         "Z.ai": 1
       },
       "models": {
-        "Anthropic \u2014 Opus 5.5": 14,
-        "Unknown \u2014 LLM": 22,
-        "Anthropic \u2014 Opus 4.8": 2,
-        "OpenAI \u2014 GPT-6": 4,
+        "Anthropic \u2014 Sonnet 4.6": 3,
+        "Anthropic \u2014 Opus 4.8": 6,
+        "Anthropic \u2014 Opus 5.5": 35,
+        "Anthropic \u2014 Opus": 3,
+        "Unknown \u2014 LLM": 49,
+        "Unknown \u2014 Fable-5.1/Opus-5.5": 1,
+        "Unknown \u2014 Opus-5.5": 2,
+        "OpenAI \u2014 ": 1,
+        "Unknown \u2014 Grok:4.7": 1,
+        "Anthropic \u2014 deepseek-v4.1-flash-1017": 8,
+        "OpenAI \u2014 GPT-6": 15,
+        "Google \u2014 Gemini 3.8": 2,
+        "Unknown \u2014 unspecified": 1,
+        "Unknown \u2014 chatgpt:gpt-6.1-sol": 1,
+        "OpenAI \u2014 GPT-6.1": 4,
+        "Anthropic \u2014 Opus 4.7": 1,
+        "Unknown \u2014 LLM (exposing the bug)": 1,
+        "Unknown \u2014 LLM (planning and coding)": 1,
         "Anthropic \u2014 Sonnet 5.5": 5,
         "Anthropic \u2014 claude-fable-5-2": 5,
-        "Unknown \u2014 chatgpt:gpt-6.1-sol": 1,
         "DeepSeek \u2014 DeepSeek V4": 1,
-        "OpenAI \u2014 GPT-6.1": 3,
         "Z.ai \u2014 GLM-5.1": 1
       },
       "tools": {
-        "Direct / API": 23,
-        "Unknown": 23,
-        "Codex": 4,
-        "OpenCode": 3
+        "Direct / API": 54,
+        "Unknown": 53,
+        "OpenCode": 7,
+        "Codex": 17,
+        "Claude Code": 8
       },
       "authors": {
-        "012e2913a92c2dcd": 1,
+        "575919a97a544412": 13,
+        "474337e93e4be2da": 1,
+        "509d90e29bc74874": 6,
+        "43d9166e34ffa575": 1,
+        "73648819e2f55f6a": 2,
+        "5f342f2e1633bda8": 1,
+        "29a317ced6664dfc": 1,
+        "3a16d8acd6b86488": 1,
+        "cad4d0c36d19ff28": 1,
+        "7befb41fc28df34e": 3,
+        "f89972363a36ad19": 2,
+        "7efddea994b123e5": 5,
+        "d71a66224ae1740f": 1,
+        "ee826be7a3087725": 1,
+        "f0fb3b9b47c45de6": 1,
+        "9ed8c08bc2356674": 1,
+        "1bfbd1b4b9a4dfbc": 9,
+        "f4893b1d8f8d4c2c": 2,
+        "5142e8ca0288f17e": 9,
+        "bda6503ad955ab34": 1,
+        "e88e0d0142b24fad": 1,
+        "57a52586b0c63668": 3,
+        "96592881ba1a1022": 2,
+        "4ef472d71b6f982d": 1,
+        "fb0481d75b1010e4": 3,
+        "9945959ba42c17fc": 1,
+        "20397c6d8bd7f9d9": 1,
+        "e5c5196ee44a7d58": 1,
+        "45b0800368c8eba9": 1,
+        "467b557a6f8ffd54": 3,
+        "3c9d8399e4f57c97": 2,
+        "566b63a15d967a6a": 1,
+        "ccbf5ed447617678": 2,
+        "9733e85f48446fa3": 1,
         "6f9f739f527220c9": 17,
-        "575919a97a544412": 9,
+        "fb6d627477c8b30a": 2,
+        "4de2b857483a1c1c": 1,
+        "fa5f310c85d1a0ca": 1,
+        "012e2913a92c2dcd": 1,
         "3ae5e6726b3f69da": 1,
         "f72c35386a016bef": 3,
         "4b379b0175383b4d": 4,
-        "467b557a6f8ffd54": 1,
         "32435b8ccbf7bf37": 6,
         "c30f07d04b076c07": 4,
-        "e5c5196ee44a7d58": 1,
         "4a23851d62b9ed4c": 1,
         "33a46f49e30fd5d6": 1,
         "72f178d9d3052e64": 3,
         "eb172083013da2d4": 1
       },
       "model_authors": {
+        "Anthropic \u2014 Sonnet 4.6": {
+          "575919a97a544412": 2,
+          "566b63a15d967a6a": 1
+        },
+        "Anthropic \u2014 Opus 4.8": {
+          "575919a97a544412": 3,
+          "29a317ced6664dfc": 1,
+          "20397c6d8bd7f9d9": 1,
+          "3c9d8399e4f57c97": 1
+        },
         "Anthropic \u2014 Opus 5.5": {
+          "474337e93e4be2da": 1,
+          "509d90e29bc74874": 6,
+          "43d9166e34ffa575": 1,
+          "5f342f2e1633bda8": 1,
+          "3a16d8acd6b86488": 1,
+          "f89972363a36ad19": 2,
+          "7efddea994b123e5": 3,
+          "9ed8c08bc2356674": 1,
+          "f4893b1d8f8d4c2c": 2,
+          "3c9d8399e4f57c97": 2,
+          "9733e85f48446fa3": 1,
           "012e2913a92c2dcd": 1,
           "3ae5e6726b3f69da": 1,
           "f72c35386a016bef": 3,
@@ -35756,18 +35820,69 @@
           "32435b8ccbf7bf37": 1,
           "eb172083013da2d4": 1
         },
+        "Anthropic \u2014 Opus": {
+          "73648819e2f55f6a": 2,
+          "3c9d8399e4f57c97": 1
+        },
         "Unknown \u2014 LLM": {
+          "cad4d0c36d19ff28": 1,
+          "575919a97a544412": 4,
+          "d71a66224ae1740f": 1,
+          "1bfbd1b4b9a4dfbc": 9,
+          "7efddea994b123e5": 2,
+          "bda6503ad955ab34": 1,
+          "e88e0d0142b24fad": 1,
+          "57a52586b0c63668": 3,
+          "4ef472d71b6f982d": 1,
+          "fb0481d75b1010e4": 3,
+          "ccbf5ed447617678": 2,
           "6f9f739f527220c9": 17,
-          "575919a97a544412": 3,
+          "4de2b857483a1c1c": 1,
+          "fa5f310c85d1a0ca": 1,
           "c30f07d04b076c07": 2
         },
-        "Anthropic \u2014 Opus 4.8": {
-          "575919a97a544412": 2
+        "Unknown \u2014 Fable-5.1/Opus-5.5": {
+          "7befb41fc28df34e": 1
+        },
+        "Unknown \u2014 Opus-5.5": {
+          "7befb41fc28df34e": 2
+        },
+        "OpenAI \u2014 ": {
+          "ee826be7a3087725": 1
+        },
+        "Unknown \u2014 Grok:4.7": {
+          "f0fb3b9b47c45de6": 1
+        },
+        "Anthropic \u2014 deepseek-v4.1-flash-1017": {
+          "5142e8ca0288f17e": 8
         },
         "OpenAI \u2014 GPT-6": {
-          "467b557a6f8ffd54": 1,
+          "5142e8ca0288f17e": 9,
+          "467b557a6f8ffd54": 3,
           "c30f07d04b076c07": 2,
           "4a23851d62b9ed4c": 1
+        },
+        "Google \u2014 Gemini 3.8": {
+          "96592881ba1a1022": 2
+        },
+        "Unknown \u2014 unspecified": {
+          "9945959ba42c17fc": 1
+        },
+        "Unknown \u2014 chatgpt:gpt-6.1-sol": {
+          "e5c5196ee44a7d58": 1
+        },
+        "OpenAI \u2014 GPT-6.1": {
+          "45b0800368c8eba9": 1,
+          "72f178d9d3052e64": 3
+        },
+        "Anthropic \u2014 Opus 4.7": {
+          "3c9d8399e4f57c97": 1
+        },
+        "Unknown \u2014 LLM (exposing the bug)": {
+          "fb6d627477c8b30a": 1
+        },
+        "Unknown \u2014 LLM (planning and coding)": {
+          "fb6d627477c8b30a": 1
         },
         "Anthropic \u2014 Sonnet 5.5": {
           "32435b8ccbf7bf37": 5
@@ -35775,17 +35890,62 @@
         "Anthropic \u2014 claude-fable-5-2": {
           "32435b8ccbf7bf37": 5
         },
-        "Unknown \u2014 chatgpt:gpt-6.1-sol": {
-          "e5c5196ee44a7d58": 1
-        },
         "DeepSeek \u2014 DeepSeek V4": {
           "33a46f49e30fd5d6": 1
         },
-        "OpenAI \u2014 GPT-6.1": {
-          "72f178d9d3052e64": 3
-        },
         "Z.ai \u2014 GLM-5.1": {
           "575919a97a544412": 1
+        }
+      }
+    },
+    "2026-11-13": {
+      "patches": 11,
+      "vendors": {
+        "Anthropic": 2,
+        "Unknown": 4,
+        "Google": 3,
+        "OpenAI": 2
+      },
+      "models": {
+        "Anthropic \u2014 Opus 5.5": 1,
+        "Unknown \u2014 LLM": 4,
+        "Google \u2014 ": 3,
+        "OpenAI \u2014 ": 2,
+        "Anthropic \u2014 Opus": 1
+      },
+      "tools": {
+        "Direct / API": 3,
+        "Unknown": 4,
+        "Antigravity": 2,
+        "Codex": 2
+      },
+      "authors": {
+        "ca9c4005e79f1551": 1,
+        "c30f07d04b076c07": 2,
+        "3b10a508fe61f0d6": 1,
+        "e0dde4beeee5bf0c": 2,
+        "019503dea101bb1b": 1,
+        "575919a97a544412": 1,
+        "89e052aa5b79bcb1": 3
+      },
+      "model_authors": {
+        "Anthropic \u2014 Opus 5.5": {
+          "ca9c4005e79f1551": 1
+        },
+        "Unknown \u2014 LLM": {
+          "c30f07d04b076c07": 2,
+          "3b10a508fe61f0d6": 1,
+          "575919a97a544412": 1
+        },
+        "Google \u2014 ": {
+          "e0dde4beeee5bf0c": 2,
+          "019503dea101bb1b": 1
+        },
+        "OpenAI \u2014 ": {
+          "89e052aa5b79bcb1": 2
+        },
+        "Anthropic \u2014 Opus": {
+          "89e052aa5b79bcb1": 1
         }
       }
     }
@@ -35793,19 +35953,19 @@
   "vendor_counts": [
     [
       "Anthropic",
-      15142
+      15176
     ],
     [
       "Unknown",
-      14263
+      14295
     ],
     [
       "OpenAI",
-      4517
+      4531
     ],
     [
       "Google",
-      2294
+      2299
     ],
     [
       "DeepSeek",
@@ -35831,15 +35991,15 @@
   "model_counts": [
     [
       "Unknown \u2014 LLM",
-      10011
+      10037
     ],
     [
       "Anthropic \u2014 Opus",
-      2875
+      2878
     ],
     [
       "Anthropic \u2014 Opus 4.8",
-      2855
+      2859
     ],
     [
       "Anthropic \u2014 Opus 4.6",
@@ -35847,7 +36007,7 @@
     ],
     [
       "Anthropic \u2014 Opus 5.5",
-      2044
+      2059
     ],
     [
       "OpenAI \u2014 GPT-5.6",
@@ -35855,7 +36015,7 @@
     ],
     [
       "Anthropic \u2014 Opus 4.7",
-      1193
+      1194
     ],
     [
       "Google \u2014 Gemini 3.1 Pro",
@@ -35867,7 +36027,7 @@
     ],
     [
       "Anthropic \u2014 Sonnet 4.6",
-      843
+      846
     ],
     [
       "Anthropic \u2014 claude-fable-5",
@@ -35903,7 +36063,7 @@
     ],
     [
       "OpenAI \u2014 GPT-6",
-      302
+      313
     ],
     [
       "Anthropic \u2014 Sonnet 4.5",
@@ -35967,7 +36127,7 @@
     ],
     [
       "OpenAI \u2014 ",
-      103
+      105
     ],
     [
       "Unknown \u2014 Bynario AI",
@@ -36003,7 +36163,7 @@
     ],
     [
       "Google \u2014 Gemini 3.8",
-      70
+      72
     ],
     [
       "Unknown \u2014 hy3-free",
@@ -36046,6 +36206,10 @@
       53
     ],
     [
+      "Google \u2014 ",
+      51
+    ],
+    [
       "Anthropic \u2014 fable-5",
       51
     ],
@@ -36054,16 +36218,16 @@
       50
     ],
     [
-      "Google \u2014 ",
-      48
-    ],
-    [
       "Unknown \u2014 Kimi:K3",
       48
     ],
     [
       "Google \u2014 Gemini 3.5 Pro",
       48
+    ],
+    [
+      "OpenAI \u2014 GPT-6.1",
+      46
     ],
     [
       "Z.ai \u2014 GLM-5.1",
@@ -36076,10 +36240,6 @@
     [
       "Unknown \u2014 LLM Codex",
       46
-    ],
-    [
-      "OpenAI \u2014 GPT-6.1",
-      45
     ],
     [
       "Unknown \u2014 tencentos-corvus-ai:kimi-k3",
@@ -36314,6 +36474,10 @@
       12
     ],
     [
+      "Unknown \u2014 LLM (exposing the bug)",
+      11
+    ],
+    [
       "Unknown \u2014 LLM sparse smatch",
       11
     ],
@@ -36355,10 +36519,6 @@
     ],
     [
       "Unknown \u2014 smatch:2.0 [static analysis]",
-      10
-    ],
-    [
-      "Unknown \u2014 LLM (exposing the bug)",
       10
     ],
     [
@@ -36412,6 +36572,10 @@
     [
       "Z.ai \u2014 GLM:5.2",
       9
+    ],
+    [
+      "Anthropic \u2014 deepseek-v4.1-flash-1017",
+      8
     ],
     [
       "Unknown \u2014 Kimi:K2 [Kimi Code CLI]",
@@ -36766,6 +36930,10 @@
       4
     ],
     [
+      "Unknown \u2014 Opus-5.5",
+      3
+    ],
+    [
       "Google \u2014 Gemini 4 Argon",
       3
     ],
@@ -36950,11 +37118,11 @@
       2
     ],
     [
-      "Unknown \u2014 Grok 4.7",
+      "Unknown \u2014 coccinelle sparse",
       2
     ],
     [
-      "Unknown \u2014 coccinelle sparse",
+      "Unknown \u2014 Grok 4.7",
       2
     ],
     [
@@ -37158,11 +37326,23 @@
       1
     ],
     [
-      "Unknown \u2014 gpt-6.1-terra",
+      "Unknown \u2014 Fable-5.1/Opus-5.5",
+      1
+    ],
+    [
+      "Unknown \u2014 Grok:4.7",
       1
     ],
     [
       "Unknown \u2014 chatgpt:gpt-6.1-sol",
+      1
+    ],
+    [
+      "Unknown \u2014 gpt-6.1-terra",
+      1
+    ],
+    [
+      "Unknown \u2014 LLM (planning and coding)",
       1
     ],
     [
@@ -37175,10 +37355,6 @@
     ],
     [
       "Unknown \u2014 LLM (generate the test case)",
-      1
-    ],
-    [
-      "Unknown \u2014 Opus-5.5",
       1
     ],
     [
@@ -37226,15 +37402,15 @@
       1
     ],
     [
+      "Unknown \u2014 LLM (Split the compiler_attributes.h from the next commit)",
+      1
+    ],
+    [
       "Unknown \u2014 LLM (updating configure.ac to error out if no such support)",
       1
     ],
     [
       "Unknown \u2014 LLM (generate the commit message with human modification)",
-      1
-    ],
-    [
-      "Unknown \u2014 LLM (Split the compiler_attributes.h from the next commit)",
       1
     ],
     [
@@ -37869,15 +38045,15 @@
   "tool_counts": [
     [
       "Direct / API",
-      14638
+      14667
     ],
     [
       "Unknown",
-      13327
+      13356
     ],
     [
       "Codex",
-      4028
+      4042
     ],
     [
       "GitHub Copilot",
@@ -37885,11 +38061,11 @@
     ],
     [
       "Antigravity",
-      1107
+      1109
     ],
     [
       "OpenCode",
-      986
+      989
     ],
     [
       "Cursor",
@@ -37901,7 +38077,7 @@
     ],
     [
       "Claude Code",
-      390
+      398
     ],
     [
       "Kiro",
@@ -37930,12 +38106,12 @@
   ],
   "vendor_models": {
     "Anthropic": {
-      "Opus": 2875,
-      "Opus 4.8": 2855,
+      "Opus": 2878,
+      "Opus 4.8": 2859,
       "Opus 4.6": 2497,
-      "Opus 5.5": 2044,
-      "Opus 4.7": 1193,
-      "Sonnet 4.6": 843,
+      "Opus 5.5": 2059,
+      "Opus 4.7": 1194,
+      "Sonnet 4.6": 846,
       "claude-fable-5": 795,
       "unspecified": 470,
       "Sonnet": 391,
@@ -37962,6 +38138,7 @@
       "claude-fable-5-2": 9,
       "claude-fable-5 shellcheck": 9,
       "claude-fable-5 tla+": 9,
+      "deepseek-v4.1-flash-1017": 8,
       "claude-fable-5 checkpatch": 8,
       "claude-fable-5 [gcc W=1]": 8,
       "Opus 5.1": 7,
@@ -38006,7 +38183,7 @@
       "mythos": 1
     },
     "Unknown": {
-      "LLM": 10011,
+      "LLM": 10037,
       "LOLLM # finding obvious bugs": 664,
       "big-pickle": 364,
       "unspecified": 274,
@@ -38063,6 +38240,7 @@
       "Devmate:Opus-5.5": 12,
       "GPT-5.6 Sol": 12,
       "YuanSheng:claude-4.7-opus": 12,
+      "LLM (exposing the bug)": 11,
       "LLM sparse smatch": 11,
       "LLM [analysis, codegen, tests]": 11,
       "PatchWise:gpt-5.5": 11,
@@ -38070,7 +38248,6 @@
       "Henry (Claude):claude-opus-4": 11,
       "ChatGPT:GPT-5.6 Sol": 10,
       "smatch:2.0 [static analysis]": 10,
-      "LLM (exposing the bug)": 10,
       "LLM (debugging, commit message)": 10,
       "LLM (Claude Sonnet 5, Anthropic)": 9,
       "Sashiko:gemini-3.1-pro-preview": 9,
@@ -38141,6 +38318,7 @@
       "kres:openai-gpt-5": 4,
       "0sec:claude-opus-4.8": 4,
       "GPT-Codex:gpt-5.2-codex": 4,
+      "Opus-5.5": 3,
       "pi:claude-opus-5-5": 3,
       "GPT-6 Astra, GPT-6.1 Sol": 3,
       "Muse-Code:muse-spark": 3,
@@ -38178,8 +38356,8 @@
       "GPT-6.1 Sol": 2,
       "LLM (debugging)": 2,
       "gpt-6-astra": 2,
-      "Grok 4.7": 2,
       "coccinelle sparse": 2,
+      "Grok 4.7": 2,
       "LLM Specula": 2,
       "LLM coccinelle sparse": 2,
       "LLM # Changelog": 2,
@@ -38216,12 +38394,14 @@
       "AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]": 2,
       "LLM (GPT-6.1-Sol)": 1,
       "spatch": 1,
-      "gpt-6.1-terra": 1,
+      "Fable-5.1/Opus-5.5": 1,
+      "Grok:4.7": 1,
       "chatgpt:gpt-6.1-sol": 1,
+      "gpt-6.1-terra": 1,
+      "LLM (planning and coding)": 1,
       "Perfloop Agent <agent@perfloop.ai>": 1,
       "GitHub_Copilot:claude-opus-5.5": 1,
       "LLM (generate the test case)": 1,
-      "Opus-5.5": 1,
       "LLM (exposing the bug and coding)": 1,
       "LLM (coding and testing)": 1,
       "LLM (the idea of using LCG, coding)": 1,
@@ -38232,9 +38412,9 @@
       "AI LLM": 1,
       "LLM (find and analyze the bug)": 1,
       "LLM (find the bug)": 1,
+      "LLM (Split the compiler_attributes.h from the next commit)": 1,
       "LLM (updating configure.ac to error out if no such support)": 1,
       "LLM (generate the commit message with human modification)": 1,
-      "LLM (Split the compiler_attributes.h from the next commit)": 1,
       "LLM.": 1,
       "LLM [analysis, codegen]": 1,
       "LLM IBM-Bob": 1,
@@ -38353,10 +38533,10 @@
       "GPT-5.5": 1184,
       "GPT-5": 780,
       "GPT-5.4": 680,
-      "GPT-6": 302,
+      "GPT-6": 313,
       "GPT-5.3": 140,
-      "": 103,
-      "GPT-6.1": 45,
+      "": 105,
+      "GPT-6.1": 46,
       "deepseek-v4-flash": 31,
       "26.506.31004": 10,
       "GLM-5.2": 9,
@@ -38380,8 +38560,8 @@
       "Gemini 3.5": 489,
       "Google Gemini 3": 133,
       "Gemini 3.6": 78,
-      "Gemini 3.8": 70,
-      "": 48,
+      "Gemini 3.8": 72,
+      "": 51,
       "Gemini 3.5 Pro": 48,
       "gemini-pro-prerelease": 33,
       "Gemini 3.7": 29,
@@ -38464,7 +38644,7 @@
     ],
     [
       "Sasha Levin",
-      794
+      799
     ],
     [
       "Ian Rogers",
